@@ -370,7 +370,7 @@
         "text": "Ah, gracias por aclarar! No hay drama, de todas formas tu perfil me llamó la atención por el trabajo que venían haciendo en posicionamiento de marca.\n\nJusto estamos trabajando con equipos que están en transición o restructurando sus áreas de marketing, y muchos descubren que hay formas de armar equipos completos sin tener que contratar in-house.\n\n¿Actualmente estás en algún proyecto o empresa donde esto podría ser relevante, o preferís que nos hablemos en otro momento?"
       }
     ],
-    "stage": 2,
+    "stage": 5,
     "stageHistory": [
       {
         "stage": 1,
@@ -379,6 +379,21 @@
       },
       {
         "stage": 2,
+        "date": "05/06/26",
+        "note": ""
+      },
+      {
+        "stage": 3,
+        "date": "05/06/26",
+        "note": "Se quedo sin trabajo"
+      },
+      {
+        "stage": 4,
+        "date": "05/06/26",
+        "note": ""
+      },
+      {
+        "stage": 5,
         "date": "05/06/26",
         "note": ""
       }
@@ -1302,7 +1317,7 @@
   {
     "id": "1780665326658",
     "date": "05/06/26",
-    "name": "Acerca de",
+    "name": "Diana Caso Fernandez",
     "variantTitle": "Verificación + permiso",
     "msg1": "Diana, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Jefe de Marketing en Calier Colombia, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?",
     "msg2": "Perfecto. Vi que vienen con varios movimientos en evolución de portafolio y lanzamientos en la región.\n\nMi pregunta es más bien sobre ejecución diaria — cuando avanzan estos lanzamientos, ¿logra el equipo marketing mantener el ritmo o siempre anda corrida?\n\nEn Hint trabajamos con clientes que viven exactamente eso. Insertamos un equipo completo dentro de la estructura para que ejecute diario sin sobrecargar lo interno.\n\n¿Te lo envío por acá? Después vemos si tiene sentido conversar.",
@@ -1336,10 +1351,30 @@
         "text": "Diana, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Jefe de Marketing en Calier Colombia, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?"
       }
     ],
-    "stage": 1,
+    "stage": 5,
     "stageHistory": [
       {
         "stage": 1,
+        "date": "05/06/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "05/06/26",
+        "note": "no trabaja mas en la empresa"
+      },
+      {
+        "stage": 3,
+        "date": "05/06/26",
+        "note": ""
+      },
+      {
+        "stage": 4,
+        "date": "05/06/26",
+        "note": ""
+      },
+      {
+        "stage": 5,
         "date": "05/06/26",
         "note": ""
       }
@@ -1716,7 +1751,7 @@
   {
     "id": "1780667942196",
     "date": "05/06/26",
-    "name": "Foto de portada",
+    "name": "Jose Coto",
     "variantTitle": "Verificación + permiso",
     "msg1": "Jose, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos CEO en Loymark, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?",
     "msg2": "Gracias! Basándome en tu experiencia en nearshore digital y transformación, me surgió una pregunta: cuando escalas proyectos que requieren trafficker, diseñador, community manager y PM funcionando coordinados, ¿cómo resolvés que todos remen para la misma métrica?\n\nPregunto porque es un desafío operativo que vemos constantemente: la fricción no está en la calidad individual de cada rol, sino en cómo se coordinan entre disciplinas.\n\nTenemos un modelo que resuelve específicamente eso. Clientes como TGS y Transener lo usan para tener equipos integrados sin inflar estructura interna.\n\n¿Te interesa que te muestre cómo funciona? Te envío un dossier con ejemplos reales.",
