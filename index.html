@@ -38,7 +38,9 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 
 /* STATS BAR */
 .stats-bar{display:flex;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap}
-.stat-card{background:white;border:1px solid var(--border);border-radius:11px;padding:12px 16px;display:flex;flex-direction:column;gap:2px;flex:1;min-width:100px}
+.stat-card{background:white;border:1px solid var(--border);border-radius:11px;padding:12px 16px;display:flex;flex-direction:column;gap:2px;flex:1;min-width:100px;cursor:pointer;transition:all .15s;user-select:none}
+.stat-card:hover{border-color:var(--orange);background:var(--orange-light)}
+.stat-card:hover .stat-num{color:var(--orange)}
 .stat-num{font-size:22px;font-weight:700;color:var(--dark)}
 .stat-lbl{font-size:11px;color:var(--mid)}
 .stat-card.active{border-color:var(--orange);background:var(--orange-light)}
@@ -170,13 +172,13 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 
   <!-- STATS -->
   <div class="stats-bar" id="stats-bar">
-    <div class="stat-card"><div class="stat-num" id="st-total">—</div><div class="stat-lbl">Total prospectos</div></div>
-    <div class="stat-card"><div class="stat-num" id="st-1" style="color:#993C1D">—</div><div class="stat-lbl">Apertura enviada</div></div>
-    <div class="stat-card"><div class="stat-num" id="st-2" style="color:#1A5FA8">—</div><div class="stat-lbl">En conversación</div></div>
-    <div class="stat-card"><div class="stat-num" id="st-3" style="color:#6B21A8">—</div><div class="stat-lbl">Dossier enviado</div></div>
-    <div class="stat-card"><div class="stat-num" id="st-4" style="color:#1A6635">—</div><div class="stat-lbl">Seguimiento 1</div></div>
-    <div class="stat-card"><div class="stat-num" id="st-5" style="color:#555">—</div><div class="stat-lbl">Seguimiento 2</div></div>
-    <div class="stat-card"><div class="stat-num" id="st-noint" style="color:#999">—</div><div class="stat-lbl">No interesados</div></div>
+    <div class="stat-card" onclick="filterStat('')"><div class="stat-num" id="st-total">—</div><div class="stat-lbl">Total prospectos</div></div>
+    <div class="stat-card" onclick="filterStat('1')"><div class="stat-num" id="st-1" style="color:#993C1D">—</div><div class="stat-lbl">Apertura enviada</div></div>
+    <div class="stat-card" onclick="filterStat('2')"><div class="stat-num" id="st-2" style="color:#1A5FA8">—</div><div class="stat-lbl">En conversación</div></div>
+    <div class="stat-card" onclick="filterStat('3')"><div class="stat-num" id="st-3" style="color:#6B21A8">—</div><div class="stat-lbl">Dossier enviado</div></div>
+    <div class="stat-card" onclick="filterStat('4')"><div class="stat-num" id="st-4" style="color:#1A6635">—</div><div class="stat-lbl">Seguimiento 1</div></div>
+    <div class="stat-card" onclick="filterStat('5')"><div class="stat-num" id="st-5" style="color:#555">—</div><div class="stat-lbl">Seguimiento 2</div></div>
+    <div class="stat-card" onclick="filterStat('noint')"><div class="stat-num" id="st-noint" style="color:#999">—</div><div class="stat-lbl">No interesados</div></div>
   </div>
 
   <div class="grid">
@@ -191,13 +193,14 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
       </div>
       <div class="filter-row">
         <input class="filter-input" id="search-input" placeholder="Buscar por nombre..." oninput="renderList()">
-        <select class="filter-sel" id="stage-filter" onchange="renderList()">
+        <select class="filter-sel" id="stage-filter" onchange="syncStatCards();renderList()">
           <option value="">Todas las etapas</option>
           <option value="1">Apertura</option>
           <option value="2">En conversación</option>
           <option value="3">Dossier enviado</option>
           <option value="4">Seguimiento 1</option>
           <option value="5">Seguimiento 2</option>
+          <option value="noint">No interesados</option>
         </select>
       </div>
       <div class="prospect-list" id="prospect-list">
@@ -272,13 +275,26 @@ function renderStats() {
   document.getElementById('st-noint').textContent = _entries.filter(e => e.noInterest).length;
 }
 
+function filterStat(val) {
+  const sel = document.getElementById('stage-filter');
+  sel.value = (sel.value === val) ? '' : val;
+  syncStatCards();
+  renderList();
+}
+function syncStatCards() {
+  const val = document.getElementById('stage-filter').value;
+  const cards = document.querySelectorAll('.stat-card');
+  const vals = ['','1','2','3','4','5','noint'];
+  cards.forEach((c,i) => c.classList.toggle('active', vals[i] === val && val !== ''));
+}
 function renderList() {
   const q = (document.getElementById('search-input').value || '').toLowerCase().trim();
   const sf = document.getElementById('stage-filter').value;
   const sorted = [..._entries].sort((a,b) => parseDate(b.date) - parseDate(a.date));
   let filtered = sorted;
   if (q) filtered = filtered.filter(e => e.name.toLowerCase().includes(q));
-  if (sf) filtered = filtered.filter(e => (e.stage||1) === parseInt(sf));
+  if (sf === 'noint') filtered = filtered.filter(e => e.noInterest);
+  else if (sf) filtered = filtered.filter(e => !e.noInterest && (e.stage||1) === parseInt(sf));
 
   document.getElementById('list-count').textContent = filtered.length + ' prospecto' + (filtered.length !== 1 ? 's' : '');
 
