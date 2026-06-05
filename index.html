@@ -107,7 +107,30 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 .copy-btn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
 .animate{animation:fadeUp .3s ease both}
+
+/* PROXIMOS PANEL */
+#proximos-bar{background:var(--dark2);border-bottom:2px solid #333;padding:0 2rem;position:sticky;top:56px;z-index:99}
+#proximos-toggle{display:flex;align-items:center;gap:10px;height:38px;cursor:pointer;user-select:none}
+#proximos-toggle:hover .prox-label{color:white}
+.prox-label{font-size:12px;font-weight:600;color:#aaa;transition:color .15s}
+.prox-count{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;background:#333;color:#ccc}
+.prox-count.has-overdue{background:#7C1D00;color:#FF9980}
+.prox-chevron{margin-left:auto;color:#555;font-size:13px;transition:transform .2s}
+#proximos-body{display:none;padding:10px 0 12px}
+#proximos-body.open{display:flex;flex-wrap:wrap;gap:8px;animation:slideDown .2s ease}
+.prox-card{background:#1F1F1F;border:1px solid #333;border-radius:9px;padding:8px 12px;cursor:pointer;transition:all .15s;min-width:180px;max-width:220px}
+.prox-card:hover{border-color:var(--orange);background:#2A2A2A}
+.prox-card.overdue{border-color:#7C1D00;background:#1A0800}
+.prox-card.overdue:hover{border-color:#FF3B00}
+.prox-card-name{font-size:12px;font-weight:600;color:white;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:3px}
+.prox-card-days{font-size:11px;font-weight:700}
+.prox-card-days.red{color:#FF5C35}
+.prox-card-days.orange{color:#FFA040}
+.prox-card-days.green{color:#27AE60}
+.prox-card-stage{font-size:10px;color:#666;margin-top:1px}
+.overdue-badge{font-size:10px;font-weight:700;padding:1px 7px;border-radius:20px;background:#FFE5E0;color:#8B1A00;flex-shrink:0}
 
 @media(max-width:750px){.grid{grid-template-columns:1fr}.stats-bar{flex-wrap:wrap}}
 </style>
@@ -126,6 +149,16 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
   </div>
   <div class="readonly-badge">👁 Solo lectura · <span id="last-update">cargando...</span></div>
 </header>
+
+<div id="proximos-bar">
+  <div id="proximos-toggle" onclick="toggleProximos()">
+    <span style="font-size:14px">📅</span>
+    <span class="prox-label">Próximos a contactar</span>
+    <span class="prox-count" id="prox-count">0</span>
+    <span class="prox-chevron" id="prox-chevron">▼</span>
+  </div>
+  <div id="proximos-body"></div>
+</div>
 
 <div class="page">
   <div class="page-title">
@@ -225,6 +258,7 @@ async function loadData() {
   }
   renderStats();
   renderList();
+  renderProximos();
 }
 
 function renderStats() {
@@ -374,6 +408,53 @@ function copyTxt(btn, text) {
     btn.innerHTML = '<span>✓ Copiado</span>';
     setTimeout(()=>{ btn.innerHTML = o; }, 2000);
   });
+}
+
+function parseDateEntry(str) {
+  const p = (str||'').split('/');
+  if (p.length !== 3) return null;
+  const [d, m, y] = p.map(Number);
+  return new Date(2000 + y, m - 1, d);
+}
+function daysAgo(dateStr) {
+  const d = parseDateEntry(dateStr);
+  if (!d) return 0;
+  return Math.floor((Date.now() - d.getTime()) / 86400000);
+}
+function getLastActivityDate(entry) {
+  const hist = entry.stageHistory;
+  if (hist && hist.length > 0) return hist[hist.length - 1].date;
+  return entry.date;
+}
+function toggleProximos() {
+  const body = document.getElementById('proximos-body');
+  const chev = document.getElementById('prox-chevron');
+  const open = body.classList.contains('open');
+  body.classList.toggle('open', !open);
+  chev.style.transform = open ? '' : 'rotate(180deg)';
+}
+function renderProximos() {
+  const sorted = [..._entries].sort((a, b) => daysAgo(getLastActivityDate(b)) - daysAgo(getLastActivityDate(a)));
+  const countEl = document.getElementById('prox-count');
+  const body = document.getElementById('proximos-body');
+  if (!sorted.length || !countEl || !body) return;
+  const overdueCnt = sorted.filter(en => daysAgo(getLastActivityDate(en)) >= 7).length;
+  countEl.textContent = sorted.length;
+  countEl.className = 'prox-count' + (overdueCnt > 0 ? ' has-overdue' : '');
+  body.innerHTML = sorted.map(en => {
+    const days = daysAgo(getLastActivityDate(en));
+    const remaining = 7 - days;
+    const overdue = days >= 7;
+    let daysLabel, daysClass;
+    if (overdue) { daysLabel = `⚠ Vencido · hace ${days}d`; daysClass = 'red'; }
+    else if (remaining <= 2) { daysLabel = `Hablar en ${remaining}d`; daysClass = 'orange'; }
+    else { daysLabel = `Hablar en ${remaining}d`; daysClass = 'green'; }
+    return `<div class="prox-card${overdue ? ' overdue' : ''}" onclick="selectProspect('${en.id}')">
+      <div class="prox-card-name">${esc(en.name)}</div>
+      <div class="prox-card-days ${daysClass}">${daysLabel}</div>
+      <div class="prox-card-stage">${stgLabel(en.stage || 1)}</div>
+    </div>`;
+  }).join('');
 }
 
 loadData();
