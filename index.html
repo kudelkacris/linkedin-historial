@@ -69,6 +69,8 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 .sp-3{background:#F3EEFF;color:#6B21A8}
 .sp-4{background:#EAF7EF;color:#1A6635}
 .sp-5{background:#F0F0F0;color:#555}
+.sp-x{background:#F0F0F0;color:#999}
+.pi-name.noint{text-decoration:line-through;color:#aaa}
 
 /* DETAIL VIEW */
 .detail-wrap{display:flex;flex-direction:column;gap:12px}
@@ -174,6 +176,7 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
     <div class="stat-card"><div class="stat-num" id="st-3" style="color:#6B21A8">—</div><div class="stat-lbl">Dossier enviado</div></div>
     <div class="stat-card"><div class="stat-num" id="st-4" style="color:#1A6635">—</div><div class="stat-lbl">Seguimiento 1</div></div>
     <div class="stat-card"><div class="stat-num" id="st-5" style="color:#555">—</div><div class="stat-lbl">Seguimiento 2</div></div>
+    <div class="stat-card"><div class="stat-num" id="st-noint" style="color:#999">—</div><div class="stat-lbl">No interesados</div></div>
   </div>
 
   <div class="grid">
@@ -264,8 +267,9 @@ async function loadData() {
 function renderStats() {
   document.getElementById('st-total').textContent = _entries.length;
   [1,2,3,4,5].forEach(s => {
-    document.getElementById('st-' + s).textContent = _entries.filter(e => (e.stage||1) === s).length;
+    document.getElementById('st-' + s).textContent = _entries.filter(e => (e.stage||1) === s && !e.noInterest).length;
   });
+  document.getElementById('st-noint').textContent = _entries.filter(e => e.noInterest).length;
 }
 
 function renderList() {
@@ -284,10 +288,10 @@ function renderList() {
     return;
   }
   list.innerHTML = filtered.map(en => `
-    <div class="prospect-item${_selected === en.id ? ' selected' : ''}" onclick="selectProspect('${en.id}')">
+    <div class="prospect-item${_selected === en.id ? ' selected' : ''}" style="${en.noInterest ? 'opacity:.55' : ''}" onclick="selectProspect('${en.id}')">
       <div class="pi-row">
-        <div class="pi-name">${esc(en.name)}</div>
-        <span class="stage-pill ${STAGE_COLORS[en.stage||1]}">${stgLabel(en.stage||1)}</span>
+        <div class="pi-name${en.noInterest ? ' noint' : ''}">${esc(en.name)}</div>
+        ${en.noInterest ? '<span class="stage-pill sp-x">✕ No int.</span>' : `<span class="stage-pill ${STAGE_COLORS[en.stage||1]}">${stgLabel(en.stage||1)}</span>`}
       </div>
       <div class="pi-meta">
         <span>${en.date}</span>

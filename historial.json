@@ -326,57 +326,6 @@
     ]
   },
   {
-    "id": "1780607501225",
-    "date": "04/06/26",
-    "name": "Adriana Miron, MSc",
-    "variantTitle": "Verificación + permiso",
-    "msg1": "Adriana, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Marketing Manager en Edify Software Consulting y trabajas en estrategia EdTech regional, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?",
-    "msg2": "Preguntaba porque justamente vemos un patrón en EdTechs que crecen regionalmente: la estrategia de marketing está clara, pero la ejecución — diseño, campañas, contenido — termina siendo un cuello de botella.\n\nEn Hint Media trabajamos con equipos como el tuyo insertando un equipo completo de ejecución que sigue tu estrategia. Sin que agregues headcount fijo.\n\nTrabajamos así con TGS, Transener, Libra, Destiny Group. El dossier muestra cómo lo armamos.\n\n¿Te lo envío? O si preferís lo revisás en tu tiempo.",
-    "extraMsgs": {
-      "MSG3": [
-        "Adriana, ¿tuviste chance de ver el dossier que te pasé?",
-        "Sin presión, pero me gustaría saber si viste algo que le haga sentido a Edify.",
-        "Si querés charlamos 15 minutos así te cuento un poco más sobre cómo trabajamos.",
-        "[LINK DOSSIER]"
-      ],
-      "MSG4": [
-        "Adriana, entiendo que quizás no es el timing ahora para explorar esto.",
-        "De todas formas quería dejar la puerta abierta por si en algún momento necesitás escalar ejecución sin agregar recursos internos.",
-        "Cualquier cosa, escribime sin problema."
-      ],
-      "SEG1": [
-        "Adriana, una pregunta rápida — ¿vieron la oportunidad o prefieres que lo replanteemos en algunos meses?",
-        "A veces el timing no es el correcto, y está todo bien.",
-        "¿Hay algo que le falta al dossier para que tenga más sentido?"
-      ],
-      "SEG2": [
-        "Adriana, no quiero ser insistente.",
-        "Solo quería dejarte claro que cualquier momento que necesites armar un equipo de ejecución sin sumar cabezas, nos escribís.",
-        "Estamos acá para eso.",
-        "Un abrazo!"
-      ]
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Adriana, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Marketing Manager en Edify Software Consulting y trabajas en estrategia EdTech regional, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?"
-      }
-    ],
-    "stage": 2,
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "04/06/26",
-        "note": ""
-      },
-      {
-        "stage": 2,
-        "date": "05/06/26",
-        "note": ""
-      }
-    ]
-  },
-  {
     "id": "1780604881457",
     "date": "04/06/26",
     "name": "Fabian Augusto Peñaloza Tobar",
