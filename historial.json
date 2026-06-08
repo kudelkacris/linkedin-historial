@@ -1,5 +1,33 @@
 [
   {
+    "id": "1780960000005",
+    "date": "08/06/26",
+    "name": "Malvina Rodríguez",
+    "variantTitle": "Investigación + logro",
+    "msg1": "",
+    "msg2": "",
+    "extraMsgs": {
+      "MSG3": [],
+      "MSG4": [],
+      "SEG1": [],
+      "SEG2": []
+    },
+    "conversationHistory": [],
+    "stage": 2,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "08/06/26",
+        "note": "Respondió"
+      }
+    ]
+  },
+  {
     "id": "1780960000004",
     "date": "08/06/26",
     "name": "Pablo Gimenez Budde",
@@ -61,52 +89,6 @@
         "stage": 2,
         "date": "08/06/26",
         "note": "Respondió positivo"
-      }
-    ]
-  },
-  {
-    "id": "1780960000002",
-    "date": "08/06/26",
-    "name": "Juan Carlos Laurent Matamoros",
-    "variantTitle": "Investigación + logro",
-    "msg1": "Juan Carlos, gracias por conectar! 👋\n\nSos Gerente General en Cano y Fajardo Industrial S.A. — empresa que desarrolla soluciones en recubrimientos y especialidades industriales. Vi que pasaste de Gerente de Operaciones a conducir la empresa en poco más de un año, lo que dice bastante de cómo se mueve tu liderazgo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
-    "msg2": "Justamente quería preguntarte algo sobre cómo comunican hacia afuera el expertise técnico de Cano y Fajardo.\n\nEmpresas con soluciones industriales complejas como la tuya casi siempre ganan por referencia, pero pierden cuando quieren entrar a nuevos mercados o segmentos — porque la narrativa no está construida para ese salto.\n\nHint Media trabaja exactamente ahí — nos insertamos como equipo interno (diseño, contenido, estrategia) para construir esa narrativa sin que tengas que armar estructura.\n\n¿Te envío el dossier por acá? En todo caso me indicás a quién se lo puedo mandar.",
-    "extraMsgs": {
-      "MSG3": [],
-      "MSG4": [],
-      "SEG1": [],
-      "SEG2": []
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Juan Carlos, gracias por conectar! 👋\n\nSos Gerente General en Cano y Fajardo Industrial S.A. — empresa que desarrolla soluciones en recubrimientos y especialidades industriales. Vi que pasaste de Gerente de Operaciones a conducir la empresa en poco más de un año, lo que dice bastante de cómo se mueve tu liderazgo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
-      },
-      {
-        "role": "received",
-        "text": "Buenas\n\nEn qué puedo servirle"
-      },
-      {
-        "role": "sent",
-        "text": "Justamente quería preguntarte algo sobre cómo comunican hacia afuera el expertise técnico de Cano y Fajardo.\n\nEmpresas con soluciones industriales complejas como la tuya casi siempre ganan por referencia, pero pierden cuando quieren entrar a nuevos mercados o segmentos — porque la narrativa no está construida para ese salto.\n\nHint Media trabaja exactamente ahí — nos insertamos como equipo interno (diseño, contenido, estrategia) para construir esa narrativa sin que tengas que armar estructura.\n\n¿Te envío el dossier por acá? En todo caso me indicás a quién se lo puedo mandar."
-      },
-      {
-        "role": "received",
-        "text": "Te agradezco pero no estamos interesados"
-      }
-    ],
-    "noInterest": true,
-    "stage": 0,
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "08/06/26",
-        "note": ""
-      },
-      {
-        "stage": 0,
-        "date": "08/06/26",
-        "note": "No interesado"
       }
     ]
   },
@@ -1584,57 +1566,6 @@
     "stageHistory": [
       {
         "stage": 1,
-        "date": "08/06/26",
-        "note": ""
-      }
-    ]
-  },
-  {
-    "id": "1780943522976",
-    "date": "08/06/26",
-    "name": "Gabriel Weiss",
-    "variantTitle": "Investigación + logro",
-    "msg1": "Gabriel, gracias por conectar! 👋\n\nSos Responsable de Comunicación y Marketing en XCMG Group — empresa de maquinaria industrial con operaciones en Argentina. Veo que manejás simultáneamente plan de comunicación, campañas estratégicas, marketing digital, eventos corporativos y seguimiento de métricas.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
-    "msg2": "La duda que tengo es: cuando tenés que ejecutar un plan de comunicación completo manejando tantos frentes, ¿cómo hacés para no comprometer la calidad de las campañas?\n\nPregunto porque trabajamos con empresas donde el responsable de comunicación hace exactamente lo que vos hacés — y lo que cambia el juego es tener un equipo especializado dedicado full-time a la ejecución.\n\nSin sumar costos de nómina, sin complejizar la gestión. El responsable enfoca en estrategia y dirección. El equipo ejecuta y escala.\n\n¿Te interesaría ver cómo lo armamos con otros clientes? Te paso el dossier. ¿Te lo envío por acá?",
-    "extraMsgs": {
-      "MSG3": [
-        "Perfecto, Gabriel. Te paso el dossier que explica cómo trabajamos.",
-        "Básicamente armamos un equipo especializado (trafficker, community manager, diseñador, PM de cuenta) que se inserta en tu estructura sin ser nómina. Ejecutan campañas, mantienen canales, y vos dirigís estrategia.",
-        "Son 3 minutos de lectura. Dale una mirada cuando tengas tiempo.",
-        "[LINK DOSSIER]"
-      ],
-      "MSG4": [
-        "Gabriel, ¿tuviste chance de ver el dossier?",
-        "Sin presión — solo quería saber si te hizo sentido la propuesta o si preferís charlar un poco más sobre cómo lo armamos.",
-        "Cualquier duda, estoy acá. 👋"
-      ],
-      "SEG1": [
-        "Gabriel, no quería desaparecer sin preguntar — ¿viste el material?",
-        "Si te interesa, podemos tener una charla de 20 minutos para que veas cómo otros responsables de comunicación lo usaron. Sin compromiso.",
-        "Si es muy pronto o no es la prioridad ahora, perfecto también — podés contactarme cuando lo necesites."
-      ],
-      "SEG2": [
-        "Gabriel, entiendo que capaz no es el timing correcto.",
-        "Solo te dejo el contacto por si en algún momento necesitás escalar la ejecución sin sumar costos fijos.",
-        "Florencia, CMO de Hint Media, es la indicada si querés hablar directo sobre cómo otros clientes lo implementaron.",
-        "Mucho éxito con XCMG. 🙌"
-      ]
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Gabriel, gracias por conectar! 👋\n\nSos Responsable de Comunicación y Marketing en XCMG Group — empresa de maquinaria industrial con operaciones en Argentina. Veo que manejás simultáneamente plan de comunicación, campañas estratégicas, marketing digital, eventos corporativos y seguimiento de métricas.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
-      }
-    ],
-    "stage": 2,
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "08/06/26",
-        "note": ""
-      },
-      {
-        "stage": 2,
         "date": "08/06/26",
         "note": ""
       }
@@ -3463,52 +3394,6 @@
     ]
   },
   {
-    "id": "1780667586905",
-    "date": "05/06/26",
-    "name": "Karla Artavia",
-    "variantTitle": "Expansión acelerada",
-    "msg1": "Karla, gracias por aceptar la conexión! 👋\n\nVi que vienen en fase de expansión fuerte en Costa Rica — 69 locales y abriendo nuevas sucursales constantemente. Veo que vos personalmente estás comunicando ese crecimiento desde lo digital.\n\n¿Eso lo estás manejando desde tu equipo completo o compartiendo recursos?",
-    "msg2": "Eso que mencionás es bastante común en marcas que crecen rápido. El tema es que la demanda de contenido y campañas digitales crece más rápido que la posibilidad de contratar gente nueva.\n\nEn Hint Media nos pasa lo opuesto — tenemos equipos completos (diseñador, trafficker, community manager, PM) que se insertan en la estructura de marcas como KFC sin pasar a nómina. Por menos de lo que cuesta una sola persona in-house.\n\nJustamente empezamos a trabajar con marcas en expansión territorial. Hicimos un dossier con cómo lo hacemos y algunos casos de clientes nuestros que estaban en situaciones parecidas.\n\n¿Te lo envío por acá? En todo caso me podrás indicar a quién se lo puedo enviar.",
-    "extraMsgs": {
-      "MSG3": [
-        "Karla, ¿tuviste chance de ver el dossier que te mandé?",
-        "Sin presión, pero si te parece que hay algo interesante ahí, me encantaría charlar 10 minutos para ver si hay sinergia.",
-        "Si no es el momento, avísame y en otro momento retomamos.",
-        "[LINK DOSSIER]"
-      ],
-      "MSG4": [
-        "Karla, solo quería dejar esto acá antes de cerrar el ciclo.",
-        "Si en algún momento ves que necesitás escalar el equipo de marketing sin contratar gente nueva, sabés dónde encontrarme.",
-        "Éxito con la expansión de KFC 🍗"
-      ],
-      "SEG1": [
-        "Karla, retomando lo de la semana pasada — viste el dossier?",
-        "Me gustaría saber si ves alguna sinergia o si preferís que lo retomemos en otro momento.",
-        "¿Qué te parece?"
-      ],
-      "SEG2": [
-        "Karla, no quiero insistir, pero quería saber si tuvo sentido para vos lo que compartimos.",
-        "En caso de que en el futuro necesites escalar contenido, campañas o diseño sin aumentar nómina, nos encantaría ser opción.",
-        "Mientras tanto, mucho éxito con el crecimiento de KFC en Costa Rica.",
-        "Cualquier cosa, acá ando 👋"
-      ]
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Karla, gracias por aceptar la conexión! 👋\n\nVi que vienen en fase de expansión fuerte en Costa Rica — 69 locales y abriendo nuevas sucursales constantemente. Veo que vos personalmente estás comunicando ese crecimiento desde lo digital.\n\n¿Eso lo estás manejando desde tu equipo completo o compartiendo recursos?"
-      }
-    ],
-    "stage": 1,
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "05/06/26",
-        "note": ""
-      }
-    ]
-  },
-  {
     "id": "1780666743717",
     "date": "05/06/26",
     "name": "Max Goldberg",
@@ -4163,44 +4048,6 @@
     ]
   },
   {
-    "id": "1780607824810",
-    "date": "04/06/26",
-    "name": "Foto de portada",
-    "variantTitle": "Verificación + permiso",
-    "msg1": "Sol, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Directora de Talento, Cultura y Relaciones Corporativas en Banco Promerica Costa Rica, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?",
-    "msg2": "Perfecto. Mira, lo que vi es que estás generando contenido y pensamiento estratégico muy interesante sobre confianza en finanzas, pero parece bastante concentrado en tu espacio personal.\n\nLa pregunta que tengo es: ¿esa narrativa de confianza forma parte de la estrategia de comunicación y posicionamiento que Promerica está amplificando como institución, o está más en una fase de exploración?\n\nPregunto porque probablemente sea relevante para lo que hacemos en Hint Media, pero primero necesito entender en qué punto estás vos con eso.\n\n¿Cómo lo ves?",
-    "extraMsgs": {
-      "MSG3": [
-        "Sol, ¿recibiste el dossier que te envié? 📎",
-        "No es nada comercial — es más para que entiendas cómo trabajamos en Hint Media. Nos interesa saber si hay una conexión posible con lo que estás haciendo en Promerica.",
-        "Si te pareció relevante, podemos tomar un café virtual breve sin presión. Si no, quedamos en contacto de todas formas.",
-        "[LINK DOSSIER]"
-      ],
-      "MSG4": [
-        "Entiendo que puede estar en un momento de evaluación o que simplemente no sea la prioridad hoy. 👋",
-        "De todas formas, me gustaría dejarte la puerta abierta: si en algún punto necesitás escalabilidad en comunicación o narrativa corporativa, acá estamos.",
-        "Seguimos conectadas por acá."
-      ],
-      "SEG1": [
-        "Sol, una última cosa antes de dejarme de molestar: ¿es un tema de timing o la propuesta simplemente no encaja con lo que necesitan hoy en Promerica?",
-        "Pregunto para entender si vale la pena retocar el enfoque o si es mejor quedar en stand by por ahora.",
-        "Sin presión de ningún lado."
-      ],
-      "SEG2": [
-        "Cierro acá para no quemar el contacto. 👋",
-        "Pero te dejo una reflexión: tu narrativa sobre confianza tiene potencial de convertirse en diferenciador institucional real. El desafío es que alguien tiene que garantizar que llegue consistentemente.",
-        "Cuando eso sea prioridad en Promerica, sabés dónde encontrarnos.",
-        "Mucho éxito con todo lo que estás construyendo."
-      ]
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Sol, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Directora de Talento, Cultura y Relaciones Corporativas en Banco Promerica Costa Rica, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?"
-      }
-    ]
-  },
-  {
     "id": "1780607501225",
     "date": "04/06/26",
     "name": "Adriana Miron, MSc",
@@ -4841,44 +4688,6 @@
     ]
   },
   {
-    "id": "1780590127155",
-    "date": "04/06/26",
-    "name": "Víctor Aránguiz",
-    "variantTitle": "Verificación + permiso",
-    "msg1": "Víctor, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Jefe de Marketing en Adhesivos Patel, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?",
-    "msg2": "Bárbaro. Vi que en Adhesivos Patel están moviendo varios frentes a la vez — digital, branding, trade marketing, última milla. Eso tiene que ser bastante intenso.\n\nLa razón por la que conecté es que en Hint Media hacemos algo que probablemente te interese — insertamos un equipo completo de marketing adentro de la estructura de nuestros clientes.\n\nNo es una agencia externa. Es un equipo de trafficker, community manager, diseñador y PM que trabaja como si fuera parte de tu organización.\n\n¿Te envío un dossier donde ves casos como TGS, Transener y Libra Seguros para que veas cómo funciona?",
-    "extraMsgs": {
-      "MSG3": [
-        "Víctor, te paso el dossier de Hint Media. Ahí ves cómo armamos equipos internos sin que necesites sumar headcount.",
-        "Químicas e industriales como Sullair y Transener ya lo están haciendo. El modelo es: trafficker, CM, diseñador y PM de cuenta — todo por menos de lo que cuesta una sola persona in-house.",
-        "Revisá cuando tengas un momento y después charlamos si ves sinergia.",
-        "[LINK DOSSIER]"
-      ],
-      "MSG4": [
-        "Víctor, ¿tuviste oportunidad de ver el dossier?",
-        "Sin presión — si te quedaron dudas o querés saber cómo funciona en la práctica, podemos charlar brevemente.",
-        "Sino, lo dejamos por acá y cuando tengas espacio lo revisás con calma."
-      ],
-      "SEG1": [
-        "Víctor, entiendo que estés ocupado con los lanzamientos en Adhesivos Patel.",
-        "Solo por si te interesa — el modelo de Hint Media es específicamente para marketing managers que están solos llevando contenido, diseño y ejecución táctica.",
-        "Si en algún momento ves que necesitás soporte en eso, sabés dónde encontrarme."
-      ],
-      "SEG2": [
-        "Víctor, no quiero ser insistente.",
-        "Solo dejarte saber que si en algún punto la carga de marketing se vuelve compleja (lanzamientos, branding, digital simultáneamente), el modelo de Hint Media está pensado exactamente para eso.",
-        "Nos vemos en el timeline. Cualquier cosa, alcanzame.",
-        "Un abrazo 🤝"
-      ]
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Víctor, gracias por aceptar mi solicitud de conexión!\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Jefe de Marketing en Adhesivos Patel, es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?"
-      }
-    ]
-  },
-  {
     "id": "1780588296685",
     "date": "04/06/26",
     "name": "Nelson Puebla Alonso",
@@ -5097,29 +4906,6 @@
       {
         "role": "sent",
         "text": "Betzabe, gracias por conectar! 👋\n\nSos Gerente General en Leterago Centroamérica — empresa farmacéutica con operaciones multipaís. En Megalabs escalaste desde Gerente de Línea hasta Gerente Comercial CEAM en 7+ años, liderando equipos complejos en varios territorios.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
-      }
-    ],
-    "stage": 1,
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "08/06/26",
-        "note": ""
-      }
-    ]
-  },
-  {
-    "id": "1749380200001",
-    "date": "08/06/26",
-    "name": "Juan Sebastian Morato Orozco",
-    "variantTitle": "Investigación + logro",
-    "msg1": "Juan Sebastian, gracias por conectar! 👋\n\nSos Gerente General en Laboratorios Naturfar — empresa líder en el sector farmacéutico colombiano con énfasis en transformación operacional y sostenibilidad. Veo que liderás un proceso significativo de cambio organizacional desde hace poco.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
-    "msg2": "",
-    "extraMsgs": {},
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Juan Sebastian, gracias por conectar! 👋\n\nSos Gerente General en Laboratorios Naturfar — empresa líder en el sector farmacéutico colombiano con énfasis en transformación operacional y sostenibilidad. Veo que liderás un proceso significativo de cambio organizacional desde hace poco.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
     "stage": 1,
