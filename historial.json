@@ -1,5 +1,33 @@
 [
   {
+    "id": "1780960000004",
+    "date": "08/06/26",
+    "name": "Pablo Gimenez Budde",
+    "variantTitle": "Contenido técnico y alcance",
+    "msg1": "Pablo, gracias por aceptar mi solicitud de conexión! 👋\n\nVi que vienen escalando bastante el ecosistema digital — RRSS, WhatsApp Business, ATANOR PRO, eventos. Contenido técnico para distribuidores, productores y asesores todo al mismo tiempo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "",
+    "extraMsgs": {
+      "MSG3": [],
+      "MSG4": [],
+      "SEG1": [],
+      "SEG2": []
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Pablo, gracias por aceptar mi solicitud de conexión! 👋\n\nVi que vienen escalando bastante el ecosistema digital — RRSS, WhatsApp Business, ATANOR PRO, eventos. Contenido técnico para distribuidores, productores y asesores todo al mismo tiempo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
     "id": "1780960000003",
     "date": "08/06/26",
     "name": "Gabriel Weiss",
@@ -111,6 +139,466 @@
     ]
   },
   {
+    "id": "1780953617763",
+    "date": "08/06/26",
+    "name": "CARLOS ALBERTO VARGAS SERRATO",
+    "variantTitle": "Investigación + logro",
+    "msg1": "Carlos, gracias por conectar! 👋\n\nVi que sos Gerente General en Bio-Crop S.A.S — empresa colombiana productora de bioinsumos y fertilizantes con fórmulas 100% naturales. Llevas 22 años en la empresa impulsando expansión nacional e internacional manteniendo alianzas con clientes de alto perfil.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Perfecto. La pregunta es simple — en esa expansión que están haciendo, cómo están comunicando las características únicas de Bio-Crop a nuevos mercados donde no los conocen todavía.\n\nPregunto porque muchas empresas agrícolas que crecen rápido como ustedes, terminan con un cuello de botella en comunicación de marca. La operación escala pero la narrativa se queda rezagada.\n\nNosotros trabajamos insertos directamente en la estructura de nuestros clientes — equipos completos de Marketing, Design y Tráfico sin necesidad de contratar in-house. Mucho más ágil para expansión.\n\nTe puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Carlos, acá va el dossier que te mencionaba. Adentro está todo sobre cómo trabajamos y el equipo que podríamos insertarte.",
+        "Clientes como TGS, Transener y Sullair crecieron con nosotros sin crecer el headcount. Bio-Crop tiene un desafío similar en expansión — acá está cómo lo resolvemos.",
+        "Si te parece que hay algo interesante, podemos conversar un momento sin presión.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Carlos, viste el dossier que pasé la semana pasada?",
+        "Si no te llegó claro o necesitás aclaraciones sobre cómo trabajamos, me avisa. No hay apuro.",
+        "Si en algún momento querés charlar dos minutos sobre expansión y cómo comunicarla, estoy acá."
+      ],
+      "SEG1": [
+        "Carlos, sin presión — solo quería confirmar si la propuesta tiene sentido para Bio-Crop en este momento.",
+        "Si ahora no es el timing, perfecto. Pero si en los próximos meses ven que necesitan un equipo ágil para comunicación y contenido, acá estamos.",
+        "Cualquier cosa, me escribís."
+      ],
+      "SEG2": [
+        "Carlos, cierre el loop conmigo — está fuera de radar o simplemente no encaja con lo que necesitás en Bio-Crop ahora.",
+        "Sin problema ninguno si es lo segundo. Estos procesos tienen sus tiempos.",
+        "Solo quería dejarte clara la opción por si en algún momento la expansión requiere comunicación que hoy no tienen cubierta.",
+        "Cualquier cosa, acá estoy. Éxito con Bio-Crop."
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Carlos, gracias por conectar! 👋\n\nVi que sos Gerente General en Bio-Crop S.A.S — empresa colombiana productora de bioinsumos y fertilizantes con fórmulas 100% naturales. Llevas 22 años en la empresa impulsando expansión nacional e internacional manteniendo alianzas con clientes de alto perfil.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780953315531",
+    "date": "08/06/26",
+    "name": "Antonio Melo Sanhueza",
+    "variantTitle": "Investigación + logro",
+    "msg1": "Antonio, gracias por conectar! 👋\n\nVi que sos Gerente General en Laboratorio Valma — compañía que fabrica productos farmacéuticos de precisión en el mercado chileno. Pasaste de Sub Gerente a Gerente General en menos de un año, manejando la transformación estructural de la compañía.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "En empresas que atraviesan cambios operativos como los que vienen haciendo, la comunicación suele quedarse atrás en prioridad.\n\nHint Media somos un equipo completo (strategy, diseño, contenido, cuenta) que funciona dentro de la estructura — como una extensión de la organización pero enfocada en que la voz de la compañía sea clara y coherente.\n\nLaboratorios como ustedes en sectores regulados suelen necesitar esto pero no siempre tienen cómo hacerlo in-house.\n\nTe puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar.",
+    "extraMsgs": {
+      "MSG3": [
+        "Antonio, te enviamos el dossier que te mencionaba. Ahí ves cómo trabajamos, el equipo completo que insertamos y casos de empresas en sectores similares.",
+        "No es un documento de venta — es para que veas exactamente qué es lo que hacemos y cómo funcionaríamos adentro de Valma.",
+        "Si querés charlar después de verlo, aviso. Sin presión.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Antonio, pregunta rápida — pudiste ver el dossier que te enviamos la semana pasada.",
+        "Sin apuro, pero quería saber si te generó algo o si prefieres que lo retomemos en otro momento.",
+        "Cualquier opción está bien."
+      ],
+      "SEG1": [
+        "Antonio, entiendo que los tiempos en Valma son movidos ahora mismo con la transformación que están haciendo.",
+        "Por eso no quería desaparecer. Si en algún momento ven que esto tiene sentido, acá estamos. Si no, también válido.",
+        "Cualquier cosa, me avisas."
+      ],
+      "SEG2": [
+        "Antonio, antes de dejarla pasar quería preguntarte algo.",
+        "Cuando vean consolidada un poco la transformación operativa, la comunicación interna y externa va a ser lo que sigue. Cuando ese momento llegue y necesites armar un equipo dedicado a eso, nos acordás.",
+        "No es para ahora. Es para cuando le toque.",
+        "Éxito con todo lo que viene."
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Antonio, gracias por conectar! 👋\n\nVi que sos Gerente General en Laboratorio Valma — compañía que fabrica productos farmacéuticos de precisión en el mercado chileno. Pasaste de Sub Gerente a Gerente General en menos de un año, manejando la transformación estructural de la compañía.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780951919738",
+    "date": "08/06/26",
+    "name": "Laura Hernandez",
+    "variantTitle": "Narrativa sectorial + legitimidad",
+    "msg1": "Laura, gracias por conectar! 👋\n\nVi que vienen construyendo una narrativa potente alrededor de minería como desarrollo responsable y transformación inclusiva — desde Veladero hacia adentro, y desde Women in Mining hacia la industria.\n\n¿Lo están escalando con contenido propio?",
+    "msg2": "Eso que hablás es exactamente lo que vemos en empresas del sector — la necesidad de mantener narrativas múltiples activas sin saturar el equipo interno.\n\nEn Hint Media trabajamos con empresas como TGS y Transener insertando equipos completos (diseño, contenido, tráfico) en sus estructuras. Menos costo que una persona en staff, más velocidad y flexibilidad.\n\nTenemos un dossier donde mostramos cómo lo hacemos. ¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?\n\nSin presión — solo para que veas si hay sinergia.",
+    "extraMsgs": {
+      "MSG3": [
+        "Laura, acá te paso el dossier de Hint Media. 📎",
+        "Trabajamos insertando equipos completos (trafficker, community manager, diseñador, PM) dentro de la estructura del cliente. Menos de lo que cuesta contratar una sola persona in-house, pero con ejecución full-time.",
+        "Tenemos casos en TGS, Transener, Sullair, Libra Seguros — todos modelos similares al tuyo: múltiples narrativas, stakeholders complejos, producción consistente.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Laura, ¿viste el dossier? 👀",
+        "Quería preguntarte: ¿te late tener una charla breve para ver si hay fit? Nada formal — 15 minutos para confirmar si tiene sentido explorar.",
+        "Sin presión si no es el momento."
+      ],
+      "SEG1": [
+        "Laura, pasó un tiempo. Quisiera saber: ¿tuviste chance de ver el dossier?",
+        "Si te interesa, podemos charlar tranqui sobre cómo se parece tu contexto a otros clientes que tenemos.",
+        "Si no es ahora, sin drama — la idea es quedar en tu radar para cuando lo necesites."
+      ],
+      "SEG2": [
+        "Laura, te dejo ir. Solo una cosa:",
+        "Si en algún momento necesitás apoyo en producción de comunicación estratégica — contenido, diseño, tráfico — sin agregar estructura interna, nos acordaste.",
+        "Tenemos el modelo listo y clientes que validan que funciona. Estamos para cuando lo necesites.",
+        "Mucho éxito con Women in Mining y con Veladero. 🚀"
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Laura, gracias por conectar! 👋\n\nVi que vienen construyendo una narrativa potente alrededor de minería como desarrollo responsable y transformación inclusiva — desde Veladero hacia adentro, y desde Women in Mining hacia la industria.\n\n¿Lo están escalando con contenido propio?"
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780951429799",
+    "date": "08/06/26",
+    "name": "Byron Salas Conejo",
+    "variantTitle": "Posicionamiento de liderazgo en innovación social",
+    "msg1": "Byron, gracias por conectar! 👋\n\nVi que publicás regularmente sobre liderazgo e impacto — eso dice mucho de cómo pensás el rol del CEO en CRUSA, no solo como ejecutor sino como constructor de narrativa.\n\n¿Ese contenido surge de una estrategia definida o va más orgánico según lo que te parece relevante?",
+    "msg2": "La mayoría de los CEOs que lideran innovación social descubren que cuando estructuran esa narrativa, el impacto de sus soluciones se amplifica — más alcance, más credibilidad, más alianzas.\n\nEl desafío es que eso requiere un equipo detrás. Design, distribución, estrategia, gestión de contenido — y eso es caro si lo hacés in-house.\n\nEn Hint Media insertamos equipos completos en organizaciones como CRUSA para construir exactamente eso: narrativa de liderazgo + comunicación de impacto, sin sumar costos fijos.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Byron, acá te dejo el dossier con cómo trabajamos y los clientes que ya confiaron en Hint Media. 📎",
+        "Básicamente insertamos un equipo completo (trafficker, CM, diseñador, PM) en tu estructura — construyen estrategia, contenido y comunicación a menos de lo que cuesta una persona full-time.",
+        "Revisalo sin prisa. Si surge algo o querés conversar sobre CRUSA, me avisas.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Byron, ¿tuviste chance de revisar el dossier? Sin presión, solo quería saber si te generó alguna duda o si hay algo que no quedó claro.",
+        "Si te parece, podemos charlar 15 minutos sobre cómo otros líderes en innovación social lo están usando.",
+        "Cualquier cosa, me avisas."
+      ],
+      "SEG1": [
+        "Byron, entiendo que estés enfocado en CRUSA ahora. Solo quería saber — ¿tiene sentido este modelo para ustedes en algún momento o prefieren otro tipo de apoyo?",
+        "Sin obligación, solo quería entender si hay sinergia o si es mejor que nos hablemos en unos meses cuando el contexto sea distinto.",
+        "De cualquier forma, quedo disponible."
+      ],
+      "SEG2": [
+        "Byron, no quiero insistir de más. Solo quería cerrar bien esta conversación.",
+        "Si en algún momento la comunicación de impacto en CRUSA se vuelve una prioridad y querés explorar opciones, ya sabés dónde encontrarme.",
+        "La puerta siempre está abierta. Mucho éxito con CRUSA — el trabajo que hacen es importante.",
+        "Cualquier cosa, conectá cuando necesites."
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Byron, gracias por conectar! 👋\n\nVi que publicás regularmente sobre liderazgo e impacto — eso dice mucho de cómo pensás el rol del CEO en CRUSA, no solo como ejecutor sino como constructor de narrativa.\n\n¿Ese contenido surge de una estrategia definida o va más orgánico según lo que te parece relevante?"
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780951299259",
+    "date": "08/06/26",
+    "name": "Joaquín Nehuén Muiño Aguilar",
+    "variantTitle": "Investigación + trayectoria",
+    "msg1": "Joaquín, gracias por conectar! 👋\n\nVi que sos Jefe de Sección de Comunicación Digital en Nucleoeléctrica — empresa de infraestructura energética nuclear. Pasaste de liderar prensa y comunicación digital (8 años) a dirección de sección. Es decir, creciste en responsabilidad dentro de la misma empresa.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Perfecto. Vi que en estos años escalaste responsabilidad en Nucleoeléctrica. Eso significa que conocés bien cómo funciona la comunicación en una empresa así.\n\nTrabajo con empresas del sector energético (TGS, Transener, Sullair). Muchas llegan a un punto donde necesitan más capacidad comunicacional pero no quieren sumar empleados fijos. Nuestro modelo es meter un equipo completo (trafficker, diseñador, CM, PM) que opera como extensión del área existente.\n\nEs menos disruptivo que una contratación tradicional y más escalable que freelancers.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Joaquín, acá va el dossier con cómo trabajamos. 📎",
+        "Básicamente: metemos un equipo completo (trafficker, diseñador, community manager, PM de cuenta) en la estructura del cliente. Trabajan full-time en vuestros objetivos, como si fueran internos, pero sin costo de nómina.",
+        "El dossier tiene casos de TGS, Transener, Sullair, Libra Seguros, Destiny Group — todas empresas donde escalamos capacidad comunicacional sin expandir headcount.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Joaquín, ¿pudiste ver el dossier? Sin presión, solo quería saber si tiene sentido para Nucleoeléctrica.",
+        "Si te late algo de lo que viste, podemos charlar 15 minutos sobre cómo otras empresas en energía lo implementaron.",
+        "¿Te parece o prefieren evaluarlo más adelante?"
+      ],
+      "SEG1": [
+        "Joaquín, entiendo que capaz es temprano. Solo no quería dejar esto en el olvido.",
+        "Si en algún momento ves que necesitan escalar comunicación sin meter más gente fija, damos una vuelta rápida. Si no es ahora, perfecto, pero queda abierto.",
+        "¿Hay algo que te gustaría entender mejor del modelo antes de archivarlo?"
+      ],
+      "SEG2": [
+        "Joaquín, no insisto más. Solo quería dejar claro que el dossier sigue siendo válido cuando lo necesites.",
+        "Cualquier momento en que vean que la capacidad comunicacional es un bottleneck, me avisás y lo vemos sin compromiso.",
+        "Mientras tanto, éxitos con los proyectos de Nucleoeléctrica. La transición energética va a necesitar mucha narrativa clara como la que construyes.",
+        "Cuando quieras, acá ando. 🙌"
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Joaquín, gracias por conectar! 👋\n\nVi que sos Jefe de Sección de Comunicación Digital en Nucleoeléctrica — empresa de infraestructura energética nuclear. Pasaste de liderar prensa y comunicación digital (8 años) a dirección de sección. Es decir, creciste en responsabilidad dentro de la misma empresa.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780950962750",
+    "date": "08/06/26",
+    "name": "Rodolfo Quique Chávez",
+    "variantTitle": "Narrativa sectorial en contextos complejos",
+    "msg1": "Rodolfo, gracias por conectar! 👋\n\nVi que vienen construyendo posicionamiento institucional en un sector donde la narrativa es tan crítica como la operación misma. En contextos así, mantener mensajería consistente en múltiples canales sin explotar presupuesto es el verdadero desafío.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Justamente eso. Hablamos con equipos en sectores similares (energía, infraestructura, minería) que enfrentan el mismo dilema: necesitan producción consistente de contenido institucional y gestión de narrativa, pero no pueden justificar un equipo in-house completo.\n\nEn Hint Media tenemos un modelo distinto — insertamos un equipo completo (CM, Trafficker, Diseñador, PM de cuenta) adentro de la estructura del cliente. El equipo se vuelve parte de tu operación diaria, conoce tu contexto y entiende tus stakeholders desde adentro.\n\nAlgunos de nuestros clientes (TGS, Transener, Libra Seguros) vinieron con exactamente este desafío. Armamos un dossier que documenta cómo trabajamos y casos concretos.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Rodolfo, acá va el dossier. Documentamos cómo trabajamos, el equipo completo que insertamos y casos reales de clientes en sectores similares al tuyo.",
+        "La idea es que entiendas cómo funciona el modelo sin presión. Si en algún momento querés conversar brevemente sobre si tiene sentido para VMOS, avísame.",
+        "De todas formas, adelante con la lectura. Cualquier duda, preguntame.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Rodolfo, ¿pudiste ver el dossier? Sin presión, solo para saber si llegó bien o si necesitás que te lo resuma.",
+        "Si en algún momento querés conversar sobre cómo el modelo podría funcionar en tu contexto específico, con gusto tenemos una charla breve.",
+        "De todas formas, quería retomar para no dejarte en el aire."
+      ],
+      "SEG1": [
+        "Rodolfo, entiendo que está complicado el timing. Solo quería saber si viste algo en el dossier que te haya generado curiosidad o si preferís que retomemos en otro momento.",
+        "Sin presión en ninguno de los casos. A veces el momentum no es el correcto y está bien.",
+        "Avisame si en algún punto querés charlar, o si hay alguien en tu equipo a quien pueda serle útil el modelo."
+      ],
+      "SEG2": [
+        "Rodolfo, respeto tu timing. Hago cierre de ciclo acá para no molestarte más, pero quería dejarte un mensaje.",
+        "Si en algún momento VMOS necesita escalar capacidad de comunicación institucional sin crear estructura permanente, el modelo que documentamos en Hint puede ser la solución exacta.",
+        "La puerta está abierta siempre. Mi contacto anda por acá si en el futuro querés explorar.",
+        "Gracias por el espacio igual. 👋"
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Rodolfo, gracias por conectar! 👋\n\nVi que vienen construyendo posicionamiento institucional en un sector donde la narrativa es tan crítica como la operación misma. En contextos así, mantener mensajería consistente en múltiples canales sin explotar presupuesto es el verdadero desafío.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780950903863",
+    "date": "08/06/26",
+    "name": "Meliné Gejekoushian",
+    "variantTitle": "Eventos + narrativa + presencia",
+    "msg1": "Meliné, gracias por conectar! 👋\n\nVi que en Addventure coordinabas los Demo Days y generabas espacios de networking entre inversores y startups. Ahora en Biofarma estás a cargo de la comunicación institucional — imagen, redes, contenido, medios. Claramente escalaste el tipo de comunicación que manejás.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Perfecto. Lo que observamos es que personas como vos, que vienen de gestionar eventos y conexiones, terminan en comunicación institucional pero manteniendo esa misma demanda operativa.\n\nTenemos clientes donde pasó exactamente esto — alguien con tu perfil manejando todo, pero sin equipo para ejecutar a ese nivel.\n\nEn Hint armamos equipos (diseñadores, content managers, community managers, PMs) que se insertan en la estructura de la empresa. Trabajan con vos pero sin ser nómina.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Hola Meliné, te enviamos el dossier donde mostramos cómo trabajamos y los clientes con los que vinimos colaborando.",
+        "Es un equipo completo (diseñador, CM, traffic, PM) que se inserta en tu estructura y maneja todo desde ahí — es la forma que encontramos para que tengas capacidad sin armar nómina.",
+        "Miralo con calma y después vemos si hay algo para conversar, sin presión.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Meliné, ¿tuviste chance de ver el dossier? Sin apuro, entiendo que el ritmo es acelerado en comunicación.",
+        "Si te quedó alguna duda o querés charlar un poco sobre cómo funciona esto en detalle, me encantaría hacerlo. Nada formal, solo una conversación.",
+        "¿Te cierra algún momento esta semana o la próxima?"
+      ],
+      "SEG1": [
+        "Meliné, entiendo si el dossier no llegó en el mejor momento. A veces pasa que vemos algo interesante pero el timing no es el correcto.",
+        "De todas formas, si en algún momento sentís que la comunicación en Biofarma necesita escalar sin agregar nómina, acá estaremos.",
+        "¿Preferís que te contacte en otro momento o mejor lo dejamos acá por ahora?"
+      ],
+      "SEG2": [
+        "Meliné, no quería ser insistente, así que respeto si esto no es prioridad en tu roadmap.",
+        "Solo quería dejar en claro: si en algún punto del año sentís que necesitás descomprimir la carga operativa en comunicación, nosotros tenemos experiencia exactamente en eso.",
+        "Cualquier cosa, acá ando. Y si conocés a alguien en otra área que esté en situación parecida, te pido el favor que me lo pases.",
+        "Un abrazo y mucho éxito con todo lo que estén armando en Biofarma."
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Meliné, gracias por conectar! 👋\n\nVi que en Addventure coordinabas los Demo Days y generabas espacios de networking entre inversores y startups. Ahora en Biofarma estás a cargo de la comunicación institucional — imagen, redes, contenido, medios. Claramente escalaste el tipo de comunicación que manejás.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780950831909",
+    "date": "08/06/26",
+    "name": "Romina Suárez",
+    "variantTitle": "Investigación + logro",
+    "msg1": "Romina, gracias por conectar! 👋\n\nVi que sos Responsable de Capacitación y Comunicación en ARSAT — empresa estatal de soluciones satelitales. Venís liderando esto durante 16 años, lo que significa que tenés tanto el cronograma anual de comunicación como la revista institucional, la intranet, eventos integradores y el diseño de beneficios bajo tu gestión.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Gracias. Lo que observo es que manejas un portfolio muy amplio de iniciativas simultáneamente — comunicación, capacitación, eventos, beneficios — y eso requiere un equipo dedicado para ejecutar bien.\n\nTrabajamos con empresas en situación similar: insertamos un equipo completo (diseñador, copywriter, community manager, project manager) para que vos y tu equipo se enfoquen en estrategia.\n\nClientes como TGS y Transener usan este modelo hace años. Te dejo el dossier para que veas cómo funciona.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Romina, te adjunto el dossier. Ahí está cómo trabajamos, quiénes forman el equipo y casos similares.",
+        "La idea es que veas si hay sinergia con lo que estás haciendo en ARSAT. Sin presión.",
+        "Cualquier pregunta, me escribís.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Hola Romina, ¿tuviste chance de mirar el dossier?",
+        "Sin apuro — solo quería saber si te gustaría charlar 15 minutos para que me digas qué te pareció.",
+        "Listo si no, podemos dejar esto para más adelante también."
+      ],
+      "SEG1": [
+        "Romina, entiendo que capaz no es el momento. Igual quería retomar brevemente: vimos que manejan mucho en comunicación interna.",
+        "Si en algún punto ustedes ven que necesitan escalar eso sin sumar estructura, nosotros estamos para eso.",
+        "Cualquier duda, acá ando."
+      ],
+      "SEG2": [
+        "Romina, no quiero ser insistente. Solo quería decirte que si en el futuro ves que podrías usar un equipo dedicado para comunicación, nosotros estamos.",
+        "Ya sea para campañas internas, eventos o contenido — tenemos experiencia en empresas como la suya.",
+        "Si no es ahora, perfecto. Quedamos para otra oportunidad.",
+        "Mucho éxito con todo lo que estás armando en ARSAT! 🚀"
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Romina, gracias por conectar! 👋\n\nVi que sos Responsable de Capacitación y Comunicación en ARSAT — empresa estatal de soluciones satelitales. Venís liderando esto durante 16 años, lo que significa que tenés tanto el cronograma anual de comunicación como la revista institucional, la intranet, eventos integradores y el diseño de beneficios bajo tu gestión.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780949947998",
+    "date": "08/06/26",
+    "name": "Federico Bellagamba",
+    "variantTitle": "Investigación + logro",
+    "msg1": "Federico, gracias por conectar! 👋\n\nVi que sos Gerente de Marketing & Comunicaciones en PwC Argentina — firma de consultoría que gestiona narrativa de valor para múltiples stakeholders. Hace 8+ años liderás posicionamiento de voceros y activación de thought leadership. Eso requiere coordinación de contenido, relaciones institucionales y ejecución en paralelo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Mi pregunta es simple: ¿ese volumen de ejecución (contenidos, diseños, campañas) lo manejan internamente o recurren a apoyos externos?\n\nPregunto porque en Hint Media nos especializamos en algo diferente: no somos agencia. Insertamos un equipo completo adentro de tu estructura — trabajan como si fueran tu gente, pero sin el costo de nómina.\n\nAlgunos clientes nuestros (como TGS, Transener, Libra Seguros) optaron por esto porque necesitaban escalar ejecución sin inflar costos fijos.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Federico, acá te dejo el dossier. 📎",
+        "Adentro está cómo trabajamos: equipo completo (trafficker, CM, diseñador, PM) insertado en tu estructura. Menos de lo que cuesta una persona in-house.",
+        "Algunos clientes como TGS, Transener y Libra Seguros ya lo validaron. Revisalo sin presión.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Federico, ¿pudiste ver el dossier? Solo quería saber si resonó con lo que necesitás.",
+        "Si sí, podríamos charlar 15 minutos sin compromiso. Si no es el momento, lo entiendo.",
+        "¿Cómo lo ves?"
+      ],
+      "SEG1": [
+        "Federico, no quería dejar esto tirado. ¿Viste el dossier o está en el radar para después?",
+        "Si te interesó aunque sea parcialmente, me gustaría entender mejor qué necesitás. Si no, también es válido.",
+        "¿Me decís cómo lo ves?"
+      ],
+      "SEG2": [
+        "Federico, entiendo que ahora puede no ser el momento. De todas formas, quería decirte algo.",
+        "Si en algún punto los desafíos de ejecución escalan, o necesitan apoyo en diseño/contenido sin sumar nómina, acordate que existe esta opción.",
+        "El dossier queda en tu bandeja. Cuando lo necesites, escribime.",
+        "Sin presión. Éxitos con todo lo que están moviendo en PwC. 👋"
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Federico, gracias por conectar! 👋\n\nVi que sos Gerente de Marketing & Comunicaciones en PwC Argentina — firma de consultoría que gestiona narrativa de valor para múltiples stakeholders. Hace 8+ años liderás posicionamiento de voceros y activación de thought leadership. Eso requiere coordinación de contenido, relaciones institucionales y ejecución en paralelo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1780949911750",
+    "date": "08/06/26",
+    "name": "Juliana Méndez",
+    "variantTitle": "Verificación + permiso",
+    "msg1": "Juliana, gracias por aceptar mi solicitud de conexión! 👋\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Jefe de RRHH en VENOIL ENERGÍA, ¿es así?\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar.",
+    "msg2": "Vi que VENOIL acaba de comunicar la prórroga de sus áreas y un nuevo plan de inversiones. Eso implica rediseño de equipos y mucho trabajo desde RRHH.\n\nNosotros trabajamos insertando equipos completos dentro de estructuras empresariales para construir comunicación estratégica alineada con crecimiento.\n\nAlgunos clientes son TGS, Transener, Sullair. Todos en industrias donde la alineación interna es crítica.\n\n¿Te envío el dossier por acá? En todo caso, ¿me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {
+      "MSG3": [
+        "Juliana, te mando el dossier. Ahí ves exactamente cómo trabajamos y con quién.",
+        "Equipo de trafficker, community manager, diseñador y PM de cuenta insertados en tu estructura. Por menos de lo que cuesta contratar una sola persona in-house.",
+        "Florencia Di Rado, nuestra CMO, coordinó esto con TGS y Transener. Elles pueden contarte cómo cambió la cosa desde adentro.",
+        "[LINK DOSSIER]"
+      ],
+      "MSG4": [
+        "Juliana, ¿pudiste revisar el dossier?",
+        "Sin presión, solo quería saber si viste algo que tenga sinergia con lo que están haciendo en VENOIL.",
+        "Si no, todo bien. Quedamos por acá en caso de que en algún momento lo necesiten."
+      ],
+      "SEG1": [
+        "Juliana, antes de cerrar: ¿hay alguien más del equipo de RRHH o comunicación que deba ver esto?",
+        "O prefieres que lo retomemos en unos meses cuando haya más claridad en el plan de rediseño de equipos?",
+        "De cualquier forma, quedo a disposición."
+      ],
+      "SEG2": [
+        "Juliana, no quiero ser insistente.",
+        "Solo dejarte la puerta abierta: si en algún momento necesitan un equipo embebido en la estructura para comunicación y narrativa interna, acá estamos.",
+        "Cualquier cosa, me escribís directo.",
+        "¡Mucho éxito con el plan de inversiones en Mendoza! 🚀"
+      ]
+    },
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Juliana, gracias por aceptar mi solicitud de conexión! 👋\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos Jefe de RRHH en VENOIL ENERGÍA, ¿es así?\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+      }
+    ],
+    "stage": 1,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      }
+    ]
+  },
+  {
     "id": "1780946717065",
     "date": "08/06/26",
     "name": "Florencia Maure",
@@ -193,12 +681,17 @@
         "text": "Julia, gracias por conectar! 👋\n\nSos Líder de Comunicación en Edenor — empresa de energía que está en plena transformación con SAP HANA. Además de eso estás liderando la implementación de edenorcerca (plataforma colaborativa) y relanzaste el programa de reconocimiento. Bastante volumen de proyectos simultáneos.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
         "date": "08/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "08/06/26",
+        "note": "Hola Florencia, cómo estás? S,i es correcto. No fue todo en simultáneo jaja pero si. Avísame en qué te puedo ayudar?"
       }
     ]
   },
@@ -285,10 +778,15 @@
         "text": "Tatiana, gracias por conectar! 👋\n\nSos Client Success Manager en Punto Rojo — empresa que gestiona grandes operaciones digitales en LATAM. Veo en tu perfil más de 10 años liderando equipos multidisciplinarios y especialización en optimización de procesos.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
         "date": "08/06/26",
         "note": ""
       }
@@ -837,10 +1335,20 @@
         "text": "Elisa, gracias por conectar! 👋\n\nSos Responsable de Relaciones Institucionales, Comunicación y Sustentabilidad en ECIPSA — una de las universidades empresariales más grandes de Argentina. En los últimos años escalaron fuerte su presencia institucional en medios y vinculación con el sector público.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 3,
         "date": "08/06/26",
         "note": ""
       }
@@ -1363,12 +1871,22 @@
         "text": "Lucas, gracias por conectar! 👋\n\nVi que sos Analista de Comunicación en Fundación Favaloro — una fundación de impacto con presencia institucional fuerte y base de donantes. Desde enero estás piloteando análisis con Power BI y SAP para optimizar decisiones de fundraising.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
         "date": "08/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 3,
+        "date": "08/06/26",
+        "note": "Dale, mandame a mi Mail y lo analizo en la semana! \n\n    🤐\n    👏\n    👍\n\nlmarchesini@ffavaloro.org"
       }
     ]
   },
@@ -4706,10 +5224,15 @@
         "text": "Daphne, gracias por conectar! 👋\n\nEstaba revisando LinkedIn y me llamó la atención tu perfil. Según veo, sos [cargo] en [empresa], es así?\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?"
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
         "date": "08/06/26",
         "note": ""
       }
