@@ -333,7 +333,7 @@
         "text": "Federico, gracias por conectar! 👋\n\nMe llamó la atención cómo te presentás — ese \"puedo alinear con el CEO el lunes y estar en HubSpot el martes.\" No es algo que la mayoría destaca cuando habla de sí mismo. Suele ser al revés: los de estrategia se distancian de la táctica, y los de ejecución juran que nunca tocan reunion rooms.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -344,6 +344,11 @@
         "stage": 2,
         "date": "09/06/26",
         "note": "Gracias Florencia, claro, cuéntame en qué te puedo ayudar."
+      },
+      {
+        "stage": 3,
+        "date": "09/06/26",
+        "note": "para trabajar para nosotros dices?\n\nPuedes enviármelo a mí si quieres, ahora mismo no estamos buscando agencia, pero me sirve por si tenemos alguna estrategia específica para actrivar, caso que necesitemos apoyo externo"
       }
     ]
   },
@@ -624,7 +629,7 @@
         "text": "Martín, gracias por conectar! 👋\n\nEstuve revisando un poco lo que venís haciendo. Me llamó la atención que en Running Balboa estés escalando estrategias omnicanal en 6 países simultáneamente — Colombia, Venezuela, Ecuador, Centroamérica y el Caribe. Eso abre bastantes frentes al mismo tiempo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
@@ -635,11 +640,6 @@
         "stage": 2,
         "date": "09/06/26",
         "note": "New Balance es en esos países. Running Balboa en solo 4"
-      },
-      {
-        "stage": 3,
-        "date": "09/06/26",
-        "note": "para trabajar para nosotros dices?\n\nPuedes enviármelo a mí si quieres, ahora mismo no estamos buscando agencia, pero me sirve por si tenemos alguna estrategia específica para actrivar, caso que necesitemos apoyo externo"
       }
     ]
   },
