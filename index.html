@@ -136,7 +136,7 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 .prox-card-stage{font-size:10px;color:#666;margin-top:1px}
 .overdue-badge{font-size:10px;font-weight:700;padding:1px 7px;border-radius:20px;background:#FFE5E0;color:#8B1A00;flex-shrink:0}
 .prox-group{display:contents}
-.prox-group-label{width:100%;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#666;padding:2px 0 4px;margin-top:4px;flex-basis:100%}
+.prox-group-label{width:100%;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#aaa;padding:6px 4px 4px;margin-top:2px;flex-basis:100%;border-top:1px solid #333}
 .prox-card-snippet{font-size:10px;color:#555;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:190px;font-style:italic}
 .prox-card-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:3px;gap:6px}
 .prox-stage-pill{font-size:9px;font-weight:700;padding:1px 6px;border-radius:10px;white-space:nowrap}
@@ -471,13 +471,12 @@ function getSnippet(en) {
   const hist = en.conversationHistory || [];
   for (let i = hist.length - 1; i >= 0; i--) {
     const r = hist[i];
-    if (r.sender === 'them' || r.role === 'received') {
+    if (r.role === 'received' || r.sender === 'them') {
       const t = (r.text || '').trim().replace(/\n/g,' ');
       return t.length > 55 ? t.substring(0,52)+'…' : t;
     }
   }
-  const msg = (en.msg2 || en.msg1 || '').replace(/\n/g,' ').trim();
-  return msg.length > 55 ? msg.substring(0,52)+'…' : msg;
+  return '';
 }
 function stagePillProx(s) {
   const cls = s===2?'psp-2':s===3?'psp-3':'psp-1';
