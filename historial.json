@@ -726,7 +726,7 @@
         "text": "Cinthya, gracias por conectar! 👋\n\nMe llamó la atención tu reflexión sobre Cristiano Ronaldo y cómo la vigencia se construye cuando el desempeño deja de ser una racha y se convierte en trayectoria. Lo interesante es que escribiste eso justamente desde un lugar donde estás liderando estrategia para 3 centros comerciales al mismo tiempo — donde la presión cotidiana suele ser ocupación inmediata, no trayectoria.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -737,8 +737,14 @@
         "stage": 2,
         "date": "09/06/26",
         "note": "si, dime"
+      },
+      {
+        "stage": 3,
+        "date": "09/06/26",
+        "note": "De momento no, gracias"
       }
-    ]
+    ],
+    "noInterest": true
   },
   {
     "id": "1781026904266",
