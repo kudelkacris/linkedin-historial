@@ -36,12 +36,17 @@
         "text": "Dyana, gracias por conectar! 👋\n\nMe llamó la atención que hayas compartido la masterclass en QLU. No es lo primero que la mayoría elige mostrar cuando dicta — pero vos destacaste el agradecimiento y el espacio, como si lo más importante fuera el aprendizaje colectivo antes que el crédito personal.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
         "date": "10/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "10/06/26",
+        "note": "Hola Florencia, un gusto saludarte! \nCuál es su duda??"
       }
     ]
   },
@@ -312,7 +317,7 @@
         "text": "Julian, gracias por conectar. Un gusto.\n\nMe llamó la atención cómo enfocaste la publicación sobre Prertty Woman. Lo que más destacaste no fue el alcance ni el número de influencers, sino la idea de que \"cuando los creadores viven la experiencia, se genera confianza y conexión\". Eso dice bastante de cómo priorizás el trabajo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -323,8 +328,14 @@
         "stage": 2,
         "date": "10/06/26",
         "note": "Buenas tardes Florencia un gusto. Cómo puedo ayudarte"
+      },
+      {
+        "stage": 3,
+        "date": "10/06/26",
+        "note": "Muchas gracias. En este momento no estamos viendo nuevos proveedores"
       }
-    ]
+    ],
+    "noInterest": true
   },
   {
     "id": "1781129686916",
@@ -1170,12 +1181,17 @@
         "text": "María, gracias por conectar! 👋\n\nEstuve revisando un poco lo que vienen haciendo en Toucan Rescue Ranch. Me llamó la atención que en menos de dos años estén trabajando simultáneamente en declaratorias turísticas, campañas educativas, alianzas empresariales de RSE y posicionamiento de marca. Eso es bastante para una estructura pequeña.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
         "date": "10/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "10/06/26",
+        "note": "Hola Florencia,\n\nEs correcto. En estos dos años he logrado impulsar importantes avances para la organización a nivel nacional.\n\nDurante más de 21 años, la organización ha desarrollado principalmente en Estados Unidos; sin embargo, se no se habían realizado esfuerzos para fortalecer su presencia en Costa Rica, precisamente donde se origina gran parte de la problemática que buscamos atender.\n.\n\n    😄\n    🤐\n    👏\n\nHa sido un trabajo muy grande para dos años, pero sumamente satisfactoria de lograr posicionar a Toucan en Costa Rica"
       }
     ]
   },
@@ -1804,7 +1820,7 @@
         "text": "Giovanna, gracias por conectar! 👋\n\nMe llamó la atención cómo expresaste tu enfoque: \"Para mí no hay problemas, solo hay Situaciones Por Resolver\". No es algo que la gente suele comunicar explícitamente. Refleja una mentalidad muy diferente — más operativa, menos resignada.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -1815,6 +1831,11 @@
         "stage": 2,
         "date": "10/06/26",
         "note": "Hola Florencia, es un gusto saludarte, espero te encuentres bien. Si con gusto comentame y en lo que pueda con gusto colaboro si está en mi posibilidad. Un cordial saludo"
+      },
+      {
+        "stage": 3,
+        "date": "10/06/26",
+        "note": "mandame el dossier lo miro y te comento a ver por donde pudieras mandarlo !!"
       }
     ]
   },
