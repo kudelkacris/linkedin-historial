@@ -239,12 +239,13 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
         </div>
       </div>
       <div class="filter-row">
-        <input class="filter-input" id="search-input" placeholder="Buscar por nombre..." oninput="renderList()">
+        <input class="filter-input" id="search-input" placeholder="Buscar nombre, empresa, email, conversación..." oninput="renderList()">
         <select class="filter-sel" id="stage-filter" onchange="syncStatCards();renderList()">
           <option value="">Todas las etapas</option>
           <option value="1">Apertura</option>
           <option value="2">En conversación</option>
           <option value="3">Dossier enviado</option>
+          <option value="email">📧 Con email</option>
           <option value="4">Seguimiento 1</option>
           <option value="5">Seguimiento 2</option>
           <option value="noint">No interesados</option>
@@ -335,13 +336,30 @@ function syncStatCards() {
   const vals = ['','1','2','3','4','5','noint'];
   cards.forEach((c,i) => c.classList.toggle('active', vals[i] === val && val !== ''));
 }
+function histHasEmail(en) {
+  if (en.dossierMail) return true;
+  for (const sh of (en.stageHistory||[])) {
+    if (/[\w.+-]+@[\w.-]+\.[a-zA-Z]{2,}/.test(sh.note||'')) return true;
+  }
+  return false;
+}
 function renderList() {
   const q = (document.getElementById('search-input').value || '').toLowerCase().trim();
   const sf = document.getElementById('stage-filter').value;
   const sorted = [..._entries].sort((a,b) => parseDate(b.date) - parseDate(a.date));
   let filtered = sorted;
-  if (q) filtered = filtered.filter(e => e.name.toLowerCase().includes(q));
+  if (q) filtered = filtered.filter(e => {
+    if (e.name.toLowerCase().includes(q)) return true;
+    if ((e.variantTitle||'').toLowerCase().includes(q)) return true;
+    if ((e.empresa||'').toLowerCase().includes(q)) return true;
+    if ((e.msg1||'').toLowerCase().includes(q)) return true;
+    if ((e.msg2||'').toLowerCase().includes(q)) return true;
+    for (const sh of (e.stageHistory||[])) { if ((sh.note||'').toLowerCase().includes(q)) return true; }
+    for (const c of (e.conversationHistory||[])) { if ((c.text||'').toLowerCase().includes(q)) return true; }
+    return false;
+  });
   if (sf === 'noint') filtered = filtered.filter(e => e.noInterest);
+  else if (sf === 'email') filtered = filtered.filter(e => !e.noInterest && histHasEmail(e));
   else if (sf) filtered = filtered.filter(e => !e.noInterest && (e.stage||1) === parseInt(sf));
 
   document.getElementById('list-count').textContent = filtered.length + ' prospecto' + (filtered.length !== 1 ? 's' : '');
@@ -359,6 +377,7 @@ function renderList() {
       </div>
       <div class="pi-meta">
         <span>${en.date}</span>
+        ${en.empresa ? `<span style="color:#888">${esc(en.empresa)}</span>` : ''}
         <span class="pi-variant">${esc(en.variantTitle)}</span>
       </div>
     </div>`).join('');
