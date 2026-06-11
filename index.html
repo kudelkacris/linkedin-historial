@@ -201,31 +201,10 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
     <div class="stat-card" onclick="filterStat('1')"><div class="stat-num" id="st-1" style="color:#993C1D">—</div><div class="stat-lbl">Apertura enviada</div></div>
     <div class="stat-card" onclick="filterStat('2')"><div class="stat-num" id="st-2" style="color:#1A5FA8">—</div><div class="stat-lbl">En conversación</div></div>
     <div class="stat-card" onclick="filterStat('3')"><div class="stat-num" id="st-3" style="color:#6B21A8">—</div><div class="stat-lbl">Dossier enviado</div></div>
+    <div class="stat-card" onclick="filterStat('email')"><div class="stat-num" id="st-email" style="color:#1A5FA8">—</div><div class="stat-lbl">Dossier × mail</div></div>
     <div class="stat-card" onclick="filterStat('4')"><div class="stat-num" id="st-4" style="color:#1A6635">—</div><div class="stat-lbl">Seguimiento 1</div></div>
     <div class="stat-card" onclick="filterStat('5')"><div class="stat-num" id="st-5" style="color:#555">—</div><div class="stat-lbl">Seguimiento 2</div></div>
     <div class="stat-card" onclick="filterStat('noint')"><div class="stat-num" id="st-noint" style="color:#999">—</div><div class="stat-lbl">No interesados</div></div>
-  </div>
-
-  <!-- EMAIL LIST -->
-  <div class="email-section" id="email-section" style="display:none">
-    <div class="email-section-head">
-      <div style="font-family:'DM Serif Display',serif;font-size:18px;color:var(--dark)">Mandar dossier por <em style="color:var(--orange)">email</em></div>
-      <div class="email-badge" id="email-badge">0</div>
-    </div>
-    <div style="overflow-x:auto">
-      <table class="email-table">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Empresa</th>
-            <th>Contexto</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="email-tbody"></tbody>
-      </table>
-    </div>
   </div>
 
   <div class="grid">
@@ -322,6 +301,7 @@ function renderStats() {
     document.getElementById('st-' + s).textContent = _entries.filter(e => (e.stage||1) === s && !e.noInterest).length;
   });
   document.getElementById('st-noint').textContent = _entries.filter(e => e.noInterest).length;
+  document.getElementById('st-email').textContent = _entries.filter(e => !e.noInterest && histHasEmail(e)).length;
 }
 
 function filterStat(val) {
@@ -333,7 +313,7 @@ function filterStat(val) {
 function syncStatCards() {
   const val = document.getElementById('stage-filter').value;
   const cards = document.querySelectorAll('.stat-card');
-  const vals = ['','1','2','3','4','5','noint'];
+  const vals = ['','1','2','3','email','4','5','noint'];
   cards.forEach((c,i) => c.classList.toggle('active', vals[i] === val && val !== ''));
 }
 function histHasEmail(en) {
