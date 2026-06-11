@@ -300,6 +300,7 @@ function domainToEmpresa(email) {
   return base.replace(/[-_.]/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim();
 }
 function getEmpresaForEntry(en) {
+  if (en.empresa) return en.empresa;
   const em = getEmailForEntry(en);
   return em ? domainToEmpresa(em) : '';
 }
