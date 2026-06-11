@@ -93,20 +93,15 @@
         "text": "Jesús, gracias por conectar. 👋\n\nEstuve revisando un poco lo que venís haciendo en Grupo Bardo. Tres propiedades de lujo en Tulum, cada una apuntando a estándares Forbes/Michelin Key, al mismo tiempo. Imagino que eso abre bastantes frentes simultáneamente en la ejecución.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 1,
     "stageHistory": [
       {
         "stage": 1,
         "date": "10/06/26",
         "note": ""
-      },
-      {
-        "stage": 2,
-        "date": "11/06/26",
-        "note": ""
       }
     ],
-    "dossierMail": true
+    "dossierMail": false
   },
   {
     "id": "1781131026032",
