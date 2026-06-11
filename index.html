@@ -294,6 +294,16 @@ async function loadData() {
   renderProximos();
 }
 
+function domainToEmpresa(email) {
+  const domain = (email||'').split('@')[1] || '';
+  const base = domain.replace(/\.(com|org|net|co|ar|cr|pa|mx|uy|cl|pe|br|info|biz)(\.[a-z]{2})?$/i,'');
+  return base.replace(/[-_.]/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim();
+}
+function getEmpresaForEntry(en) {
+  const em = getEmailForEntry(en);
+  return em ? domainToEmpresa(em) : '';
+}
+
 function hasEmailEntry(en) {
   if (en.dossierMail) return true;
   for (const sh of (en.stageHistory||[])) {
@@ -347,17 +357,22 @@ function renderList() {
     list.innerHTML = '<div class="empty-list">Sin resultados</div>';
     return;
   }
-  list.innerHTML = filtered.map(en => `
+  list.innerHTML = filtered.map(en => {
+    const email = getEmailForEntry(en);
+    const empresa = email ? domainToEmpresa(email) : '';
+    return `
     <div class="prospect-item${_selected === en.id ? ' selected' : ''}" style="${en.noInterest ? 'opacity:.55' : ''}" onclick="selectProspect('${en.id}')">
       <div class="pi-row">
         <div class="pi-name${en.noInterest ? ' noint' : ''}">${esc(en.name)}</div>
         ${en.noInterest ? '<span class="stage-pill sp-x">✕ No int.</span>' : `<span class="stage-pill ${STAGE_COLORS[en.stage||1]}">${stgLabel(en.stage||1)}</span>`}
       </div>
+      ${email ? `<div style="font-size:11px;color:#1A5FA8;margin-top:2px">📧 ${esc(empresa)} · ${esc(email)}</div>` : ''}
       <div class="pi-meta">
         <span>${en.date}</span>
         <span class="pi-variant">${esc(en.variantTitle)}</span>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 function selectProspect(id) {
@@ -454,7 +469,7 @@ function renderDetail(en) {
       <span style="font-size:10.5px;color:var(--mid)">${en.date} · ${esc(en.variantTitle)}</span>
     </div>
     ${renderStageBar(en)}
-    ${(()=>{const em=getEmailForEntry(en);return em?`<div style="padding:9px 14px;background:#E6F1FB;border-bottom:1px solid #C4DAFA;display:flex;align-items:center;gap:10px"><span style="font-size:12px">📧</span><span style="font-size:12.5px;color:#1A5FA8;font-weight:600">${esc(em)}</span><button class="copy-btn" style="margin-left:auto" onclick="copyTxt(this,'${escAttr(em)}')">Copiar email</button></div>`:'';})()}
+    ${(()=>{const em=getEmailForEntry(en);if(!em)return'';const emp=domainToEmpresa(em);return`<div style="padding:9px 14px;background:#E6F1FB;border-bottom:1px solid #C4DAFA;display:flex;align-items:center;gap:10px"><span style="font-size:12px">📧</span><div style="flex:1"><div style="font-size:12.5px;color:#1A5FA8;font-weight:600">${esc(en.name)} · ${esc(emp)}</div><div style="font-size:11.5px;color:#2A6FA8">${esc(em)}</div></div><button class="copy-btn" onclick="copyTxt(this,'${escAttr(em)}')">Copiar email</button></div>`;})()}
     <div style="padding:10px 14px;border-bottom:1px solid var(--border);background:white">
       <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mid);margin-bottom:6px">Registro de etapas</div>
       ${logHtml}
