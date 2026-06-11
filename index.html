@@ -448,14 +448,25 @@ function renderDetail(en) {
     } else i++;
   }
 
+  const detailEmail = extractEmail((en.stageHistory||[]).map(s=>s.note||'').join(' '));
+  const detailEmpresa = en.empresa || '';
+
   dv.innerHTML = `
     <div class="var-head" style="display:flex;align-items:center;justify-content:space-between;padding:9px 13px;background:var(--light);border-bottom:1px solid var(--border)">
       <div style="display:flex;align-items:center;gap:7px">
         <span style="font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;background:var(--blue-light);color:var(--blue)">Prospecto</span>
         <span style="font-size:12px;font-weight:600;color:var(--dark)">${esc(en.name)}</span>
+        ${detailEmpresa ? `<span style="font-size:11px;color:var(--mid)">· ${esc(detailEmpresa)}</span>` : ''}
       </div>
       <span style="font-size:10.5px;color:var(--mid)">${en.date} · ${esc(en.variantTitle)}</span>
     </div>
+    ${detailEmail ? `<div style="display:flex;align-items:center;gap:10px;padding:8px 13px;background:#E6F1FB;border-bottom:1px solid #C4DAFA">
+      <span style="font-size:12px">📧</span>
+      <span style="font-size:13px;font-weight:600;color:#1A5FA8">${esc(detailEmail)}</span>
+      <button class="copy-btn" style="margin-left:auto;border-color:#C4DAFA;color:#1A5FA8" onclick="copyTxt(this,'${escAttr(detailEmail)}')">
+        <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Copiar
+      </button>
+    </div>` : ''}
     ${renderStageBar(en)}
     <div style="padding:10px 14px;border-bottom:1px solid var(--border);background:white">
       <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mid);margin-bottom:6px">Registro de etapas</div>
