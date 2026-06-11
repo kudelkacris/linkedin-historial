@@ -403,7 +403,8 @@
         "date": "10/06/26",
         "note": "Sí, claro\n\n    😄\n    🤐\n    👏\n\nMi correo es Roberto.gutierrezv@ageseguros.com"
       }
-    ]
+    ],
+    "dossierMail": true
   },
   {
     "id": "1781129582138",
@@ -965,7 +966,8 @@
         "date": "10/06/26",
         "note": "Claro, podes enviarme el dossier a cawong@code-cr.com"
       }
-    ]
+    ],
+    "dossierMail": true
   },
   {
     "id": "1781114079850",
@@ -1266,7 +1268,8 @@
         "date": "10/06/26",
         "note": ""
       }
-    ]
+    ],
+    "dossierMail": true
   },
   {
     "id": "1781113513522",
@@ -1613,7 +1616,8 @@
         "date": "10/06/26",
         "note": ""
       }
-    ]
+    ],
+    "dossierMail": false
   },
   {
     "id": "1781113068126",
