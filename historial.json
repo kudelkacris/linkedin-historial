@@ -289,14 +289,26 @@
         "text": "Yescenia, gracias por conectar! 👋\n\nMe llamó la atención cómo cerraste la reflexión sobre JUMP. Lo que más me gustó fue que en un espacio donde podrías haber hablado del crecimiento, la audiencia o el impacto numérico, le dieras el crédito principal al equipo de Be:Brave que \"hace posible este proyecto\". No suele ser lo primero que alguien destaca cuando celebra una iniciativa así.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
         "date": "22/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "23/06/26",
+        "note": "Hola Florencia. \nmuchas gracias. \nClaro cuentame como te puedo ayudar \nsaludos"
+      },
+      {
+        "stage": 3,
+        "date": "23/06/26",
+        "note": "ynavarro@bbravegroup.com"
       }
-    ]
+    ],
+    "noInterest": false,
+    "dossierMail": true
   },
   {
     "id": "1782138585474",
@@ -337,12 +349,17 @@
         "text": "Paola, gracias por conectar 👋\n\nMe llamó la atención esa publicación que compartiste hace unos meses sobre que \"Finanzas decide la campaña, Operaciones cambia el mensaje, Ventas pide algo rápido\". La escribiste con bastante precisión, como si fuera observación directa. No suele ser algo que publique gente que no lo vive todos los días.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
         "date": "22/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "23/06/26",
+        "note": "si, literal lo vivi jajaja pero tristemente, en muchas ocasiones es la realidad de muchisimas empresas."
       }
     ]
   },
@@ -385,12 +402,17 @@
         "text": "Carla, gracias por conectar. 👋\n\nEstuve revisando un poco lo que venís haciendo en Novartis. Me llamó la atención que en los últimos meses estés compartiendo constantemente contenido sobre IA, optimización de datos y omnicanalidad — no son posts de la empresa, son aprendizajes que estás recolectando. Eso sugiere que hay algo importante pasando en tu rol.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
         "date": "22/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "23/06/26",
+        "note": "si claro dime"
       }
     ]
   },
@@ -2355,7 +2377,7 @@
         "text": "Keylin, gracias por conectar 👋\n\nVi la publicación que compartiste hace poco sobre valor percibido vs descuento. Lo que me llamó la atención fue que no hablaste de herramientas ni de canales, sino de por qué muchas empresas comunican errado desde el inicio. \"No siempre gana quien tiene la mejor propuesta. Muchas veces gana quien comunica mejor su valor.\" Eso es lo opuesto a lo que la mayoría hace.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -2371,6 +2393,11 @@
         "stage": 3,
         "date": "18/06/26",
         "note": "Keylin Smith\n20:36\n\n    😄\n    🤐\n    👏\n\n¡Qué lindo leerte, Florencia! 😊 Y gracias por compartirme eso, porque justamente esa era la intención del mensaje.\n\nCreo que antes de hablar de estrategias, canales o herramientas, primero hay que tener muy claro qué hace valiosa una marca y por qué alguien debería elegirla. Lo demás potencia ese valor, pero no lo reemplaza.\n\nNo te preocupes por los mensajes cortados 😄. Gracias por compartirme el dossier voy a revisarlo con atención. Luego te escribo para compartirte mis comentarios.\n\n¡Muchas gracias por pensar en mí! Que tengas un excelente fin de semana. ✨"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": "¡Hola, Florencia! 😊\n\nYa revisé el dossier con calma y quería agradecerte por compartírmelo. Me gustó mucho el enfoque de Hint Media y la manera en que integran la estrategia con la ejecución.\n\nMientras lo leía, pensé que podríamos generar una muy buena sinergia. Personalmente, donde más disfruto aportar valor es en la estrategia creativa, el desarrollo de conceptos, la construcción de mensajes, los guiones para contenido audiovisual y la planificación de campañas desde una perspectiva de neuromarketing y comportamiento del consumidor.\n\nSi te parece, me encantaría que conversemos y exploremos si existe alguna oportunidad para colaborar. ✨"
       }
     ]
   },
@@ -2525,7 +2552,7 @@
         "text": "Catalina, gracias por conectar! 👋\n\nMe llamó la atención que compartieras la reflexión de Cristián Barra sobre voluntad y raíz interior — ese tipo de contenido no es lo que usualmente ves circular en espacios de marketing corporativo. Parece que para vos la credibilidad viene de algo más profundo que los datos o los logros.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -2536,8 +2563,14 @@
         "stage": 2,
         "date": "22/06/26",
         "note": "Si, dime"
+      },
+      {
+        "stage": 3,
+        "date": "23/06/26",
+        "note": "no usamos agencia gracias!"
       }
-    ]
+    ],
+    "noInterest": true
   },
   {
     "id": "1781823717099",
@@ -3083,7 +3116,7 @@
         "text": "Greg, gracias por conectar 👋\n\nMe llamó la atención cómo narraste Exponor. No hablaste de los deals o los contactos que cerraste. Lo que te quedó fue lo humano — los escolares con gorras naranjas, la visita a SQM \"que pone todo en perspectiva\". Eso dice mucho de cómo pensás el mercado.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -3098,6 +3131,11 @@
       {
         "stage": 3,
         "date": "18/06/26",
+        "note": ""
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
         "note": ""
       }
     ]
@@ -4039,7 +4077,7 @@
         "text": "Cristina, gracias por conectar! 👋\n\nMe llamó la atención la publicación sobre Kellogg, especialmente cuando mencionás que querías \"pensar más estratégicamente sobre crecimiento centrado en el cliente\". Eso no es cualquier intención — la mayoría completa un programa y listo. Vos además lo escribís pensando en cómo aplicarlo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -4055,6 +4093,11 @@
         "stage": 3,
         "date": "18/06/26",
         "note": "Si, en Nutrisnacks trabajamos todo in-house, pero si gusta me puede enviar el dossier por acá."
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -4249,7 +4292,7 @@
         "text": "Paula, gracias por conectar! 👋\n\nMe llamó mucho la atención la publicación que compartiste sobre el joven geólogo. Lo que más me gustó fue que en lugar de venderle a la gente el \"valor de FEXMIN\", decidiste contar una historia concreta de lo que pasó adentro. No es lo que suele hacer la mayoría cuando quiere promocionar algo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -4265,6 +4308,11 @@
         "stage": 3,
         "date": "18/06/26",
         "note": "Hola si claro pqe@fexmin.cl"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
     "dossierMail": true
@@ -4468,7 +4516,7 @@
         "text": "Yanelly, gracias por conectar! 👋\n\nMe quedó la reflexión que compartiste sobre la segunda edición de Talent Up. Lo que me llamó la atención no fue solo el evento en sí, sino cómo describiste el proceso: algo que empezó como una idea y se convirtió en iniciativa, y cómo eso te obligó a descubrir áreas de liderazgo que no sabías que tenías.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -4479,6 +4527,11 @@
         "stage": 2,
         "date": "20/06/26",
         "note": "Hola, Florencia! Muchas gracias por tomarse el tiempo de leerlo con tanto detalle!\n\nDe hecho fue una experiencia que me retó bastante y me dejó muchos aprendizajes sobre liderazgo y ejecución.\nVer el perfil de Yanelly Yanelly Ramírez Baltodano\nYanelly Ramírez Baltodano 14:54\n\n    🤗\n    😄\n    🤐\n\nFeliz de conversar. Cuéntame, ¿cuál era tu consulta?"
+      },
+      {
+        "stage": 3,
+        "date": "23/06/26",
+        "note": "si mandamelo"
       }
     ]
   },
@@ -6703,7 +6756,7 @@
         "text": "Guille, gracias por conectar!\n\nEstuve revisando un poco lo que vienen haciendo en Komunika. Me llamó la atención que en poco más de 4 años pasaste de Gerente de Digital a liderar toda la unidad de PR, Marketing y Comunicaciones Corporativas. Eso significa mucho crecimiento en clientes, proyectos y complejidad operativa.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -6719,6 +6772,11 @@
         "stage": 3,
         "date": "16/06/26",
         "note": "Buen día Florencia! Claro que sí, compárteme por aquí tus credenciales o a mi email gtejada@komunikalatam.com"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
     "dossierMail": true
@@ -6855,7 +6913,7 @@
         "text": "Laura, gracias por conectar! 👋\n\nMe llamó la atención el comentario que hiciste hace unos meses sobre lo que RRHH solicita para perfiles senior de marketing. La realidad que describiste (diseño, redes, SEO, email, eventos, todo en una persona) es exactamente lo que mata las estrategias reales. Me quedó claro que vos entendés la diferencia entre un ejecutor y un líder.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -6871,6 +6929,11 @@
         "stage": 3,
         "date": "16/06/26",
         "note": "si envialo"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -7121,7 +7184,7 @@
         "text": "Evanny, gracias por responder!\n\nLo que describiste en el post de storytelling me parecio muy preciso: \"contar historias no es solo hablar de una marca o un producto, es lograr que el publico se identifique y conecte.\" Eso es exactamente el estandar que cuesta mas sostener en el dia a dia.\n\nEn Hint trabajamos con instituciones y marcas en contenido estrategico, storytelling y posicionamiento digital que mantienen ese nivel de conexion de forma consistente.\n\nTe puedo enviar un dossier por aca si no es mucha molestia, o me indicarias a quien se lo puedo mandar?"
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -7137,6 +7200,11 @@
         "stage": 3,
         "date": "16/06/26",
         "note": "si claro"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -8022,7 +8090,7 @@
         "text": "Marcela, gracias por conectar! 👋\n\nMe llamó la atención cómo enfocaste la publicación sobre el viaje a República Dominicana. Lo que más destacaste fue el trabajo que hizo Gilsé en el panel de agencias — crédito explícito, \"nos llenó de orgullo\" — cuando muchos líderes hubieran hablado solo de lo que ellos hicieron. Eso dice bastante sobre cómo construís equipo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -8037,6 +8105,11 @@
       {
         "stage": 3,
         "date": "17/06/26",
+        "note": ""
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
         "note": ""
       }
     ]
@@ -8318,7 +8391,7 @@
         "text": "Leidy, gracias por conectar. Un gusto.\n\nMe llamó la atención cómo posicionaste a Congero en London Tech Week. Lo que más valoro es que decidiste destacar a Celio y Alexander como puntos de entrada en lugar de solo listar servicios. Eso dice bastante sobre cómo pensás el relacionamiento comercial.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -8334,6 +8407,11 @@
         "stage": 3,
         "date": "16/06/26",
         "note": "si claro"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -8830,7 +8908,7 @@
         "text": "Tatiana, muchas gracias! Te lo mando ahora."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -8846,6 +8924,11 @@
         "stage": 3,
         "date": "15/06/26",
         "note": "En mi trabajo no tengo poder de decisión para adquisición de servicios, pero si deseas dejarlo y que yo lo comparta, claro, con gusto puedes enviarme por esta vía tu carta de servicios."
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -8945,7 +9028,7 @@
         "text": "Anabel, gracias por conectar! 👋\n\nMe llamó la atención cómo cerraste la reflexión sobre el Panamá Circular Experience. No es lo más común que alguien destaque que \"detrás hay mucho más que logística\" — la mayoría solo anuncia el resultado. Vos lo que enfatizaste fue la coordinación, la estrategia alineada, los múltiples actores en movimiento al mismo tiempo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -8961,6 +9044,11 @@
         "stage": 3,
         "date": "17/06/26",
         "note": "claro puedes enviarmelo"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -9462,7 +9550,7 @@
         "text": "Karina, gracias por conectar 👋\n\nMe llamó la atención cómo enfocaste las publicaciones de los lanzamientos. Antes que hablar de features, visibilizaste que era \"parte del equipo detrás\" de Translations y de AI-Generated Video Detection. No es lo típico cuando alguien anuncia un logro.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -9478,6 +9566,11 @@
         "stage": 3,
         "date": "15/06/26",
         "note": "Sí puedes enviármelo"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -9982,7 +10075,7 @@
         "text": "César, gracias por conectar.\n\nMe llamó la atención que en tu presentación hayas puesto mindfulness junto con hotel management. La mayoría dice \"lujo y servicio\". Vos pusiste algo más. Eso dice bastante de cómo estás pensando Distrito Panamera.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -9998,6 +10091,11 @@
         "stage": 3,
         "date": "12/06/26",
         "note": "Oh, bien\n\nActualmente trabajamos con una empresa que nos ayuda a la difusión y promoción de nuestras actividades. \n\nSin embargo, el mindfulness es más dentro de mis actividades personales hacia el staff. Aún no lo concreto como modelo de negocio."
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -10086,7 +10184,7 @@
         "text": "Daniel, gracias por conectar. Un gusto.\n\nEstuve revisando un poco tu perfil y me quedó claro que gran parte de tu trabajo pasa por construir infraestructura que funcione — automatización, flujos, integraciones — pero al mismo tiempo necesitás que eso genere resultados que el equipo pueda usar hoy. Eso es un equilibrio bastante particular.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -10102,6 +10200,11 @@
         "stage": 3,
         "date": "16/06/26",
         "note": "si claro"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -11335,7 +11438,7 @@
         "text": "Ericka, gracias por conectar. Un gusto.\n\nMe llamó la atención que en lugar de destacar un logro de campaña, compartiste tu aprendizaje del Foro de Sostenibilidad. Lo que más me gustó fue que enfatizaras que \"seguir aprendiendo sobre planificación urbana y movilidad es fundamental\" en desarrollo inmobiliario. No es lo típico que ves en marketing — suele haber más ruido comercial que reflexión estratégica.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -11351,6 +11454,11 @@
         "stage": 3,
         "date": "16/06/26",
         "note": "Sí, claro"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ]
   },
@@ -11801,7 +11909,7 @@
         "text": "Roberto, gracias por conectar. Un gusto.\n\nEstuve revisando un poco lo que venís haciendo. Me llamó la atención que en los últimos 9 años construyeras iniciativas de transformación digital desde cero en tres países simultáneamente — eso no es lineal. Además, ahora estás en el rol donde esa experiencia tiene que convertirse en crecimiento de revenue inmediato.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -11817,6 +11925,11 @@
         "stage": 3,
         "date": "10/06/26",
         "note": "Sí, claro\n\n    😄\n    🤐\n    👏\n\nMi correo es Roberto.gutierrezv@ageseguros.com"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
     "dossierMail": true
@@ -12370,7 +12483,7 @@
         "text": "Carlos, gracias por conectar. 👋\n\nMe llamó la atención la complejidad de lo que implica posicionar una marca en MERCO ESG, Great Place To Work y al mismo tiempo liderar una certificación OECD con 34 empresas operando. Imagino que eso abre múltiples frentes de comunicación al mismo tiempo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -12386,6 +12499,11 @@
         "stage": 3,
         "date": "10/06/26",
         "note": "Claro, podes enviarme el dossier a cawong@code-cr.com"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
     "dossierMail": true
@@ -12687,7 +12805,7 @@
         "text": "Jitzel, gracias por conectar! 👋\n\nMe llamó la atención algo que escribiste sobre invertir en la gente. No es lo primero que alguien destaca cuando habla de 25 años en marketing, normalmente se habla de números o campañas. Pero vos pusiste eso como el centro.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -12703,9 +12821,15 @@
         "stage": 3,
         "date": "10/06/26",
         "note": ""
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
-    "dossierMail": true
+    "dossierMail": true,
+    "noInterest": true
   },
   {
     "id": "1781113513522",
@@ -15403,7 +15527,7 @@
         "text": "Perfecto Romina, te lo mando ahora. Quedamos en contacto!"
       }
     ],
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -15419,6 +15543,11 @@
         "stage": 3,
         "date": "12/06/26",
         "note": "Dale, cuando puedas por favor me lo enviás."
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
     "empresa": "ARSAT"
@@ -20067,7 +20196,7 @@
     "msg2": "Hola Bernardo, gracias!\n\n8 paises en paralelo, cada mercado con su propio ritmo y exigencia. En ese volumen mantener coherencia de marca y calidad de ejecucion al mismo tiempo es donde el contenido empieza a ceder.\n\nEn Hint trabajamos con equipos en esa brecha. Con TGS acompanamos la produccion de contenido y comunicacion para que la estrategia regional tambien se vea en cada mercado.\n\nTe puedo enviar un dossier por aca si no es mucha molestia, o me indicarias a quien se lo puedo mandar?",
     "estado": "MSG2 enviado",
     "respuesta": "Hola Florencia. Buenas tardes. Cuentame como te puedo ayudar?",
-    "stage": 3,
+    "stage": 4,
     "stageHistory": [
       {
         "stage": 1,
@@ -20083,6 +20212,11 @@
         "stage": 3,
         "date": "15/06/26",
         "note": "Bdiaz@gulfoilpanama.com"
+      },
+      {
+        "stage": 4,
+        "date": "23/06/26",
+        "note": ""
       }
     ],
     "dossierMail": true
