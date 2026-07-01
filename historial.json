@@ -18606,63 +18606,6 @@
     ]
   },
   {
-    "id": "1780934238114",
-    "date": "08/06/26",
-    "name": "Miguel Bocanument Gomez",
-    "variantTitle": "Operaciones complejas + comunicación",
-    "msg1": "Miguel, gracias por aceptar! 👋\n\nRevisé tu trayectoria y lo que más me llamó la atención es cómo optimizás estructuras — redujiste FdV 4%, generaste ahorros de millones, mejoraste márgenes operativos. La mentalidad de eficiencia es clara.\n\n¿Esa misma lógica la aplican al equipo de marketing y comunicación, o ahí opera diferente?",
-    "msg2": "Interesante que lo menciones. Es que la mayoría de las empresas en expansión como KipClin mantienen equipos de marketing muy rígidos — costo fijo alto, capacidades limitadas, dificultad para escalar.\n\nNosotros trabajamos diferente. Insertamos un equipo completo de marketing (trafficker, CM, diseñador, account manager) que opera como si fuera interno, pero con la flexibilidad y el costo de un modelo variable. Es la misma lógica que aplicás en operaciones, pero en marketing.\n\nClientes como Libra Seguros y Destiny Group lo usan para mantener ritmo de campañas sin bloques de presupuesto anuales rígidos.\n\n¿Te envío un dossier que detalla cómo funciona?",
-    "extraMsgs": {
-      "MSG3": [
-        "Miguel, ¿viste el dossier que te pasé?",
-        "Sin presión — capaz no es el momento o no se alinea con lo que vienen haciendo. Pero si querés conversar 15 minutos sobre cómo otras empresas en expansión están escalando el equipo de marketing sin inflar estructura, estoy disponible.",
-        "¿Te viene bien algún día esta semana?",
-        "[LINK DOSSIER]"
-      ],
-      "MSG4": [
-        "Miguel, te dejo esta acá — capaz quedó perdido en el feed.",
-        "Si en algún momento necesitás conversar sobre cómo escalar marketing sin agregar costos fijos, acá estamos.",
-        "Éxitos con KipClin! 🚀"
-      ],
-      "SEG1": [
-        "Miguel, quería retomar brevemente porque creo que hay potencial real acá.",
-        "Vi el trabajo que vienen haciendo en KipClin — es claro que el marketing genera impacto directo en números (transacciones, ecommerce, base de datos). La pregunta es si hoy tenés la capacidad interna para sostener eso mientras escalas otras áreas.",
-        "¿Tiene sentido conversar 20 minutos sobre cómo lo estamos resolviendo con otros clientes, o preferís dejar esto para más adelante?"
-      ],
-      "SEG2": [
-        "Miguel, no quiero insistir.",
-        "Solo quería dejarte claro que si en algún momento necesitás ampliar capacidades en marketing sin agregar estructura rígida, sabemos cómo hacerlo y tenemos experiencia probada.",
-        "Cuando te hagas tiempo, revisá el dossier — quizás en 3-6 meses vuelve a tener sentido conversar.",
-        "Mucho éxito! 💪"
-      ]
-    },
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Miguel, gracias por aceptar! 👋\n\nRevisé tu trayectoria y lo que más me llamó la atención es cómo optimizás estructuras — redujiste FdV 4%, generaste ahorros de millones, mejoraste márgenes operativos. La mentalidad de eficiencia es clara.\n\n¿Esa misma lógica la aplican al equipo de marketing y comunicación, o ahí opera diferente?"
-      }
-    ],
-    "stage": 3,
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "08/06/26",
-        "note": ""
-      },
-      {
-        "stage": 2,
-        "date": "24/06/26",
-        "note": "Envíamelo a gerencia@kipclin.com"
-      },
-      {
-        "stage": 3,
-        "date": "01/07/26",
-        "note": "gerencia@kipclin.com"
-      }
-    ],
-    "dossierMail": true
-  },
-  {
     "id": "1780933381653",
     "date": "08/06/26",
     "name": "Rocio Tome",
@@ -21200,5 +21143,67 @@
         "note": ""
       }
     ]
+  },
+  {
+    "id": "1780934238114",
+    "date": "08/06/26",
+    "name": "Miguel Bocanument Gomez",
+    "empresa": "Kipclin",
+    "variantTitle": "Operaciones complejas + comunicacion",
+    "msg1": "Miguel, gracias por aceptar! 👋\n\nRevisé tu trayectoria y lo que más me llamó la atención es cómo optimizás estructuras — redujiste FdV 4%, generaste ahorros de millones, mejoraste márgenes operativos. La mentalidad de eficiencia es clara.\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?",
+    "msg2": "Buenas Miguel, gracias por la buena onda!\nEsa eficiencia que mencioné (FdV, márgenes, ahorros) suele chocar contra equipos de marketing que siguen midiendo por instinto más que por números. Ahí es donde se pierde presupuesto sin que se note.\nEn Hint Media trabajamos justo para meter ese mismo criterio de eficiencia en comunicación y contenido, con marcas como Destiny Group y Libra Seguros.\nTe puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?",
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Miguel, gracias por aceptar! 👋\n\nRevisé tu trayectoria y lo que más me llamó la atención es cómo optimizás estructuras — redujiste FdV 4%, generaste ahorros de millones, mejoraste márgenes operativos. La mentalidad de eficiencia es clara.\n\nSi es correcto y me lo permitís, tenía una duda y quería saber si me podrías ayudar?"
+      },
+      {
+        "role": "received",
+        "text": "Hola Florencia, como estas. Claro que si cuentame"
+      },
+      {
+        "role": "sent",
+        "text": "Buenas Miguel, gracias por la buena onda!\nEsa eficiencia que mencioné (FdV, márgenes, ahorros) suele chocar contra equipos de marketing que siguen midiendo por instinto más que por números. Ahí es donde se pierde presupuesto sin que se note.\nEn Hint Media trabajamos justo para meter ese mismo criterio de eficiencia en comunicación y contenido, con marcas como Destiny Group y Libra Seguros.\nTe puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?"
+      },
+      {
+        "role": "received",
+        "text": "Envíamelo a gerencia@kipclin.com"
+      },
+      {
+        "role": "sent",
+        "text": "Perfecto Miguel, lo dejamos adjuntado por ese medio. Muchas gracias y estamos en contacto"
+      },
+      {
+        "role": "sent",
+        "text": "Buenas Miguel!\nEse criterio de eficiencia que aplicás en operaciones es exactamente lo que falta en la mayoría de los equipos de comunicación.\nMe gustaría contarte puntualmente qué hicimos con Destiny Group en términos de resultados medibles. Creo que te va a resonar.\nPodemos hacer una charla corta esta semana o la próxima?"
+      },
+      {
+        "role": "received",
+        "text": "Hola florencia, No me llego nada al correo. Cuando me llegó reviso si vale la pena agenda el espacio"
+      },
+      {
+        "role": "sent",
+        "text": "Lo enviamos devuelta en un rato entonces Miguel. Habra sido un error nuestro, estamos en contacto"
+      }
+    ],
+    "stage": 3,
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "08/06/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "24/06/26",
+        "note": "Envíamelo a gerencia@kipclin.com"
+      },
+      {
+        "stage": 3,
+        "date": "24/06/26",
+        "note": "gerencia@kipclin.com"
+      }
+    ],
+    "dossierMail": true
   }
 ]
