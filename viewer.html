@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hint Media · Generador LinkedIn</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#FF5C35;--orange-dark:#CC3A1A;--orange-light:#FFF0EB;
+  --dark:#0D0D0D;--dark2:#1A1A1A;--dark3:#2A2A2A;
+  --mid:#666;--light:#F5F3EF;--white:#FFFFFF;--border:#E8E5DF;
+  --green:#27AE60;--green-light:#EAF7EF;
+  --blue-light:#E6F1FB;--blue:#1A5FA8;
+  --shadow:0 2px 16px rgba(0,0,0,0.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--light);color:var(--dark);min-height:100vh}
+
+/* HEADER */
+header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;border-bottom:2px solid var(--orange)}
+.logo{display:flex;align-items:center;gap:10px}
+.logo-dot{width:28px;height:28px;background:var(--orange);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.logo-dot svg{width:15px;height:15px;stroke:white;fill:none;stroke-width:2}
+.logo-name{font-family:'DM Serif Display',serif;font-size:17px;color:white}
+.logo-sub{font-size:11px;color:#777;margin-top:1px}
+.status-pill{background:var(--dark3);border:1px solid #333;border-radius:20px;padding:4px 12px;font-size:11.5px;color:#aaa;display:flex;align-items:center;gap:6px}
+.status-dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+
+/* PROXIMOS PANEL */
+#proximos-bar{background:var(--dark2);border-bottom:2px solid #333;padding:0 2rem;position:sticky;top:56px;z-index:99}
+#proximos-toggle{display:flex;align-items:center;gap:10px;height:38px;cursor:pointer;user-select:none}
+#proximos-toggle:hover .prox-label{color:white}
+.prox-label{font-size:12px;font-weight:600;color:#aaa;transition:color .15s}
+.prox-count{font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;background:#333;color:#ccc}
+.prox-count.has-overdue{background:#7C1D00;color:#FF9980}
+.prox-chevron{margin-left:auto;color:#555;font-size:13px;transition:transform .2s}
+#proximos-body{display:none;padding:10px 0 14px}
+#proximos-body.open{display:flex;gap:16px;animation:slideDown .2s ease;overflow-x:auto;align-items:flex-start}
+/* Columnas de acción */
+.prox-col{flex:0 0 300px;min-width:240px;max-width:320px}
+.prox-col-head{display:flex;align-items:center;gap:7px;padding:6px 10px;border-radius:7px 7px 0 0;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.prox-col-head.col-msg2{background:#3A1500;color:#FF9060}
+.prox-col-head.col-dossier{background:#002040;color:#60A8FF}
+.prox-col-head.col-seg{background:#1A1040;color:#A080FF}
+.prox-col-head.col-other{background:#1A1A1A;color:#888}
+.prox-col-count{font-weight:800;font-size:13px;margin-left:auto}
+.prox-col-body{background:#161616;border:1px solid #2A2A2A;border-top:none;border-radius:0 0 7px 7px;max-height:260px;overflow-y:auto}
+.prox-row{display:flex;align-items:center;gap:8px;padding:7px 10px;border-bottom:1px solid #1F1F1F;cursor:pointer;transition:background .12s}
+.prox-row:last-child{border-bottom:none}
+.prox-row:hover{background:#1F1F1F}
+.prox-row.overdue-row{border-left:2px solid #7C1D00}
+.prox-row-info{flex:1;min-width:0}
+.prox-row-name{font-size:12px;font-weight:600;color:white;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prox-row-empresa{font-size:10px;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prox-row-days{font-size:11px;font-weight:700;white-space:nowrap;flex-shrink:0}
+.prox-row-days.red{color:#FF5C35}
+.prox-row-days.orange{color:#FFA040}
+.prox-row-days.green{color:#27AE60}
+.prox-empty-col{padding:14px 10px;font-size:11px;color:#444;text-align:center;font-style:italic}
+.prox-col-head.col-recontact{background:#1A2A1A;color:#60C080}
+.recontact-picker{background:#1A1A2A;border:1px solid #3A3A5A;border-radius:8px;padding:10px;margin-top:8px;display:none}
+.recontact-picker.open{display:block}
+.recontact-opt{display:inline-block;background:#2A2A4A;color:#A0A0FF;border:none;border-radius:5px;padding:4px 10px;font-size:11px;cursor:pointer;margin:2px}
+.recontact-opt:hover{background:#3A3A6A}
+.recontact-current{font-size:11px;color:#60C080;margin-bottom:6px}
+.recontact-clear{background:#3A1A1A;color:#FF6060;border:none;border-radius:5px;padding:3px 9px;font-size:10px;cursor:pointer;margin-left:6px}
+
+/* CONTAINER */
+.page{max-width:1060px;margin:0 auto;padding:2rem 1.5rem 5rem}
+.page-title{margin-bottom:1.5rem}
+.page-title h1{font-family:'DM Serif Display',serif;font-size:26px;color:var(--dark);line-height:1.2;margin-bottom:3px}
+.page-title h1 em{color:var(--orange);font-style:italic}
+.page-title p{font-size:13px;color:var(--mid)}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:420px 1fr;gap:1.5rem;align-items:start}
+
+/* CARD */
+.card{background:white;border-radius:14px;border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden}
+.card-head{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.card-icon{width:30px;height:30px;border-radius:7px;background:var(--orange-light);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.card-icon svg{width:15px;height:15px;stroke:var(--orange);fill:none;stroke-width:2}
+.card-ttl{font-size:13px;font-weight:600;color:var(--dark)}
+.card-sub{font-size:11px;color:var(--mid);margin-top:1px}
+.card-body{padding:16px}
+
+/* FORM */
+textarea.profile{width:100%;min-height:240px;padding:12px;font-family:'DM Sans',sans-serif;font-size:12.5px;line-height:1.6;color:var(--dark);background:var(--light);border:1.5px solid var(--border);border-radius:9px;resize:vertical;outline:none;transition:border-color .2s}
+textarea.profile:focus{border-color:var(--orange);background:white}
+textarea.profile::placeholder{color:#bbb}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}
+label.lbl{display:block;font-size:11px;font-weight:600;color:var(--mid);margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+select.sel{width:100%;padding:8px 10px;font-family:'DM Sans',sans-serif;font-size:12.5px;color:var(--dark);background:var(--light);border:1.5px solid var(--border);border-radius:7px;outline:none;cursor:pointer;transition:border-color .2s;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center}
+select.sel:focus{border-color:var(--orange)}
+
+/* BUTTONS */
+.btn-main{width:100%;margin-top:12px;padding:11px;background:var(--orange);color:white;border:none;border-radius:9px;font-family:'DM Sans',sans-serif;font-size:13.5px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:background .2s,transform .1s}
+.btn-main:hover{background:var(--orange-dark)}
+.btn-main:active{transform:scale(.98)}
+.btn-main:disabled{background:#ccc;cursor:not-allowed}
+.btn-main svg{width:16px;height:16px;stroke:white;fill:none;stroke-width:2;flex-shrink:0}
+.spinner{width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:white;border-radius:50%;animation:spin .7s linear infinite;display:none;flex-shrink:0}
+
+/* RESULTS PANEL */
+.results-wrap{display:flex;flex-direction:column;gap:12px}
+.empty-state{text-align:center;padding:3rem 1.5rem;color:#ccc}
+.empty-state svg{width:44px;height:44px;stroke:#ddd;fill:none;stroke-width:1.5;margin:0 auto 10px;display:block}
+.empty-state p{font-size:12.5px;line-height:1.6;color:#bbb}
+
+/* LOADING */
+.loading-box{display:none;flex-direction:column;align-items:center;padding:2.5rem;gap:12px}
+.loading-ring{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--orange);border-radius:50%;animation:spin .8s linear infinite}
+.loading-lbl{font-size:12.5px;color:var(--mid)}
+
+/* VARIANT CARD */
+.variant{border:1px solid var(--border);border-radius:11px;overflow:hidden;animation:fadeUp .35s ease both}
+.variant:nth-child(1){animation-delay:.05s}
+.variant:nth-child(2){animation-delay:.15s}
+.variant:nth-child(3){animation-delay:.25s}
+.var-head{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;background:var(--light);border-bottom:1px solid var(--border)}
+.var-left{display:flex;align-items:center;gap:7px}
+.vtag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.04em}
+.variant-best{border:2px solid #F97316;box-shadow:0 0 0 3px #FFF0EB}
+.best-badge{font-size:10px;font-weight:700;background:#F97316;color:white;padding:2px 8px;border-radius:20px;letter-spacing:.04em}
+.vtag-a{background:#FFF0EB;color:#993C1D}
+.vtag-b{background:var(--green-light);color:#1A6635}
+.vtag-c{background:var(--blue-light);color:var(--blue)}
+.vtag-d{background:#F3EEFF;color:#6B21A8}
+.vtitle{font-size:12px;font-weight:600;color:var(--dark)}
+.copy-btn{font-size:11px;color:var(--mid);background:white;border:1px solid var(--border);border-radius:6px;padding:3px 9px;cursor:pointer;display:flex;align-items:center;gap:3px;transition:all .15s;font-family:'DM Sans',sans-serif}
+.copy-btn:hover{border-color:var(--orange);color:var(--orange)}
+.copy-btn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* CHAT */
+.msg-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#bbb;padding:7px 13px 2px}
+.chat-area{padding:10px 13px;background:#FAFAF8;display:flex;flex-direction:column;gap:5px}
+.bwrap{display:flex}
+.bwrap.out{justify-content:flex-start}
+.bwrap.in{justify-content:flex-end}
+.bub{max-width:86%;padding:7px 12px;border-radius:16px 16px 16px 4px;font-size:12px;line-height:1.55;color:var(--dark);background:white;border:1px solid var(--border);white-space:pre-wrap;word-break:break-word}
+.bub.in{border-radius:16px 16px 4px 16px;background:var(--blue-light);border-color:#C5DDF6;color:#0A3A6B}
+.bub.hl{background:var(--orange-light);border-color:#FFD0BC}
+.bub.wait{background:none;border:1px dashed #ccc;color:#aaa;font-style:italic;font-size:11px;max-width:100%;border-radius:7px;padding:5px 9px}
+.var-tip{padding:7px 13px;border-top:1px solid var(--border);font-size:11px;color:var(--mid);display:flex;align-items:flex-start;gap:5px;background:white}
+.var-tip svg{width:13px;height:13px;stroke:var(--orange);fill:none;stroke-width:2;flex-shrink:0;margin-top:1px}
+
+/* USE THIS BUTTON */
+.use-btn{width:100%;padding:8px;background:none;border:1px dashed var(--orange);border-radius:7px;color:var(--orange);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .15s;margin-top:4px}
+.use-btn:hover{background:var(--orange-light)}
+.use-btn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* CONVERSATION THREAD */
+.thread{display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.thread-step{border:1px solid var(--border);border-radius:11px;overflow:hidden;animation:slideDown .3s ease both}
+.thread-step-head{padding:9px 13px;background:var(--dark2);display:flex;align-items:center;justify-content:space-between}
+.thread-step-head span{font-size:11.5px;font-weight:600;color:white}
+.thread-step-head small{font-size:10.5px;color:#888}
+.reply-box{padding:12px 13px;background:var(--light);border-bottom:1px solid var(--border)}
+.reply-box label{display:block;font-size:11px;font-weight:600;color:var(--mid);margin-bottom:5px;text-transform:uppercase;letter-spacing:.04em}
+textarea.reply-input{width:100%;padding:9px 11px;font-family:'DM Sans',sans-serif;font-size:12.5px;line-height:1.55;color:var(--dark);background:white;border:1.5px solid var(--border);border-radius:8px;resize:vertical;min-height:70px;outline:none;transition:border-color .2s}
+textarea.reply-input:focus{border-color:var(--orange)}
+textarea.reply-input::placeholder{color:#bbb;font-style:italic}
+.reply-actions{display:flex;gap:7px;margin-top:8px}
+.btn-reply{flex:1;padding:8px;background:var(--orange);color:white;border:none;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:background .15s}
+.btn-reply:hover{background:var(--orange-dark)}
+.btn-reply:disabled{background:#ccc;cursor:not-allowed}
+.btn-reply svg{width:14px;height:14px;stroke:white;fill:none;stroke-width:2}
+.btn-reply .mini-spin{width:13px;height:13px;border:2px solid rgba(255,255,255,.3);border-top-color:white;border-radius:50%;animation:spin .7s linear infinite;display:none}
+.response-bubble{padding:10px 13px;background:#FAFAF8;display:flex;flex-direction:column;gap:5px}
+
+/* SELECTED INDICATOR */
+.selected-tag{background:var(--green);color:white;font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.03em}
+
+/* HISTORY */
+.hist-panel{margin-top:12px}
+.hist-count{font-size:10px;background:var(--orange);color:white;padding:1px 7px;border-radius:20px;font-weight:700;min-width:20px;text-align:center}
+.hist-list{padding:0 10px 10px;display:flex;flex-direction:column;gap:6px}
+.hist-item{padding:9px 11px;border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .15s;background:var(--light);display:flex;flex-direction:column}
+.hist-item:hover{border-color:var(--orange);background:var(--orange-light)}
+.hist-item-row{display:flex;align-items:center;gap:5px}
+.hist-item-name{font-size:12.5px;font-weight:600;color:var(--dark);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hist-item-meta{font-size:10.5px;color:var(--mid);margin-top:3px;display:flex;gap:6px;align-items:center}
+.hist-item-var{font-size:10px;padding:1px 6px;border-radius:10px;background:var(--blue-light);color:var(--blue);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:130px}
+.hist-empty{text-align:center;padding:1.5rem;color:#bbb;font-size:12px}
+.hist-del{background:none;border:none;cursor:pointer;padding:2px 5px;color:#ccc;font-size:11px;border-radius:4px;transition:all .15s;flex-shrink:0}
+.hist-del:hover{color:#c0392b;background:#fdf0ef}
+.hist-chevron{width:14px;height:14px;stroke:var(--mid);fill:none;stroke-width:2;transition:transform .2s;margin-left:8px;flex-shrink:0}
+
+@media(max-width:750px){.grid{grid-template-columns:1fr}.row2{grid-template-columns:1fr}}
+
+/* STAGE PILLS */
+.stage-pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;letter-spacing:.03em;white-space:nowrap}
+.sp-1{background:#FFF0EB;color:#993C1D}
+.sp-2{background:#E6F1FB;color:#1A5FA8}
+.sp-3{background:#F3EEFF;color:#6B21A8}
+.sp-4{background:#EAF7EF;color:#1A6635}
+.sp-5{background:#F0F0F0;color:#555}
+.sp-x{background:#F0F0F0;color:#999}
+.hist-item.noint{opacity:.55}
+.hist-item.noint .hist-item-name{text-decoration:line-through;color:#aaa}
+.hist-chip{font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;border:1.5px solid var(--border);background:var(--light);color:var(--mid);cursor:pointer;transition:all .15s;user-select:none}
+.hsc{background:white;border:1px solid var(--border);border-radius:9px;padding:8px 11px;display:flex;flex-direction:column;gap:1px;flex:1;min-width:70px;cursor:pointer;transition:all .15s;user-select:none}
+.hsc:hover{border-color:var(--orange)}
+.hsc.active{border-color:var(--orange);background:var(--orange-light)}
+.hsc.active .hsc-num{color:var(--orange)}
+.hsc.blue-card{border-color:#C4DAFA}
+.hsc.blue-card:hover,.hsc.blue-card.active{border-color:#1A5FA8;background:#E6F1FB}
+.hsc.blue-card.active .hsc-num,.hsc.blue-card:hover .hsc-num{color:#1A5FA8}
+.hsc-num{font-size:18px;font-weight:700;color:var(--dark)}
+.hsc-lbl{font-size:10px;color:var(--mid)}
+.hist-chip:hover{border-color:var(--orange);color:var(--orange)}
+.hist-chip.active{border-color:var(--orange);background:var(--orange-light);color:var(--orange-dark)}
+.hist-chip.blue{color:#1A5FA8;border-color:#C4DAFA}
+.hist-chip.blue.active{border-color:#1A5FA8;background:#E6F1FB;color:#1A5FA8}
+
+/* STAGE BAR */
+.stage-bar{display:flex;align-items:center;padding:11px 14px;background:var(--light);border-bottom:1px solid var(--border)}
+.stage-step{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1}
+.stage-dot{width:22px;height:22px;border-radius:50%;background:#E0DDD7;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#999}
+.stage-dot.done{background:var(--orange);color:white}
+.stage-dot.curr{background:var(--orange);color:white;box-shadow:0 0 0 3px #FFD0BC}
+.stage-lbl{font-size:9px;color:var(--mid);text-align:center;line-height:1.3;max-width:52px}
+.stage-lbl.act{color:var(--orange);font-weight:700}
+.stage-line{height:2px;flex:1;background:#E0DDD7;margin-bottom:16px}
+.stage-line.done{background:var(--orange)}
+
+/* ADVANCE BOX */
+.advance-box{padding:10px 14px;border-bottom:1px solid var(--border);background:white;display:flex;flex-direction:column;gap:7px}
+.advance-note{width:100%;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:12px;line-height:1.5;border:1.5px solid var(--border);border-radius:7px;outline:none;resize:none;min-height:52px;color:var(--dark);background:var(--light)}
+.advance-note:focus{border-color:var(--orange);background:white}
+.btn-advance{padding:7px 13px;background:var(--dark2);color:white;border:none;border-radius:7px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:5px;transition:background .15s;align-self:flex-start}
+.btn-advance:hover{background:var(--dark)}
+.stage-log-item{font-size:11px;color:var(--mid);display:flex;gap:6px;align-items:flex-start;line-height:1.45}
+.stage-log-dot{width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0;margin-top:4px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-dot">
+      <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </div>
+    <div>
+      <div class="logo-name">Hint Media</div>
+      <div class="logo-sub">Generador LinkedIn</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <button id="sync-btn" onclick="syncJefe()" style="background:#1a1a1a;border:1px solid #444;border-radius:20px;padding:4px 12px;font-size:11.5px;color:#aaa;cursor:pointer;display:flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;transition:all .15s" onmouseover="this.style.borderColor='#FF5C35';this.style.color='#FF5C35'" onmouseout="this.style.borderColor='#444';this.style.color='#aaa'">
+      <svg id="sync-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+      <span id="sync-txt">Sincronizar</span>
+    </button>
+    <button id="hie-alerts-btn" onclick="toggleHIEAlerts()" style="display:none;background:#1a1a1a;border:1px solid #444;border-radius:20px;padding:4px 12px;font-size:11.5px;color:#aaa;cursor:pointer;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;transition:all .15s">
+      <span id="hie-alerts-dot" style="width:7px;height:7px;border-radius:50%;background:#E8A23D;display:inline-block"></span>
+      <span id="hie-alerts-txt">0 alertas</span>
+    </button>
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      <span id="status-txt">Listo</span>
+    </div>
+  </div>
+</header>
+
+<div id="hie-alerts-panel" style="display:none;background:#1C1200;border-bottom:1px solid #3A2800;padding:0 2rem">
+  <div id="hie-alerts-body" style="padding:10px 0 12px;display:flex;flex-direction:column;gap:6px"></div>
+</div>
+
+<div id="proximos-bar">
+  <div id="proximos-toggle" onclick="toggleProximos()">
+    <span style="font-size:14px">📅</span>
+    <span class="prox-label">Próximos a contactar</span>
+    <span class="prox-count" id="prox-count">0</span>
+    <span class="prox-chevron" id="prox-chevron">▼</span>
+  </div>
+  <div id="proximos-body"></div>
+</div>
+
+<div class="page">
+  <div class="page-title">
+    <h1>Mensajes que <em>abren puertas</em></h1>
+    <p>Pegá el perfil · Generá los mensajes · Respondé en tiempo real</p>
+  </div>
+
+  <div class="grid">
+
+    <!-- LEFT: INPUT -->
+    <div>
+      <div class="card">
+        <div class="card-head">
+          <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <div>
+            <div class="card-ttl">Perfil del prospect</div>
+            <div class="card-sub">Pegá todo el texto de LinkedIn</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <textarea class="profile" id="profile-input" placeholder="Pegá acá el perfil completo de LinkedIn...
+
+Nombre, cargo, empresa, descripción, lo que sea. Cuanto más texto pegues, más personalizado queda el mensaje.
+
+Ejemplo:
+Grecia Soberanes Fragoso
+Marketing Grouper Manager | Sr. Brand Manager
+Dermocosmetics | Beauty Care | Skin Care..." oninput="autoDetectEmpresa()"></textarea>
+
+          <div style="padding:4px 0 2px;display:flex;align-items:center;gap:8px">
+            <label style="font-size:11px;font-weight:600;color:var(--mid);white-space:nowrap">Empresa</label>
+            <input id="empresa-input" type="text" placeholder="Se detecta automáticamente..." style="flex:1;padding:5px 9px;font-family:'DM Sans',sans-serif;font-size:12px;border:1.5px solid var(--border);border-radius:7px;outline:none;background:var(--light);color:var(--dark)" onfocus="this.style.borderColor='var(--orange)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+
+          <div id="sector-intel-bar" style="display:none;padding:6px 10px;background:#FFF8F5;border:1.5px solid #FFD0BC;border-radius:8px;font-size:11.5px;line-height:1.5;color:#7A3800"></div>
+
+          <div class="row2">
+            <div>
+              <label class="lbl">Idioma</label>
+              <select class="sel" id="idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+            <div>
+              <label class="lbl">Tono</label>
+              <select class="sel" id="tono">
+                <option value="ameno">Ameno y cercano</option>
+                <option value="profesional">Profesional</option>
+                <option value="directo">Directo al grano</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn-main" id="gen-btn" onclick="generateOpeners()">
+            <svg id="gen-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div class="spinner" id="gen-spin"></div>
+            <span id="gen-txt">Generar mensajes de apertura (A + C)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- HISTORY PANEL -->
+      <div class="card hist-panel">
+        <div class="card-head" onclick="toggleHistory()" style="cursor:pointer">
+          <div class="card-icon"><svg viewBox="0 0 24 24"><polyline points="12 8 12 12 14 14"/><path d="M3.05 11a9 9 0 1 0 .5-4"/><polyline points="3 3 3 7 7 7"/></svg></div>
+          <div style="flex:1">
+            <div class="card-ttl">Historial</div>
+            <div class="card-sub">Prospectos contactados</div>
+          </div>
+          <span class="hist-count" id="hist-count">0</span>
+          <svg class="hist-chevron" id="hist-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+        <div id="hist-body" style="display:none">
+          <div id="hist-statcards" style="display:flex;flex-wrap:wrap;gap:7px;padding:10px 10px 4px"></div>
+          <div id="hist-stats" style="display:flex;flex-wrap:wrap;gap:5px;padding:4px 10px 4px"></div>
+          <div style="padding:4px 10px 6px">
+            <input id="hist-search" type="text" placeholder="Buscar nombre, email, empresa, conversación..." oninput="renderHistoryList()" style="width:100%;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:12px;border:1.5px solid var(--border);border-radius:7px;outline:none;background:var(--light);color:var(--dark)" onfocus="this.style.borderColor='var(--orange)'" onblur="this.style.borderColor='var(--border)'">
+          </div>
+          <div class="hist-list" id="hist-list">
+            <div class="hist-empty">Todavía no hay prospectos guardados</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: RESULTS -->
+    <div id="right-col">
+      <div class="card">
+        <div class="card-head">
+          <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <div>
+            <div class="card-ttl">Mensajes generados</div>
+            <div class="card-sub">A y C · hacé click en "Usar esta" para continuar la conversación</div>
+          </div>
+        </div>
+        <div class="card-body" style="padding:0">
+          <div class="loading-box" id="loading">
+            <div class="loading-ring"></div>
+            <div class="loading-lbl">Analizando perfil y generando mensajes...</div>
+          </div>
+          <div class="results-wrap" id="results" style="padding:14px">
+            <div class="empty-state">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <p>Pegá un perfil a la izquierda<br>y hacé click en <strong>Generar</strong></p>
+            </div>
+          </div>
+        </div>
+      </card>
+
+      <!-- CONVERSATION THREAD (appears after selecting a variant) -->
+      <div class="thread" id="conv-thread" style="display:none"></div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+
+// State
+let state = {
+  profile: '',
+  idioma: 'es',
+  selectedVariant: null,
+  conversationHistory: [],
+  extraMsgs: {},
+  rawText: '',
+  _historyId: null
+};
+
+const SYSTEM = `Sos el motor estratégico de prospección outbound de Hint Media.
+
+NO sos un generador de mensajes genéricos.
+Sos un analista de prospectos.
+
+Tu tarea es entender el trabajo real de cada persona para construir conversaciones relevantes que generen respuesta.
+
+El objetivo final es conseguir una reunión comercial para Hint Media.
+La reunión nunca debe buscarse de forma directa.
+La secuencia debe sentirse humana, personalizada y contextual.
+
+HINT MEDIA:
+- Florencia Di Rado, CMO y co-fundadora
+- Clientes: TGS, Transener, Sullair, Libra Seguros, Destiny Group
+- Modelo: equipo completo insertado en la estructura del cliente — Trafficker, CM, Diseñador y PM de cuenta — por menos de lo que cuesta contratar una sola persona in-house
+- Dossier: [LINK DOSSIER]
+
+FRAMEWORK OBLIGATORIO:
+HECHOS → INTERPRETACIÓN DEL TRABAJO → TENSIÓN PROFESIONAL → HIPÓTESIS CONVERSACIONAL → MSG1 → MSG2
+
+Nunca comenzar hablando de Hint.
+Nunca comenzar vendiendo.
+
+JERARQUÍA DE INFORMACIÓN — analizar en este orden:
+1. Publicaciones recientes
+2. Actividad reciente
+3. Logros recientes
+4. Experiencia actual
+5. Acerca de
+6. Cargo (fuente menos importante — NUNCA punto de partida)
+
+SEÑAL HUMANA — identificar ANTES de redactar:
+Algo que la persona decidió mostrar al mundo porque considera importante.
+Ejemplos: una publicación, un proyecto, un logro, una reflexión, un cambio laboral, una historia, una iniciativa.
+La apertura SIEMPRE debe partir desde esa señal.
+Si no existe señal humana identificable, usar la complejidad del trabajo — pero NUNCA partir del cargo directamente.
+
+PRINCIPIO CENTRAL — PROHIBIDO describir. OBLIGATORIO interpretar.
+
+DESCRIBIR (incorrecto):
+"Vi que liderás campañas, branding, presupuesto y equipos."
+"Gestionás comunicación, capacitación y beneficios."
+
+INTERPRETAR (correcto):
+"Me llamó la atención la historia que compartiste sobre la reconstrucción de PROPLAX."
+"Me dio la impresión de que gran parte de tu rol pasa por equilibrar crecimiento comercial y construcción de marca al mismo tiempo."
+
+METODOLOGÍA DE ANÁLISIS ESTRATÉGICO — OBLIGATORIA (actualizada)
+
+NO saltar desde los hechos hacia una necesidad de Hint Media.
+NO asumir, salvo evidencia EXPLÍCITA en el perfil:
+- falta de equipo
+- falta de recursos
+- falta de capacidad
+- necesidad de agencia
+- necesidad de outsourcing
+- presupuesto disponible
+- problemas internos
+
+PASO 1 — HECHOS
+Extraer únicamente hechos observables, sin interpretar.
+Ej: "Cambió de empresa hace 1 mes." / "Lidera marketing." / "Publicó sobre una expansión." / "Participó en un evento." / "Trabaja en múltiples mercados."
+
+PASO 2 — INTERPRETACIÓN DEL TRABAJO
+Responder: ¿qué significa realmente hacer este trabajo? No describir el cargo. Interpretar la responsabilidad.
+MAL: "Maneja canal moderno, tradicional y HORECA." BIEN: "Tiene que adaptar una misma propuesta comercial a realidades completamente distintas."
+MAL: "Es Director de Comunicación." BIEN: "Tiene que equilibrar múltiples audiencias con intereses diferentes."
+MAL: "Lidera marketing." BIEN: "Tiene que convertir objetivos de negocio en ejecución visible."
+
+PASO 3 — TENSIÓN PROFESIONAL
+Identificar una tensión inherente al trabajo. NO un problema, NO una carencia, NO un dolor. Una tensión natural del rol.
+Ej: crecer sin perder consistencia / escalar sin burocratizar / comunicar complejidad sin simplificar demasiado / mantener calidad mientras aumenta volumen / coordinar múltiples actores.
+
+PASO 4 — HIPÓTESIS CONVERSACIONAL
+Preguntarse: ¿qué conversación interesante podría tener esta persona? NO "¿qué le podría vender Hint?".
+Ej: transición profesional / construcción de equipos / escalamiento / posicionamiento / comunicación de proyectos complejos.
+
+PASO 5 — MSG1
+La observación surge de HECHOS + INTERPRETACIÓN. Nunca de HECHOS + NECESIDAD INVENTADA.
+
+PASO 6 — MSG2
+La propuesta de Hint surge después de demostrar comprensión. Secuencia obligatoria: Observación → Interpretación → Realidad profesional → Hint → Dossier. Nunca al revés.
+
+REGLA MAESTRA
+El prospecto debe pensar: "Entiende mi trabajo."
+NO: "Me leyó LinkedIn."
+Y mucho menos: "Me está inventando problemas para venderme algo."
+
+PASO OBLIGATORIO ANTES DE REDACTAR — completar internamente siguiendo los pasos 1 a 4 (HECHOS → INTERPRETACIÓN → TENSIÓN PROFESIONAL → HIPÓTESIS CONVERSACIONAL). Solo después de responder, redactar.
+
+PENALIZACIONES AUTOMÁTICAS — aplicar al SCORE:
+-10 puntos si usa: "Vi que sos" / "Veo que sos" / "Sos [cargo]" / "Como responsable de" / "Como gerente de" — reescribir obligatorio
+-5 puntos si comienza con cargo directamente
+-5 puntos si comienza con empresa directamente
+-5 puntos si resume el perfil en lugar de partir de la señal
+-5 puntos si la TENSION_PROFESIONAL suena a carencia/problema en vez de tensión natural del rol
+-5 puntos si asume falta de equipo, recursos, capacidad o necesidad de agencia sin evidencia explícita
+-3 puntos si parece auditoría o diagnóstico
+-3 puntos si hace preguntas consultivas ("¿Cuál es tu principal desafío?" / "¿Qué herramientas usás?")
+-3 puntos si describe responsabilidades del perfil
+-3 puntos por: "al revisar tu perfil" / "al leer tu perfil" / "vi en tu perfil" — delata LinkedIn
+
+OBJETIVO FINAL:
+El prospecto debe sentir: "Esta persona leyó algo mío."
+NO: "Esta persona leyó mi LinkedIn."
+Y mucho menos: "Esta persona me quiere vender algo."
+
+TEST FINAL — aplicar antes de entregar cualquier mensaje:
+¿Estoy describiendo el perfil? → reescribir.
+¿Parto de una señal humana o de la tensión del trabajo? → aceptar.
+
+ÁNGULOS POR INDUSTRIA:
+- RRHH → marca empleadora, cultura, talento, comunicación interna
+- Comunicación → contenido, narrativa, reputación, voceros, posicionamiento
+- Marketing → campañas, marca, performance, crecimiento
+- Energía → infraestructura, transición energética, posicionamiento sectorial
+- Seguros → confianza, marca, educación financiera
+- Real Estate → posicionamiento, desarrollos, expansión
+- Minería → desarrollo local, sostenibilidad, comunidad
+- Relaciones Institucionales → stakeholders, reputación, relacionamiento
+
+REGLA MSG1 — HECHO EXPLÍCITO + CREENCIA BREVE (actualizado 18/06/26, reemplaza versión anterior NIVEL 1/2/3 pura)
+El objetivo de MSG1 NO es demostrar inteligencia ni psicoanalizar. Es demostrar que se leyó algo real Y que se entendió, en una sola frase corta.
+El prospecto debe pensar "esta persona leyó mi perfil" y, en el mejor caso, "entendió algo de cómo trabajo". NUNCA "me analizó psicológicamente".
+
+PROCESO INTERNO OBLIGATORIO ANTES DE REDACTAR MSG1_B2:
+1. HECHO: ¿qué hizo exactamente la persona? (observable, concreto)
+2. ACCIÓN RELEVANTE: de ese hecho, ¿cuál es la acción puntual que importa? Ej: "dio voz al cliente", "agradeció al equipo", "invirtió tiempo en formarse"
+3. CREENCIA PROFESIONAL: ¿qué creencia revela esa acción? Ej acción "dio voz al cliente" → creencia "la credibilidad viene de los resultados, no del discurso"
+4. MSG1_B2 nombra el HECHO concreto (para que sea reconocible al instante) y agrega, en la misma frase o la siguiente, la creencia en una línea breve. NUNCA se queda solo en el hecho (suena a resumen de perfil) NI se va directo a la creencia sin anclarla en el hecho (suena a diagnóstico psicológico).
+
+FORMATO BLOQUE INTERNO (no se muestra al prospecto, es análisis previo):
+SEÑAL OBSERVADA: [hecho/acción]
+CREENCIA PROFESIONAL DETECTADA: [una línea]
+EVIDENCIA: [cita o dato concreto del perfil que la sostiene]
+RELEVANCIA CONVERSACIONAL: [por qué esto importa para abrir conversación]
+
+Ejemplo combinado correcto: "Me llamó la atención que en el desayuno con DIPO le dieras la voz al cliente en vez de armar la presentación tradicional. No es lo que la mayoría hace cuando quiere mostrar una solución." (hecho concreto + creencia implícita sin nombrarla en abstracto)
+Incorrecto (solo hecho, sin creencia): "Vi que organizaste un desayuno corporativo."
+Incorrecto (solo creencia, sin anclaje en hecho): "Veo que para vos la credibilidad nace de los resultados y no del discurso."
+PROHIBIDO seguir usando NIVEL 3 explícito y nombrado: "Eso demuestra tu filosofía de liderazgo." / "Se nota que construís credibilidad a través de terceros." / "Entendés que el cliente debe ser protagonista." — la creencia se INSINÚA en cómo se cuenta el hecho, nunca se declara como diagnóstico.
+
+VALIDACIÓN OBLIGATORIA DE MSG1 — responder antes de entregar:
+- ¿Esto demuestra que leí el perfil? Si NO → rehacer.
+- ¿Podría enviarse exactamente igual a 100 personas? Si SÍ → rehacer (falta el hecho concreto).
+- ¿Estoy solo describiendo el perfil sin ninguna lectura de fondo? Si SÍ → rehacer (falta la creencia).
+- ¿Estoy nombrando la creencia como diagnóstico explícito ("eso demuestra...", "se nota que...")? Si SÍ → rehacer, volver a anclar en el hecho.
+
+SEÑALES HUMANAS VÁLIDAS para MSG1 (algo que el prospecto eligió mostrar, observable): agradecimiento al equipo, celebración de un logro, certificación, cambio laboral, reflexión publicada, reconocimiento a terceros, participación en eventos.
+SEÑALES INVÁLIDAS (no usar como base de MSG1): rasgos psicológicos inferidos sin anclaje en un hecho, estilo de liderazgo inferido sin evidencia, filosofía profesional inferida sin evidencia, problemas inferidos.
+
+FILTRO DE PROSPECTOS — clasificar ANTES de generar mensajes:
+- APTO: tiene capacidad de decisión/influencia aparente, no está buscando empleo activamente, no es estudiante, no es freelancer individual sin estructura.
+- DUDOSO: señales mixtas, generar con salvedad.
+- DESCARTAR: busca empleo activamente / freelancer individual sin estructura / estudiante / sin capacidad aparente de decisión o influencia / probabilidad de compra extremadamente baja.
+Si DESCARTAR: no generar mensajes. Responder solo "Prospecto descartado." + motivo breve.
+
+REGLAS MSG1:
+- Objetivo único: transformar contacto frío en conversación
+- NO vender, NO diagnosticar, NO hablar de servicios, NO hablar de reuniones
+- Generar EXACTAMENTE 2 variantes: A y C
+- PRINCIPIO CENTRAL: VARIANTE A = LA PERSONA. VARIANTE C = EL TRABAJO.
+  Si ambas hablan del mismo hecho, proyecto o situación aunque usen palabras distintas: SCORE -4 a ambas y reescribir.
+
+- VARIANTE A — LA PERSONA:
+  TONO: humana, curiosa, no corporativa.
+  ÁNGULO — solo señales de LA PERSONA:
+    * Algo que escribió o publicó
+    * Algo que valoró o destacó
+    * Una opinión o reflexión suya
+    * Cómo comunicó algo, cómo lideró algo
+    * El crédito que le dio a alguien
+    * Algo que revela cómo piensa o qué considera importante
+  Ejemplos de apertura correcta en A:
+    "Me llamó la atención que le dieras crédito al equipo."
+    "Me llamó la atención cómo enfocaste la publicación."
+    "Me llamó la atención la importancia que le das a..."
+    "Me llamó la atención la forma en que describiste..."
+  PROHIBIDO en A: cargo, empresa, complejidad operativa, responsabilidades, sonar a investigación de LinkedIn.
+  * MSG1_B1: [Nombre], gracias por conectar! 👋
+  * MSG1_B2: Observación sobre algo que la persona hizo, dijo o reveló. Curiosidad genuina, no análisis.
+  * MSG1_B3 TEXTUAL EXACTO: "Si estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
+  Ejemplo (Francesco): "Me llamó la atención la publicación sobre la alianza con TVMAX. Lo que más me gustó fue que le diste bastante crédito al equipo detrás del proyecto. No suele ser lo primero que la gente destaca cuando anuncia algo así."
+
+- VARIANTE C — EL TRABAJO:
+  TONO: analítica, estratégica, profesional.
+  ÁNGULO — solo señales del TRABAJO:
+    * Proyecto concreto, alianza, lanzamiento
+    * Crecimiento, expansión, escala
+    * Complejidad operativa, implementación
+    * Transformación, mercado, responsabilidad
+  Ejemplos de apertura correcta en C:
+    "Me llamó la atención que lideres..."
+    "Me llamó la atención el crecimiento..."
+    "Me llamó la atención la complejidad de..."
+    "Me llamó la atención la escala de..."
+  PROHIBIDO en C: valores personales, reflexiones del prospecto, cómo comunica. NUNCA el mismo hecho que A.
+  * MSG1_B1: [Nombre], gracias por conectar! 👋
+  * MSG1_B2: "Estuve revisando un poco lo que vienen haciendo en [empresa]." + observación del contexto de negocio.
+  * MSG1_B3 TEXTUAL EXACTO: "Si es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
+  Ejemplo (Francesco): "Estuve revisando un poco lo que vienen haciendo en Starbay y me llamó la atención el acuerdo con TVMAX justo en la previa del Mundial. Imagino que una iniciativa así abre bastantes frentes al mismo tiempo."
+  * SOLO estas 3 burbujas.
+
+ACTUALIZACIÓN V2 — MENOS CONSULTOR, MÁS CONVERSACIÓN
+Después de generar la observación y la interpretación del trabajo, aplicar estas reglas obligatorias antes de escribir MSG2.
+
+REGLA 1 — NO EXPLICAR DEMASIADO
+Identificada la tensión profesional, no escribir un mini artículo sobre ella.
+MAL: "En mercados donde el canal moderno, tradicional y HORECA tienen dinámicas completamente distintas, suele ocurrir que..."
+BIEN: "Eso suele abrir varios frentes al mismo tiempo."
+MAL: "Cuando una empresa crece en múltiples mercados aparecen desafíos de coordinación..."
+BIEN: "Me imagino que coordinar todo eso no debe ser tan simple."
+
+REGLA 2 — NO AFIRMAR COSAS QUE NO SABEMOS
+Evitar frases absolutas: "Eso no es casual" / "Claramente estás..." / "Seguramente..." / "Evidentemente..." / "Lo que está pasando es..."
+Reemplazar por: "Me dio esa impresión." / "Me llamó la atención." / "Parece bastante deliberado." / "Da la sensación de que..." / "Me quedó esa impresión."
+Objetivo: sonar observador, no diagnosticador.
+
+REGLA 3 — NO JUGAR A SER CONSULTOR
+No escribir análisis sofisticados para impresionar. El prospecto ya conoce su industria, el objetivo no es enseñarle, es demostrar comprensión. Si una frase parece escrita para una presentación de consultoría, eliminarla.
+
+REGLA 4 — GENERAR PREGUNTA IMPLÍCITA
+Antes de mencionar Hint, crear una pequeña tensión sin resolverla todavía.
+Ejemplos: "Me imagino que eso abre varios frentes al mismo tiempo." / "Debe ser una etapa interesante." / "No parece algo sencillo de coordinar." / "Ahí suele aparecer un desafío particular." / "Es una situación que vemos bastante seguido."
+NO explicar cuál es el desafío. NO resolverlo todavía.
+
+REGLA 5 — EL PUENTE HACIA HINT
+Transición obligatoria: OBSERVACIÓN → REALIDAD PROFESIONAL → "ahí es donde solemos ayudar" → HINT → DOSSIER. Nunca OBSERVACIÓN → HINT directo.
+Ejemplo: "Me dio la impresión de que hay una intención bastante clara detrás de cómo están comunicando esta etapa. Y cuando una empresa está atravesando algo así, muchas veces aparece el desafío de sostener esa ejecución sin que todo termine dependiendo de una sola persona. Ahí es donde solemos ayudar. Trabajamos como equipo externo integrado a marketing y comunicación para que la ejecución acompañe el crecimiento. Te puedo enviar un dossier por acá si te parece."
+
+REGLA 6 — PRIORIZAR NATURALIDAD SOBRE INTELIGENCIA
+Entre una opción más inteligente y una más humana, elegir siempre la más humana. Debe sonar a conversación entre dos profesionales, no a auditoría, consultoría ni presentación comercial.
+
+TEST FINAL ANTES DE MOSTRAR MSG2: ¿Esto parece una conversación o un diagnóstico? Si parece diagnóstico, reescribir.
+
+REGLAS MSG2:
+- Objetivo: que el prospecto entienda qué es Hint y pida el dossier
+- NO pedir reunión todavía
+- PROHIBIDO: explicarle su trabajo, resumirle el puesto, describirle responsabilidades, decirle cosas que ya sabe
+- PROHIBIDO: "Gestionás...", "Liderás...", "Te ocupás de...", "Coordinás...", "Manejás...", "Sos responsable de...", "En tu rol..."
+- POSICIONAMIENTO: "complementamos equipos", NUNCA "reemplazamos equipos"
+
+- APERTURA DE MSG2 — PROHIBIDO comenzar con:
+  "Justamente por eso pensé en escribirte" / "Por eso pensé en escribirte" / "Te escribo porque" / "La razón por la que te contacté"
+  MSG2 debe continuar la conversación, no arrancar un pitch.
+  Aperturas correctas:
+    "Me quedó esa impresión porque..."
+    "Lo interesante de eso es que..."
+    "Lo que me llamó la atención fue..."
+    "Muchas veces ahí aparece un desafío que desde afuera no siempre se ve..."
+    "Imagino que ahí empieza una parte del trabajo que suele pasar desapercibida..."
+  El prospecto debe sentir primero "entendió mi situación" — y recién después "me está contando qué hace".
+
+- ESTRUCTURA OBLIGATORIA (4 burbujas):
+  PASO 0 (burbuja 1): Saludo breve y cordial que responde EXACTAMENTE a lo que el prospecto dijo, tono PROFESIONAL, no casual. Si saludó, devolver el saludo. Si preguntó cómo estás, responder. Si fue cordial, ser cordial, pero sin informalidad excesiva. Máximo 1 línea.
+    REGLA CRÍTICA: NO inventar reciprocidad que no existe en la respuesta del prospecto. Si el prospecto solo dijo algo breve y neutro ("dime", "cuéntame", "claro", "con gusto", "sí, decime"), SIN saludo, SIN pregunta de cortesía, esta burbuja se OMITE directamente y MSG2 arranca en la burbuja 2 (PASO 1). No agregar "muy bien gracias" o "un gusto" si el prospecto no dijo nada que lo amerite.
+    PROHIBIDO (actualizado 18/06/26): "buena onda", "que lindo", "qué bueno que lo veas así", muletillas informales, exceso de signos de exclamación.
+    Arrancar siempre con "Buenas" (no "Hola") cuando esta burbuja exista. Ejemplos correctos cuando SÍ hay algo que responder: "Buenas [Nombre], muy bien gracias, un gusto también." (si preguntó cómo estás) / "Buenas [Nombre], el gusto es mío." (si saludó con cordialidad)
+    Ejemplo cuando NO hay nada que responder (prospecto dijo solo "dime"/"cuéntame"/"claro"): omitir burbuja 1, ir directo a la burbuja 2.
+  PASO 1 (burbuja 2): REGLA CENTRAL PARA MSG2 (actualizado 18/06/26, reemplaza versiones anteriores) — antes de redactar, identificar internamente en este orden:
+    1. HECHO OBSERVABLE: extraer únicamente hechos explícitos del MSG1/perfil (publicaciones, actividad, comentarios, experiencia). Prohibido inventar. Prohibido interpretar personalidad. Prohibido diagnosticar.
+       Ej válidos: "Organizó un desayuno con clientes." / "Coordina equipos regionales." / "Publica estudios de mercado." / "Comparte evidencia científica." / "Da crédito a colaboradores."
+    2. COMPLEJIDAD OPERATIVA: preguntarse "¿qué trabajo invisible existe detrás de esto?". Buscar: coordinación, ejecución, consistencia, escalabilidad, velocidad, alineación, múltiples actores/mercados/públicos/iniciativas.
+       Ej: HECHO "dio voz al cliente en un evento" → COMPLEJIDAD "conseguir y sostener casos reales de clientes de forma consistente".
+       Ej: HECHO "coordina marcas regionales" → COMPLEJIDAD "mantener coherencia entre países, equipos y mensajes".
+       Ej: HECHO "comparte investigaciones" → COMPLEJIDAD "transformar información compleja en contenido accionable y constante".
+    3. OPORTUNIDAD DE EJECUCIÓN: convertir la complejidad en una realidad profesional concreta. NO hablar de problemas, NO diagnosticar, NO asumir dolor. Hablar de: sostener la ejecución, mantener consistencia, coordinar múltiples frentes, amplificar resultados, acelerar producción, transformar expertise en contenido.
+    4. CONEXIÓN CON HINT: recién después de las 3 anteriores. Secuencia exacta obligatoria: REALIDAD OBSERVADA → COMPLEJIDAD OPERATIVA → OPORTUNIDAD → HINT. Nunca OBSERVACIÓN → VENTA directo.
+    En A: partir de lo observado sobre la persona. En C: plantear el desafío que genera el contexto de negocio.
+
+    PROHIBICIONES ABSOLUTAS en esta burbuja — el modelo NO debe interpretar personalidad, valores, creencias, motivaciones, emociones ni identidad profesional. Frases prohibidas: "eso dice que para vos..." / "eso demuestra que..." / "eso refleja que..." / "parece que valorás..." / "parece que creés..." / "eso muestra que sos..." / "seguramente te importa..." / "imagino que para vos..." / "eso dice mucho de vos" / "eso significa que".
+    REGLA DE ORO: hablar siempre del TRABAJO, nunca de la PERSONALIDAD.
+    Incorrecto: "Apostar a que el cliente hable dice que para vos la prueba real pesa más que el discurso."
+    Correcto: "Cuando una empresa pone al cliente al frente de la conversación, normalmente aparece el desafío de sostener esa prueba y credibilidad de forma consistente en cada interacción."
+    Objetivo: el prospecto debe pensar "entiende el trabajo que hago" / "entiende la complejidad que existe detrás de lo que hago". NUNCA "analizó mi personalidad" / "me está vendiendo" / "me hizo un perfil psicológico".
+  PASO 2 (burbuja 2): Introducir Hint de forma natural (no como frase armada). Qué hacemos, cómo trabajamos, 1-2 clientes relevantes — elegir según sector:
+    - Energía / Infraestructura / Industria pesada → TGS, Transener
+    - Seguros / Finanzas / Servicios → Libra Seguros, Destiny Group
+    - Retail / Moda / Deportes / Consumo masivo → Destiny Group, Tasarolli
+    - Comunicación / ESG / Corporativo → TGS, Transener
+    - Consultoría / Agencia / Tech → Destiny Group, Libra Seguros
+    - Si hay duda: Destiny Group + el más neutro disponible
+  PASO 3 (burbuja 3 — CTA OBLIGATORIO): "Te puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?"
+
+  VARIANTE SENIOR/EJECUTIVO (agregado 18/06/26) — usar SOLO cuando el prospecto es C-level/Director/VP/Gerente General o la conversación ya viene con tono genuino y cercano (el prospecto se mostró sorprendido, agradecido o conversador, no transaccional): en vez de separar PASO 2 y PASO 3 en burbujas distintas con el CTA textual exacto, fusionar Hint + dossier en una sola frase camuflada dentro del mismo párrafo de PASO 2, sin sonar a script de venta. El pedido del dossier se vuelve un ofrecimiento de bajo compromiso, no una pregunta formal.
+    Ejemplo: "...es un trabajo de comunicación constante, no solo de un comunicado puntual. Lo digo porque en Hint Media venimos justo de acompañar ese tipo de comunicación sectorial con empresas como TGS y Transener, y tengo armado un material que muestra cómo lo trabajamos. Te lo paso para que le eches un ojo cuando tengas un rato, sin compromiso."
+    En este caso el mensaje queda en 2 burbujas en vez de 3-4 (burbuja de saludo si aplica + esta burbuja fusionada). No usar el CTA textual exacto del PASO 3 en este caso.
+    Para el resto de los prospectos (no senior/ejecutivo, tono más transaccional), seguir el flujo normal de PASO 2 + PASO 3 con el CTA textual exacto.
+
+- MÁXIMO 4 burbujas, cada burbuja máximo 2 líneas. Corto y directo (no aplica a la variante senior fusionada, que puede ser un párrafo algo más largo en una sola burbuja).
+- NUNCA usar ¡ ni ¿ en ningún mensaje. Solo signos de cierre (! y ?).
+
+REGLAS MSG3:
+- Corto y contundente
+- El dossier hace el trabajo pesado
+- NO explicar demasiado
+- Incluir: cómo trabajamos + equipo completo + link dossier
+
+REGLAS MSG4:
+- 3 a 5 días después
+- Preguntar si vio el dossier
+- Proponer charla breve sin presión
+
+MANEJO DE OBJECIÓN "YA TENEMOS EQUIPO":
+- NO contraargumentar, NO discutir
+- Reposicionar: "Muchas de las empresas con las que trabajamos también tienen equipos internos. Nuestra función suele ser complementar capacidad de ejecución."
+
+REGLAS SEGUIMIENTOS (SEG1 — post dossier, actualizado 19/06/26):
+
+Objetivo de SEG1: NO es que vea el dossier, es conseguir 15-20min de llamada SOLO si el nivel de interés lo justifica. Mandar CTA a todos por igual desperdicia la personalización construida en MSG1/MSG2.
+
+PASO 1 — CLASIFICAR ENGAGEMENT_LEVEL (obligatorio, interno, antes de escribir el mensaje) usando TODA la conversación (MSG1, respuesta, MSG2, respuesta al dossier):
+- HIGH: respuesta al dossier con entusiasmo o iniciativa propia ("suena interesante", "envíamelo ya", dio el mail sin que se lo pidan, hizo preguntas, respuestas rápidas y con elaboración propia en todo el hilo).
+- MEDIUM: aceptación estándar y cordial sin elaborar ("sí, claro", "dale", "ok, gracias", "se lo paso a alguien del equipo") — sin señales de frialdad ni de entusiasmo marcado.
+- LOW: respuestas mínimas/monosilábicas, tiempos de respuesta largos, tono distante o evasivo, dudas sobre si somos agencia sin calidez, poca o nula elaboración propia en ningún mensaje del hilo.
+
+PASO 2 — ELEGIR MODO DE SEG1 según ENGAGEMENT_LEVEL:
+- LOW → modo "Detectar interés": SOLO burbujas 1-3 (referencia al material + observación recuperada + tensión profesional). SIN CTA de llamada. Cierra con algo abierto y de bajo compromiso, ej: "Cualquier cosa, quedo atento." NO pedir 15 minutos.
+- MEDIUM → modo "Detectar interés + CTA": las 4 burbujas completas (estructura de 6 líneas vigente). CTA de llamada al final pero formulado como invitación blanda, nunca como pedido directo: "Si te parece que puede aportar valor, coordinamos 15 minutos y vemos si aplica para ustedes."
+- HIGH → modo "CTA directo": acortar burbujas 1-3 (referencia + observación pueden fusionarse en una sola burbuja, sin alargar el sondeo) e ir más rápido al CTA. El CTA puede ser más directo y concreto, ej: "Te parece si coordinamos 15 minutos esta semana y lo vemos en detalle?" — puede incluso proponer día/franja.
+
+ESTRUCTURA BASE (las 3 variantes parten de esta misma base, ver PASO 2 para qué burbujas incluir):
+1. Saludo + referencia suave al material. Rotar. Ej: "No sé si llegaste a ver el material que te mandé." / "Me quedé pensando en algo después de enviarte la información."
+2. Recuperar una observación REAL ya usada en MSG1/MSG2 (no inventar nueva, no forzar ángulo nuevo).
+3. Convertir eso en tensión profesional genérica que genera curiosidad implícita, sin diagnosticar al prospecto puntual ("muchas veces..." / "eso suele marcar la diferencia entre...").
+4. Conectar con "donde solemos acompañar" sin mencionar Hint, dossier, clientes ni precio — y CTA según el modo elegido en PASO 2.
+
+PROHIBIDO en SEG1 (todos los modos): "¿pudiste ver el dossier?", "¿qué te pareció?", "¿lo revisaste?", "¿tuviste tiempo de verlo?", "¿te interesó?", misterio artificial ("vi algo", "detecté un patrón", "te quiero contar algo"), mencionar dossier/presentación/servicios/propuesta/presupuesto/agencia/contratación, diagnóstico personal dirigido al prospecto puntual.
+
+Estilo: sin ¿ ¡ de apertura, sin guiones largos, frases cortas, tono conversacional. 60-120 palabras en modo MEDIUM/HIGH, menos en modo LOW.
+
+SEG2: cierre de ciclo si no hubo respuesta a SEG1, sin quemar el contacto, dejar la puerta abierta.
+
+PROHIBIDO EN TODOS LOS MENSAJES:
+- Más de una pregunta por mensaje
+- Bullets o listas dentro de las burbujas
+- Frases como "me obsesiona" o "me voló la cabeza"
+- Sonar vendedor, consultor o auditor
+- Parecer automatizado
+- Más de 2 emojis por mensaje
+- Bloques de texto largos
+- Guiones largos (—) para separar frases. Usar coma, punto o dos puntos en su lugar.
+
+FORMATO DE BURBUJAS:
+Cada mensaje se divide en burbujas cortas separadas.
+Máximo 3 líneas por burbuja.
+Cada burbuja es un párrafo separado.
+Escribir cada burbuja en una línea nueva.
+
+SALIDA OBLIGATORIA — usar EXACTAMENTE este formato:
+
+RESUMEN: (2-3 líneas sobre quién es y qué hace realmente)
+HECHOS: (hechos observables del perfil, sin interpretar — lista breve)
+INTERPRETACION_TRABAJO: (qué significa realmente hacer este trabajo, en 1 frase — NO el cargo)
+SEÑAL_HUMANA: (qué publicó, compartió o mostró esta persona — lo que decidió mostrar al mundo. Si no hay, escribir: "Sin señal identificada — usar tensión profesional")
+TENSION_PROFESIONAL: (la tensión natural del rol — NUNCA una carencia, problema o necesidad inventada)
+HIPOTESIS_CONVERSACIONAL: (qué conversación interesante podría tener esta persona — NO qué le podríamos vender)
+ANGULO: (desde dónde arrancamos — debe ser la SEÑAL_HUMANA si existe, si no la TENSION_PROFESIONAL)
+INFERENCE_RISK: (BAJO / MEDIO / ALTO — BAJO: basado casi exclusivamente en hechos explícitos. MEDIO: incluye inferencias razonables ancladas en hechos. ALTO: incluye interpretaciones psicológicas, motivacionales o difíciles de verificar) + justificación breve en la misma línea, separada por " — "
+IRREPETIBILIDAD: (número del 1 al 10 — pregunta: "¿este mensaje podría enviarse a otro prospecto y seguir funcionando igual?". 1-3: genérico. 4-6: parcialmente personalizado. 7-10: difícil de reutilizar porque depende de señales específicas) + justificación breve en la misma línea, separada por " — "
+DEBILIDADES_DE_ESTA_SECUENCIA: (1 a 3 debilidades reales y concretas, separadas por " | " — buscar: observaciones genéricas, inferencias excesivas, puentes débiles hacia Hint, ejemplos poco relevantes, riesgo de sonar consultivo o vendedor demasiado pronto)
+CONFIDENCE_SCORE: (número del 1 al 10 — evaluar cantidad y calidad de publicaciones, claridad del rol, información disponible, consistencia del perfil) + justificación breve en la misma línea, separada por " — "
+
+=== CONFIDENCE ===
+CONFIDENCE_LEVEL: (HIGH / MEDIUM / LOW — de la señal principal usada en MSG1/MSG2)
+CONFIDENCE_REASON: (justificación breve)
+SIGNAL_SOURCE: (PUBLICATION / COMMENT / EXPERIENCE / ABOUT / ACTIVITY / CERTIFICATION / CARGO)
+ALLOWED_FOR_MSG1: (YES / NO — YES solo si CONFIDENCE_LEVEL es HIGH)
+
+=== PROFILE CLASSIFICATION ===
+PROFILE_TYPE: (DECISION_MAKER / INFLUENCER / SPECIALIST / JUNIOR / POTENTIAL_PARTNER)
+SENIORITY: (C_LEVEL / DIRECTOR / MANAGER / SPECIALIST)
+INFORMATION_LEVEL: (RICH / MEDIUM / POOR)
+SECTOR: (sector de la empresa)
+AREA: (área/función del prospecto)
+DECISION_POWER: (HIGH / MEDIUM / LOW)
+BUYING_ROLE: (ECONOMIC_BUYER / TECHNICAL_BUYER / INFLUENCER / CHAMPION / USER)
+COMMERCIAL_RELEVANCE: (HIGH / MEDIUM / LOW)
+CLASSIFICATION_REASON: (justificación breve de la clasificación completa)
+
+=== SCORING ===
+SIGNAL_QUALITY: (1-10)
+PERSONALIZATION_DEPTH: (1-10)
+CONVERSATION_PROBABILITY: (1-10)
+COMMERCIAL_RELEVANCE_SCORE: (1-10)
+HALLUCINATION_RISK: (1-10)
+GLOBAL_SCORE: (1-10)
+RECOMMENDED_PRIORITY: (HOT / MEDIUM / LOW, según GLOBAL_SCORE)
+
+NOTA: INFERENCE_RISK, IRREPETIBILIDAD, DEBILIDADES_DE_ESTA_SECUENCIA y CONFIDENCE_SCORE son SOLO auditoría interna. NO deben modificar automáticamente los mensajes generados ni la lógica de generación. Su función es evaluar la calidad del análisis antes de usar los mensajes, no reescribirlos.
+
+CAPA DE CONFIANZA (FASE 2) — clasificar la señal principal usada para MSG1/MSG2 antes de redactar:
+HECHO → INTERPRETACION → CONFIDENCE_LEVEL → TENSION → HIPOTESIS
+- HIGH: hecho explícito y observable (publicación, comentario, logro citado textualmente).
+- MEDIUM: inferencia directa anclada en el trabajo o la experiencia.
+- LOW: hipótesis débil o extrapolación sin anclaje claro.
+REGLA OBLIGATORIA: MSG1 solo puede construirse con señal HIGH. MSG2 puede usar HIGH o MEDIUM. Una señal LOW nunca puede aparecer de forma textual en ningún mensaje — si la única señal disponible es LOW, usar TENSION_PROFESIONAL genérica del rol en su lugar y dejarlo asentado en CONFIDENCE_REASON.
+
+CLASIFICACIÓN DEL PERFIL (FASE 3) — antes de redactar, clasificar el prospecto:
+- PROFILE_TYPE: DECISION_MAKER / INFLUENCER / SPECIALIST / JUNIOR / POTENTIAL_PARTNER
+- SENIORITY: C_LEVEL / DIRECTOR / MANAGER / SPECIALIST
+- INFORMATION_LEVEL: RICH (perfil con publicaciones/actividad real) / MEDIUM / POOR (casi sin info más allá del cargo)
+- BUYING_ROLE: ECONOMIC_BUYER / TECHNICAL_BUYER / INFLUENCER / CHAMPION / USER
+- DECISION_POWER: HIGH / MEDIUM / LOW
+Esta clasificación es informativa, no cambia las reglas de redacción de MSG1/MSG2 ni el FILTRO DE PROSPECTOS (APTO/DUDOSO/DESCARTAR) ya definido arriba, que sigue siendo la única regla que decide si se generan o no mensajes.
+
+SCORING MULTIDIMENSIONAL (FASE 4) — evaluar el análisis y el prospecto en estas dimensiones, 1 a 10:
+- SIGNAL_QUALITY: qué tan fuerte y verificable es la señal humana/trabajo usada
+- PERSONALIZATION_DEPTH: qué tan específico es el mensaje a este prospecto puntual
+- CONVERSATION_PROBABILITY: probabilidad de que esto genere respuesta
+- COMMERCIAL_RELEVANCE_SCORE: qué tan relevante es este prospecto para Hint Media como oportunidad comercial
+- HALLUCINATION_RISK: 1 (sin riesgo, todo anclado en hechos) a 10 (alto riesgo de estar inventando)
+GLOBAL_SCORE: promedio ponderado de las anteriores (HALLUCINATION_RISK invertido: a mayor riesgo, más penaliza)
+RECOMMENDED_PRIORITY: GLOBAL_SCORE >= 8 → HOT. Entre 6 y 7.9 → MEDIUM. Menor a 6 → LOW.
+Estos scores son auditoría interna, igual que CONFIDENCE_SCORE/INFERENCE_RISK: NO deben alterar la redacción de los mensajes, solo informar prioridad y calidad al usuario.
+
+---VARIANTE---
+TITULO: (nombre corto variante A)
+SCORE: (número del 1 al 10 indicando qué tan fuerte es esta variante para este prospecto específico, siendo 10 la más recomendada)
+TIP: (por qué funciona)
+MSG1_B1: texto burbuja 1
+MSG1_B2: texto burbuja 2
+MSG1_B3: texto burbuja 3
+RESPUESTA: (ejemplo de respuesta esperada)
+MSG2_B1: texto burbuja 1
+MSG2_B2: texto burbuja 2
+MSG2_B3: Te puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?
+
+---VARIANTE---
+TITULO: Investigación + logro
+SCORE: (número del 1 al 10)
+TIP: (por qué funciona mostrar que investigaste con logro específico)
+MSG1_B1: [Nombre], gracias por conectar! 👋
+MSG1_B2: Vi que [cargo en empresa] — [qué hace la empresa en 1 frase]. [logro específico extraído del perfil, dato concreto]. SIN pregunta, SIN observación, SIN opinión. Solo hechos.
+MSG1_B3: Si es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar. (EXACTO, no modificar)
+RESPUESTA: (ejemplo de respuesta esperada)
+MSG2_B1: texto
+MSG2_B2: texto
+MSG2_B3: Te puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?
+
+
+---MSG3---
+B1: texto
+B2: texto
+B3: texto
+B4: [LINK DOSSIER]
+
+---MSG4---
+B1: texto
+B2: texto
+B3: texto
+
+---SEG1---
+B1: texto
+B2: texto
+B3: texto
+
+---SEG2---
+B1: texto
+B2: texto
+B3: texto
+B4: texto`;
+
+// ─── SYNC JEFE ───────────────────────────────────────────────────────
+async function syncJefe() {
+  const btn = document.getElementById('sync-btn');
+  const txt = document.getElementById('sync-txt');
+  txt.textContent = 'Sincronizando...';
+  btn.disabled = true;
+  try {
+    const res = await fetch('/api/sync', { method: 'POST' });
+    const data = await res.json();
+    txt.textContent = data.ok ? '✓ Sincronizado' : '✗ Error';
+    setTimeout(() => { txt.textContent = 'Sincronizar'; btn.disabled = false; }, 3000);
+  } catch {
+    txt.textContent = '✗ Error';
+    setTimeout(() => { txt.textContent = 'Sincronizar'; btn.disabled = false; }, 3000);
+  }
+}
+
+// ─── GENERATE OPENERS ───────────────────────────────────────────────
+async function generateOpeners() {
+  const profile = document.getElementById('profile-input').value.trim();
+  const idioma = document.getElementById('idioma').value;
+  const tono = document.getElementById('tono').value;
+
+  if (!profile) { alert('Pegá el perfil de LinkedIn primero'); return; }
+
+  state.profile = profile;
+  state.idioma = idioma;
+  state.selectedVariant = null;
+  state.conversationHistory = [];
+  state.rawText = '';
+  state._historyId = null;
+
+  setLoading(true, 'gen');
+  document.getElementById('conv-thread').style.display = 'none';
+  document.getElementById('conv-thread').innerHTML = '';
+
+  const prompt = `PERFIL A ANALIZAR:
+${profile}
+
+IDIOMA: ${idioma === 'es' ? 'Español' : 'English'}
+TONO: ${tono}
+
+Analizá este perfil y generá la salida EXACTAMENTE con este formato — sin agregar texto adicional antes o entre secciones:
+
+RESUMEN: ...
+HECHOS: (hechos observables del perfil, sin interpretar)
+INTERPRETACION_TRABAJO: (qué significa realmente hacer este trabajo, 1 frase — NO el cargo)
+SEÑAL_HUMANA: (qué publicó/compartió/mostró esta persona — o "Sin señal identificada — usar tensión profesional")
+TENSION_PROFESIONAL: (tensión natural del rol — NUNCA una carencia o necesidad inventada)
+HIPOTESIS_CONVERSACIONAL: (qué conversación interesante podría tener esta persona — NO qué le venderíamos)
+ANGULO: (debe partir de SEÑAL_HUMANA si existe, si no de TENSION_PROFESIONAL)
+
+=== CONFIDENCE ===
+CONFIDENCE_LEVEL: (HIGH / MEDIUM / LOW)
+CONFIDENCE_REASON: ...
+SIGNAL_SOURCE: (PUBLICATION / COMMENT / EXPERIENCE / ABOUT / ACTIVITY / CERTIFICATION / CARGO)
+ALLOWED_FOR_MSG1: (YES / NO)
+
+=== PROFILE CLASSIFICATION ===
+PROFILE_TYPE: (DECISION_MAKER / INFLUENCER / SPECIALIST / JUNIOR / POTENTIAL_PARTNER)
+SENIORITY: (C_LEVEL / DIRECTOR / MANAGER / SPECIALIST)
+INFORMATION_LEVEL: (RICH / MEDIUM / POOR)
+SECTOR: ...
+AREA: ...
+DECISION_POWER: (HIGH / MEDIUM / LOW)
+BUYING_ROLE: (ECONOMIC_BUYER / TECHNICAL_BUYER / INFLUENCER / CHAMPION / USER)
+COMMERCIAL_RELEVANCE: (HIGH / MEDIUM / LOW)
+CLASSIFICATION_REASON: ...
+
+=== SCORING ===
+SIGNAL_QUALITY: (1-10)
+PERSONALIZATION_DEPTH: (1-10)
+CONVERSATION_PROBABILITY: (1-10)
+COMMERCIAL_RELEVANCE_SCORE: (1-10)
+HALLUCINATION_RISK: (1-10)
+GLOBAL_SCORE: (1-10)
+RECOMMENDED_PRIORITY: (HOT / MEDIUM / LOW)
+
+---VARIANTE---
+TITULO: (variante A — observación humana desde SEÑAL_HUMANA)
+TIP: ...
+MSG1_B1: ...
+MSG1_B2: ...
+MSG1_B3: Si estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar.
+RESPUESTA: ...
+MSG2_B1: ...
+MSG2_B2: ...
+MSG2_B3: Te puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?
+
+---VARIANTE---
+TITULO: Investigación + logro
+TIP: ...
+MSG1_B1: [Nombre], gracias por conectar! 👋
+MSG1_B2: Estuve revisando un poco lo que venís haciendo. Me llamó la atención [hecho concreto]. [observación breve]. Solo hechos.
+MSG1_B3: Si es correcto lo que leí, tenía una duda y quería saber si me podías ayudar.
+RESPUESTA: ...
+MSG2_B1: ...
+MSG2_B2: ...
+MSG2_B3: Te puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?
+
+---MSG3---
+B1: ...
+B2: ...
+B3: ...
+B4: [LINK DOSSIER]
+
+---MSG4---
+B1: ...
+B2: ...
+B3: ...
+
+---SEG1---
+B1: ...
+B2: ...
+B3: ...
+
+---SEG2---
+B1: ...
+B2: ...
+B3: ...
+B4: ...`;
+
+  // ── Contexto histórico del HIE (sin API, lee KB local) ──────────────────
+  let hieContext = '';
+  try {
+    const hieRes = await fetch('/api/intelligence');
+    if (hieRes.ok) {
+      const hieData = await hieRes.json();
+      hieContext = buildHIEContextBlock(hieData.context, profile);
+    }
+  } catch(_) {
+    // Si el HIE no está disponible, el sistema sigue funcionando normalmente
+  }
+
+  const fullPrompt = hieContext ? `${hieContext}\n\n${prompt}` : prompt;
+
+  try {
+    const text = await callAPI(fullPrompt, SYSTEM);
+    state.rawText = text;
+    renderVariants(text);
+    state.conversationHistory.push({ role: 'system', text: `Perfil analizado: ${profile.substring(0,300)}` });
+  } catch(e) {
+    showError(e.message);
+  } finally {
+    setLoading(false, 'gen');
+  }
+}
+
+// ─── HIE ALERTS ──────────────────────────────────────────────────────────────
+async function loadHIEAlerts() {
+  try {
+    const res = await fetch('/api/intelligence');
+    if (!res.ok) return;
+    const data = await res.json();
+    const alertsData = data.alerts || {};
+    const alerts = alertsData.alertas || [];
+    if (!alerts.length) return;
+
+    const btn = document.getElementById('hie-alerts-btn');
+    const txt = document.getElementById('hie-alerts-txt');
+    const dot = document.getElementById('hie-alerts-dot');
+    const body = document.getElementById('hie-alerts-body');
+
+    const alta = alerts.filter(a => a.severidad === 'ALTA').length;
+    txt.textContent = `${alerts.length} alerta${alerts.length > 1 ? 's' : ''} HIE`;
+    dot.style.background = alta > 0 ? '#FF5C35' : '#E8A23D';
+    btn.style.display = 'flex';
+    if (alta > 0) {
+      btn.style.borderColor = '#FF5C35';
+      btn.style.color = '#FF5C35';
+    }
+
+    const sevLabel = { ALTA: '[!]', MEDIA: '[~]', INFO: '[i]' };
+    const sevColor = { ALTA: '#FF5C35', MEDIA: '#E8A23D', INFO: '#888' };
+    body.innerHTML = alerts.map(a => `
+      <div style="display:flex;align-items:baseline;gap:8px;font-size:12px;line-height:1.4">
+        <span style="color:${sevColor[a.severidad]||'#888'};font-weight:700;flex-shrink:0">${sevLabel[a.severidad]||''}</span>
+        <span style="color:#FFD080">${esc(a.titulo)}</span>
+      </div>
+    `).join('');
+  } catch(_) {}
+}
+
+function toggleHIEAlerts() {
+  const panel = document.getElementById('hie-alerts-panel');
+  const btn   = document.getElementById('hie-alerts-btn');
+  const open  = panel.style.display !== 'none';
+  panel.style.display = open ? 'none' : 'block';
+  btn.style.background = open ? '#1a1a1a' : '#2A1800';
+}
+
+// ─── HIE REPLY SCORER ────────────────────────────────────────────────────────
+// Señales positivas y negativas cargadas desde signals.json (via /api/intelligence)
+let _hieSignals = null;
+
+async function loadHIESignals() {
+  if (_hieSignals) return _hieSignals;
+  try {
+    const res = await fetch('/api/intelligence');
+    if (!res.ok) return null;
+    const data = await res.json();
+    const kb = data.context;
+    // Extraer señales del context (el servidor sirve context_injection.json,
+    // pero signals.json está en KB por separado — usamos datos hardcodeados
+    // desde el último run del engine como fallback si no están en context)
+    _hieSignals = {
+      positive: ['correcto', 'contenido', 'marcas', 'interesante', 'nosotros', 'años',
+                 'sin', 'eso', 'mismo', 'puede', 'media', 'apoyarte', 'embargo', 'area'],
+      negative: ['escribirme', 'cuentame', 'cual', 'alegra'],
+      // Umbrales validados empíricamente
+      LONG_RESPONSE_CHARS: 200,    // >200 → señal positiva
+      MEDIUM_RESPONSE_CHARS: 100,  // 100-200 → neutral
+      // Tasas históricas para mostrar en UI
+      dossier_pct: { HIGH: 81.8, MEDIUM: 71.1, LOW: 31.5 },
+    };
+    return _hieSignals;
+  } catch(_) {
+    return null;
+  }
+}
+
+async function scoreReply(textarea, stepNum) {
+  const text = textarea.value.trim();
+  const scoreEl = document.getElementById(`reply-score-${stepNum}`);
+  if (!scoreEl) return;
+
+  if (text.length < 10) {
+    scoreEl.style.display = 'none';
+    return;
+  }
+
+  const signals = await loadHIESignals();
+  if (!signals) return;
+
+  const lower = text.toLowerCase();
+  const words = lower.match(/\b[a-záéíóúüñ]{3,}\b/g) || [];
+  const wordSet = new Set(words);
+
+  // Calcular score
+  let score = 0;
+  const found_pos = [];
+  const found_neg = [];
+
+  // Longitud (predictor más fuerte)
+  if (text.length >= signals.LONG_RESPONSE_CHARS) {
+    score += 3;
+  } else if (text.length >= signals.MEDIUM_RESPONSE_CHARS) {
+    score += 1;
+  }
+
+  // Pregunta (2do predictor más fuerte)
+  if (text.includes('?')) score += 2;
+
+  // Señales positivas
+  for (const w of signals.positive) {
+    if (wordSet.has(w)) { score += 1; found_pos.push(w); }
+  }
+
+  // Señales negativas
+  for (const w of signals.negative) {
+    if (wordSet.has(w)) { score -= 1; found_neg.push(w); }
+  }
+
+  // Clasificar
+  let nivel, color, bg, hist_pct, label;
+  if (score >= 5) {
+    nivel = 'HIGH'; color = '#1A7A3C'; bg = '#EBF9F1';
+    hist_pct = signals.dossier_pct.HIGH; label = 'Señal alta de conversión';
+  } else if (score >= 2) {
+    nivel = 'MEDIUM'; color = '#8A5C00'; bg = '#FFF8E6';
+    hist_pct = signals.dossier_pct.MEDIUM; label = 'Señal media';
+  } else {
+    nivel = 'LOW'; color = '#7A3800'; bg = '#FFF0EB';
+    hist_pct = signals.dossier_pct.LOW; label = 'Señal baja';
+  }
+
+  // Razones
+  const reasons = [];
+  if (text.length >= signals.LONG_RESPONSE_CHARS) reasons.push(`respuesta larga (${text.length} chars)`);
+  if (text.includes('?')) reasons.push('hace una pregunta');
+  if (found_pos.length > 0) reasons.push(`palabras clave: ${found_pos.slice(0,3).join(', ')}`);
+  if (found_neg.length > 0) reasons.push(`señales frías: ${found_neg.join(', ')}`);
+
+  scoreEl.style.display = 'block';
+  scoreEl.style.background = bg;
+  scoreEl.style.borderColor = color;
+  scoreEl.style.color = color;
+  scoreEl.innerHTML = `
+    <strong>${label}</strong> · ${hist_pct}% llegaron a dossier con este patrón
+    <br><span style="opacity:.75;font-size:10.5px">${reasons.join(' · ') || 'respuesta corta'}</span>
+  `;
+}
+
+// ─── HIE CONTEXT BUILDER ─────────────────────────────────────────────────────
+function buildHIEContextBlock(ctx, profileText) {
+  if (!ctx || !ctx.por_sector) return '';
+
+  // Detectar sector del prospecto desde el texto del perfil (heurística rápida)
+  // El sistema completo de detección está en Python; acá hacemos una aproximación
+  const profileLower = profileText.toLowerCase();
+  const sectorMap = {
+    'Energía': ['tgs', 'transener', 'energía', 'ecopetrol', 'petrobras', 'gas', 'oil', 'eléctric'],
+    'Minería': ['minería', 'antofagasta', 'newmont', 'barrick', 'bhp', 'miner'],
+    'Educación': ['universidad', 'educación', 'edutech', 'business school', 'institute'],
+    'Seguros/Finanzas': ['seguros', 'finanzas', 'libra', 'banca', 'fintech', 'crédito'],
+    'Farmacéutico': ['farmacéutico', 'abbott', 'novartis', 'laboratorio', 'pharma', 'salud latam'],
+    'Tecnología': ['software', 'technology', 'tech', 'datos', 'crm', 'erp', 'saas'],
+    'Real Estate': ['inmobil', 'real estate', 'desarrollo inmobiliario'],
+    'Retail/Consumo': ['retail', 'consumo', 'moda', 'tasarolli'],
+    'Turismo/Hotelería': ['hotel', 'turismo', 'hospitalidad', 'resort'],
+    'Agencia/Marketing': ['agencia', 'marketing', 'publicidad', 'comunicación'],
+    'Consultoría/Legal': ['consultor', 'consulting', 'legal', 'abogad'],
+    'Salud/Clínica': ['clínica', 'hospital', 'salud', 'médic'],
+  };
+
+  let detectedSector = null;
+  for (const [sector, keywords] of Object.entries(sectorMap)) {
+    if (keywords.some(k => profileLower.includes(k))) {
+      detectedSector = sector;
+      break;
+    }
+  }
+
+  const sectorData = detectedSector ? ctx.por_sector[detectedSector] : null;
+  const globalData = ctx.metadata || {};
+  const variantes = ctx.variantes || {};
+  const insights = ctx.insights_criticos || [];
+
+  // Solo agregar contexto si hay datos relevantes
+  const lines = ['=== CONTEXTO HISTÓRICO (HIE — basado en datos reales) ==='];
+  lines.push(`Base de datos: ${globalData.n_total || 0} contactos reales. Dossier rate global: ${globalData.dossier_rate_global || 0}%.`);
+
+  if (sectorData && sectorData.n >= 5) {
+    lines.push(`\nSECTOR DETECTADO: ${detectedSector}`);
+    lines.push(`- Dossier rate en este sector: ${sectorData.dossier_pct}% (n=${sectorData.n}, confianza: ${sectorData.confianza})`);
+    if (sectorData.mejor_seniority && sectorData.mejor_seniority !== 'INSUFFICIENT_DATA') {
+      lines.push(`- Mejor seniority en este sector: ${sectorData.mejor_seniority}`);
+    }
+    if (sectorData.mejor_variante && sectorData.mejor_variante !== 'INSUFFICIENT_DATA') {
+      lines.push(`- Variante con más conversión: ${sectorData.mejor_variante}`);
+    }
+    if (sectorData.clientes_hint && sectorData.clientes_hint.length > 0) {
+      lines.push(`- Clientes Hint más relevantes para este sector: ${sectorData.clientes_hint.join(', ')}`);
+    }
+  }
+
+  if (Object.keys(variantes).length >= 2) {
+    const varLines = Object.entries(variantes)
+      .filter(([, v]) => v.n >= 10)
+      .sort((a, b) => b[1].dossier_pct - a[1].dossier_pct)
+      .map(([v, d]) => `Variante ${v}: ${d.dossier_pct}% (n=${d.n})`);
+    if (varLines.length > 0) lines.push(`\nVARIANTES (global): ${varLines.join(' | ')}`);
+  }
+
+  if (insights.length > 0) {
+    lines.push('\nINSIGHTS CRÍTICOS:');
+    insights.slice(0, 3).forEach(i => lines.push(`- ${i.titulo}`));
+  }
+
+  lines.push('\nUsá este contexto solo como referencia para priorizar. No lo menciones en los mensajes.');
+  lines.push('=== FIN CONTEXTO HIE ===');
+
+  return lines.join('\n');
+}
+
+// ─── RENDER VARIANTS ────────────────────────────────────────────────
+function renderVariants(text) {
+  const results = document.getElementById('results');
+  results.innerHTML = '';
+  results.style.padding = '14px';
+  results.style.display = 'flex';
+  results.style.flexDirection = 'column';
+  results.style.gap = '12px';
+
+  if (/^\s*prospecto descartado/i.test(text)) {
+    const box = document.createElement('div');
+    box.style.cssText = 'background:#FFF0F0;border:1.5px solid #F5B5B5;border-radius:11px;padding:13px 15px;font-size:13px;line-height:1.6;color:#902020';
+    box.textContent = text.trim();
+    results.appendChild(box);
+    return;
+  }
+
+  // Parse strategic analysis
+  const getField = key => {
+    const re = new RegExp('^' + key + ':\\s*(.+)', 'im');
+    const m = text.match(re);
+    return m ? m[1].trim() : '';
+  };
+  const resumen = getField('RESUMEN');
+  const hechos = getField('HECHOS');
+  const interpretacion = getField('INTERPRETACION_TRABAJO');
+  const senalHumana = getField('SEÑAL_HUMANA');
+  const tension = getField('TENSION_PROFESIONAL');
+  const hipotesis = getField('HIPOTESIS_CONVERSACIONAL');
+  const angulo = getField('ANGULO');
+  const inferenceRisk = getField('INFERENCE_RISK');
+  const irrepetibilidad = getField('IRREPETIBILIDAD');
+  const debilidades = getField('DEBILIDADES_DE_ESTA_SECUENCIA');
+  const confidenceScore = getField('CONFIDENCE_SCORE');
+
+  // FASE 2 — Confidence layer
+  const confLevel = getField('CONFIDENCE_LEVEL');
+  const confReason = getField('CONFIDENCE_REASON');
+  const signalSource = getField('SIGNAL_SOURCE');
+  const allowedMsg1 = getField('ALLOWED_FOR_MSG1');
+
+  // FASE 3 — Profile classification
+  const profileType = getField('PROFILE_TYPE');
+  const seniority = getField('SENIORITY');
+  const infoLevel = getField('INFORMATION_LEVEL');
+  const sector = getField('SECTOR');
+  const area = getField('AREA');
+  const decisionPower = getField('DECISION_POWER');
+  const buyingRole = getField('BUYING_ROLE');
+  const commercialRelevance = getField('COMMERCIAL_RELEVANCE');
+  const classificationReason = getField('CLASSIFICATION_REASON');
+
+  // FASE 4 — Scoring multidimensional
+  const signalQuality = getField('SIGNAL_QUALITY');
+  const personalizationDepth = getField('PERSONALIZATION_DEPTH');
+  const conversationProbability = getField('CONVERSATION_PROBABILITY');
+  const commercialRelevanceScore = getField('COMMERCIAL_RELEVANCE_SCORE');
+  const hallucinationRisk = getField('HALLUCINATION_RISK');
+  const globalScore = getField('GLOBAL_SCORE');
+  const recommendedPriority = getField('RECOMMENDED_PRIORITY');
+
+  if (resumen || hechos || interpretacion || senalHumana || tension || hipotesis || angulo) {
+    const ap = document.createElement('div');
+    ap.style.cssText = 'background:#FFF8F5;border:1.5px solid #FFD0BC;border-radius:11px;padding:13px 15px;font-size:12px;line-height:1.65;display:flex;flex-direction:column;gap:7px;animation:fadeUp .3s ease both';
+    ap.innerHTML = `
+      <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--orange);margin-bottom:1px">Análisis estratégico</div>
+      ${resumen ? `<div><span style="font-weight:600;color:var(--dark)">Quién es: </span>${esc(resumen)}</div>` : ''}
+      ${hechos ? `<div><span style="font-weight:600;color:var(--dark)">Hechos: </span>${esc(hechos)}</div>` : ''}
+      ${interpretacion ? `<div><span style="font-weight:600;color:var(--dark)">Interpretación del trabajo: </span>${esc(interpretacion)}</div>` : ''}
+      ${senalHumana ? `<div style="background:#F0FFF4;border-radius:7px;padding:6px 10px;border:1px solid #9FD9B4"><span style="font-weight:600;color:#1A7A3C">Señal humana: </span>${esc(senalHumana)}</div>` : ''}
+      ${tension ? `<div style="background:#F0F7FF;border-radius:7px;padding:6px 10px;border:1px solid #C5DDF6"><span style="font-weight:600;color:#1A5FA8">Tensión profesional: </span>${esc(tension)}</div>` : ''}
+      ${hipotesis ? `<div><span style="font-weight:600;color:var(--dark)">Hipótesis conversacional: </span>${esc(hipotesis)}</div>` : ''}
+      ${angulo ? `<div style="background:var(--orange-light);border-radius:7px;padding:6px 10px"><span style="font-weight:600;color:#993C1D">Ángulo: </span>${esc(angulo)}</div>` : ''}`;
+    results.appendChild(ap);
+  }
+
+  if (inferenceRisk || irrepetibilidad || debilidades || confidenceScore) {
+    const auditBox = document.createElement('div');
+    auditBox.style.cssText = 'background:#F7F7FA;border:1.5px dashed #C8C8D4;border-radius:11px;padding:13px 15px;font-size:12px;line-height:1.65;display:flex;flex-direction:column;gap:7px;animation:fadeUp .3s ease both';
+    auditBox.innerHTML = `
+      <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#6B6B7A;margin-bottom:1px">Auditoría interna (no afecta los mensajes)</div>
+      ${inferenceRisk ? `<div><span style="font-weight:600;color:var(--dark)">Riesgo de inferencia: </span>${esc(inferenceRisk)}</div>` : ''}
+      ${irrepetibilidad ? `<div><span style="font-weight:600;color:var(--dark)">Irrepetibilidad: </span>${esc(irrepetibilidad)}</div>` : ''}
+      ${confidenceScore ? `<div><span style="font-weight:600;color:var(--dark)">Confianza del análisis: </span>${esc(confidenceScore)}</div>` : ''}
+      ${debilidades ? `<div><span style="font-weight:600;color:var(--dark)">Debilidades de esta secuencia: </span>${esc(debilidades)}</div>` : ''}`;
+    results.appendChild(auditBox);
+  }
+
+  // FASE 2/3/4 — acordeones colapsables (no afectan generación de mensajes)
+  const priorityColor = { HOT: '#27AE60', MEDIUM: '#E8A23D', LOW: '#999' };
+  if (confLevel || confReason || signalSource || allowedMsg1) {
+    results.appendChild(makeAccordion('Confidence', [
+      confLevel ? ['Nivel de confianza', confLevel] : null,
+      signalSource ? ['Fuente de la señal', signalSource] : null,
+      allowedMsg1 ? ['Permitido para MSG1', allowedMsg1] : null,
+      confReason ? ['Motivo', confReason] : null,
+    ].filter(Boolean)));
+  }
+  if (profileType || seniority || infoLevel || sector || area || decisionPower || buyingRole || commercialRelevance || classificationReason) {
+    results.appendChild(makeAccordion('Profile Classification', [
+      profileType ? ['Tipo de perfil', profileType] : null,
+      seniority ? ['Seniority', seniority] : null,
+      infoLevel ? ['Nivel de información', infoLevel] : null,
+      sector ? ['Sector', sector] : null,
+      area ? ['Área', area] : null,
+      decisionPower ? ['Poder de decisión', decisionPower] : null,
+      buyingRole ? ['Rol de compra', buyingRole] : null,
+      commercialRelevance ? ['Relevancia comercial', commercialRelevance] : null,
+      classificationReason ? ['Motivo', classificationReason] : null,
+    ].filter(Boolean)));
+  }
+  if (signalQuality || personalizationDepth || conversationProbability || commercialRelevanceScore || hallucinationRisk || globalScore || recommendedPriority) {
+    const prioColor = priorityColor[(recommendedPriority||'').toUpperCase()] || '#999';
+    results.appendChild(makeAccordion('Scoring', [
+      signalQuality ? ['Calidad de señal', signalQuality + '/10'] : null,
+      personalizationDepth ? ['Profundidad de personalización', personalizationDepth + '/10'] : null,
+      conversationProbability ? ['Probabilidad de conversación', conversationProbability + '/10'] : null,
+      commercialRelevanceScore ? ['Relevancia comercial', commercialRelevanceScore + '/10'] : null,
+      hallucinationRisk ? ['Riesgo de inventar (hallucination)', hallucinationRisk + '/10'] : null,
+      globalScore ? ['Score global', globalScore + '/10'] : null,
+      recommendedPriority ? ['Prioridad recomendada', `<span style="font-weight:700;color:${prioColor}">${esc(recommendedPriority)}</span>`, true] : null,
+    ].filter(Boolean)));
+  }
+
+  // Parse fixed blocks: ---MSG3---, ---MSG4---, ---SEG1---, ---SEG2---
+  const parseFixedBlock = tag => {
+    const re = new RegExp('\\s*---\\s*' + tag + '\\s*---\\s*([\\s\\S]*?)(?=\\s*---|$)', 'i');
+    const m = text.match(re);
+    if (!m) return [];
+    return m[1].trim().split('\n').map(l => l.trim()).filter(l => /^B\d+:/i.test(l)).map(l => l.slice(l.indexOf(':') + 1).trim());
+  };
+  state.extraMsgs = {
+    MSG3: parseFixedBlock('MSG3'),
+    MSG4: parseFixedBlock('MSG4'),
+    SEG1: parseFixedBlock('SEG1'),
+    SEG2: parseFixedBlock('SEG2')
+  };
+
+  // Parse ---VARIANTE--- blocks (stop before fixed blocks)
+  const variantSection = text.split(/\s*---\s*(MSG3|MSG4|SEG1|SEG2)\s*---\s*/i)[0];
+  const blocks = variantSection.split(/\s*---\s*VARIANTE\s*[A-Z]?\s*---\s*/i).filter(b => b.trim());
+  // blocks[0] may be the analysis section (no TITULO) — skip it
+  const startIdx = /TITULO:/i.test(blocks[0]) ? 0 : 1;
+  const variantBlocks = blocks.slice(startIdx, startIdx + 4);
+  const tagClass = ['vtag-a','vtag-c','vtag-c','vtag-d'];
+  const tagLabel = ['Variante A','Variante C','Variante C','Variante D'];
+
+  // First pass: parse scores to find best
+  const parsedBlocks = variantBlocks.slice(0, 4).map((block, idx) => {
+    const lines = block.trim().split('\n').map(l => l.trim()).filter(l => l);
+    const get = k => { const l = lines.find(l => l.toLowerCase().startsWith(k.toLowerCase() + ':')); return l ? l.slice(l.indexOf(':') + 1).trim() : ''; };
+    return { block, idx, lines, get, score: parseInt(get('SCORE')) || 0 };
+  });
+  const maxScore = Math.max(...parsedBlocks.map(p => p.score));
+
+  parsedBlocks.forEach(({ block, idx, lines, get }) => {
+    if (idx > 3) return;
+    const getBubbles = prefix => lines.filter(l => l.toLowerCase().startsWith(prefix.toLowerCase())).map(l => ({ text: l.slice(l.indexOf(':') + 1).trim(), hl: false }));
+
+    const titulo = get('TITULO') || get('TITLE') || tagLabel[idx];
+    const tip = get('TIP');
+    const score = parseInt(get('SCORE')) || 0;
+    const isBest = maxScore > 0 && score === maxScore;
+    const respuesta = get('RESPUESTA');
+    const msg1 = getBubbles('MSG1_B');
+    const msg2 = getBubbles('MSG2_B');
+
+    const fullText = ['── MENSAJE 1 ──', ...msg1.map(b => b.text), '', respuesta ? `[Respuesta esperada: "${respuesta}"]` : '', ' ', '── MENSAJE 2 ──', ...msg2.map(b => b.text)].join('\n');
+    const b1html = msg1.map(b => `<div class="bwrap out"><div class="bub">${esc(b.text)}</div></div>`).join('');
+    const repHtml = respuesta ? `<div class="bwrap in"><div class="bub in">${esc(respuesta)}</div></div>` : '';
+    const b2html = msg2.map(b => `<div class="bwrap out"><div class="bub">${esc(b.text)}</div></div>`).join('');
+
+    const varEl = document.createElement('div');
+    varEl.className = 'variant' + (isBest ? ' variant-best' : '');
+    varEl.id = `variant-${idx}`;
+    varEl.innerHTML = `
+      <div class="var-head">
+        <div class="var-left">
+          <span class="vtag ${tagClass[idx]}">${tagLabel[idx]}</span>
+          <span class="vtitle">${esc(titulo)}</span>
+          ${isBest ? `<span class="best-badge">⭐ Mejor opción</span>` : ''}
+        </div>
+        <button class="copy-btn" onclick="copyTxt(this,\`${escAttr(fullText)}\`)">
+          <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+          Copiar
+        </button>
+      </div>
+      <div class="msg-label">Primer mensaje</div>
+      <div class="chat-area">${b1html}</div>
+      ${respuesta ? `<div class="msg-label" style="color:var(--blue)">Respuesta esperada</div><div class="chat-area">${repHtml}</div>` : ''}
+      <div class="msg-label">Segundo mensaje</div>
+      <div class="chat-area">${b2html}</div>
+      ${tip ? `<div class="var-tip"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span>${esc(tip)}</span></div>` : ''}
+      <button class="use-btn" onclick="selectVariant(${idx}, '${idx}', \`${escAttr(fullText)}\`, \`${escAttr(msg1.map(b=>b.text).join('\n\n'))}\`, \`${escAttr(msg2.map(b=>b.text).join('\n\n'))}\`)">
+        <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        Usar esta variante → continuar conversación
+      </button>`;
+    results.appendChild(varEl);
+  });
+
+  if (!results.querySelector('.variant')) showError('No se pudieron generar los mensajes. Intentá de nuevo.');
+}
+
+// ─── SELECT VARIANT ─────────────────────────────────────────────────
+function selectVariant(idx, letter, fullText, msg1Text, msg2Text) {
+  document.querySelectorAll('.variant').forEach((v,i) => {
+    const btn = v.querySelector('.use-btn');
+    const head = v.querySelector('.var-head .var-left');
+    if(i === idx) {
+      btn.innerHTML = `<svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2"><polyline points="20 6 9 17 4 12"/></svg> Seleccionada`;
+      btn.style.background = 'var(--green-light)';
+      btn.style.borderColor = 'var(--green)';
+      btn.style.color = 'var(--green)';
+      if(!head.querySelector('.selected-tag')) {
+        const tag = document.createElement('span');
+        tag.className = 'selected-tag';
+        tag.textContent = 'EN USO';
+        head.appendChild(tag);
+      }
+    } else {
+      btn.style.opacity = '0.4';
+      btn.disabled = true;
+    }
+  });
+
+  state.selectedVariant = { idx, letter, msg1: msg1Text, msg2: msg2Text };
+  state.conversationHistory.push({ role: 'sent', text: msg1Text });
+
+  // Save to history (lightweight — no rawText)
+  const varTitleEl = document.querySelector(`#variant-${idx} .vtitle`);
+  const variantTitle = varTitleEl ? varTitleEl.textContent.trim() : `Variante ${idx + 1}`;
+  const histId = state._historyId || String(Date.now());
+  state._historyId = histId;
+  histUpsert({
+    id: histId,
+    date: new Date().toLocaleDateString('es-AR', { day:'2-digit', month:'2-digit', year:'2-digit' }),
+    name: histExtractName(state.profile),
+    empresa: (document.getElementById('empresa-input')?.value?.trim()) || histExtractEmpresa(msg1Text, state.profile),
+    variantTitle,
+    profileRaw: state.profile || '',
+    msg1: msg1Text,
+    msg2: msg2Text,
+    extraMsgs: state.extraMsgs || {},
+    conversationHistory: [{ role: 'sent', text: msg1Text }]
+  });
+
+  const thread = document.getElementById('conv-thread');
+  thread.style.display = 'flex';
+  thread.innerHTML = '';
+  addReplyStep(thread, 1);
+
+  // Show MSG3/4/SEG1/2 as reference sequence
+  const extra = state.extraMsgs;
+  const hasExtra = Object.values(extra).some(arr => arr.length > 0);
+  if (hasExtra) {
+    const seqEl = document.createElement('div');
+    seqEl.className = 'card';
+    seqEl.style.animation = 'fadeUp .4s ease both';
+    const labels = { MSG3: 'MSG3 — Presentación con dossier', MSG4: 'MSG4 — Cierre de conversación', SEG1: 'SEG1 — Seguimiento 1', SEG2: 'SEG2 — Seguimiento 2' };
+    let seqInner = `<div class="card-head"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><div><div class="card-ttl">Secuencia de seguimiento</div><div class="card-sub">Mensajes pre-generados para continuar la conversación</div></div></div><div style="padding:12px 14px;display:flex;flex-direction:column;gap:10px">`;
+    Object.entries(labels).forEach(([key, label]) => {
+      const bubbles = extra[key];
+      if (!bubbles || !bubbles.length) return;
+      const fullMsg = bubbles.join('\n\n');
+      const bubblesHtml = bubbles.map(t => `<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
+      seqInner += `
+        <div style="border:1px solid var(--border);border-radius:9px;overflow:hidden">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 11px;background:var(--light);border-bottom:1px solid var(--border)">
+            <span style="font-size:11px;font-weight:700;color:var(--dark)">${label}</span>
+            <button class="copy-btn" onclick="copyTxt(this,\`${escAttr(fullMsg)}\`)">
+              <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              Copiar
+            </button>
+          </div>
+          <div class="chat-area">${bubblesHtml}</div>
+        </div>`;
+    });
+    seqInner += '</div>';
+    seqEl.innerHTML = seqInner;
+    thread.appendChild(seqEl);
+  }
+
+  setTimeout(() => thread.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+// ─── ADD REPLY STEP ──────────────────────────────────────────────────
+function addReplyStep(thread, stepNum) {
+  const stepEl = document.createElement('div');
+  stepEl.className = 'thread-step';
+  stepEl.id = `step-${stepNum}`;
+  const es = state.idioma === 'es';
+  stepEl.innerHTML = `
+    <div class="thread-step-head">
+      <span>${es ? '💬 ¿Qué te respondió?' : '💬 What did they reply?'}</span>
+      <small>${es ? 'Pegá su respuesta exacta' : 'Paste their exact reply'}</small>
+    </div>
+    <div class="reply-box">
+      <textarea class="reply-input" id="reply-${stepNum}" placeholder="${es ? 'Pegá acá lo que te escribió...\n\nEjemplo: "Hola Florencia, así es. Ese es mi cargo. ¿En qué te puedo ayudar?"' : 'Paste what they wrote...\n\nExample: "Hi Florencia, that\'s correct. How can I help you?"'}" oninput="scoreReply(this, ${stepNum})"></textarea>
+      <div id="reply-score-${stepNum}" style="display:none;margin-top:6px;padding:7px 10px;border-radius:7px;font-size:11.5px;line-height:1.5;border:1.5px solid"></div>
+      <div class="reply-actions">
+        <button class="btn-reply" id="reply-btn-${stepNum}" onclick="handleReply(${stepNum})">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div class="mini-spin" id="reply-spin-${stepNum}"></div>
+          <span id="reply-btn-txt-${stepNum}">${es ? 'Generar respuesta' : 'Generate reply'}</span>
+        </button>
+      </div>
+    </div>
+    <div class="response-bubble" id="response-${stepNum}" style="display:none"></div>`;
+  thread.appendChild(stepEl);
+}
+
+// ─── HANDLE REPLY ────────────────────────────────────────────────────
+async function handleReply(stepNum) {
+  const replyText = document.getElementById(`reply-${stepNum}`).value.trim();
+  if(!replyText) { alert(state.idioma==='es'?'Pegá la respuesta primero':'Paste their reply first'); return; }
+
+  const btn = document.getElementById(`reply-btn-${stepNum}`);
+  const spin = document.getElementById(`reply-spin-${stepNum}`);
+  const btnTxt = document.getElementById(`reply-btn-txt-${stepNum}`);
+
+  btn.disabled = true;
+  spin.style.display = 'block';
+  btnTxt.textContent = state.idioma==='es'?'Generando...':'Generating...';
+  document.getElementById('status-txt').textContent = 'Procesando...';
+
+  state.conversationHistory.push({ role: 'received', text: replyText });
+
+  const historyText = state.conversationHistory.map(m => {
+    if(m.role==='system') return `[CONTEXTO: ${m.text}]`;
+    if(m.role==='sent') return `FLORENCIA ENVIÓ:\n${m.text}`;
+    if(m.role==='received') return `PROSPECT RESPONDIÓ:\n${m.text}`;
+    if(m.role==='suggested') return `FLORENCIA ENVIÓ:\n${m.text}`;
+    return '';
+  }).join('\n\n---\n\n');
+
+  const prompt = `CONVERSACIÓN EN CURSO:
+${historyText}
+
+La persona acaba de responder: "${replyText}"
+
+IDIOMA: ${state.idioma==='es'?'Español':'English'}
+
+Analizá qué dijo y generá el mensaje exacto que Florencia debería mandar ahora.
+
+Si esta conversación ya pasó la etapa de dossier enviado (Florencia ya ofreció o mandó el dossier en algún mensaje anterior) y esta respuesta es la reacción al dossier o algo posterior, esto es un SEG1: aplicá la lógica de REGLAS SEGUIMIENTOS del SYSTEM.
+Antes de redactar, clasificá internamente ENGAGEMENT_LEVEL (LOW / MEDIUM / HIGH) usando TODA la conversación, y elegí el modo correspondiente (Detectar interés / Detectar interés + CTA / CTA directo) según esa clasificación. No mandes CTA de llamada a un engagement LOW.
+
+Devolvé SOLO el mensaje en burbujas, con este formato:
+BURBUJA1: texto
+BURBUJA2: texto
+BURBUJA3: texto (si hace falta)
+BURBUJA4: texto con [HIGHLIGHT] si es el cierre/call-to-action
+
+Después agregá:
+ENGAGEMENT_LEVEL: (LOW / MEDIUM / HIGH / N-A si todavía no aplica — + justificación breve en la misma línea, separada por " — ")
+ANALISIS: (1 línea explicando por qué este mensaje en función de lo que respondieron)
+SIGUIENTE: (qué se espera que pase después - "call agendada", "pide más info", "no interesado", etc.)`;
+
+  try {
+    const text = await callAPI(prompt, SYSTEM);
+    renderReplyResponse(stepNum, replyText, text);
+  } catch(e) {
+    btn.disabled = false;
+    spin.style.display = 'none';
+    btnTxt.textContent = state.idioma==='es'?'Generar respuesta':'Generate reply';
+    alert('Error: ' + e.message);
+  } finally {
+    document.getElementById('status-txt').textContent = 'Listo';
+  }
+}
+
+// ─── RENDER REPLY RESPONSE ───────────────────────────────────────────
+function renderReplyResponse(stepNum, replyText, text) {
+  const lines = text.split('\n').map(l=>l.trim()).filter(l=>l);
+  const bubbles = lines.filter(l=>/^BURBUJA\d+:/i.test(l)).map(l=>{ const v=l.slice(l.indexOf(':')+1).trim(); return {text:v.replace('[HIGHLIGHT]','').trim(),hl:v.includes('[HIGHLIGHT]')}; });
+  const analisis = (lines.find(l=>/^ANALISIS:/i.test(l))||'').replace(/^ANALISIS:/i,'').trim();
+  const siguiente = (lines.find(l=>/^SIGUIENTE:/i.test(l))||'').replace(/^SIGUIENTE:/i,'').trim();
+  const engagement = (lines.find(l=>/^ENGAGEMENT_LEVEL:/i.test(l))||'').replace(/^ENGAGEMENT_LEVEL:/i,'').trim();
+
+  const fullReply = bubbles.map(b=>b.text).join('\n\n');
+  state.conversationHistory.push({ role: 'suggested', text: fullReply });
+  if (state._historyId) histUpdateConv(state._historyId, state.conversationHistory);
+
+  const responseEl = document.getElementById(`response-${stepNum}`);
+  responseEl.style.display = 'flex';
+  responseEl.style.flexDirection = 'column';
+  responseEl.style.gap = '5px';
+  responseEl.style.padding = '10px 13px';
+
+  responseEl.innerHTML = `
+    <div class="msg-label" style="color:var(--blue)">Ellos dijeron</div>
+    <div class="bwrap in"><div class="bub in">${esc(replyText)}</div></div>
+    <div class="msg-label" style="margin-top:6px">Tu respuesta sugerida</div>
+    ${bubbles.map(b=>`<div class="bwrap out"><div class="bub${b.hl?' hl':''}">${esc(b.text)}</div></div>`).join('')}
+    ${engagement&&!/^N-A/i.test(engagement)?`<div style="margin-top:6px;padding:5px 10px;background:#EDE7FF;border-radius:7px;font-size:11px;color:#3B1E8C;display:flex;gap:5px"><span>📶</span><span><strong>Engagement:</strong> ${esc(engagement)}</span></div>`:''}
+    ${analisis?`<div style="margin-top:6px;padding:7px 10px;background:var(--orange-light);border-radius:7px;font-size:11px;color:#4A1B0C;display:flex;gap:5px;align-items:flex-start"><span style="color:var(--orange);flex-shrink:0">→</span><span>${esc(analisis)}</span></div>`:''}
+    ${siguiente?`<div style="margin-top:4px;padding:5px 10px;background:var(--green-light);border-radius:7px;font-size:11px;color:#1A6635;display:flex;gap:5px"><span>✓</span><span><strong>Próximo paso:</strong> ${esc(siguiente)}</span></div>`:''}
+    <div style="display:flex;gap:7px;margin-top:8px">
+      <button class="btn-reply" style="flex:1" onclick="copyTxt(this,\`${escAttr(fullReply)}\`)">
+        <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        <span>Copiar respuesta</span>
+      </button>
+      <button class="btn-reply" style="flex:1;background:var(--dark2)" onclick="addNextStep(${stepNum})">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <span>${state.idioma==='es'?'Volvió a responder →':'They replied again →'}</span>
+      </button>
+    </div>`;
+
+  document.getElementById(`reply-${stepNum}`).disabled = true;
+  const replyBox = document.getElementById(`reply-btn-${stepNum}`);
+  replyBox.disabled = true;
+  replyBox.style.opacity = '0.4';
+  document.getElementById(`reply-spin-${stepNum}`).style.display = 'none';
+  document.getElementById(`reply-btn-txt-${stepNum}`).textContent = state.idioma==='es'?'Enviado':'Sent';
+}
+
+// ─── ADD NEXT STEP ───────────────────────────────────────────────────
+function addNextStep(currentStep) {
+  const thread = document.getElementById('conv-thread');
+  const nextStep = currentStep + 1;
+  addReplyStep(thread, nextStep);
+  setTimeout(() => document.getElementById(`step-${nextStep}`).scrollIntoView({ behavior:'smooth', block:'start' }), 100);
+}
+
+// ─── API CALL (via servidor local) ──────────────────────────────────
+async function callAPI(prompt, system) {
+  const res = await fetch('/api/generate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ prompt, system: system || '' })
+  });
+  const data = await res.json();
+  if (!res.ok || data.error) throw new Error(data.error || 'Error en la API');
+  return data.text;
+}
+
+// ─── UI HELPERS ──────────────────────────────────────────────────────
+function setLoading(on, type) {
+  if(type === 'gen') {
+    const btn = document.getElementById('gen-btn');
+    const spin = document.getElementById('gen-spin');
+    const icon = document.getElementById('gen-icon');
+    const txt = document.getElementById('gen-txt');
+    const loading = document.getElementById('loading');
+    const results = document.getElementById('results');
+    btn.disabled = on;
+    spin.style.display = on ? 'block' : 'none';
+    icon.style.display = on ? 'none' : 'block';
+    txt.textContent = on ? 'Generando...' : 'Generar mensajes de apertura';
+    loading.style.display = on ? 'flex' : 'none';
+    results.style.display = on ? 'none' : 'flex';
+    document.getElementById('status-txt').textContent = on ? 'Procesando...' : 'Listo';
+  }
+}
+
+function showError(msg) {
+  const results = document.getElementById('results');
+  results.style.display = 'flex';
+  results.innerHTML = `<div style="padding:2rem;text-align:center;color:#c0392b;font-size:12.5px"><strong>Error:</strong> ${esc(msg)}<br><br><small style="color:#999">Verificá tu conexión y que la API key sea válida.</small></div>`;
+}
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\n/g,'<br>');
+}
+function escAttr(s) {
+  return String(s||'').replace(/\\/g,'\\\\').replace(/`/g,'\\`').replace(/\$/g,'\\$').replace(/"/g,'&quot;').replace(/\r?\n/g,'\\n');
+}
+
+let _accordionSeq = 0;
+function makeAccordion(title, rows) {
+  const id = 'acc-' + (++_accordionSeq);
+  const el = document.createElement('div');
+  el.className = 'card';
+  el.style.animation = 'fadeUp .3s ease both';
+  const rowsHtml = rows.map(([label, value, rawHtml]) =>
+    `<div style="display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:5px 0;border-bottom:1px solid var(--border)">
+      <span style="color:var(--mid)">${esc(label)}</span>
+      <span style="font-weight:600;color:var(--dark);text-align:right">${rawHtml ? value : esc(value)}</span>
+    </div>`
+  ).join('');
+  el.innerHTML = `
+    <div class="card-head" style="cursor:pointer;padding:10px 14px" onclick="toggleAccordion('${id}')">
+      <div style="flex:1;font-size:12px;font-weight:700;color:var(--dark)">${esc(title)}</div>
+      <svg class="hist-chevron" id="${id}-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div id="${id}-body" style="display:none;padding:4px 14px 12px">${rowsHtml}</div>`;
+  return el;
+}
+function toggleAccordion(id) {
+  const body = document.getElementById(id + '-body');
+  const chev = document.getElementById(id + '-chev');
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  chev.style.transform = open ? '' : 'rotate(180deg)';
+}
+function copyTxt(btn, text) {
+  const cleanText = text.replace(/\\n/g,'\n');
+  navigator.clipboard.writeText(cleanText).then(()=>{
+    const o = btn.innerHTML;
+    btn.innerHTML = btn.innerHTML.replace(/<span>.*?<\/span>/,'<span>✓ Copiado</span>');
+    setTimeout(()=>{ btn.innerHTML = o; }, 2000);
+  });
+}
+
+// ─── CONTEXTO PARA CLAUDE ────────────────────────────────────────────
+function formatConvHistoryPlain(en) {
+  const hist = en.conversationHistory || [];
+  return hist.map(m => {
+    if (m.role === 'system') return `[CONTEXTO: ${m.text}]`;
+    if (m.role === 'sent') return `FLORENCIA ENVIÓ:\n${m.text}`;
+    if (m.role === 'received') return `PROSPECTO RESPONDIÓ:\n${m.text}`;
+    if (m.role === 'suggested') return `FLORENCIA ENVIÓ:\n${m.text}`;
+    return m.text || '';
+  }).join('\n\n---\n\n');
+}
+function buildClaudeFullContext(en) {
+  const empresa = en.empresa || '—';
+  const stage = stgLabel(en.stage || 1);
+  const conv = formatConvHistoryPlain(en) || '(sin conversación registrada)';
+  return [
+    '==================================================',
+    'PERFIL COMPLETO', '',
+    en.profileRaw || '(no se guardó perfil completo para este contacto)', '',
+    '==================================================',
+    'EMPRESA', '',
+    empresa, '',
+    '==================================================',
+    'CONVERSACIÓN', '',
+    conv, '',
+    '==================================================',
+    'ETAPA ACTUAL', '',
+    stage, '',
+    '==================================================',
+    'OBJETIVO', '',
+    'Generar el próximo mensaje según metodología Hint Media.',
+    '=================================================='
+  ].join('\n');
+}
+function buildClaudeProfileOnly(en) {
+  return [
+    '==================================================',
+    'PERFIL COMPLETO', '',
+    en.profileRaw || '(no se guardó perfil completo para este contacto)',
+    '=================================================='
+  ].join('\n');
+}
+function buildClaudeProfileConv(en) {
+  const conv = formatConvHistoryPlain(en) || '(sin conversación registrada)';
+  return (en.profileRaw || '(no se guardó perfil completo para este contacto)') + '\n\n*\n\n' + conv;
+}
+function buildClaudeStructuredContext(en) {
+  const conv = formatConvHistoryPlain(en) || '(sin conversación registrada)';
+  const stage = stgLabel(en.stage || 1);
+  return [
+    '=== PERFIL ORIGINAL ===', '',
+    en.profileRaw || '(no se guardó perfil completo para este contacto)', '',
+    '=== RESUMEN ESTRUCTURADO ===', '',
+    'Tipo perfil: ' + (en.tipoPerfil || ''),
+    'Sector: ' + (en.sector || ''),
+    'Empresa: ' + (en.empresa || ''),
+    'Nivel interés: ' + (en.nivelInteres || ''),
+    'Señal detectada: ' + (en.senalDetectada || ''),
+    'Ángulo MSG1: ' + (en.anguloMsg1 || ''),
+    'Hipótesis MSG2: ' + (en.hipotesisMsg2 || ''), '',
+    '=== CONVERSACIÓN COMPLETA ===', '',
+    conv, '',
+    '=== ETAPA ACTUAL ===', '',
+    stage, '',
+    '=== OBJETIVO ===', '',
+    'Generar siguiente mensaje según metodología Hint Media.'
+  ].join('\n');
+}
+function copyContextFor(id, mode, btn) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+  let text;
+  if (mode === 'full') text = buildClaudeFullContext(en);
+  else if (mode === 'profile') text = buildClaudeProfileOnly(en);
+  else if (mode === 'structured') text = buildClaudeStructuredContext(en);
+  else text = buildClaudeProfileConv(en);
+  navigator.clipboard.writeText(text).then(() => {
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copiado';
+    setTimeout(() => { btn.textContent = orig; }, 2000);
+  });
+}
+function escHtmlAttr(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function updateStructFieldLocal(id, field, value) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+  en[field] = value;
+}
+function persistStructField(id) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+  histPersist(en);
+}
+function structFieldHtml(en, field, label) {
+  return `<div style="display:flex;flex-direction:column;gap:2px">
+    <label style="font-size:9.5px;color:var(--mid);font-weight:600">${label}</label>
+    <input type="text" value="${escHtmlAttr(en[field]||'')}" oninput="updateStructFieldLocal('${en.id}','${field}',this.value)" onblur="persistStructField('${en.id}')" style="font-size:11.5px;padding:5px 7px;border:1px solid var(--border);border-radius:6px;background:#fafafa">
+  </div>`;
+}
+function renderStructuredSummary(en) {
+  return `<div style="padding:10px 13px;display:flex;flex-direction:column;gap:6px;background:#fff;border-bottom:1px solid var(--border)">
+    <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mid)">Resumen estructurado <span style="font-weight:400;text-transform:none;letter-spacing:0">(no se manda a la IA, solo para tu referencia)</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+      ${structFieldHtml(en,'tipoPerfil','Tipo de perfil')}
+      ${structFieldHtml(en,'sector','Sector')}
+      ${structFieldHtml(en,'nivelInteres','Nivel de interés')}
+      ${structFieldHtml(en,'senalDetectada','Señal detectada')}
+      ${structFieldHtml(en,'anguloMsg1','Ángulo MSG1')}
+      ${structFieldHtml(en,'hipotesisMsg2','Hipótesis MSG2')}
+      ${structFieldHtml(en,'estadoActual','Estado actual')}
+    </div>
+  </div>`;
+}
+
+document.addEventListener('keydown', e => { if(e.ctrlKey && e.key==='Enter') generateOpeners(); });
+
+// ─── HISTORY ─────────────────────────────────────────────────────────
+
+const STAGES = [null,
+  {label:'Apertura'},
+  {label:'En conversación'},
+  {label:'Dossier enviado'},
+  {label:'Seguimiento 1'},
+  {label:'Seguimiento 2'}
+];
+const STAGE_COLORS = ['','sp-1','sp-2','sp-3','sp-4','sp-5'];
+const STAGE_NAMES_SHORT = ['','Apertura','En conv.','Dossier','Seg. 1','Seg. 2'];
+
+function stgLabel(s){ return (STAGES[s]||{label:'?'}).label; }
+
+function renderStageBar(en) {
+  const cur = en.stage || 1;
+  let h = '<div class="stage-bar">';
+  for (let i=1;i<=5;i++) {
+    const done = i < cur, curr = i === cur;
+    h += '<div class="stage-step">';
+    h += '<div class="stage-dot' + (done?' done':curr?' curr':'') + '">' + i + '</div>';
+    h += '<div class="stage-lbl' + (curr?' act':'') + '">' + STAGE_NAMES_SHORT[i] + '</div>';
+    h += '</div>';
+    if (i<5) h += '<div class="stage-line' + (done?' done':'') + '"></div>';
+  }
+  h += '</div>';
+  return h;
+}
+
+function renderAdvanceBox(en) {
+  const cur = en.stage || 1;
+  const log = en.stageHistory || [{stage:1, date:en.date, note:''}];
+  let h = '<div class="advance-box">';
+  if (log.length) {
+    h += '<div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mid);margin-bottom:2px">Registro</div>';
+    h += log.map(l =>
+      '<div class="stage-log-item"><div class="stage-log-dot"></div><span><strong>' + stgLabel(l.stage) + '</strong> · ' + l.date + (l.note ? ' — <em>' + esc(l.note) + '</em>' : '') + '</span></div>'
+    ).join('');
+  }
+  // botones acción
+  h += '<div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap">';
+  if (cur > 1) {
+    h += '<button class="btn-advance" style="background:#444;flex:0" onclick="histGoBack(\'' + en.id + '\')">';
+    h += '← Volver a ' + stgLabel(cur - 1) + '</button>';
+  }
+  if (!en.noInterest) {
+    h += '<button class="btn-advance" style="background:#888;flex:0" onclick="histMarkNoInterest(\'' + en.id + '\')">';
+    h += '✕ No interesado</button>';
+    h += '<button class="btn-advance" style="background:#1A2A3A;flex:0" onclick="toggleRecontactPicker(\'' + en.id + '\')">';
+    h += '⏰ Recontactar</button>';
+  } else {
+    h += '<button class="btn-advance" style="background:#444;flex:0" onclick="histMarkNoInterest(\'' + en.id + '\')">';
+    h += '↩ Reactivar</button>';
+  }
+  h += '</div>';
+  const recontactDate = en.followup_date || '';
+  h += '<div class="recontact-picker" id="recontact-picker-' + en.id + '">';
+  if (recontactDate) {
+    h += '<div class="recontact-current">Programado: ' + recontactDate + '<button class="recontact-clear" onclick="clearRecontact(\'' + en.id + '\')">Cancelar</button></div>';
+  }
+  h += '<span style="font-size:10px;color:#777;display:block;margin-bottom:5px">Recontactar en:</span>';
+  h += '<button class="recontact-opt" onclick="setRecontact(\'' + en.id + '\',1)">1 mes</button>';
+  h += '<button class="recontact-opt" onclick="setRecontact(\'' + en.id + '\',3)">3 meses</button>';
+  h += '<button class="recontact-opt" onclick="setRecontact(\'' + en.id + '\',6)">6 meses</button>';
+  h += '</div>';
+  if (!en.noInterest) {
+    if (cur < 5) {
+      h += '<div style="font-size:11px;color:var(--mid);margin-top:8px">¿Qué pasó? <span style="color:#bbb">(opcional — si te dieron email, pegalo acá)</span></div>';
+      h += '<textarea class="advance-note" id="advance-note-' + en.id + '" placeholder="Ej: Respondió con interés... o pegá el mail si lo dieron" oninput="detectEmailNote(this)"></textarea>';
+      h += '<div id="email-hint-' + en.id + '" style="display:none;font-size:11px;color:#1A5FA8;background:#E6F1FB;border-radius:6px;padding:4px 9px;margin-top:4px">📧 Email detectado</div>';
+      if (cur === 2) {
+        h += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px">';
+        h += '<button class="btn-advance" style="margin-top:0" onclick="histAdvanceStage(\'' + en.id + '\',false)">';
+        h += '<svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:white;fill:none;stroke-width:2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>';
+        h += 'Dossier</button>';
+        h += '<button class="btn-advance" style="margin-top:0;background:#1A5FA8" onclick="histAdvanceStage(\'' + en.id + '\',true)">';
+        h += '<svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:white;fill:none;stroke-width:2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>';
+        h += 'Dossier × mail</button>';
+        h += '</div>';
+      } else {
+        h += '<button class="btn-advance" onclick="histAdvanceStage(\'' + en.id + '\',false)">';
+        h += '<svg viewBox="0 0 24 24" style="width:13px;height:13px;stroke:white;fill:none;stroke-width:2"><polyline points="9 18 15 12 9 6"/></svg>';
+        h += 'Avanzar → ' + stgLabel(cur + 1) + '</button>';
+      }
+    } else {
+      h += '<div style="font-size:11px;color:var(--green);font-weight:600;display:flex;gap:5px;align-items:center;margin-top:2px"><span>✓</span><span>Secuencia completa</span></div>';
+    }
+  }
+  h += '</div>';
+  return h;
+}
+
+function detectEmailNote(textarea) {
+  const id = textarea.id.replace('advance-note-','');
+  const hint = document.getElementById('email-hint-' + id);
+  if (!hint) return;
+  hint.style.display = /[\w.+-]+@[\w.-]+\.[a-zA-Z]{2,}/.test(textarea.value) ? '' : 'none';
+}
+
+function histAdvanceStage(id, isDossierMail) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en || (en.stage||1) >= 5) return;
+  const noteEl = document.getElementById('advance-note-' + id);
+  const note = noteEl ? noteEl.value.trim() : '';
+  const newStage = (en.stage||1) + 1;
+  const dateStr = new Date().toLocaleDateString('es-AR',{day:'2-digit',month:'2-digit',year:'2-digit'});
+  en.stage = newStage;
+  if (isDossierMail) en.dossierMail = true;
+  if (!en.stageHistory) en.stageHistory = [{stage:1, date:en.date, note:''}];
+  en.stageHistory.push({stage:newStage, date:dateStr, note});
+  histPersist();
+  renderHistoryList();
+  histRestore(id);
+}
+function histGoBack(id) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en || (en.stage||1) <= 1) return;
+  en.stage = (en.stage||1) - 1;
+  if (en.stageHistory && en.stageHistory.length > 1) en.stageHistory.pop();
+  histPersist();
+  renderHistoryList();
+  histRestore(id);
+}
+function histMarkNoInterest(id) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+  en.noInterest = !en.noInterest;
+  histPersist();
+  renderHistoryList();
+  histRestore(id);
+}
+function toggleRecontactPicker(id) {
+  const picker = document.getElementById('recontact-picker-' + id);
+  if (picker) picker.classList.toggle('open');
+}
+function setRecontact(id, months) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+  const d = new Date();
+  d.setMonth(d.getMonth() + months);
+  en.followup_date = d.toLocaleDateString('es-AR', {day:'2-digit', month:'2-digit', year:'numeric'});
+  histPersist();
+  renderProximos();
+  histRestore(id);
+  const picker = document.getElementById('recontact-picker-' + id);
+  if (picker) picker.classList.remove('open');
+}
+function clearRecontact(id) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+  delete en.followup_date;
+  histPersist();
+  renderProximos();
+  histRestore(id);
+}
+
+let _histEntries = [];
+let _histStageFilter = '';
+
+async function initHist() {
+  try {
+    const res = await fetch('/api/historial');
+    const data = await res.json();
+    if (Array.isArray(data) && data.length > 0) {
+      _histEntries = data;
+    } else {
+      // migración one-time desde localStorage
+      try {
+        const local = JSON.parse(localStorage.getItem('hm_hist_v2') || '[]');
+        if (local.length > 0) { _histEntries = local; histPersist(); }
+      } catch {}
+    }
+  } catch {
+    try { _histEntries = JSON.parse(localStorage.getItem('hm_hist_v2') || '[]'); } catch { _histEntries = []; }
+  }
+  renderHistoryList();
+  if (_histEntries.length) {
+    document.getElementById('hist-body').style.display = 'block';
+    document.getElementById('hist-chevron').style.transform = 'rotate(180deg)';
+  }
+}
+
+function parseDateEntry(str) {
+  const p = (str||'').split('/');
+  if (p.length !== 3) return null;
+  const [d, m, y] = p.map(Number);
+  return new Date(2000 + y, m - 1, d);
+}
+function daysAgo(dateStr) {
+  const d = parseDateEntry(dateStr);
+  if (!d) return 0;
+  return Math.floor((Date.now() - d.getTime()) / 86400000);
+}
+function getLastActivityDate(entry) {
+  const hist = entry.stageHistory;
+  if (hist && hist.length > 0) return hist[hist.length - 1].date;
+  return entry.date;
+}
+function getOverdueEntries() {
+  return _histEntries
+    .filter(en => daysAgo(getLastActivityDate(en)) >= 7)
+    .sort((a, b) => daysAgo(getLastActivityDate(b)) - daysAgo(getLastActivityDate(a)));
+}
+function renderAlertBanner() {
+  renderProximos();
+}
+function toggleProximos() {
+  const body = document.getElementById('proximos-body');
+  const chev = document.getElementById('prox-chevron');
+  const open = body.classList.contains('open');
+  body.classList.toggle('open', !open);
+  chev.style.transform = open ? '' : 'rotate(180deg)';
+}
+function getThreshold(en) {
+  const s = en.stage || 1;
+  if (s === 2) return 2;
+  if (s === 3) return 5;
+  if (s === 4) return 7;
+  return 7;
+}
+function getSnippet(en) {
+  const hist = en.conversationHistory || [];
+  for (let i = hist.length - 1; i >= 0; i--) {
+    const r = hist[i];
+    if (r.role === 'received' || r.sender === 'them') {
+      const t = (r.text || '').trim().replace(/\n/g,' ');
+      return t.length > 55 ? t.substring(0,52)+'…' : t;
+    }
+  }
+  return '';
+}
+function stagePillProx(s) {
+  const cls = s===2?'psp-2':s===3?'psp-3':'psp-1';
+  return `<span class="prox-stage-pill ${cls}">${STAGE_NAMES_SHORT[s]||'Apertura'}</span>`;
+}
+function getActionForStage(stage) {
+  if (stage === 1) return 'msg2';
+  if (stage === 2) return 'dossier';
+  if (stage === 3) return 'seg1';
+  if (stage === 4) return 'seg2';
+  return 'other';
+}
+function getEmpresaDisplay(en) {
+  if (en.empresa) return en.empresa;
+  const m1 = (en.msg1 || '').match(/en\s+([A-Z][^\.,\n]{2,30})/);
+  if (m1) return m1[1];
+  if (en.email) { const d = en.email.split('@')[1]; if (d) return d.split('.')[0]; }
+  return '';
+}
+function renderProximos() {
+  const today = new Date(); today.setHours(0,0,0,0);
+  function parseFollowupDate(str) {
+    if (!str) return null;
+    const [d,m,y] = str.split('/').map(Number);
+    return new Date(y < 100 ? 2000+y : y, m-1, d);
+  }
+  const active = [..._histEntries].filter(en => {
+    if (en.noInterest || (en.stage||1) > 4) return false;
+    if (en.followup_date) {
+      const fd = parseFollowupDate(en.followup_date);
+      if (fd && fd > today) return false;
+    }
+    return true;
+  });
+  const recontactEntries = [..._histEntries].filter(en => {
+    if (en.noInterest) return false;
+    if (!en.followup_date) return false;
+    const fd = parseFollowupDate(en.followup_date);
+    return fd && fd > today;
+  });
+  const countEl = document.getElementById('prox-count');
+  const body = document.getElementById('proximos-body');
+  if (!countEl || !body) return;
+  const enriched = active.map(en => {
+    const days = daysAgo(getLastActivityDate(en));
+    const thresh = getThreshold(en);
+    const remaining = thresh - days;
+    const overdue = remaining <= 0;
+    const action = getActionForStage(en.stage || 1);
+    return { en, days, remaining, overdue, action };
+  }).sort((a,b) => a.remaining - b.remaining);
+  const overdueCnt = enriched.filter(x => x.overdue).length;
+  countEl.textContent = enriched.length;
+  countEl.className = 'prox-count' + (overdueCnt > 0 ? ' has-overdue' : '');
+  const cols = [
+    { key:'msg2',    head:'col-msg2',   label:'Enviar MSG2',      emoji:'💬' },
+    { key:'dossier', head:'col-dossier',label:'Enviar dossier',   emoji:'📄' },
+    { key:'seg1',    head:'col-seg',    label:'Seguimiento 1',    emoji:'🔁' },
+    { key:'seg2',    head:'col-seg',    label:'Seguimiento 2',    emoji:'🔁' },
+  ];
+  function daysLabel(x) {
+    if (x.overdue) return { text: `hace ${x.days}d`, cls: 'red' };
+    if (x.remaining === 0) return { text: 'Hoy', cls: 'orange' };
+    if (x.remaining === 1) return { text: 'Mañana', cls: 'orange' };
+    return { text: `en ${x.remaining}d`, cls: 'green' };
+  }
+  const recontactRows = recontactEntries.sort((a,b) => {
+    const fa = parseFollowupDate(a.followup_date), fb = parseFollowupDate(b.followup_date);
+    return fa - fb;
+  }).map(en => {
+    const fd = parseFollowupDate(en.followup_date);
+    const diffDays = Math.round((fd - today) / 86400000);
+    const empresa = getEmpresaDisplay(en);
+    let text, cls;
+    if (diffDays <= 0) { text = 'Hoy'; cls = 'orange'; }
+    else if (diffDays === 1) { text = 'Mañana'; cls = 'orange'; }
+    else if (diffDays <= 7) { text = `en ${diffDays}d`; cls = 'orange'; }
+    else { text = en.followup_date; cls = 'green'; }
+    return `<div class="prox-row" onclick="proxCardClick('${en.id}')">
+      <div class="prox-row-info">
+        <div class="prox-row-name">${esc(en.name)}</div>
+        ${empresa ? `<div class="prox-row-empresa">${esc(empresa)}</div>` : ''}
+      </div>
+      <div class="prox-row-days ${cls}">${text}</div>
+    </div>`;
+  }).join('') || `<div class="prox-empty-col">Sin pendientes</div>`;
+
+  body.innerHTML = cols.map(col => {
+    const items = enriched.filter(x => x.action === col.key);
+    const rows = items.length === 0
+      ? `<div class="prox-empty-col">Sin pendientes</div>`
+      : items.map(x => {
+          const { text, cls } = daysLabel(x);
+          const empresa = getEmpresaDisplay(x.en);
+          return `<div class="prox-row${x.overdue ? ' overdue-row' : ''}" onclick="proxCardClick('${x.en.id}')">
+            <div class="prox-row-info">
+              <div class="prox-row-name">${esc(x.en.name)}</div>
+              ${empresa ? `<div class="prox-row-empresa">${esc(empresa)}</div>` : ''}
+            </div>
+            <div class="prox-row-days ${cls}">${text}</div>
+          </div>`;
+        }).join('');
+    return `<div class="prox-col">
+      <div class="prox-col-head ${col.head}">
+        <span>${col.emoji} ${col.label}</span>
+        <span class="prox-col-count">${items.length}</span>
+      </div>
+      <div class="prox-col-body">${rows}</div>
+    </div>`;
+  }).join('') + `<div class="prox-col">
+    <div class="prox-col-head col-recontact">
+      <span>⏰ Recontactar</span>
+      <span class="prox-col-count">${recontactEntries.length}</span>
+    </div>
+    <div class="prox-col-body">${recontactRows}</div>
+  </div>`;
+}
+function proxCardClick(id) {
+  histRestore(id);
+  document.getElementById('hist-body').style.display = 'block';
+  document.getElementById('hist-chevron').style.transform = 'rotate(180deg)';
+  toggleProximos();
+}
+function histPersist(entry) {
+  const payload = entry ? entry : _histEntries;
+  fetch('/api/historial', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(() => {});
+}
+function histExtractName(profile) {
+  return (profile || '').trim().split('\n').map(l => l.trim()).find(l => l) || 'Sin nombre';
+}
+function autoDetectEmpresa() {
+  const profile = document.getElementById('profile-input').value;
+  const input = document.getElementById('empresa-input');
+  if (!input || input.dataset.manual === '1') return;
+  const empresa = histExtractEmpresaFromProfile(profile);
+  input.value = empresa;
+  updateSectorIntelBar(profile);
+}
+
+async function updateSectorIntelBar(profileText) {
+  const bar = document.getElementById('sector-intel-bar');
+  if (!bar || !profileText || profileText.length < 30) { if(bar) bar.style.display='none'; return; }
+
+  // Reusar la detección de sector del buildHIEContextBlock
+  const sectorMap = {
+    'Energía': ['tgs', 'transener', 'energía', 'ecopetrol', 'petrobras', 'gas', 'oil', 'eléctric'],
+    'Minería': ['minería', 'antofagasta', 'newmont', 'barrick', 'bhp', 'miner'],
+    'Educación': ['universidad', 'educación', 'edutech', 'business school', 'institute'],
+    'Seguros/Finanzas': ['seguros', 'finanzas', 'libra', 'banca', 'fintech', 'crédito'],
+    'Farmacéutico': ['farmacéutico', 'abbott', 'novartis', 'laboratorio', 'pharma'],
+    'Tecnología': ['software', 'technology', 'tech', 'datos', 'crm', 'erp', 'saas'],
+    'Real Estate': ['inmobil', 'real estate', 'desarrollo inmobiliario'],
+    'Retail/Consumo': ['retail', 'consumo', 'moda', 'tasarolli'],
+    'Turismo/Hotelería': ['hotel', 'turismo', 'hospitalidad', 'resort', 'vacations'],
+    'Agencia/Marketing': ['agencia', 'marketing', 'publicidad'],
+    'Consultoría/Legal': ['consultor', 'consulting', 'legal', 'abogad'],
+    'Salud/Clínica': ['clínica', 'hospital', 'salud'],
+    'Construcción/Materiales': ['construc', 'materiales', 'ternium', 'acero'],
+  };
+
+  const lower = profileText.toLowerCase();
+  let sector = null;
+  for (const [s, kws] of Object.entries(sectorMap)) {
+    if (kws.some(k => lower.includes(k))) { sector = s; break; }
+  }
+
+  if (!sector) { bar.style.display = 'none'; return; }
+
+  try {
+    const res = await fetch('/api/intelligence');
+    if (!res.ok) { bar.style.display = 'none'; return; }
+    const data = await res.json();
+    const ctx = data.context || {};
+    const sd = (ctx.por_sector || {})[sector];
+    const varA = (ctx.variantes || {})['A'];
+    const varC = (ctx.variantes || {})['C'];
+
+    if (!sd) { bar.style.display = 'none'; return; }
+
+    const conf = { HIGH: '🟢', MEDIUM: '🟡', LOW: '🔴', INSUFFICIENT: '⚫' };
+    const varText = (varA && varC)
+      ? `Var A ${varA.dossier_pct}% vs C ${varC.dossier_pct}%`
+      : '';
+    const clientes = (sd.clientes_hint || []).join(', ');
+
+    bar.style.display = 'block';
+    bar.innerHTML = `
+      <strong>${sector}</strong> ${conf[sd.confianza]||''} &nbsp;·&nbsp;
+      Dossier histórico: <strong>${sd.dossier_pct}%</strong> (n=${sd.n}) &nbsp;·&nbsp;
+      ${varText ? varText + ' &nbsp;·&nbsp;' : ''}
+      Clientes: <em>${clientes}</em>
+    `;
+  } catch(_) { bar.style.display = 'none'; }
+}
+function histExtractEmpresaFromProfile(profile) {
+  const lines = (profile||'').split('\n').map(l => l.trim()).filter(l => l);
+  for (let i = 1; i < Math.min(lines.length, 10); i++) {
+    const l = lines[i];
+    const ma = l.match(/\bat\s+([A-ZÁÉÍÓÚÑÜ][^|·\n]{2,40}?)(?:\s*[|·]|$)/);
+    if (ma) return ma[1].trim();
+    const me = l.match(/\ben\s+([A-ZÁÉÍÓÚÑÜ][^|·\n]{2,40}?)(?:\s*[|·]|$)/);
+    if (me) return me[1].trim();
+    if (!l.includes('|') && !l.includes(',') && /^[A-ZÁÉÍÓÚÑÜ]/.test(l) && l.split(' ').length <= 5 && l.length > 3 && l.length < 50 && !/grado|años|er |ción$|miento$|contacto|mensaje|navigator|enviar|conectar/i.test(l)) return l;
+  }
+  return '';
+}
+function extractEmail(text) {
+  const m = (text||'').match(/[\w.+-]+@[\w.-]+\.[a-zA-Z]{2,}/);
+  return m ? m[0] : null;
+}
+function domainToEmpresa(email) {
+  const domain = (email||'').split('@')[1] || '';
+  const base = domain.replace(/\.(com|org|net|co|ar|cr|pa|mx|uy|cl|pe|br|info|biz)(\.[a-z]{2})?$/i,'');
+  return base.replace(/[-_.]/g,' ').replace(/\b\w/g,c=>c.toUpperCase()).trim();
+}
+function histHasEmail(en) {
+  if (en.dossierMail) return true;
+  for (const sh of (en.stageHistory||[])) {
+    if (/[\w.+-]+@[\w.-]+\.[a-zA-Z]{2,}/.test(sh.note||'')) return true;
+  }
+  return false;
+}
+
+function histExtractEmpresa(msg1, profile) {
+  // Try msg1 first: "en Company —"
+  const m = (msg1||'').match(/\ben\s+([A-ZÁÉÍÓÚÑÜ][^—\n]{2,50}?)\s*—/);
+  if (m) return m[1].trim();
+  // Fallback: profile text — look for "at Company" or "en Company" in headline lines
+  const lines = (profile||'').split('\n').map(l => l.trim()).filter(l => l);
+  for (let i = 1; i < Math.min(lines.length, 8); i++) {
+    const l = lines[i];
+    // "Title at Company" or "Title en Company"
+    const ma = l.match(/\bat\s+([A-ZÁÉÍÓÚÑÜ][^|·\n]{2,40}?)(?:\s*[|·]|$)/);
+    if (ma) return ma[1].trim();
+    const me = l.match(/\ben\s+([A-ZÁÉÍÓÚÑÜ][^|·\n]{2,40}?)(?:\s*[|·]|$)/);
+    if (me) return me[1].trim();
+    // Standalone company line: short, capitalized, no | separators
+    if (!l.includes('|') && !l.includes(',') && /^[A-ZÁÉÍÓÚÑÜ]/.test(l) && l.split(' ').length <= 5 && l.length > 3 && !/grado|años|er |ción$|miento$|contacto|mensaje|navigator|enviar|conectar/i.test(l)) {
+      return l;
+    }
+  }
+  return '';
+}
+function histUpsert(entry) {
+  const i = _histEntries.findIndex(e => e.id === entry.id);
+  if (i >= 0) {
+    // preserve stage + stageHistory on upsert
+    entry.stage = entry.stage || _histEntries[i].stage || 1;
+    entry.stageHistory = entry.stageHistory || _histEntries[i].stageHistory || [{stage:1, date:entry.date, note:''}];
+    _histEntries[i] = entry;
+  } else {
+    if (!entry.stage) entry.stage = 1;
+    if (!entry.stageHistory) entry.stageHistory = [{stage:1, date:entry.date, note:''}];
+    _histEntries.unshift(entry);
+  }
+  if (_histEntries.length > 2000) _histEntries = _histEntries.slice(0, 2000);
+  histPersist(entry);
+  renderHistoryList();
+}
+function histUpdateConv(id, conversationHistory) {
+  const i = _histEntries.findIndex(e => e.id === id);
+  if (i >= 0) { _histEntries[i].conversationHistory = [...conversationHistory]; histPersist(); }
+}
+function histEditEmpresa(id, e) {
+  e.stopPropagation();
+  const entry = _histEntries.find(en => en.id === id);
+  if (!entry) return;
+  const nuevo = prompt('Empresa:', entry.empresa || '');
+  if (nuevo === null) return;
+  entry.empresa = nuevo.trim();
+  histPersist();
+  renderHistoryList();
+  histRestore(id);
+}
+function histRename(id, e) {
+  e.stopPropagation();
+  const entry = _histEntries.find(en => en.id === id);
+  if (!entry) return;
+  const nuevo = prompt('Nuevo nombre:', entry.name);
+  if (!nuevo || !nuevo.trim() || nuevo.trim() === entry.name) return;
+  entry.name = nuevo.trim();
+  histPersist();
+  renderHistoryList();
+}
+function histDeleteEntry(id, e) {
+  e.stopPropagation();
+  _histEntries = _histEntries.filter(en => en.id !== id);
+  histPersist();
+  renderHistoryList();
+}
+function toggleHistory() {
+  const body = document.getElementById('hist-body');
+  const chevron = document.getElementById('hist-chevron');
+  const open = body.style.display !== 'none';
+  body.style.display = open ? 'none' : 'block';
+  chevron.style.transform = open ? '' : 'rotate(180deg)';
+}
+function filterHistChip(val) {
+  _histStageFilter = (_histStageFilter === val) ? '' : val;
+  renderHistoryList();
+}
+function renderHistStatCards(counts) {
+  const el = document.getElementById('hist-statcards');
+  if (!el) return;
+  const cards = [
+    {val:'', num: _histEntries.length, lbl:'Total', color:'var(--dark)'},
+    {val:'1', num: counts[1], lbl:'Apertura', color:'#993C1D'},
+    {val:'2', num: counts[2], lbl:'Conv.', color:'#1A5FA8'},
+    {val:'3', num: counts[3], lbl:'Dossier', color:'#6B21A8'},
+    {val:'email', num: counts.email, lbl:'× mail', color:'#1A5FA8', blue:true},
+    {val:'4', num: counts[4], lbl:'Seg. 1', color:'#1A6635'},
+    {val:'5', num: counts[5], lbl:'Seg. 2', color:'#555'},
+    {val:'recontact', num: counts.recontact, lbl:'Recontacto', color:'#27AE60'},
+    {val:'noint', num: counts.noint, lbl:'No int.', color:'#999'},
+  ];
+  el.innerHTML = cards.map(c => {
+    const isActive = _histStageFilter === c.val && c.val !== '';
+    return `<div class="hsc${isActive?' active':''}${c.blue?' blue-card':''}" onclick="filterHistChip('${c.val}')">
+      <div class="hsc-num" style="color:${c.color}">${c.num}</div>
+      <div class="hsc-lbl">${c.lbl}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderHistStats() {
+  const bar = document.getElementById('hist-stats');
+  if (!bar) return;
+  const counts = {1:0,2:0,3:0,4:0,5:0,noint:0,email:0,recontact:0};
+  _histEntries.forEach(e => {
+    if (e.noInterest) counts.noint++;
+    else if (e.followup_date) counts.recontact++;
+    else { counts[e.stage||1] = (counts[e.stage||1]||0) + 1; if (histHasEmail(e)) counts.email++; }
+  });
+  const chips = [
+    {val:'1', label:`Apertura · ${counts[1]}`},
+    {val:'2', label:`Conv. · ${counts[2]}`},
+    {val:'3', label:`Dossier · ${counts[3]}`},
+    {val:'email', label:`📧 Mail · ${counts.email}`, blue:true},
+    {val:'4', label:`Seg.1 · ${counts[4]}`},
+    {val:'5', label:`Seg.2 · ${counts[5]}`},
+    {val:'recontact', label:`⏰ Recontacto · ${counts.recontact}`},
+    {val:'noint', label:`No int. · ${counts.noint}`},
+  ];
+  bar.innerHTML = chips.map(c =>
+    `<span class="hist-chip${_histStageFilter === c.val ? ' active' : ''}${c.blue ? ' blue' : ''}" onclick="filterHistChip('${c.val}')">${c.label}</span>`
+  ).join('');
+  renderHistStatCards(counts);
+}
+function renderHistoryList() {
+  document.getElementById('hist-count').textContent = _histEntries.length;
+  renderAlertBanner();
+  renderHistStats();
+  const list = document.getElementById('hist-list');
+  if (!_histEntries.length) {
+    list.innerHTML = '<div class="hist-empty">Todavía no hay prospectos guardados</div>';
+    return;
+  }
+  const q = (document.getElementById('hist-search')?.value || '').toLowerCase().trim();
+  const parseDate = d => { const p=(d||'').split('/'); return p.length===3?parseInt(p[2])*10000+parseInt(p[1])*100+parseInt(p[0]):0; };
+  const sorted = _histEntries.map((e,i)=>({e,i})).sort((a,b)=>{ const dd=parseDate(b.e.date)-parseDate(a.e.date); return dd!==0?dd:a.i-b.i; }).map(x=>x.e);
+  function searchEntry(en) {
+    if (en.name.toLowerCase().includes(q)) return true;
+    if ((en.variantTitle||'').toLowerCase().includes(q)) return true;
+    if ((en.msg1||'').toLowerCase().includes(q)) return true;
+    if ((en.msg2||'').toLowerCase().includes(q)) return true;
+    for (const sh of (en.stageHistory||[])) { if ((sh.note||'').toLowerCase().includes(q)) return true; }
+    for (const c of (en.conversationHistory||[])) { if ((c.text||'').toLowerCase().includes(q)) return true; }
+    return false;
+  }
+  let filtered = q ? sorted.filter(searchEntry) : sorted;
+  if (_histStageFilter === 'noint') filtered = filtered.filter(en => en.noInterest);
+  else if (_histStageFilter === 'email') filtered = filtered.filter(en => !en.noInterest && !en.followup_date && histHasEmail(en));
+  else if (_histStageFilter === 'recontact') filtered = filtered.filter(en => !!en.followup_date);
+  else if (_histStageFilter) filtered = filtered.filter(en => !en.noInterest && !en.followup_date && (en.stage||1) === parseInt(_histStageFilter));
+  if (!filtered.length) {
+    list.innerHTML = '<div class="hist-empty">Sin resultados para "' + esc(q) + '"</div>';
+    return;
+  }
+  list.innerHTML = filtered.map(en => {
+    const days = daysAgo(getLastActivityDate(en));
+    const overdue = !en.noInterest && days >= 7;
+    const noint = !!en.noInterest;
+    return `
+    <div class="hist-item${noint ? ' noint' : ''}" onclick="histRestore('${en.id}')" style="${overdue ? 'border-color:#FFBCB0' : ''}">
+      <div class="hist-item-row">
+        <div class="hist-item-name">${esc(en.name)}</div>
+        ${overdue ? `<span class="overdue-badge">⚠ ${days}d</span>` : ''}
+        ${noint ? `<span class="stage-pill sp-x">✕ No int.</span>` : `<span class="stage-pill ${STAGE_COLORS[en.stage||1]}">${stgLabel(en.stage||1)}</span>`}
+        <button class="hist-del" onclick="histRename('${en.id}', event)" title="Renombrar" style="font-size:13px">✏️</button>
+        <button class="hist-del" onclick="histDeleteEntry('${en.id}', event)" title="Eliminar">✕</button>
+      </div>
+      <div class="hist-item-meta">
+        <span>${en.date}</span>
+        ${(() => { const emailFb = extractEmail((en.stageHistory||[]).map(s=>s.note||'').join(' ')); const emp = en.empresa || histExtractEmpresa(en.msg1,'') || (emailFb ? domainToEmpresa(emailFb) : ''); return emp ? `<span style="color:#888;font-size:10.5px"><span style="font-weight:600;color:var(--mid)">Empresa:</span> ${esc(emp)}</span>` : ''; })()}
+        <span class="hist-item-var">${esc(en.variantTitle)}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+function histRestore(id) {
+  const en = _histEntries.find(e => e.id === id);
+  if (!en) return;
+
+  state.extraMsgs = en.extraMsgs || {};
+  state.conversationHistory = [...(en.conversationHistory || [])];
+  state._historyId = id;
+
+  const empEl = document.getElementById('empresa-input');
+  if (empEl) { empEl.value = en.empresa || ''; empEl.dataset.manual = '0'; }
+
+  // Show history detail view in right column
+  const results = document.getElementById('results');
+  document.getElementById('loading').style.display = 'none';
+  results.style.display = 'flex';
+  results.style.flexDirection = 'column';
+  results.style.gap = '12px';
+  results.style.padding = '14px';
+
+  const msg1Bubbles = en.msg1.replace(/\\n/g,'\n').split('\n\n').filter(t=>t.trim());
+  const msg2Bubbles = en.msg2.replace(/\\n/g,'\n').split('\n\n').filter(t=>t.trim());
+  const b1html = msg1Bubbles.map(t=>`<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
+  const b2html = msg2Bubbles.map(t=>`<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
+
+  const detailEl = document.createElement('div');
+  detailEl.className = 'variant';
+  detailEl.innerHTML = `
+    <div class="var-head">
+      <div class="var-left">
+        <span class="vtag vtag-b">Historial</span>
+        <span class="vtitle">${esc(en.name)} — ${esc(en.variantTitle)}</span>
+      </div>
+      <span style="font-size:10.5px;color:var(--mid)">${en.date}</span>
+    </div>
+    <div style="padding:6px 13px;background:var(--light);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px">
+      <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--mid)">Empresa</span>
+      <span id="empresa-display-${en.id}" style="font-size:12px;font-weight:600;color:var(--dark)">${esc(en.empresa||'—')}</span>
+      <button class="hist-del" style="font-size:11px;margin-left:2px" onclick="histEditEmpresa('${en.id}', event)" title="Editar empresa">✏️</button>
+    </div>
+    <div style="padding:8px 13px;background:#fff;border-bottom:1px solid var(--border);display:flex;gap:6px;flex-wrap:wrap">
+      <button class="copy-btn" onclick="copyContextFor('${en.id}','full',this)" title="Perfil + empresa + conversación + etapa + objetivo, listo para pegar en Claude">📋 Copiar contexto para Claude</button>
+      <button class="copy-btn" onclick="copyContextFor('${en.id}','profile',this)" title="Solo el perfil completo">👤 Copiar solo perfil</button>
+      <button class="copy-btn" onclick="copyContextFor('${en.id}','profileconv',this)" title="Perfil + conversación, sin instrucciones">🧩 Copiar perfil + conversación</button>
+      <button class="copy-btn" onclick="copyContextFor('${en.id}','structured',this)" title="Perfil + resumen estructurado + conversación + etapa + objetivo">📋 Copiar contexto completo para Claude</button>
+    </div>
+    ${renderStructuredSummary(en)}
+    ${renderStageBar(en)}
+    ${renderAdvanceBox(en)}
+    <div class="msg-label">Primer mensaje (enviado)</div>
+    <div class="chat-area">${b1html}</div>
+    <div class="msg-label">Segundo mensaje</div>
+    <div class="chat-area" style="position:relative">
+      ${b2html}
+      <button class="copy-btn" style="margin:6px 0 0 0" onclick="copyTxt(this,\`${escAttr(en.msg2)}\`)">
+        <svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        <span>Copiar MSG2</span>
+      </button>
+    </div>`;
+  results.innerHTML = '';
+  results.appendChild(detailEl);
+
+  // Follow-up sequence
+  const extra = en.extraMsgs || {};
+  const hasExtra = Object.values(extra).some(arr => arr.length > 0);
+  if (hasExtra) {
+    const seqEl = document.createElement('div');
+    seqEl.className = 'card';
+    const labels = { MSG3: 'MSG3 — Dossier', MSG4: 'MSG4 — Cierre', SEG1: 'SEG1 — Seguimiento 1', SEG2: 'SEG2 — Seguimiento 2' };
+    let seqInner = `<div class="card-head"><div class="card-icon"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><div><div class="card-ttl">Secuencia de seguimiento</div></div></div><div style="padding:12px 14px;display:flex;flex-direction:column;gap:10px">`;
+    Object.entries(labels).forEach(([key, label]) => {
+      const bubbles = extra[key];
+      if (!bubbles || !bubbles.length) return;
+      const fullMsg = bubbles.join('\n\n');
+      const bubblesHtml = bubbles.map(t => `<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
+      seqInner += `<div style="border:1px solid var(--border);border-radius:9px;overflow:hidden"><div style="display:flex;align-items:center;justify-content:space-between;padding:7px 11px;background:var(--light);border-bottom:1px solid var(--border)"><span style="font-size:11px;font-weight:700;color:var(--dark)">${label}</span><button class="copy-btn" onclick="copyTxt(this,\`${escAttr(fullMsg)}\`)"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>Copiar</button></div><div class="chat-area">${bubblesHtml}</div></div>`;
+    });
+    seqInner += '</div>';
+    seqEl.innerHTML = seqInner;
+    results.appendChild(seqEl);
+  }
+
+  // Conversation thread — past exchanges + active step
+  const thread = document.getElementById('conv-thread');
+  thread.style.display = 'flex';
+  thread.innerHTML = '';
+  const history = en.conversationHistory || [];
+  let stepNum = 1;
+  let i = 0;
+  while (i < history.length && history[i].role !== 'received') i++;
+  while (i < history.length) {
+    if (history[i].role === 'received') {
+      const replyText = history[i].text;
+      const suggested = history[i+1] && history[i+1].role === 'suggested' ? history[i+1].text : null;
+      if (suggested) {
+        const stepEl = document.createElement('div');
+        stepEl.className = 'thread-step';
+        const bHtml = suggested.replace(/\\n/g,'\n').split('\n\n').filter(t=>t).map(t=>`<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
+        stepEl.innerHTML = `<div class="thread-step-head"><span>💬 Intercambio ${stepNum}</span><small>Historial</small></div><div class="response-bubble" style="display:flex;flex-direction:column;gap:5px;padding:10px 13px"><div class="msg-label" style="color:var(--blue)">Ellos dijeron</div><div class="bwrap in"><div class="bub in">${esc(replyText)}</div></div><div class="msg-label" style="margin-top:6px">Respuesta enviada</div>${bHtml}</div>`;
+        thread.appendChild(stepEl);
+        stepNum++; i += 2;
+      } else i++;
+    } else i++;
+  }
+  addReplyStep(thread, stepNum);
+  setTimeout(() => document.getElementById('right-col').scrollIntoView({ behavior:'smooth', block:'start' }), 100);
+}
+
+function recuperarSesion() {
+  const missing = [
+    { name: 'Otto Mena W', variantTitle: 'Verificación + permiso' },
+    { name: 'Andrea Catalina Prieto Chapeton', variantTitle: 'Verificación + permiso' },
+    { name: 'Dario Jerez Isla', variantTitle: 'Verificación + permiso' },
+    { name: 'Alejandro Castaño Vargas', variantTitle: 'Expansión y narrativa regulatoria' },
+    { name: 'Jorge Barreto', variantTitle: 'Verificación + permiso' },
+    { name: 'Gustavo Castillo', variantTitle: 'Verificación + permiso' },
+    { name: 'Grecia Soberanes Fragoso', variantTitle: 'Verificación + permiso' },
+    { name: 'David Spaggiari', variantTitle: 'Verificación + permiso' },
+  ];
+  missing.forEach((e, i) => {
+    if (!_histEntries.find(h => h.name === e.name)) {
+      _histEntries.push({ id: String(Date.now() - (missing.length - i) * 1000), date: '04/06/26', name: e.name, variantTitle: e.variantTitle, msg1: '', msg2: '', extraMsgs: {}, conversationHistory: [] });
+    }
+  });
+  histPersist();
+  renderHistoryList();
+  document.getElementById('btn-recuperar').style.display = 'none';
+}
+
+initHist();
+loadHIEAlerts();
+</script>
+</body>
+</html>
