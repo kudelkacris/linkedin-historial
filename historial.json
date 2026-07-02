@@ -434,7 +434,7 @@
         "text": "Ariadna, gracias por conectar! 👋\n\nMe llamó la atención cómo describiste el proceso de Impact Night. No hablaste de asistentes ni de votos. Hablaste del proceso conceptual: que lo que hacen y lo que cuentan sean la misma cosa. Eso no es lo que la mayoría escribe cuando anuncia un evento.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -445,6 +445,11 @@
         "stage": 2,
         "date": "02/07/26",
         "note": "Totalmente, creo que el reto está en que esa lógica no dependa solo de las personas que han estado desde el inicio"
+      },
+      {
+        "stage": 3,
+        "date": "02/07/26",
+        "note": "Puedes enviarme el dossier por aquí"
       }
     ]
   },
