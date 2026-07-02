@@ -313,10 +313,10 @@ async function loadData() {
 function renderStats() {
   document.getElementById('st-total').textContent = _entries.length;
   [1,2,3,4,5].forEach(s => {
-    document.getElementById('st-' + s).textContent = _entries.filter(e => (e.stage||1) === s && !e.noInterest && !e.followup_date).length;
+    document.getElementById('st-' + s).textContent = _entries.filter(e => (e.stage||1) === s && !e.noInterest).length;
   });
   document.getElementById('st-noint').textContent = _entries.filter(e => e.noInterest).length;
-  document.getElementById('st-email').textContent = _entries.filter(e => !e.noInterest && !e.followup_date && histHasEmail(e)).length;
+  document.getElementById('st-email').textContent = _entries.filter(e => !e.noInterest && histHasEmail(e)).length;
 }
 
 function filterStat(val) {
@@ -371,8 +371,8 @@ function renderList() {
     return false;
   });
   if (sf === 'noint') filtered = filtered.filter(e => e.noInterest);
-  else if (sf === 'email') filtered = filtered.filter(e => !e.noInterest && !e.followup_date && histHasEmail(e));
-  else if (sf) filtered = filtered.filter(e => !e.noInterest && !e.followup_date && (e.stage||1) === parseInt(sf));
+  else if (sf === 'email') filtered = filtered.filter(e => !e.noInterest && histHasEmail(e));
+  else if (sf) filtered = filtered.filter(e => !e.noInterest && (e.stage||1) === parseInt(sf));
 
   document.getElementById('list-count').textContent = filtered.length + ' prospecto' + (filtered.length !== 1 ? 's' : '');
 
