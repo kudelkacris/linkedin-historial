@@ -326,14 +326,26 @@
         "text": "Paula, gracias por conectar! 👋\n\nMe llamó la atención cómo planteaste la publicación sobre IA hace poco. No solo hablaste de la tecnología, sino que destacaste la importancia de que el equipo completo entienda sus posibilidades y límites. Es raro ver a alguien priorizar el aprendizaje colectivo antes que el anuncio de la solución.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
         "date": "01/07/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "02/07/26",
+        "note": "Hola Florencia, me podés mandar a mi el dossier"
+      },
+      {
+        "stage": 3,
+        "date": "02/07/26",
+        "note": "Dossier enviado por mail: paula.cafferata@tavarone.com"
       }
-    ]
+    ],
+    "dossierMail": true,
+    "email": "paula.cafferata@tavarone.com"
   },
   {
     "id": "1782951268395",
