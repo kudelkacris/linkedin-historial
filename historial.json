@@ -86,12 +86,16 @@
         "text": "Edy, gracias por conectar. 👋\n\nMe llamó la atención que en tu post sobre los primeros tres meses en Lilo Social destacaras específicamente lo que aprendiste sobre cómo high-growth brands escalan sus esfuerzos de marketing. La mayoría de los project managers habla de proyectos entregados o clientes satisfechos. Vos pusiste el foco en el \"cómo se crece sin romperse\".\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
         "date": "01/07/26",
         "note": ""
+      },
+      {
+        "stage": 3,
+        "date": "03/07/26"
       }
     ]
   },
@@ -283,12 +287,16 @@
         "text": "Brenda, gracias por conectar! 👋\n\nMe llamó la atención cómo comunicaste la apertura de la tienda 16 en Cuenca. Podría haber sido un anuncio sobre la expansión, pero elegiste dar la voz al equipo que lo hizo posible. \"Nada de esto sería posible sin el extraordinario equipo\" — eso no es lo que la mayoría publica cuando quiere mostrar un logro.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 2,
     "stageHistory": [
       {
         "stage": 1,
         "date": "01/07/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "03/07/26"
       }
     ]
   },
@@ -1060,7 +1068,8 @@
         "date": "02/07/26",
         "note": "MSG2 enviado"
       }
-    ]
+    ],
+    "noInterest": true
   },
   {
     "id": "1782950305262",
@@ -1754,7 +1763,7 @@
         "text": "Alejandra, gracias por conectar 👋\n\nLeí tu publicación de cierre en UVE y me quedó esa impresión de que gran parte de los 5 años fueron dedicados a armar que diferentes actores (administraciones, retailers, agricultores, sociedad civil) hablaran el mismo lenguaje sobre transición proteica. No es lo que la mayoría hace cuando cierra una etapa — suelen armar un resumen de logros puntuales, vos pusiste el acento en el equipo y el movimiento construido.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -1765,6 +1774,10 @@
         "stage": 2,
         "date": "02/07/26",
         "note": "MSG2 enviado"
+      },
+      {
+        "stage": 3,
+        "date": "03/07/26"
       }
     ]
   },
@@ -3438,8 +3451,14 @@
         "stage": 4,
         "date": "01/07/26",
         "note": "SEG1 enviado"
+      },
+      {
+        "stage": 4,
+        "date": "03/07/26",
+        "note": "Cerrada"
       }
-    ]
+    ],
+    "noInterest": true
   },
   {
     "id": "1781883292919",
