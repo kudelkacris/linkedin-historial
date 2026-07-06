@@ -39,7 +39,7 @@
     "empresa": "PHD Media Spain",
     "sector": "Agencias / Medios / Marketing",
     "pais": "Espana",
-    "stage": 2,
+    "stage": "3",
     "estado": "MSG2 enviado",
     "fecha": "06/07/26"
   },
@@ -1400,7 +1400,7 @@
         "text": "Marta, gracias por conectar. 👋\n\nMe llamó la atención la publicación que compartiste después del Digital Masters de Barcelona. Lo que más me gustó fue que le diste crédito al equipo antes de hablar del evento. No es lo primero que la gente destaca cuando comunica algo así.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": "2",
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
