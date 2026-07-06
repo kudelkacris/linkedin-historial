@@ -1722,7 +1722,9 @@
         "date": "01/07/26",
         "note": ""
       }
-    ]
+    ],
+    "email": "gerencia-ventas@centraldeuniformes.com",
+    "dosierPorMail": true
   },
   {
     "id": "1782930144723",
