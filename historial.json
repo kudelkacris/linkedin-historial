@@ -17,9 +17,10 @@
     "empresa": "Gasdelsur",
     "sector": "Energia (GLP)",
     "pais": "Chile",
-    "stage": 2,
+    "stage": "3",
     "estado": "MSG2 enviado",
-    "fecha": "06/07/26"
+    "fecha": "06/07/26",
+    "email": "fdiaz@gasdelsur.cl"
   },
   {
     "id": "ricardo-vargas-burgos",
@@ -240,14 +241,15 @@
         "text": "Robinson, gracias por conectar! 👋\n\nMe llamó la atención cómo en tus publicaciones sobre el crecimiento de Gasdelsur le das crédito al equipo en primer lugar, no a los números. La mayoría de los Gerentes comerciales hacen exactamente lo inverso.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": "2",
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
       }
-    ]
+    ],
+    "email": "fdiaz@gasdelsur.cl"
   },
   {
     "id": "1783351423592",
@@ -1056,7 +1058,7 @@
         "text": "Gabriela, gracias por conectar. 👋\n\nMe llamó la atención la reflexión que compartiste sobre la creatividad que \"requiere el valor de ser imperfecta\". No es lo que la mayoría publica cuando habla de marketing — la mayoría vende optimización y perfeccionismo. Vos estás hablando del riesgo que hay detrás de cada idea que se lanza sin garantías.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
