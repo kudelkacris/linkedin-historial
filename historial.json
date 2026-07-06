@@ -44,17 +44,6 @@
     "fecha": "06/07/26"
   },
   {
-    "id": "marc-roca",
-    "nombre": "Marc Roca",
-    "cargo": "CMO @ Acuarium Piscinas & Spas",
-    "empresa": "Acuarium Piscinas & Spas",
-    "sector": "Retail / Servicios",
-    "pais": "Costa Rica",
-    "stage": 3,
-    "estado": "Dossier enviado",
-    "fecha": "06/07/26"
-  },
-  {
     "id": "laura-chacon-munoz",
     "nombre": "Laura Chacon Munoz",
     "cargo": "Regional Marketing Manager",
@@ -88,17 +77,6 @@
     "fecha": "06/07/26"
   },
   {
-    "id": "ingrith-munoz-herrera",
-    "nombre": "Ingrith Munoz Herrera",
-    "cargo": "Estratega de Marketing y Comunicacion",
-    "empresa": "EAE Business School",
-    "sector": "Marketing / Educacion",
-    "pais": "Panama",
-    "stage": 3,
-    "estado": "Dossier enviado",
-    "fecha": "06/07/26"
-  },
-  {
     "id": "fabian-ignacio-corbalan-beltran",
     "nombre": "Fabian Ignacio Corbalan Beltran",
     "cargo": "Journalist focused on strategic communications",
@@ -106,17 +84,6 @@
     "sector": "Gobierno Local / Comunicacion Publica",
     "pais": "Chile",
     "stage": 2,
-    "estado": "MSG2 enviado",
-    "fecha": "06/07/26"
-  },
-  {
-    "id": "evin-tapia",
-    "nombre": "Evin Tapia",
-    "cargo": "Creative Director · Corporate Branding, Marketing and Business Communication",
-    "empresa": "Pardini & Asociados",
-    "sector": "Agencia / Consultoria Creativa",
-    "pais": "Panama",
-    "stage": "3",
     "estado": "MSG2 enviado",
     "fecha": "06/07/26"
   },
