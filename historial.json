@@ -20,7 +20,8 @@
     "stage": "3",
     "estado": "MSG2 enviado",
     "fecha": "06/07/26",
-    "email": "fdiaz@gasdelsur.cl"
+    "email": "fdiaz@gasdelsur.cl",
+    "emailNota": "Fernando Díaz — Gerente Marketing Gasdelsur"
   },
   {
     "id": "ricardo-vargas-burgos",
@@ -249,7 +250,8 @@
         "note": ""
       }
     ],
-    "email": "fdiaz@gasdelsur.cl"
+    "email": "fdiaz@gasdelsur.cl",
+    "emailNota": "Fernando Díaz — Gerente Marketing Gasdelsur"
   },
   {
     "id": "1783351423592",
