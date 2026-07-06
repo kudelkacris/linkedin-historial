@@ -313,7 +313,7 @@ async function loadData() {
 function renderStats() {
   document.getElementById('st-total').textContent = _entries.length;
   [1,2,3,4,5].forEach(s => {
-    document.getElementById('st-' + s).textContent = _entries.filter(e => (e.stage||1) === s && !e.noInterest).length;
+    document.getElementById('st-' + s).textContent = _entries.filter(e => String(e.stage||1) === String(s) && !e.noInterest).length;
   });
   document.getElementById('st-noint').textContent = _entries.filter(e => e.noInterest).length;
   document.getElementById('st-email').textContent = _entries.filter(e => !e.noInterest && histHasEmail(e)).length;
@@ -372,7 +372,7 @@ function renderList() {
   });
   if (sf === 'noint') filtered = filtered.filter(e => e.noInterest);
   else if (sf === 'email') filtered = filtered.filter(e => !e.noInterest && histHasEmail(e));
-  else if (sf) filtered = filtered.filter(e => !e.noInterest && (e.stage||1) === parseInt(sf));
+  else if (sf) filtered = filtered.filter(e => !e.noInterest && String(e.stage||1) === String(sf));
 
   document.getElementById('list-count').textContent = filtered.length + ' prospecto' + (filtered.length !== 1 ? 's' : '');
 
@@ -408,7 +408,7 @@ function selectProspect(id) {
 }
 
 function renderStageBar(en) {
-  const cur = en.stage || 1;
+  const cur = parseInt(en.stage || 1);
   let h = '<div class="stage-bar">';
   for (let i=1;i<=5;i++) {
     const done = i < cur, curr = i === cur;
@@ -606,7 +606,7 @@ function toggleProximos() {
   chev.style.transform = open ? '' : 'rotate(180deg)';
 }
 function getThreshold(en) {
-  const s = en.stage || 1;
+  const s = parseInt(en.stage || 1);
   if (s === 2) return 2;
   if (s === 3) return 5;
   return 7;
@@ -650,7 +650,7 @@ function renderProximos() {
     const thresh = getThreshold(en);
     const remaining = thresh - days;
     const overdue = remaining <= 0;
-    const action = getActionForStage(en.stage || 1);
+    const action = getActionForStage(parseInt(en.stage || 1));
     return { en, days, remaining, overdue, action };
   }).sort((a,b) => a.remaining - b.remaining);
   const overdueCnt = enriched.filter(x => x.overdue).length;
