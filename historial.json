@@ -1,5 +1,159 @@
 [
   {
+    "id": "sebastian-estevez",
+    "nombre": "Sebastian Estevez",
+    "cargo": "Jefe de marketing en SEGUROS UNIDOS",
+    "empresa": "SEGUROS UNIDOS",
+    "sector": "Seguros",
+    "pais": "Ecuador",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "robinson-carrera-astudillo",
+    "nombre": "Robinson Carrera Astudillo",
+    "cargo": "Gerente comercial en Gasdelsur",
+    "empresa": "Gasdelsur",
+    "sector": "Energia (GLP)",
+    "pais": "Chile",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "ricardo-vargas-burgos",
+    "nombre": "Ricardo Vargas Burgos",
+    "cargo": "MBA / Comunicaciones Corporativas / Sostenibilidad / Asuntos Corporativos",
+    "empresa": "Servipag",
+    "sector": "Servicios Financieros / Fintech",
+    "pais": "Chile",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "marta-saenz-herrera",
+    "nombre": "Marta Saenz Herrera",
+    "cargo": "Marketing & Communications Manager",
+    "empresa": "PHD Media Spain",
+    "sector": "Agencias / Medios / Marketing",
+    "pais": "Espana",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "marc-roca",
+    "nombre": "Marc Roca",
+    "cargo": "CMO @ Acuarium Piscinas & Spas",
+    "empresa": "Acuarium Piscinas & Spas",
+    "sector": "Retail / Servicios",
+    "pais": "Costa Rica",
+    "stage": 3,
+    "estado": "Dossier enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "laura-chacon-munoz",
+    "nombre": "Laura Chacon Munoz",
+    "cargo": "Regional Marketing Manager",
+    "empresa": "PHD Media / Educacion",
+    "sector": "Educacion / EdTech",
+    "pais": "Espana",
+    "stage": 3,
+    "estado": "Dossier enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "juanjo-pereira-seijo",
+    "nombre": "Juanjo Pereira Seijo",
+    "cargo": "Branding / Marketing",
+    "empresa": "AURUM",
+    "sector": "Branding / Marketing",
+    "pais": "",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "jonathan-josafat-rivas-carvajal",
+    "nombre": "Jonathan Josafat Rivas Carvajal",
+    "cargo": "Marketing Fraccional | Manufactura & B2B",
+    "empresa": "Prumisa",
+    "sector": "Manufactura / B2B",
+    "pais": "Costa Rica",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "ingrith-munoz-herrera",
+    "nombre": "Ingrith Munoz Herrera",
+    "cargo": "Estratega de Marketing y Comunicacion",
+    "empresa": "EAE Business School",
+    "sector": "Marketing / Educacion",
+    "pais": "Panama",
+    "stage": 3,
+    "estado": "Dossier enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "fabian-ignacio-corbalan-beltran",
+    "nombre": "Fabian Ignacio Corbalan Beltran",
+    "cargo": "Journalist focused on strategic communications",
+    "empresa": "Ilustre Municipalidad de La Granja",
+    "sector": "Gobierno Local / Comunicacion Publica",
+    "pais": "Chile",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "evin-tapia",
+    "nombre": "Evin Tapia",
+    "cargo": "Creative Director · Corporate Branding, Marketing and Business Communication",
+    "empresa": "Pardini & Asociados",
+    "sector": "Agencia / Consultoria Creativa",
+    "pais": "Panama",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "diana-kuhlmann",
+    "nombre": "Diana Kuhlmann",
+    "cargo": "Founder & CEO",
+    "empresa": "Irrational Agency",
+    "sector": "Agencia Creativa / Marketing",
+    "pais": "Argentina",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "allan-jimenez-monge",
+    "nombre": "Allan Jimenez Monge",
+    "cargo": "Creative Director",
+    "empresa": "Universidad Latina de Costa Rica",
+    "sector": "Advertising / Creative Services",
+    "pais": "Costa Rica",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
+    "id": "acelis-tunon-singh",
+    "nombre": "Acelis Tunon Singh",
+    "cargo": "High-Value Marketing | Digital Strategy",
+    "empresa": "Grupo VerdeAzul",
+    "sector": "Real Estate / Hospitality",
+    "pais": "Panama",
+    "stage": 2,
+    "estado": "MSG2 enviado",
+    "fecha": "06/07/26"
+  },
+  {
     "id": "1783352085248",
     "date": "06/07/26",
     "name": "Fabián Ignacio Corbalán Beltrán",
@@ -24913,25 +25067,6 @@
         "stage": 1,
         "date": "08/06/26",
         "note": ""
-      }
-    ]
-  },
-  {
-    "id": "juanjo-pereira-seijo",
-    "date": "06/07/26",
-    "name": "Juanjo Pereira Seijo",
-    "empresa": "AURUM",
-    "stage": "2",
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "06/07/26",
-        "note": ""
-      },
-      {
-        "stage": 2,
-        "date": "06/07/26",
-        "note": "MSG2 enviado"
       }
     ]
   }
