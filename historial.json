@@ -129,7 +129,7 @@
     "empresa": "Irrational Agency",
     "sector": "Agencia Creativa / Marketing",
     "pais": "Argentina",
-    "stage": 2,
+    "stage": "3",
     "estado": "MSG2 enviado",
     "fecha": "06/07/26"
   },
@@ -316,7 +316,7 @@
         "text": "Diana, gracias por conectar! 👋\n\nMe llamó mucho la atención el post que compartiste hace unos días sobre Irrational. Específicamente, el dato de los 9 de 10 productos que fallan hoy. Lo que me quedó es que vos no estás vendiendo una agencia creativa más, estás vendiendo una tesis sobre por qué la mayoría se equivoca. Eso es distinto.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": "2",
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
@@ -676,7 +676,7 @@
         "text": "Johan, gracias por conectar 👋\n\nMe llamó la atención cómo comunicaste AVSARA en la última publicación. En lugar de vender la plataforma, pusiste el ledger público y dijiste \"verificalo tú mismo\". No es lo que la mayoría de los founders hace cuando quiere tracción rápida.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
@@ -844,7 +844,7 @@
         "text": "Andrés, gracias por conectar! 👋\n\nEstuve viendo la cobertura de la entrevista con el alcalde Sichel en Radio Agricultura. Lo que me quedó fue que elegiste la presencialidad como valor: \"diálogo directo y cercanía con quienes toman decisiones\". No es lo que la mayoría destaca cuando cubre política o gestión local. Casi todos van por el titular.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
@@ -1228,14 +1228,15 @@
         "text": "Sarah, gracias por conectar! 👋\n\nMe llamó la atención la publicación que compartiste sobre vender un hotel que no existía aún. Específicamente esto: \"A good story earns you the first yes. But it also raises the bar, because now you have to live up to it.\" No es lo que la mayoría escribe cuando abre un hotel nuevo. La mayoría habla de números, locación, amenities. Vos hablaste de la brecha entre lo que prometes y lo que entregas.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
       }
-    ]
+    ],
+    "noInterest": true
   },
   {
     "id": "1783347919045",
@@ -22002,7 +22003,7 @@
         "text": "Johan, gracias por conectar! 👋\n\nSos Gerente General en Laboratorio Elmor — empresa que lleva más de una década transformando su posicionamiento en mercado farmacéutico mexicano. Vos mismo llevás 10 años en la dirección de cambios estratégicos y comerciales significativos.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "1",
     "stageHistory": [
       {
         "stage": 1,
