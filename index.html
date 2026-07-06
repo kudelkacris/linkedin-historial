@@ -349,7 +349,7 @@ async function toggleMailSent(id, checked) {
   }
 }
 function histHasEmail(en) {
-  if (en.dossierMail) return true;
+  if (en.dossierMail || en.email || en.dosierPorMail) return true;
   for (const sh of (en.stageHistory||[])) {
     if (/[\w.+-]+@[\w.-]+\.[a-zA-Z]{2,}/.test(sh.note||'')) return true;
   }
@@ -484,7 +484,7 @@ function renderDetail(en) {
     } else i++;
   }
 
-  const detailEmail = extractEmail((en.stageHistory||[]).map(s=>s.note||'').join(' '));
+  const detailEmail = en.email || extractEmail((en.stageHistory||[]).map(s=>s.note||'').join(' '));
   const detailEmpresa = en.empresa || histExtractEmpresa(en.msg1) || (detailEmail ? domainToEmpresa(detailEmail) : '');
 
   dv.innerHTML = `
@@ -531,12 +531,20 @@ function histExtractEmpresa(msg1) {
 function renderEmailList() {
   const emailRows = [];
   for (const en of _entries) {
+    // Primero: campo email directo
+    if (en.email) {
+      const empresa = en.empresa || domainToEmpresa(en.email);
+      const ctx = (typeof en.msg1 === 'string' ? en.msg1 : '').replace(/\n/g,' ').trim().slice(0,80);
+      emailRows.push({ name: en.name, email: en.email, empresa, ctx, id: en.id });
+      continue;
+    }
+    // Fallback: buscar en notas de stageHistory
     for (const sh of (en.stageHistory||[])) {
       const note = sh.note || '';
       if (!note.includes('@')) continue;
       const email = extractEmail(note);
       if (!email) continue;
-      const empresa = domainToEmpresa(email);
+      const empresa = en.empresa || domainToEmpresa(email);
       const ctx = (typeof en.msg1 === 'string' ? en.msg1 : '').replace(/\n/g,' ').trim().slice(0,80);
       emailRows.push({ name: en.name, email, empresa, ctx, id: en.id });
       break;
