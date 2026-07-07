@@ -119,8 +119,9 @@
     "sector": "Agencia / Consultoria Creativa",
     "pais": "Panama",
     "stage": "3",
-    "estado": "MSG2 enviado",
-    "fecha": "06/07/26"
+    "estado": "CERRADA",
+    "fecha": "06/07/26",
+    "noInterest": true
   },
   {
     "id": "diana-kuhlmann",
@@ -724,14 +725,15 @@
         "text": "Pedro, gracias por conectar! 👋\n\nMe llamó la atención tu reflexión hace poco sobre la clasificación al Mundial. Lo que más me gustó fue que le dieras todo el crédito al equipo de prensa que armaron para cada partido. No es lo que la mayoría destaca cuando anuncia un logro de esa magnitud.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
       }
-    ]
+    ],
+    "estado": "MSG2 enviado"
   },
   {
     "id": "1783350167783",
@@ -1012,7 +1014,7 @@
         "text": "Margarita, gracias por conectar! 👋\n\nMe llamó la atención la publicación de hace poco sobre la IA redactando copy sin nadie atrás. No es lo que la mayoría publica en LinkedIn cuando trabaja con creatividad. La mayoría intenta vender velocidad. Vos cuestionás si eso vale la pena.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
@@ -1269,7 +1271,9 @@
         "stage": 2,
         "date": "06/07/26"
       }
-    ]
+    ],
+    "noInterest": true,
+    "estado": "CERRADA"
   },
   {
     "id": "1783347898757",
@@ -3764,6 +3768,11 @@
         "stage": 1,
         "date": "25/06/26",
         "note": "Perfil sin senal humana fuerte, descartado en analisis inicial, MSG1 generado y guardado a pedido del usuario"
+      },
+      {
+        "stage": 1,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ]
   },
@@ -3923,6 +3932,11 @@
         "stage": 2,
         "date": "25/06/26",
         "note": "Florencia encantada! Sin embargo nosotros no trabajamos directamente con posibles proveedores ya que la empresa tiene una estricta política de procura. Además, al ser una empresa de naturaleza mixta hay que pasar primero el filtro del área de abastecimento"
+      },
+      {
+        "stage": 2,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -6069,6 +6083,11 @@
         "stage": 3,
         "date": "20/06/26",
         "note": "Hola ! Si claro solo que en el equipo que trabajo lamentablemente no manejamos proveedores ni agencias."
+      },
+      {
+        "stage": 3,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -6160,12 +6179,16 @@
         "text": "Richard, gracias por conectar! 👋\n\nMe llamó la atención que en tus últimas publicaciones documentés las visitas a clientes, los logros de entregas, las capacitaciones con el equipo — todo con detalle de dónde, con quién, qué solución. No es lo que ves habitualmente en directores comerciales. Normalmente publican logros agregados o reflexiones. Vos muestras el trabajo real.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "18/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "07/07/26"
       }
     ]
   },
@@ -8923,6 +8946,11 @@
         "stage": 4,
         "date": "19/06/26",
         "note": "Florencia, muchas gracias, pero la empresa, por el momento, no está buscando agencia (iniciamos con una hace poco), pero nunca está de más tener esta información y contacto."
+      },
+      {
+        "stage": 4,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -9350,6 +9378,11 @@
         "stage": 3,
         "date": "18/06/26",
         "note": "SI CLARO"
+      },
+      {
+        "stage": 3,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -9648,12 +9681,16 @@
         "text": "Jose Luis, gracias por conectar! 👋\n\nMe llamó la atención la publicación sobre el fracaso de IA en LATAM. No es lo habitual: la mayoría publica casos de éxito. Vos estás nombrando el problema que nadie quiere hablar en las juntas directivas. El que ya gastaron y no ven nada.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "18/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "07/07/26"
       }
     ]
   },
@@ -10275,7 +10312,7 @@
         "text": "Reinaldo, gracias por conectar! 👋\n\nMe llamó la atención el ensayo que compartiste sobre pasar de problemas técnicos a problemas humanos. No es algo que vea publicar en LinkedIn tan seguido, menos aún con esa reflexión sobre liderazgo. Pero lo más interesante fue que lo enfocaste en comunicación y feedback como herramientas fundamentales, no como \"temas blandos\".\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 2,
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
@@ -10286,6 +10323,10 @@
         "stage": 2,
         "date": "18/06/26",
         "note": "Florencia, muchas gracias por la retroalimentación. Quedo atento a a tu consulta."
+      },
+      {
+        "stage": 3,
+        "date": "07/07/26"
       }
     ]
   },
@@ -10714,6 +10755,11 @@
         "stage": 5,
         "date": "25/06/26",
         "note": "Ya tienen agencia unica LATAM, redirigido por email a persona encargada, cerrado positivamente"
+      },
+      {
+        "stage": 5,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "dossierMail": true
@@ -11214,6 +11260,11 @@
         "stage": 3,
         "date": "24/06/26",
         "note": ""
+      },
+      {
+        "stage": 3,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -13267,6 +13318,11 @@
         "stage": 3,
         "date": "15/06/26",
         "note": "Dulce Rodríguez 16:54\n\n    😄\n    🤐\n    👏\n\nHola Florencia, te agradezco, nosotros trabajamos la estrategia inhouse y ya tenemos una agencia para pauta y compra de medios, saludos"
+      },
+      {
+        "stage": 3,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -13429,12 +13485,16 @@
         "text": "Jana, gracias por conectar! 👋\n\nEstuve revisando un poco lo que venís haciendo en TROOP. Me llamó la atención que en los últimos años hayas ejecutado más de 30 eventos globales mientras crecías la presencia en LinkedIn de 5k a 23k followers. Eso es coordinación de múltiples frentes bastante intensa.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "12/06/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "07/07/26"
       }
     ]
   },
@@ -17156,6 +17216,11 @@
         "stage": 5,
         "date": "01/07/26",
         "note": "Hola Florencia, gsuto saludarte. Me parece curioso que eso te quedé dando vueltas jajajajaja, es de lo más normal, yo tengo un departamento de marketing in house, entre diseñadores, especialistas y Cms, trabajando organizadamente y de manera estrategica, las cosas se dan.  Creeme, tengo 1 año y medio aquí liderando, es pessdo, pero no imposible.  Agradezco que quieras ofrecernos tus servicios, pero siendote honesta en este momento, estoy peleando el presupuesto de las marcas, por otros objetivos que tenemos. Saludos,"
+      },
+      {
+        "stage": 5,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "dossierMail": true,
@@ -17260,7 +17325,7 @@
         "text": "Daniel, gracias por conectar! 👋\n\nEstuve revisando un poco lo que venís haciendo. Me llamó la atención que pasaste de gerenciar una sucursal a coordinar marketing en Petromotors en corto tiempo. En Todo a Dollar lograste aumentar conversión con exhibiciones visuales y mejoraste operación. Parece que ahora estás en la parte estratégica.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 4,
+    "stage": "5",
     "stageHistory": [
       {
         "stage": 1,
@@ -17281,6 +17346,10 @@
         "stage": 4,
         "date": "19/06/26",
         "note": "Daniel, cómo estás?\nNo sé si llegaste a checar el material.\nMe quedé pensando en eso de pasar de retail a coordinar marketing en automotriz, sosteniendo digital, ATL/BTL y activaciones de showroom al mismo tiempo en los primeros meses.\nSi te parece que puede aportar valor, coordinamos 15 minutos y vemos qué tendría sentido para Petromotors."
+      },
+      {
+        "stage": 5,
+        "date": "07/07/26"
       }
     ]
   },
@@ -17740,6 +17809,11 @@
         "stage": 2,
         "date": "10/06/26",
         "note": "En este momento. No es necesario \nMuchas gracias"
+      },
+      {
+        "stage": 2,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
@@ -19890,6 +19964,11 @@
         "stage": 5,
         "date": "25/06/26",
         "note": "no estamos interesados"
+      },
+      {
+        "stage": 5,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "empresa": "ARSAT",
@@ -20457,7 +20536,7 @@
         "text": "Cecilia, gracias por conectar! 👋\n\nSos Gerente Corporativo de RI y Comunicación en ECIPSA, y además Presidenta de Circom CBA desde hace poco — estás liderando espacios de capacitación profesional sobre streaming y comunicación audiovisual, con organizaciones como OSDE. Eso no es cualquier cosa.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 4,
+    "stage": "5",
     "stageHistory": [
       {
         "stage": 1,
@@ -20478,6 +20557,10 @@
         "stage": 4,
         "date": "19/06/26",
         "note": "Cecilia, cómo estás?\nNo sé si llegaste a ver el material que te compartí.\nMe quedó pensando en eso de liderar Circom mientras gestionás la comunicación de ECIPSA, formando a otros en cómo comunicar mientras también comunicás hacia afuera.\nCualquier cosa que te genere, quedo atenta."
+      },
+      {
+        "stage": 5,
+        "date": "07/07/26"
       }
     ]
   },
@@ -23819,6 +23902,11 @@
         "stage": 5,
         "date": "18/06/26",
         "note": "Hola Florencia, gracias pero no estoy interesado.\n\nSaludos"
+      },
+      {
+        "stage": 5,
+        "date": "07/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
