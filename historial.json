@@ -820,7 +820,7 @@
         "text": "Manuel, gracias por conectar 👋\n\nMe llamó la atención la publicación que compartiste hace dos meses sobre el cambio. Especialmente porque no lo planteaste como \"mejor oportunidad\", sino como alineación. Y después veo que arrancaste en La Maison con una marca que promete productos \"hechos para durar, para transmitir de generación en generación\". Eso no parece casual.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
@@ -1234,6 +1234,11 @@
         "stage": 1,
         "date": "06/07/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "06/07/26",
+        "note": "Cerrada"
       }
     ],
     "noInterest": true
