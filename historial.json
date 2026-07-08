@@ -11,19 +11,6 @@
     "fecha": "06/07/26"
   },
   {
-    "id": "robinson-carrera-astudillo",
-    "nombre": "Robinson Carrera Astudillo",
-    "cargo": "Gerente comercial en Gasdelsur",
-    "empresa": "Gasdelsur",
-    "sector": "Energia (GLP)",
-    "pais": "Chile",
-    "stage": "3",
-    "estado": "Dossier por mail",
-    "fecha": "06/07/26",
-    "email": "fdiaz@gasdelsur.cl",
-    "emailNota": "Fernando Díaz — Gerente Marketing Gasdelsur"
-  },
-  {
     "id": "ricardo-vargas-burgos",
     "nombre": "Ricardo Vargas Burgos",
     "cargo": "MBA / Comunicaciones Corporativas / Sostenibilidad / Asuntos Corporativos",
@@ -133,19 +120,6 @@
     "stage": "3",
     "estado": "MSG2 enviado",
     "fecha": "06/07/26"
-  },
-  {
-    "id": "argerie-ramirez",
-    "name": "Argerie Ramirez",
-    "cargo": "Job Marketing Specialist",
-    "empresa": "Walmart Connect México y Centroamérica",
-    "pais": "Costa Rica",
-    "sector": "Retail / E-commerce / Retail Media",
-    "email": "Argerie.Ramirez@walmart.com",
-    "stage": "3",
-    "estado": "Dossier por mail",
-    "fecha": "08/07/26",
-    "emailNota": "Referida por Tatiana Guido Núñez — Job Marketing Specialist Walmart Connect"
   },
   {
     "id": "allan-jimenez-monge",
