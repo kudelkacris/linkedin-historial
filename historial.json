@@ -18,7 +18,7 @@
     "sector": "Energia (GLP)",
     "pais": "Chile",
     "stage": "3",
-    "estado": "MSG2 enviado",
+    "estado": "Dossier por mail",
     "fecha": "06/07/26",
     "email": "fdiaz@gasdelsur.cl",
     "emailNota": "Fernando Díaz — Gerente Marketing Gasdelsur"
@@ -133,6 +133,19 @@
     "stage": "3",
     "estado": "MSG2 enviado",
     "fecha": "06/07/26"
+  },
+  {
+    "id": "argerie-ramirez",
+    "name": "Argerie Ramirez",
+    "cargo": "Job Marketing Specialist",
+    "empresa": "Walmart Connect México y Centroamérica",
+    "pais": "Costa Rica",
+    "sector": "Retail / E-commerce / Retail Media",
+    "email": "Argerie.Ramirez@walmart.com",
+    "stage": "3",
+    "estado": "Dossier por mail",
+    "fecha": "08/07/26",
+    "emailNota": "Referida por Tatiana Guido Núñez — Job Marketing Specialist Walmart Connect"
   },
   {
     "id": "allan-jimenez-monge",
@@ -252,7 +265,8 @@
       }
     ],
     "email": "fdiaz@gasdelsur.cl",
-    "emailNota": "Fernando Díaz — Gerente Marketing Gasdelsur"
+    "emailNota": "Fernando Díaz — Gerente Marketing Gasdelsur",
+    "estado": "Dossier por mail"
   },
   {
     "id": "1783351423592",
@@ -341,14 +355,21 @@
         "text": "Tatiana, gracias por conectar! 👋\n\nMe llamó la atención cómo escribiste sobre el año en Walmart. Especialmente la parte donde dijiste que no sabías si ibas a volver a sentirte así de realizada profesionalmente después de donde venías. Y después mencionaste a tus mentores por nombre. No suele ser lo primero que la gente destaca cuando celebra un logro propio.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
+      },
+      {
+        "stage": 3,
+        "date": "08/07/26",
+        "note": "Que precioso trabajo gracias por compartir, esa no es mi área yo estoy ligada más a temas comerciales, sin embargo siento que existe mucha oportunidad para comunicar aún, ya tenemos a una profesional espectacular trabajando en todo el tema de dar a conocer esto, es la especialista de job marketing se llama ARGERIE RAMIREZ <Argerie.Ramirez@walmart.com> te dejo su mail, ella es la persona indicada para hablar del tema ;) y poder ofrecerle sus soluciones. Saludos."
       }
-    ]
+    ],
+    "estado": "Referido a Argerie Ramirez (Walmart)",
+    "dossierMail": true
   },
   {
     "id": "1783351090478",
@@ -804,6 +825,44 @@
         "stage": 1,
         "date": "06/07/26",
         "note": ""
+      }
+    ]
+  },
+  {
+    "id": "1783350100200",
+    "date": "07/07/26",
+    "name": "Andrea Robles",
+    "empresa": "CONFECCIONES SHIC S.A",
+    "variantTitle": "Estándar interno vs resultado visible",
+    "profileRaw": "Gerente de Mercadeo. Especialista en Transformación Digital, Omnicanalidad, Medios Masivos, IA y Automatización de flujos. Panamá. CONFECCIONES SHIC S.A (Johnny Cotton, Chessking, JCX).",
+    "msg1": "Andrea, gracias por conectar.\n\nMe llamó la atención la publicación sobre Fulo y Johnny Cotton. No es lo típico decir \"nos quedamos cortos con la visión inicial\" cuando una campaña funciona. La mayoría anuncia el éxito y listo. Vos fuiste más allá.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar.",
+    "msg2": "Buenas Andrea! Te cuento.\nLo que me llamó la atención de esa publicación es la brecha que describís: la campaña funcionó, pero vos sabías que había más. Cómo hacés para que ese estándar interno sea lo que un cliente nuevo te elige, y no solo el resultado que ya vio?\nTrabajo en Hint Media, una agencia de comunicación omnicanal. Acompañamos a agencias y directores creativos a construir narrativa de marca que haga legible hacia afuera el criterio que tienen adentro, no solo los resultados. Trabajamos con Destiny Group en posicionamiento y comunicación de marca.\nTenemos un dossier breve con casos concretos de ese tipo de trabajo. Te puedo enviar por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Andrea, gracias por conectar.\n\nMe llamó la atención la publicación sobre Fulo y Johnny Cotton. No es lo típico decir \"nos quedamos cortos con la visión inicial\" cuando una campaña funciona. La mayoría anuncia el éxito y listo. Vos fuiste más allá.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
+      },
+      {
+        "role": "received",
+        "text": "Hola Florencia! Gracias Cuéntame claro"
+      },
+      {
+        "role": "sent",
+        "text": "Buenas Andrea! Te cuento.\nLo que me llamó la atención de esa publicación es la brecha que describís: la campaña funcionó, pero vos sabías que había más. Cómo hacés para que ese estándar interno sea lo que un cliente nuevo te elige, y no solo el resultado que ya vio?\nTrabajo en Hint Media, una agencia de comunicación omnicanal. Acompañamos a agencias y directores creativos a construir narrativa de marca que haga legible hacia afuera el criterio que tienen adentro, no solo los resultados. Trabajamos con Destiny Group en posicionamiento y comunicación de marca.\nTenemos un dossier breve con casos concretos de ese tipo de trabajo. Te puedo enviar por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?"
+      }
+    ],
+    "stage": "2",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "07/07/26",
+        "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "07/07/26",
+        "note": "MSG2 enviado"
       }
     ]
   },
@@ -25165,44 +25224,6 @@
         "stage": 1,
         "date": "08/06/26",
         "note": ""
-      }
-    ]
-  },
-  {
-    "id": "1783350100200",
-    "date": "07/07/26",
-    "name": "Andrea Robles",
-    "empresa": "CONFECCIONES SHIC S.A",
-    "variantTitle": "Estándar interno vs resultado visible",
-    "profileRaw": "Gerente de Mercadeo. Especialista en Transformación Digital, Omnicanalidad, Medios Masivos, IA y Automatización de flujos. Panamá. CONFECCIONES SHIC S.A (Johnny Cotton, Chessking, JCX).",
-    "msg1": "Andrea, gracias por conectar.\n\nMe llamó la atención la publicación sobre Fulo y Johnny Cotton. No es lo típico decir \"nos quedamos cortos con la visión inicial\" cuando una campaña funciona. La mayoría anuncia el éxito y listo. Vos fuiste más allá.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar.",
-    "msg2": "Buenas Andrea! Te cuento.\nLo que me llamó la atención de esa publicación es la brecha que describís: la campaña funcionó, pero vos sabías que había más. Cómo hacés para que ese estándar interno sea lo que un cliente nuevo te elige, y no solo el resultado que ya vio?\nTrabajo en Hint Media, una agencia de comunicación omnicanal. Acompañamos a agencias y directores creativos a construir narrativa de marca que haga legible hacia afuera el criterio que tienen adentro, no solo los resultados. Trabajamos con Destiny Group en posicionamiento y comunicación de marca.\nTenemos un dossier breve con casos concretos de ese tipo de trabajo. Te puedo enviar por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?",
-    "extraMsgs": {},
-    "conversationHistory": [
-      {
-        "role": "sent",
-        "text": "Andrea, gracias por conectar.\n\nMe llamó la atención la publicación sobre Fulo y Johnny Cotton. No es lo típico decir \"nos quedamos cortos con la visión inicial\" cuando una campaña funciona. La mayoría anuncia el éxito y listo. Vos fuiste más allá.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
-      },
-      {
-        "role": "received",
-        "text": "Hola Florencia! Gracias Cuéntame claro"
-      },
-      {
-        "role": "sent",
-        "text": "Buenas Andrea! Te cuento.\nLo que me llamó la atención de esa publicación es la brecha que describís: la campaña funcionó, pero vos sabías que había más. Cómo hacés para que ese estándar interno sea lo que un cliente nuevo te elige, y no solo el resultado que ya vio?\nTrabajo en Hint Media, una agencia de comunicación omnicanal. Acompañamos a agencias y directores creativos a construir narrativa de marca que haga legible hacia afuera el criterio que tienen adentro, no solo los resultados. Trabajamos con Destiny Group en posicionamiento y comunicación de marca.\nTenemos un dossier breve con casos concretos de ese tipo de trabajo. Te puedo enviar por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?"
-      }
-    ],
-    "stage": "2",
-    "stageHistory": [
-      {
-        "stage": 1,
-        "date": "07/07/26",
-        "note": ""
-      },
-      {
-        "stage": 2,
-        "date": "07/07/26",
-        "note": "MSG2 enviado"
       }
     ]
   }
