@@ -1323,14 +1323,15 @@
         "text": "Idis, gracias por conectar.\n\nMe llamó la atención cómo anunciaste el reconocimiento de Fabiola en el Marriott Global Elite Award. No empezaste hablando de GVA, empezaste dándole la voz a ella. Eso no es lo que la mayoría hace cuando quiere mostrar que las cosas funcionan.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
       }
-    ]
+    ],
+    "estado": "MSG2 enviado"
   },
   {
     "id": "1783347622225",
@@ -1371,14 +1372,16 @@
         "text": "Hernán, gracias por conectar! 👋\n\nMe llamó mucho la atención cómo escribís sobre las activaciones de marca. En la de Carolina Herrera decís \"crear un momento memorable para nuestrxs consumidores, conectando desde la emoción\", y en la de Invictus hablas de \"una experiencia de marca para los consumidores\". No es lo que la mayoría destaca cuando anuncia un lanzamiento. Normalmente van directo a fechas y productos.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
       }
-    ]
+    ],
+    "estado": "CERRADA — no interesado",
+    "noInterest": true
   },
   {
     "id": "1783347560836",
