@@ -63,9 +63,10 @@
     "empresa": "PHD Media / Educacion",
     "sector": "Educacion / EdTech",
     "pais": "Espana",
-    "stage": 3,
+    "stage": "3",
     "estado": "Dossier enviado",
-    "fecha": "06/07/26"
+    "fecha": "06/07/26",
+    "followup_date": "01/10/26"
   },
   {
     "id": "juanjo-pereira-seijo",
@@ -121,7 +122,14 @@
     "stage": "3",
     "estado": "CERRADA",
     "fecha": "06/07/26",
-    "noInterest": true
+    "noInterest": true,
+    "stageHistory": [
+      {
+        "stage": 3,
+        "date": "08/07/26",
+        "note": "Cerrada"
+      }
+    ]
   },
   {
     "id": "diana-kuhlmann",
@@ -459,6 +467,7 @@
       }
     ],
     "stage": "3",
+    "followup_date": "01/10/26",
     "stageHistory": [
       {
         "stage": 1,
@@ -1349,12 +1358,16 @@
         "text": "Idis, gracias por conectar.\n\nMe llamó la atención cómo anunciaste el reconocimiento de Fabiola en el Marriott Global Elite Award. No empezaste hablando de GVA, empezaste dándole la voz a ella. Eso no es lo que la mayoría hace cuando quiere mostrar que las cosas funcionan.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "2",
     "stageHistory": [
       {
         "stage": 1,
         "date": "06/07/26",
         "note": ""
+      },
+      {
+        "stage": 2,
+        "date": "08/07/26"
       }
     ]
   },
@@ -1403,6 +1416,11 @@
         "stage": 1,
         "date": "06/07/26",
         "note": ""
+      },
+      {
+        "stage": 1,
+        "date": "08/07/26",
+        "note": "Cerrada"
       }
     ]
   },
@@ -4199,7 +4217,8 @@
         "text": "Carolina, gracias por conectar! 👋\n\nMe llamó la atención la publicación que compartiste hace poco: \"Cuando trabajas con personas que aman lo que hacen, todo fluye diferente.\" No es lo que la mayoría escribe en LinkedIn cuando quiere verse profesional. Eso dice algo de cómo realmente ves el trabajo.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
+    "email": "carolina.rodriguez@smartsmd.com",
     "stageHistory": [
       {
         "stage": 1,
@@ -10371,7 +10390,7 @@
         "text": "Reinaldo, gracias por conectar! 👋\n\nMe llamó la atención el ensayo que compartiste sobre pasar de problemas técnicos a problemas humanos. No es algo que vea publicar en LinkedIn tan seguido, menos aún con esa reflexión sobre liderazgo. Pero lo más interesante fue que lo enfocaste en comunicación y feedback como herramientas fundamentales, no como \"temas blandos\".\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": "3",
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
@@ -19931,7 +19950,8 @@
         "text": "Meliné, gracias por conectar! 👋\n\nVi que en Addventure coordinabas los Demo Days y generabas espacios de networking entre inversores y startups. Ahora en Biofarma estás a cargo de la comunicación institucional — imagen, redes, contenido, medios. Claramente escalaste el tipo de comunicación que manejás.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "3",
+    "noInterest": true,
     "stageHistory": [
       {
         "stage": 1,
@@ -21982,7 +22002,6 @@
         "text": "Santiago, gracias por conectar! 👋\n\nSos Gerente de Asuntos Corporativos en BHP — minería de escala global en transición energética. Vi que estás amplificando narrativa sobre el cobre más allá de \"commodity\" — posicionándolo como infraestructura civilizatoria. Eso requiere contenido, diseño y ejecución constante.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podrías ayudar."
       }
     ],
-    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
@@ -22001,7 +22020,8 @@
       }
     ],
     "empresa": "BHP",
-    "followup_date": "01/10/26"
+    "followup_date": "08/10/2026",
+    "stage": "3"
   },
   {
     "id": "1780939927467",
