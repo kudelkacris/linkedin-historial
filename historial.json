@@ -2813,7 +2813,7 @@
         "text": "Ariadna, gracias por conectar! 👋\n\nMe llamó la atención cómo describiste el proceso de Impact Night. No hablaste de asistentes ni de votos. Hablaste del proceso conceptual: que lo que hacen y lo que cuentan sean la misma cosa. Eso no es lo que la mayoría escribe cuando anuncia un evento.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
@@ -3572,7 +3572,7 @@
         "text": "Pedro Andrés, gracias por conectar! 👋\n\nMe llamó la atención cómo en cada logro que publicas — la integración de Yape, la expansión a Argentina, los eventos internacionales — le das bastante protagonismo al equipo en vez de armar la historia de otro modo. No es lo que la mayoría hace cuando está comunicando hitos.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
@@ -3625,12 +3625,16 @@
         "text": "Diego, gracias por conectar! 👋\n\nEstuve revisando un poco lo que vienen haciendo en LEAD University. Me llamó la atención que hace poco asumiste como Jefe de Marketing ahí. Imagino que en una universidad que está creciendo, eso abre bastantes frentes al mismo tiempo.\n\nSi es correcto lo que leí, tenía una duda y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
         "date": "01/07/26",
         "note": ""
+      },
+      {
+        "stage": 4,
+        "date": "10/07/26"
       }
     ]
   },
@@ -3673,7 +3677,7 @@
         "text": "Ara, gracias por conectar! 👋\n\nMe llamó mucho la atención la publicación que compartiste sobre SIGMA São Paulo. Específicamente cuando dijiste que \"las conexiones son el motor que nos impulsa hacia el éxito\" y que creer en las sinergias significa llegar más lejos juntos. No es lo que la mayoría de los directivos comerciales publica cuando hablan de un evento.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
@@ -3726,7 +3730,7 @@
         "text": "Elizabeth, gracias por conectar. 👋\n\nMe llamó la atención que hace poco te certificaras en Storytelling y Persuasión con Datos, y ahora te registraras en un programa de mentoring. No es lo que hace la mayoría cuando ya está establecido en un rol. Da la sensación de que buscás herramientas nuevas para elevar algo en tu trabajo comunicacional.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
@@ -3737,6 +3741,10 @@
         "stage": 3,
         "date": "01/07/26",
         "note": "MSG2 enviado. Confirmo dossier: se lo manda y lo pasa a quien corresponda."
+      },
+      {
+        "stage": 4,
+        "date": "10/07/26"
       }
     ]
   },
@@ -3779,7 +3787,7 @@
         "text": "Huanda, gracias por conectar! 👋\n\nMe llamó la atención que compartieras esa reflexión de Jaime sobre trabajar con gente mejor que vos como privilegio. No es lo que la mayoría publica cuando quiere mostrar su rol como Brand Manager. Se nota que para vos el equipo y el crecimiento mutuo importan.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 3,
+    "stage": "4",
     "stageHistory": [
       {
         "stage": 1,
@@ -3790,6 +3798,10 @@
         "stage": 3,
         "date": "01/07/26",
         "note": "MSG2 enviado. Confirmo dossier por aca."
+      },
+      {
+        "stage": 4,
+        "date": "10/07/26"
       }
     ]
   },
