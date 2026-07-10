@@ -56,6 +56,22 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 /* PROSPECT LIST */
 .prospect-list{max-height:calc(100vh - 260px);overflow-y:auto}
 .prospect-item{padding:11px 14px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s;display:flex;flex-direction:column;gap:4px}
+/* WEEK SECTIONS */
+.week-section{margin-bottom:5px}
+.week-header{display:flex;align-items:center;gap:8px;padding:7px 11px;background:var(--dark2);cursor:pointer;user-select:none;transition:background .15s}
+.week-header:hover{background:#222}
+.week-header:first-child{border-top:none}
+.week-label{font-size:11.5px;font-weight:600;color:#ccc;flex:1}
+.week-count{font-size:10px;font-weight:700;background:#333;color:#aaa;padding:1px 7px;border-radius:20px;flex-shrink:0}
+.week-chevron{font-size:13px;color:#555;transition:transform .2s;flex-shrink:0}
+.week-body{display:flex;flex-direction:column}
+/* STAGE SUB-SECTIONS */
+.stage-group-header{display:flex;align-items:center;gap:7px;padding:5px 12px 5px 16px;background:#F5F3EF;cursor:pointer;user-select:none;transition:background .12s;border-left:3px solid var(--border);border-bottom:1px solid var(--border)}
+.stage-group-header:hover{background:#EDEAE4}
+.stage-group-label{font-size:11px;font-weight:600;color:var(--mid);flex:1}
+.stage-group-count{font-size:10px;font-weight:700;padding:1px 6px;border-radius:20px;background:rgba(0,0,0,.07);color:var(--mid);flex-shrink:0}
+.stage-group-chev{font-size:12px;color:#bbb;transition:transform .2s;flex-shrink:0}
+.stage-group-body{display:flex;flex-direction:column}
 .prospect-item:hover{background:var(--orange-light)}
 .prospect-item.selected{background:#FFF8F5;border-left:3px solid var(--orange)}
 .pi-row{display:flex;align-items:center;gap:6px}
@@ -274,6 +290,49 @@ const STAGE_NAMES_SHORT = ['','Apertura','En conv.','Dossier','Seg. 1','Seg. 2']
 let _entries = [];
 let _selected = null;
 let _mailMap = {};
+let _weekState = {};
+
+function getWeekKey(dateStr) {
+  const p = (dateStr||'').split('/');
+  if (p.length < 3) return 'unknown';
+  const day = parseInt(p[0]);
+  const wk = day <= 7 ? 1 : day <= 14 ? 2 : day <= 21 ? 3 : 4;
+  return `${p[2]}-${p[1]}-${wk}`;
+}
+function getWeekLabel(weekKey) {
+  if (weekKey === 'unknown') return 'Sin fecha';
+  const [yr, mo, wk] = weekKey.split('-');
+  const months = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const moName = months[parseInt(mo)-1] || mo;
+  const ranges = {'1':'1–7','2':'8–14','3':'15–21','4':'22–31'};
+  const yearFull = parseInt(yr) < 100 ? 2000+parseInt(yr) : parseInt(yr);
+  return `Semana ${wk} · ${ranges[wk]||'?'} ${moName} ${yearFull}`;
+}
+function currentWeekKey() {
+  const now = new Date();
+  const day = now.getDate();
+  const mo = String(now.getMonth()+1).padStart(2,'0');
+  const yr = String(now.getFullYear()).slice(-2);
+  const wk = day <= 7 ? 1 : day <= 14 ? 2 : day <= 21 ? 3 : 4;
+  return `${yr}-${mo}-${wk}`;
+}
+function toggleWeek(key) {
+  _weekState[key] = !_weekState[key];
+  renderList();
+}
+function toggleStageGroup(key, e) {
+  e.stopPropagation();
+  _weekState[key] = !_weekState[key];
+  renderList();
+}
+function getStageSectionLabel(sk) {
+  const map = {'1':'MSG1 enviado','2':'MSG2 enviado','3':'Dossier enviado','4':'SEG1 enviado','5':'Seguimiento 2','6':'Reunión agendada','noint':'No interesados'};
+  return map[String(sk)] || `Stage ${sk}`;
+}
+function getStageSectionColor(sk) {
+  const map = {'1':'#FF5C35','2':'#1A5FA8','3':'#6B21A8','4':'#27AE60','5':'#888','6':'#E8A23D','noint':'#999'};
+  return map[String(sk)] || '#888';
+}
 
 function esc(s) {
   return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/\n/g,'<br>');
@@ -355,6 +414,24 @@ function histHasEmail(en) {
   }
   return false;
 }
+function renderProspectItem(en) {
+  return `<div class="prospect-item${_selected === en.id ? ' selected' : ''}${isMailSent(en.id) ? ' mail-sent' : ''}" style="${en.noInterest ? 'opacity:.55' : ''}" onclick="selectProspect('${en.id}')">
+    <div class="pi-row">
+      <div class="pi-name${en.noInterest ? ' noint' : ''}">${esc(en.name)}</div>
+      ${en.noInterest ? '<span class="stage-pill sp-x">✕ No int.</span>' : `<span class="stage-pill ${STAGE_COLORS[en.stage||1]}">${stgLabel(en.stage||1)}</span>`}
+    </div>
+    <div class="pi-meta">
+      <span>${en.date}</span>
+      ${(()=>{ const emailFb=extractEmail((en.stageHistory||[]).map(s=>s.note||'').join(' ')); const emp=en.empresa||histExtractEmpresa(en.msg1)||(emailFb?domainToEmpresa(emailFb):''); return emp?`<span style="color:#888">${esc(emp)}</span>`:''; })()}
+      <span class="pi-variant">${esc(en.variantTitle)}</span>
+      <label class="mail-check" onclick="event.stopPropagation()">
+        <input type="checkbox" ${isMailSent(en.id) ? 'checked' : ''} onchange="toggleMailSent('${en.id}', this.checked)">
+        <span class="mc-lbl">Mail enviado</span>
+      </label>
+    </div>
+  </div>`;
+}
+
 function renderList() {
   const q = (document.getElementById('search-input').value || '').toLowerCase().trim();
   const sf = document.getElementById('stage-filter').value;
@@ -377,26 +454,65 @@ function renderList() {
   document.getElementById('list-count').textContent = filtered.length + ' prospecto' + (filtered.length !== 1 ? 's' : '');
 
   const list = document.getElementById('prospect-list');
-  if (!filtered.length) {
-    list.innerHTML = '<div class="empty-list">Sin resultados</div>';
-    return;
-  }
-  list.innerHTML = filtered.map(en => `
-    <div class="prospect-item${_selected === en.id ? ' selected' : ''}${isMailSent(en.id) ? ' mail-sent' : ''}" style="${en.noInterest ? 'opacity:.55' : ''}" onclick="selectProspect('${en.id}')">
-      <div class="pi-row">
-        <div class="pi-name${en.noInterest ? ' noint' : ''}">${esc(en.name)}</div>
-        ${en.noInterest ? '<span class="stage-pill sp-x">✕ No int.</span>' : `<span class="stage-pill ${STAGE_COLORS[en.stage||1]}">${stgLabel(en.stage||1)}</span>`}
+  if (!filtered.length) { list.innerHTML = '<div class="empty-list">Sin resultados</div>'; return; }
+
+  // Group by week
+  const byWeek = {};
+  const weekOrder = [];
+  filtered.forEach(en => {
+    const wk = getWeekKey(en.date);
+    if (!byWeek[wk]) { byWeek[wk] = []; weekOrder.push(wk); }
+    byWeek[wk].push(en);
+  });
+  const parseWk = k => { if(k==='unknown') return 0; const [y,m,w]=k.split('-').map(Number); const yr=y<100?2000+y:y; return yr*10000+m*100+w; };
+  weekOrder.sort((a,b) => parseWk(b) - parseWk(a));
+
+  const curWk = currentWeekKey();
+  const hasAnyOpen = weekOrder.some(wk => _weekState[wk] === true);
+  weekOrder.forEach((wk, i) => {
+    if (_weekState[wk] === undefined) _weekState[wk] = (wk === curWk) || (!hasAnyOpen && i === 0);
+  });
+
+  list.innerHTML = weekOrder.map(wk => {
+    const entries = byWeek[wk];
+    const isOpen = !!_weekState[wk];
+    const chevronStyle = isOpen ? 'transform:rotate(180deg)' : '';
+
+    // Group by stage within week
+    const byStage = {};
+    const stageOrder = [];
+    entries.forEach(en => {
+      const sk = en.noInterest ? 'noint' : String(en.stage||1);
+      if (!byStage[sk]) { byStage[sk] = []; stageOrder.push(sk); }
+      byStage[sk].push(en);
+    });
+    const stageRank = s => s==='noint' ? 99 : parseInt(s)||0;
+    stageOrder.sort((a,b) => stageRank(a) - stageRank(b));
+
+    const stageGroupsHtml = stageOrder.map(sk => {
+      const sgKey = `${wk}||${sk}`;
+      if (_weekState[sgKey] === undefined) _weekState[sgKey] = true;
+      const sgOpen = !!_weekState[sgKey];
+      const color = getStageSectionColor(sk);
+      return `<div class="stage-group-header" style="border-left-color:${color}" onclick="toggleStageGroup('${sgKey}',event)">
+        <span class="stage-group-label" style="color:${color}">${getStageSectionLabel(sk)}</span>
+        <span class="stage-group-count">${byStage[sk].length}</span>
+        <span class="stage-group-chev" style="${sgOpen?'transform:rotate(180deg)':''}">▾</span>
       </div>
-      <div class="pi-meta">
-        <span>${en.date}</span>
-        ${(() => { const emailFb = extractEmail((en.stageHistory||[]).map(s=>s.note||'').join(' ')); const emp = en.empresa || histExtractEmpresa(en.msg1) || (emailFb ? domainToEmpresa(emailFb) : ''); return emp ? `<span style="color:#888">${esc(emp)}</span>` : ''; })()}
-        <span class="pi-variant">${esc(en.variantTitle)}</span>
-        <label class="mail-check" onclick="event.stopPropagation()">
-          <input type="checkbox" ${isMailSent(en.id) ? 'checked' : ''} onchange="toggleMailSent('${en.id}', this.checked)">
-          <span class="mc-lbl">Mail enviado</span>
-        </label>
+      <div class="stage-group-body" style="display:${sgOpen?'flex':'none'};flex-direction:column">
+        ${byStage[sk].map(en => renderProspectItem(en)).join('')}
+      </div>`;
+    }).join('');
+
+    return `<div class="week-section">
+      <div class="week-header" onclick="toggleWeek('${wk}')">
+        <span class="week-label">${getWeekLabel(wk)}</span>
+        <span class="week-count">${entries.length}</span>
+        <span class="week-chevron" style="${chevronStyle}">▾</span>
       </div>
-    </div>`).join('');
+      <div class="week-body" style="display:${isOpen?'block':'none'}">${stageGroupsHtml}</div>
+    </div>`;
+  }).join('');
 }
 
 function selectProspect(id) {
