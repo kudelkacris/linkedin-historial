@@ -87,6 +87,7 @@ header{background:var(--dark);padding:0 2rem;height:56px;display:flex;align-item
 .sp-3{background:#F3EEFF;color:#6B21A8}
 .sp-4{background:#EAF7EF;color:#1A6635}
 .sp-5{background:#F0F0F0;color:#555}
+.sp-6{background:#FFF8E6;color:#B07800}
 .sp-x{background:#F0F0F0;color:#999}
 .pi-name.noint{text-decoration:line-through;color:#aaa}
 .mail-check{display:flex;align-items:center;gap:4px;flex-shrink:0;cursor:pointer;user-select:none}
@@ -282,10 +283,11 @@ const STAGES = [null,
   {label:'En conversación'},
   {label:'Dossier enviado'},
   {label:'Seguimiento 1'},
-  {label:'Seguimiento 2'}
+  {label:'Seguimiento 2'},
+  {label:'Reunión agendada'}
 ];
-const STAGE_COLORS = ['','sp-1','sp-2','sp-3','sp-4','sp-5'];
-const STAGE_NAMES_SHORT = ['','Apertura','En conv.','Dossier','Seg. 1','Seg. 2'];
+const STAGE_COLORS = ['','sp-1','sp-2','sp-3','sp-4','sp-5','sp-6'];
+const STAGE_NAMES_SHORT = ['','Apertura','En conv.','Dossier','Seg. 1','Seg. 2','Reunión'];
 
 let _entries = [];
 let _selected = null;
@@ -455,6 +457,12 @@ function renderList() {
 
   const list = document.getElementById('prospect-list');
   if (!filtered.length) { list.innerHTML = '<div class="empty-list">Sin resultados</div>'; return; }
+
+  // FLAT LIST when filtering or searching — avoids collapsed-week hiding bug
+  if (q || sf) {
+    list.innerHTML = filtered.map(en => renderProspectItem(en)).join('');
+    return;
+  }
 
   // Group by week
   const byWeek = {};
@@ -645,6 +653,10 @@ function histExtractEmpresa(msg1) {
   return m ? m[1].trim() : '';
 }
 function renderEmailList() {
+  const sec = document.getElementById('email-section');
+  const tbody = document.getElementById('email-tbody');
+  const badge = document.getElementById('email-badge');
+  if (!sec || !tbody || !badge) return;
   const emailRows = [];
   for (const en of _entries) {
     // Primero: campo email directo
