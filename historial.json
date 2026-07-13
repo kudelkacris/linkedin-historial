@@ -3816,7 +3816,8 @@
         "text": "Ara, gracias por conectar! 👋\n\nMe llamó mucho la atención la publicación que compartiste sobre SIGMA São Paulo. Específicamente cuando dijiste que \"las conexiones son el motor que nos impulsa hacia el éxito\" y que creer en las sinergias significa llegar más lejos juntos. No es lo que la mayoría de los directivos comerciales publica cuando hablan de un evento.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": "4",
+    "stage": "5",
+    "estado": "Cerrado - no fit actual. Estrategia orgánica, puerta abierta.",
     "stageHistory": [
       {
         "stage": 1,
@@ -3827,6 +3828,11 @@
         "stage": 3,
         "date": "02/07/26",
         "note": "Dossier enviado"
+      },
+      {
+        "stage": 5,
+        "date": "13/07/26",
+        "note": "Cerrado - no fit actual"
       }
     ]
   },
@@ -25542,7 +25548,7 @@
         "text": "Hola Josué! Eso es exactamente lo que quise decir cuando leí tu publicación.\n\nEl pico es la trampa. Se siente bien en el momento, suben las visualizaciones, el cliente queda contento, pero no construye nada. Y el problema es que muchos nunca salen de ese ciclo porque nadie les hace la pregunta de fondo: ¿hacia dónde querés que vaya esta marca en dos años?\n\nEso es justo en lo que trabajamos desde Hint Media: ayudar a marcas e instituciones a construir esa visión y ejecutar la comunicación que la sostenga en el tiempo. No picos, sino presencia con dirección. Hemos trabajado con TGS y Libra Seguros en ese tipo de estructura.\n\nTe puedo enviar un dossier por acá si no es mucha molestia, o me indicarías a quién se lo puedo mandar?"
       }
     ],
-    "stage": 2,
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
