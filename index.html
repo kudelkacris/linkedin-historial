@@ -678,9 +678,6 @@ function renderEmailList() {
       break;
     }
   }
-  const sec = document.getElementById('email-section');
-  const tbody = document.getElementById('email-tbody');
-  const badge = document.getElementById('email-badge');
   badge.textContent = emailRows.length;
   sec.style.display = emailRows.length ? '' : 'none';
   tbody.innerHTML = emailRows.map(r =>
