@@ -440,7 +440,7 @@ function renderList() {
   const sorted = [..._entries].sort((a,b) => parseDate(b.date) - parseDate(a.date));
   let filtered = sorted;
   if (q) filtered = filtered.filter(e => {
-    if (e.name.toLowerCase().includes(q)) return true;
+    if ((e.name||e.nombre||'').toLowerCase().includes(q)) return true;
     if ((e.variantTitle||'').toLowerCase().includes(q)) return true;
     if ((e.empresa||'').toLowerCase().includes(q)) return true;
     if ((e.msg1||'').toLowerCase().includes(q)) return true;
@@ -475,10 +475,8 @@ function renderList() {
   const parseWk = k => { if(k==='unknown') return 0; const [y,m,w]=k.split('-').map(Number); const yr=y<100?2000+y:y; return yr*10000+m*100+w; };
   weekOrder.sort((a,b) => parseWk(b) - parseWk(a));
 
-  const curWk = currentWeekKey();
-  const hasAnyOpen = weekOrder.some(wk => _weekState[wk] === true);
-  weekOrder.forEach((wk, i) => {
-    if (_weekState[wk] === undefined) _weekState[wk] = (wk === curWk) || (!hasAnyOpen && i === 0);
+  weekOrder.forEach(wk => {
+    if (_weekState[wk] === undefined) _weekState[wk] = true;
   });
 
   list.innerHTML = weekOrder.map(wk => {
