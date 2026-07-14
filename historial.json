@@ -26173,5 +26173,298 @@
         "note": ""
       }
     ]
+  },
+  {
+    "id": "1752530000001",
+    "date": "14/07/26",
+    "name": "Alberto Garcia Martinez de Artola",
+    "empresa": "IngeVital / Ingecom Sistemas",
+    "variantTitle": "HINTCREATIVO - Perfil A - Co-Founder CMO dos empresas",
+    "msg1": "Buenas Alberto!\nLo que compartiste sobre alarmas reactivas vs predictivas es una distincion que en comunicacion tambien importa. La mayoria de las startups comunica cuando ya tienen un problema de visibilidad, no antes.\nGestionar la comunicacion de dos empresas con audiencias tan distintas al mismo tiempo es dificil de hacer bien. Ingevital habla a familias que buscan soluciones para sus mayores. Ingecom a municipios y empresas de infraestructura. Son dos lenguajes, dos canales, dos estrategias.\nEn Hint Media trabajamos como el equipo de marketing externo para empresas que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estas manejando hoy con las dos empresas?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Alberto! Lo que compartiste sobre alarmas reactivas vs predictivas..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000002",
+    "date": "14/07/26",
+    "name": "Francy Ferro",
+    "empresa": "Tiresia Soluciones Tecnologicas",
+    "variantTitle": "HINTCREATIVO - Perfil B - Marketing Director solitaria",
+    "msg1": "Buenas Francy!\nLo que escribiste la semana pasada sobre hablar del problema en vez de las funcionalidades es exactamente la diferencia entre comunicacion que vende y comunicacion que informa.\nUna directora de marketing sola en una empresa de ERP tiene que hacer estrategia, contenido, pauta, direccion creativa y analisis al mismo tiempo. Eso tiene un techo, no porque falte criterio, sino porque el criterio solo no alcanza para ejecutar todo.\nEn Hint Media trabajamos como el equipo externo de marketing para empresas que no tienen uno adentro todavia: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estas manejando hoy, con todo lo que implica Tiresia?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Francy! Lo que escribiste la semana pasada..."
+      }
+    ],
+    "stage": "noInterest",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      },
+      {
+        "stage": "noInterest",
+        "date": "14/07/26",
+        "note": "Bloqueo tras MSG1"
+      }
+    ]
+  },
+  {
+    "id": "1752530000003",
+    "date": "14/07/26",
+    "name": "Juan Lopez Ibanez",
+    "empresa": "Nuela AI",
+    "variantTitle": "HINTCREATIVO - Perfil A - COO Co-Founder EdTech",
+    "msg1": "Buenas Juan!\nLo que conto el director del colegio en el Bernabeu, me cabrea pensar en las horas que tire a la basura, es el mejor argumento comercial que Nuela puede tener. Y viene de un cliente, no de una campana.\nEso que construiste en comunicacion funciona porque salio desde adentro del producto. El reto es que a este ritmo, con 10 paises y la operacion escalando, la voz de Nuela no puede depender de lo que te sobre como COO.\nEn Hint Media somos el equipo de marketing externo para startups que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estan manejando hoy con la comunicacion mientras escalan?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Juan! Lo que conto el director del colegio en el Bernabeu..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000004",
+    "date": "14/07/26",
+    "name": "Elena Alcover Jorge",
+    "empresa": "DataGrowth",
+    "variantTitle": "HINTCREATIVO - Perfil A - CEO Co-Founder Data/IA Under30",
+    "msg1": "Buenas Elena!\nLo que escribiste hace unos dias sobre la seleccion espanola tiene mucho sentido aplicado a cualquier startup de IA: el producto es la tactica, el equipo es lo que gana. El problema es que cuando el equipo somos dos o tres personas, comunicar eso hacia afuera queda siempre para despues.\nDataGrowth acabo de ganar el Under30, hace formaciones, tiene casos reales en produccion. Eso no es poca cosa. El reto es que si esa narrativa depende de lo que te sobre como CEO, tiene un techo.\nEn Hint Media somos el equipo de marketing externo para empresas que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estas manejando hoy con la comunicacion de DataGrowth mientras tambien llevas ventas y los proyectos?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Elena! Lo que escribiste hace unos dias sobre la seleccion espanola..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000005",
+    "date": "14/07/26",
+    "name": "Rafael Adaui",
+    "empresa": "SoyDigio",
+    "variantTitle": "HINTCREATIVO - Perfil A - CEO Fundador oficina digital",
+    "msg1": "Buenas Rafael!\nLo que escribiste sobre cobrar por transferencia tiene una capa que no es tecnica: la imagen que proyectas cuando tu sistema depende de que el otro se acuerde. Ese argumento aplica igual a la comunicacion.\nSoyDigio lleva un ano construyendo infraestructura digital profesional para que otros no dependan de nadie. El reto es que si toda la presencia de SoyDigio depende de lo que te sobre como CEO, tenes el mismo problema que resolves para tus clientes.\nEn Hint Media somos el equipo de marketing externo para empresas que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estas manejando hoy con la comunicacion de SoyDigio mientras tambien llevas la operacion y los clientes?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Rafael! Lo que escribiste sobre cobrar por transferencia..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000006",
+    "date": "14/07/26",
+    "name": "Nacho Alonso Cembrano",
+    "empresa": "BAnCLUBS / Pinama Capital23",
+    "variantTitle": "HINTCREATIVO - Perfil A - Presidente clubs inversion Forbes",
+    "msg1": "Buenas Nacho!\nLo que escribiste en Forbes tiene una capa que va mas alla del reconocimiento: una lista que no habla de patrimonio, sino de proposito. Eso resume exactamente lo que BAnCLUBS hace que otros clubs no hacen, pero esa narrativa hoy vive casi exclusivamente en tu LinkedIn.\nSi el ecosistema inversor te identifica a vos, no a la marca, es dificil que BAnCLUBS escale su presencia mas rapido que tu agenda.\nEn Hint Media somos el equipo de marketing externo para organizaciones que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estan manejando hoy con la comunicacion de BAnCLUBS mientras la expansion territorial se acelera?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Nacho! Lo que escribiste en Forbes tiene una capa que va mas alla del reconocimiento..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000007",
+    "date": "14/07/26",
+    "name": "Daniel Gratz",
+    "empresa": "B2Chat",
+    "variantTitle": "HINTCREATIVO - Perfil B - Marketing Director SaaS 20 paises",
+    "msg1": "Buenas Daniel!\nLo del username en WhatsApp es exactamente eso: un cambio que parece cosmetico pero mueve la forma en que las empresas construyen identidad en conversaciones. Es el tipo de lectura que distingue a los que piensan producto de los que solo ejecutan canal.\nCuando el marketing director de una empresa en 20 paises tambien es quien redefine el messaging, arma los creativos, gestiona la pauta y analiza el pipeline, hay un punto en que la capacidad de ejecucion no sigue el ritmo de la estrategia.\nEn Hint Media somos el equipo de marketing externo para empresas que necesitan escalar la ejecucion sin perder criterio: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo esta organizado hoy el equipo de marketing en B2Chat mientras escalan la operacion?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Daniel! Lo del username en WhatsApp es exactamente eso..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000008",
+    "date": "14/07/26",
+    "name": "Enrique Chaparro",
+    "empresa": "Pi-Tec",
+    "variantTitle": "HINTCREATIVO - Perfil A - CEO Co-founder consultora IA Peru",
+    "msg1": "Buenas Enrique!\nLo del vendor sprawl tiene una capa que va mas alla del gasto: el problema no es cuantas licencias hay, es que nadie tiene autoridad para decidir cual se queda. Ese mismo patron aparece en comunicacion: muchas empresas de tech tienen presencia en varios canales, pero nadie decidio que canal construye la marca y cual solo consume tiempo.\nPi-Tec ayuda a otras empresas a ordenar sus decisiones de IA con criterio. Pero si toda la presencia de Pi-Tec depende de tu LinkedIn, el dia que tu agenda se llene, la marca desaparece del radar.\nEn Hint Media somos el equipo de marketing externo para empresas que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estan manejando hoy con la comunicacion de Pi-Tec mientras tambien llevas la parte academica y los proyectos?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Enrique! Lo del vendor sprawl tiene una capa que va mas alla del gasto..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000009",
+    "date": "14/07/26",
+    "name": "Mathias Vier",
+    "empresa": "Shifty App",
+    "variantTitle": "HINTCREATIVO - Perfil A - CEO Co-Founder HRtech hosteleria",
+    "msg1": "Buenas Mathias!\nLa historia del cocinero en 14 minutos la contaste de una forma que pocas startups saben hacer: con el reloj corriendo, un cliente real y el resultado concreto al final. Eso vende mas que cualquier pitch.\nEl reto es que esa capacidad de narrar depende de lo que te sobre como CEO entre el South Summit, las alianzas y la operacion. Shifty crece, pero la marca en LinkedIn sigue siendo basicamente vos.\nEn Hint Media armamos el equipo de marketing externo para startups que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estan manejando hoy con la comunicacion de Shifty mientras escalan la operacion?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Mathias! La historia del cocinero en 14 minutos..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000010",
+    "date": "14/07/26",
+    "name": "Diego Andres Morales Torres",
+    "empresa": "Grupo Estrenar Vivienda",
+    "variantTitle": "Mensaje picante - Director Marketing con equipo (no HINTCREATIVO standard)",
+    "msg1": "Buenas Diego!\nLo de Argentina y la PNL tiene un punto que pocas marcas aplican de verdad: no cambiaron la identidad despues de las derrotas, reencuadraron los datos y volvieron con el sistema intacto.\nEl sector inmobiliario hace exactamente lo contrario: cada vez que baja el trafico o cae la conversion, cambia el mensaje, el tono, la paleta, la campana. Nunca el sistema.\nLa pregunta que me quedo: en Estrenar Vivienda tienen esa identidad instalada o todavia la estan construyendo partido a partido?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Diego! Lo de Argentina y la PNL tiene un punto que pocas marcas aplican de verdad..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "Mensaje conversacional sin pitch - tiene equipo propio"
+      }
+    ]
+  },
+  {
+    "id": "1752530000011",
+    "date": "14/07/26",
+    "name": "Vicente Nicolas Tudon",
+    "empresa": "Muppy",
+    "variantTitle": "HINTCREATIVO - Perfil A - CEO Co-Founder Proptech post-ronda Mutua",
+    "msg1": "Buenas Vicente!\nLo de Mutua Madrilena no es solo una ronda. Es la validacion de que lo que construiste en cinco anos tiene estructura para escalar. De 150 a 400 millones en dos anos, con una institucion como Mutua al lado, cambia completamente el nivel de credibilidad que Muppy necesita proyectar.\nEl desafio es que ese salto de etapa tambien exige que la marca escale al mismo ritmo que la operacion. Hoy la comunicacion de Muppy depende de lo que te sobre como CEO mientras tambien cerras el equipo de Real Estate, Transactions y Expansion.\nEn Hint Media somos el equipo de marketing externo para empresas que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estan manejando hoy con la comunicacion de Muppy mientras armas el equipo para la siguiente etapa?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Vicente! Lo de Mutua Madrilena no es solo una ronda..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
+  },
+  {
+    "id": "1752530000012",
+    "date": "14/07/26",
+    "name": "Vladimir Berrio Garcia",
+    "empresa": "BRAINS TESTING",
+    "variantTitle": "HINTCREATIVO - Perfil A - CEO Founder consultora QA/Testing LATAM",
+    "msg1": "Buenas Vladimir!\nLo que escribiste sobre la IA tiene una capa que aplica a mas contextos: el problema no es el error, es que a mayor escala el error se multiplica antes de que alguien lo detecte. Lo mismo pasa con la comunicacion cuando no hay sistema detras.\nBRAINS TESTING lleva dos anos creciendo como referente en LATAM, pero esa presencia escala a la velocidad de lo que te sobre como CEO entre los proyectos, los speakers engagements y los articulos. Sin sistema, depende de tu energia, no de la marca.\nEn Hint Media somos el equipo de marketing externo para empresas que todavia no tienen uno adentro: estrategia, contenido, diseno, paid media, todo incluido.\nCon Destiny Group construimos presencia digital desde cero: cobertura en medios del sector y presencia consistente en todos los canales en ocho meses.\nComo lo estan manejando hoy con la comunicacion de BRAINS TESTING mientras tambien llevas los proyectos y la agenda de eventos?",
+    "msg2": "",
+    "extraMsgs": {},
+    "conversationHistory": [
+      {
+        "role": "sent",
+        "text": "Buenas Vladimir! Lo que escribiste sobre la IA tiene una capa que aplica a mas contextos..."
+      }
+    ],
+    "stage": "1",
+    "stageHistory": [
+      {
+        "stage": 1,
+        "date": "14/07/26",
+        "note": "HINTCREATIVO"
+      }
+    ]
   }
 ]
