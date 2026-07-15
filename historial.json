@@ -882,14 +882,15 @@
         "text": "Sofia, gracias por conectar! 👋\n\nMe llamó la atención la publicación sobre Deskan-C. No es lo que la mayoría comparte cuando presenta una marca: enfatizaste \"saber a quién le hablamos, entender cada público, construir experiencias cercanas\". Eso es más reflexión que pitch, y menos común en pharma.\n\nSi estoy entendiendo bien lo que leí, tenía una consulta y quería saber si me podías ayudar."
       }
     ],
-    "stage": 1,
+    "stage": "3",
     "stageHistory": [
       {
         "stage": 1,
         "date": "09/07/26",
         "note": ""
       }
-    ]
+    ],
+    "email": "jdelfierro@activomas.cl; iosorio@activomas.cl"
   },
   {
     "id": "1783620935996",
