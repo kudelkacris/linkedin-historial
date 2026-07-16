@@ -26869,11 +26869,12 @@
     "empresa": "HealthMate",
     "sector": "Salud / HealthTech",
     "pais": "España",
-    "stage": 5,
+    "stage": 1,
     "estado": "No interesado",
     "fecha": "16/07/26",
     "date": "16/07/26",
-    "name": "Marcos Valera Santana"
+    "name": "Marcos Valera Santana",
+    "noInterest": true
   },
   {
     "id": "alejandro-quintans",
@@ -26882,11 +26883,12 @@
     "empresa": "Ovianta",
     "sector": "Salud / HealthTech",
     "pais": "España",
-    "stage": 5,
+    "stage": 1,
     "estado": "No interesado",
     "fecha": "16/07/26",
     "date": "16/07/26",
-    "name": "Alejandro Quintans"
+    "name": "Alejandro Quintans",
+    "noInterest": true
   },
   {
     "id": "david-zafra",
