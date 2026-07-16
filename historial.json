@@ -642,14 +642,15 @@
         "text": "Armando, gracias por conectar! ðŸ‘‹\n\nMe llamÃ³ la atenciÃ³n cÃ³mo escribiste sobre tu salida de Falabella. La mayorÃ­a de las personas anuncian un cambio de empresa. Vos explicaste quÃ© te llevabas contigo del equipo anterior. No es lo que ves normalmente.\n\nSi estoy entendiendo bien lo que leÃ­, tenÃ­a una consulta y querÃ­a saber si me podÃ­as ayudar."
       }
     ],
-    "stage": 1,
+    "stage": 3,
     "stageHistory": [
       {
         "stage": 1,
         "date": "10/07/26",
         "note": ""
       }
-    ]
+    ],
+    "estado": "Dossier enviado"
   },
   {
     "id": "1783690641791",
@@ -26623,10 +26624,11 @@
     "empresa": "Glya",
     "sector": "HealthTech",
     "pais": "Colombia",
-    "stage": "1",
-    "estado": "MSG1 enviado",
+    "stage": 3,
+    "estado": "Dossier enviado",
     "lista": "HINTCREATIVO",
-    "date": "15/07/26"
+    "date": "15/07/26",
+    "name": "Ximena Ruget"
   },
   {
     "id": "mavy-catherine-guti-rrez",
@@ -26867,8 +26869,8 @@
     "empresa": "HealthMate",
     "sector": "Salud / HealthTech",
     "pais": "España",
-    "stage": 1,
-    "estado": "MSG1 enviado",
+    "stage": 5,
+    "estado": "No interesado",
     "fecha": "16/07/26",
     "date": "16/07/26",
     "name": "Marcos Valera Santana"
