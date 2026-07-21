@@ -1080,14 +1080,15 @@
                                         "text":  "Valeska, gracias por conectar! ðŸ‘‹\n\nMe llamÃ³ la atenciÃ³n la reflexiÃ³n que compartiste sobre el aÃ±o en Candelaria. Lo que mÃ¡s me gustÃ³ fue que le dieras tanto crÃ©dito a la comunidad colaborativa detrÃ¡s, en vez de solo celebrar el logro puntual. No suele ser lo primero que nombra la gente cuando habla de un rol de comunicaciÃ³n.\n\nSi estoy entendiendo bien lo que leÃ­, tenÃ­a una consulta y querÃ­a saber si me podÃ­as ayudar."
                                     }
                                 ],
-        "stage":  4,
+        "stage":  1,
         "stageHistory":  [
                              {
                                  "stage":  1,
                                  "date":  "09/07/26",
                                  "note":  ""
                              }
-                         ]
+                         ],
+        "noInterest":  true
     },
     {
         "id":  "1783352085248",
