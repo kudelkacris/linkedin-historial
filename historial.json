@@ -27293,5 +27293,82 @@
         "fecha":  "16/07/26",
         "date":  "16/07/26",
         "name":  "Lorena Miguel Pariente"
+    },
+    {
+        "id":  "arisdelssy-martinez",
+        "name":  "Arisdelssy Martinez",
+        "cargo":  "Sales Marketing Manager",
+        "empresa":  "MC Logística",
+        "sector":  "Logística / Tecnología",
+        "pais":  "Costa Rica",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
+    },
+    {
+        "id":  "gabriel-utges",
+        "name":  "Gabriel Utgés",
+        "cargo":  "Marketing \u0026 Communication Manager",
+        "empresa":  "Inkema",
+        "sector":  "Industrial / Manufactura",
+        "pais":  "España",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
+    },
+    {
+        "id":  "antonio-grgicevic",
+        "name":  "Antonio Grgicevic",
+        "cargo":  "Marketing Manager",
+        "empresa":  "WICO Combustibles",
+        "sector":  "Energía / Combustibles",
+        "pais":  "Argentina",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
+    },
+    {
+        "id":  "veronica-arevalo-montesdeoca",
+        "name":  "Verónica Arévalo Montesdeoca",
+        "cargo":  "Marketing Manager",
+        "empresa":  "SAIA Importadora Andina",
+        "sector":  "Automotriz / Retail",
+        "pais":  "Ecuador",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
+    },
+    {
+        "id":  "israel-contreras-mora",
+        "name":  "Israel Contreras Mora",
+        "cargo":  "Gerente de Mercadotecnia",
+        "empresa":  "SPIN GRUPO S.A. DE C.V.",
+        "sector":  "Químicos Industriales",
+        "pais":  "México",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
+    },
+    {
+        "id":  "dafna-brilovich-zimerman",
+        "name":  "Dafna Brilovich Zimerman",
+        "cargo":  "Marketing Manager",
+        "empresa":  "Chocolatería Entrelagos",
+        "sector":  "Consumo Masivo / Retail",
+        "pais":  "Chile",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
+    },
+    {
+        "id":  "kivony-poyser",
+        "name":  "Kivony Poyser C.",
+        "cargo":  "Head of Sales and Marketing",
+        "empresa":  "Novitec Consultores",
+        "sector":  "Tech / Consultoría SAP",
+        "pais":  "Costa Rica",
+        "stage":  1,
+        "estado":  "MSG1 enviado",
+        "date":  "21/07/26"
     }
 ]
