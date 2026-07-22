@@ -2621,7 +2621,8 @@
                                  "stage":  3,
                                  "date":  "03/07/26"
                              }
-                         ]
+                         ],
+        "noInterest":  true
     },
     {
         "id":  "1782951485997",
@@ -4309,7 +4310,7 @@
                                         "text":  "Alejandra, gracias por conectar ðŸ‘‹\n\nLeÃ­ tu publicaciÃ³n de cierre en UVE y me quedÃ³ esa impresiÃ³n de que gran parte de los 5 aÃ±os fueron dedicados a armar que diferentes actores (administraciones, retailers, agricultores, sociedad civil) hablaran el mismo lenguaje sobre transiciÃ³n proteica. No es lo que la mayorÃ­a hace cuando cierra una etapa â€” suelen armar un resumen de logros puntuales, vos pusiste el acento en el equipo y el movimiento construido.\n\nSi estoy entendiendo bien lo que leÃ­, tenÃ­a una consulta y querÃ­a saber si me podÃ­as ayudar."
                                     }
                                 ],
-        "stage":  4,
+        "stage":  6,
         "stageHistory":  [
                              {
                                  "stage":  1,
@@ -27357,8 +27358,9 @@
         "sector":  "Consumo Masivo / Retail",
         "pais":  "Chile",
         "stage":  1,
-        "estado":  "MSG1 enviado",
-        "date":  "21/07/26"
+        "estado":  "No interesada",
+        "date":  "21/07/26",
+        "noInterest":  true
     },
     {
         "id":  "kivony-poyser",
@@ -27370,5 +27372,137 @@
         "stage":  1,
         "estado":  "MSG1 enviado",
         "date":  "21/07/26"
+    },
+    {
+        "empresa":  "Trascender Centro Psicologico",
+        "id":  "jenny-carolina-lopez",
+        "date":  "22/07/26",
+        "pais":  "Colombia",
+        "cargo":  "Socio Fundadora - Psiquiatra Perinatal",
+        "sector":  "Salud mental",
+        "name":  "Jenny Carolina Lopez",
+        "stage":  2,
+        "estado":  "MSG2 enviado"
+    },
+    {
+        "empresa":  "SuperVive",
+        "id":  "aidee-granados",
+        "date":  "22/07/26",
+        "pais":  "USA",
+        "cargo":  "Founder",
+        "sector":  "Salud preventiva",
+        "name":  "Aidee Granados",
+        "stage":  2,
+        "estado":  "MSG2 enviado"
+    },
+    {
+        "empresa":  "Clinica Oftalmocenter",
+        "id":  "bernardo-quijano-nieto",
+        "date":  "22/07/26",
+        "pais":  "Colombia",
+        "cargo":  "Fundador y Director",
+        "sector":  "Oftalmologia",
+        "name":  "Bernardo Quijano Nieto",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "The Global Chamber",
+        "id":  "gabriel-uribe",
+        "date":  "22/07/26",
+        "pais":  "Mexico",
+        "cargo":  "Executive Director Mexico City",
+        "sector":  "Business development",
+        "name":  "Gabriel Uribe",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "PDC Training Consulting",
+        "id":  "juan-carlos-garcia-villalaz",
+        "date":  "22/07/26",
+        "pais":  "Panama",
+        "cargo":  "Fundador Director",
+        "sector":  "Consultoria / Formacion ejecutiva",
+        "name":  "Juan Carlos Garcia Villalaz",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "Lumaflex Body Pro",
+        "id":  "john-graham-harper",
+        "date":  "22/07/26",
+        "pais":  "USA",
+        "cargo":  "CEO",
+        "sector":  "Wellness tech",
+        "name":  "John Graham Harper",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "ID360",
+        "id":  "kim-zoller",
+        "date":  "22/07/26",
+        "pais":  "USA",
+        "cargo":  "Founder CEO",
+        "sector":  "Liderazgo / Coaching ejecutivo",
+        "name":  "Kim Zoller",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "Prism Wellness",
+        "id":  "erin-atkinson",
+        "date":  "22/07/26",
+        "pais":  "USA",
+        "cargo":  "Founder Clinical Director",
+        "sector":  "Wellness / Salud mental",
+        "name":  "Erin Atkinson",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "Betterfly",
+        "id":  "lina-vanegas-matiz",
+        "date":  "22/07/26",
+        "pais":  "Mexico",
+        "cargo":  "Head of Marketing",
+        "sector":  "HR Tech / Bienestar corporativo",
+        "name":  "Lina Vanegas Matiz",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "enlace",
+        "id":  "adalberto-maldonado-romero",
+        "date":  "22/07/26",
+        "pais":  "Mexico",
+        "cargo":  "Consejero Profesional Independiente",
+        "sector":  "Consultoria independiente",
+        "name":  "Adalberto Maldonado Romero",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "Sequel Brands",
+        "id":  "christopher-pena",
+        "date":  "22/07/26",
+        "pais":  "USA",
+        "cargo":  "President Franchise Development",
+        "sector":  "Fitness franchise",
+        "name":  "Christopher Pena",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
+    },
+    {
+        "empresa":  "Wall Breaker Mexico",
+        "id":  "jose-miguez",
+        "date":  "22/07/26",
+        "pais":  "Mexico",
+        "cargo":  "Founder CEO Estratega Transformacion Ejecutiva",
+        "sector":  "Consultoria / Coaching ejecutivo",
+        "name":  "Jose Miguez",
+        "stage":  1,
+        "estado":  "MSG1 enviado"
     }
 ]
