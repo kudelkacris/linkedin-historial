@@ -554,8 +554,8 @@
         "cargo":  "Socio Fundadora - Psiquiatra Perinatal",
         "sector":  "Salud mental",
         "name":  "Jenny Carolina Lopez",
-        "stage":  2,
-        "estado":  "MSG2 enviado"
+        "stage":  3,
+        "estado":  "Dossier enviado"
     },
     {
         "id":  "javier-salas-isequilla",
@@ -1256,6 +1256,11 @@
                                  "stage":  1,
                                  "date":  "23/07/26",
                                  "note":  ""
+                             },
+                             {
+                                 "stage":  1,
+                                 "date":  "23/07/26",
+                                 "note":  "Cerrada"
                              }
                          ],
         "noInterest":  true
