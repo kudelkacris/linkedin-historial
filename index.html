@@ -345,7 +345,9 @@ function escAttr(s) {
 function stgLabel(s){ return (STAGES[s]||{label:'?'}).label; }
 
 function parseDate(d) {
-  const p=(d||'').split('/');
+  if (!d) return 0;
+  if (d.includes('-')) { const [y,m,dd]=d.split('-'); return parseInt(y%100)*10000+parseInt(m)*100+parseInt(dd); }
+  const p=d.split('/');
   return p.length===3?parseInt(p[2])*10000+parseInt(p[1])*100+parseInt(p[0]):0;
 }
 
