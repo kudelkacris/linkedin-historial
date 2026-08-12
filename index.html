@@ -661,7 +661,7 @@ function renderEmailList() {
     if (en.email) {
       const empresa = en.empresa || domainToEmpresa(en.email);
       const ctx = (typeof en.msg1 === 'string' ? en.msg1 : '').replace(/\n/g,' ').trim().slice(0,80);
-      emailRows.push({ name: en.name, email: en.email, empresa, ctx, id: en.id });
+      emailRows.push({ name: en.name, email: en.email, empresa, ctx, id: en.id, date: en.date||'' });
       continue;
     }
     // Fallback: buscar en notas de stageHistory
@@ -672,10 +672,17 @@ function renderEmailList() {
       if (!email) continue;
       const empresa = en.empresa || domainToEmpresa(email);
       const ctx = (typeof en.msg1 === 'string' ? en.msg1 : '').replace(/\n/g,' ').trim().slice(0,80);
-      emailRows.push({ name: en.name, email, empresa, ctx, id: en.id });
+      emailRows.push({ name: en.name, email, empresa, ctx, id: en.id, date: en.date||'' });
       break;
     }
   }
+  // Pendientes primero (más antiguas), enviadas al final
+  emailRows.sort((a, b) => {
+    const aSent = isMailSent(a.id) ? 1 : 0;
+    const bSent = isMailSent(b.id) ? 1 : 0;
+    if (aSent !== bSent) return aSent - bSent;
+    return parseDate(a.date) - parseDate(b.date);
+  });
   badge.textContent = emailRows.length;
   sec.style.display = emailRows.length ? '' : 'none';
   tbody.innerHTML = emailRows.map(r =>
