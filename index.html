@@ -376,7 +376,8 @@ async function loadData() {
 function renderStats() {
   document.getElementById('st-total').textContent = _entries.length;
   [1,2,3,4,5].forEach(s => {
-    document.getElementById('st-' + s).textContent = _entries.filter(e => String(e.stage||1) === String(s) && !e.noInterest).length;
+    const base = _entries.filter(e => String(e.stage||1) === String(s) && !e.noInterest);
+    document.getElementById('st-' + s).textContent = s === 3 ? base.filter(e => !e.recontact).length : base.length;
   });
   document.getElementById('st-noint').textContent = _entries.filter(e => e.noInterest).length;
   document.getElementById('st-email').textContent = _entries.filter(e => !e.noInterest && histHasEmail(e)).length;
@@ -453,7 +454,7 @@ function renderList() {
   });
   if (sf === 'noint') filtered = filtered.filter(e => e.noInterest);
   else if (sf === 'email') filtered = filtered.filter(e => !e.noInterest && histHasEmail(e));
-  else if (sf) filtered = filtered.filter(e => !e.noInterest && String(e.stage||1) === String(sf));
+  else if (sf) filtered = filtered.filter(e => !e.noInterest && String(e.stage||1) === String(sf) && (sf !== '3' || !e.recontact));
 
   document.getElementById('list-count').textContent = filtered.length + ' prospecto' + (filtered.length !== 1 ? 's' : '');
 
@@ -773,7 +774,7 @@ function getEmpresaDisplay(en) {
   return '';
 }
 function renderProximos() {
-  const active = _entries.filter(en => !en.noInterest && (en.stage||1) <= 4);
+  const active = _entries.filter(en => !en.noInterest && (en.stage||1) <= 4 && !en.recontact);
   const countEl = document.getElementById('prox-count');
   const body = document.getElementById('proximos-body');
   if (!countEl || !body) return;
