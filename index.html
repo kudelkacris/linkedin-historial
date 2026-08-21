@@ -591,9 +591,10 @@ function renderDetail(en) {
   while (i < history.length) {
     if (history[i].role === 'received') {
       const replyText = history[i].text;
-      const suggested = history[i+1] && history[i+1].role === 'suggested' ? history[i+1].text : null;
-      if (suggested) {
-        const bHtml = suggested.replace(/\\n/g,'\n').split('\n\n').filter(t=>t).map(t=>`<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
+      const next = history[i+1];
+      const followText = next && (next.role === 'suggested' || next.role === 'sent') ? next.text : null;
+      if (followText) {
+        const bHtml = followText.replace(/\\n/g,'\n').split('\n\n').filter(t=>t).map(t=>`<div class="bwrap out"><div class="bub">${esc(t)}</div></div>`).join('');
         convHtml += `<div style="border:1px solid var(--border);border-radius:11px;overflow:hidden">
           <div style="padding:9px 13px;background:var(--dark2);display:flex;align-items:center;justify-content:space-between">
             <span style="font-size:11.5px;font-weight:600;color:white">💬 Intercambio ${stepNum}</span>
@@ -634,7 +635,7 @@ function renderDetail(en) {
       ${logHtml}
     </div>
     ${b1html ? `<div class="msg-label">Primer mensaje</div><div class="chat-area">${b1html}</div>` : ''}
-    ${b2html ? `<div class="msg-label">Segundo mensaje</div><div class="chat-area">${b2html}</div>` : ''}
+    ${b2html && !convHtml ? `<div class="msg-label">Segundo mensaje</div><div class="chat-area">${b2html}</div>` : ''}
     ${convHtml ? `<div style="padding:12px 14px;display:flex;flex-direction:column;gap:10px">${convHtml}</div>` : ''}
     ${extraHtml ? `<div style="padding:0 14px 14px;display:flex;flex-direction:column;gap:10px">${extraHtml}</div>` : ''}
   `;
