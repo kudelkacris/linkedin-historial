@@ -4,12 +4,568 @@
 
 ---
 
-## Última sesión: 12/08/26 — sesión tarde (cierre)
+## Sesión 13/10/26 — respuestas a la tanda
+
+- **Nadia Sager** (GEINSA): por ahora no, quiere el contacto para futuro. Cierre cordial, puerta abierta. Cerrada.
+- **Juan Pablo Rossi** (JPR Consulting): pidió charla. Respuesta: mail para Meet y dos días (completar). Sin usar "sinergia" ni prometer recomendaciones. **Pendiente:** el jefe decide la propuesta de recomendaciones mutuas; llevar también el ángulo de posible cliente.
+- **Luis Orlando Arias Heredia** (speaker financiero): maneja la comunicación solo, ofrece derivar por finanzas. Cierre cordial con derivación. Cerrado.
+- **Aprendizaje:** al abrir sesión leer el session completo y los feedbacks de tono, no solo el principio. Reglas que fallé: dar solo el mensaje (sin preámbulo ni notas) y no repetir palabras dentro de un mismo mensaje.
+- **Sigue pendiente de 12/10:** Muñoz Seguel (falta mail/día), Moray, Fernandini, Garza, Bellido, Aarón Flores, Gustavo Diaz, mails de dossier (Pablo Rego, Alcides Roldán), medición del B3 el 14/10, cargar 109 de la tanda del 06/10 al historial.
+
+---
+
+## Sesión 12/10/26 — auditoría de la semana y respuestas
+
+- **Auditoría semana 06-10/10** guardada en `conversaciones/octubre/auditoria-semana-06-10oct26.md`: 171 MSG1, 17 respuestas (~10%), 0 reuniones, 37% de la tanda del 06/10 eran perfiles de "descartar". Plan de la semana adentro.
+- **Rebeca Zumbado Briceño** (Callizo Aromas): lo resuelven adentro. MSG2 sin pitch, pregunta por contar un aroma nuevo (historia de marca o producto). Stage 2.
+- **Irving De los Santos Reyes** (COGNITIA): agradeció, cierre con puerta abierta a derivación y colaboración.
+- **Jose Montalvo** (Humandroid): lo hacen con equipo interno. Cierre cordial, puerta abierta para algo puntual. Cerrado.
+- **Pendiente:** el plan de la semana (Muñoz Seguel, Moray, Fernandini, Garza, Bellido, Aarón Flores, mails de dossier, medición del B3 el 14/10, SEG1 solo a decisores, cargar 109 de la tanda del 06/10 al historial).
+
+---
+
+## Sesión 10/10/26 — respuestas a la tanda del 09/10
+
+- **José Eduardo Muñoz Seguel** (GSP Consultora, Capacitaciones): aceptó la idea de un módulo de comunicación y vocería para jefes dentro de sus programas para YPF, Pecom, Pluspetrol y ministerios de educación. Presencial. Dossier general enviado. **Charla la semana del 12/10, falta mail o día.** Antes: temario, precio y modelo (reventa o comisión) con el jefe. Ficha en `NUEVA_OFERTA/conversaciones/jose-eduardo-munoz-seguel.md`.
+- **Gilberto Garza** (Wertek AI): no sabe quién adopta IAES. MSG3 desde marketing, ir por Wertek (producto pago). Esperando.
+- **Roberto Bellido** (Punto Horeca): tema pendiente, "te tengo en mente". MSG2 con pregunta redes o mostrar proyectos.
+- **Aarón Flores** (Premier Motors Honduras): todo interno + externos temporales. MSG2. Es CEO de Bishop Digital Agency.
+- **Gustavo Diaz**: está desempleado, le piden asesoría gratis, quiere llegar a gremios y cámaras. Pidió precio en USD → se le pasó 800 USD/mes (perfil + contenido, pauta aparte), puerta abierta. Esperando respuesta. Stage 4.
+- **Gonzalo Silman**: se fue de WakeUp. **Javier Calvo**: vendió Liderman, cerrado con agradecimiento. **Irving**: solopreneur, cerrado cordial.
+
+**Reglas de tono nuevas (memoria feedback_tono_mensajes):** escribir como charla real. En hilo abierto no nombrar a la persona, no repetir lo que dijo, no agradecer cada respuesta. No afirmar de más ni suponer cosas que no dijo. No cerrar puertas por la situación del prospecto (desempleo, presupuesto). Evitar frases ambiguas o sobradoras.
+
+---
+
+## Cierre 09/10/26 — tanda MSG1 corto (57 contactos) y cambio del cierre
+
+**Hecho:** se cruzaron 139 aceptadas contra todas las listas. **Es una sola cuenta con dos enfoques** (corregido: antes figuraba que la línea Capacitaciones + Videos salía desde la cuenta del jefe). Se armó MSG1 corto a 55 aceptadas del 23/09 al 06/10, en el orden en que se pegaron. Detalle completo en `conversaciones/octubre/tanda-msg1-09oct26.md`. Marketing integral → `historial.json`; Capacitaciones + Videos → `NUEVA_OFERTA/historial.json` (11).
+
+**Respuestas:**
+- **Vicente Alvarez Boggio** (Ventura BnB, Lima): pidió precio (800 USD/mes desde), dossier y si grabamos en Perú. Cerró "no de momento" por la distancia. Estaba contratando analista de marketing → origen de la variante hiring.
+- **Gilberto Garza** (Wertek AI / IAES): respondió a los 2 minutos, MSG2 enviado (stage 2).
+
+**Reglas nuevas (escritas en CLAUDE.md, sección "TANDAS DE CONEXIONES ACEPTADAS", y en los dos index.html):**
+- B3 sin "o es algo que piensan resolver más adelante?". Ahora: consulta cálida que pide su mirada, con dos opciones. Sin dos puntos, sin "me da curiosidad", sin "segundo plano", sin dar por hecho datos que no dijo.
+- Obra del cliente ≠ trabajo nuestro (caso gasoducto Perito Moreno): decir que hicimos la comunicación, nunca la obra.
+- B2 nombra Sullair, TGS y Transener, no solo Sullair.
+- No descartar a nadie (referido, derivación o colaboración). Orden de los mensajes = orden en que se pegaron.
+- Precio de arranque 800 USD/mes (redes + contenido). Producción fuera de Buenos Aires: viaje a cargo del cliente o graban ellos con guiones nuestros.
+- Con un prospecto que está charlando, no ofrecer llamada en cada mensaje.
+
+**Pendiente para la próxima sesión:**
+1. **Variante hiring:** en la próxima lista marcar quién está contratando marketing/contenido. Búsqueda sugerida: Empleos de LinkedIn (community manager, marketing digital, contenidos; 11-200 empleados; última semana) → contactar a quien publicó el aviso.
+2. MSG1 a las ~55 aceptadas del 06 al 09/10 (línea Capacitaciones + Videos). Prioridad: De Stefano, Battolla, Scotti, Martens, Olivera. Una persona por empresa (Biosidus → Battolla; Raízen y PAE, elegir uno). LLYC (Mateu) es competencia.
+3. 14 aceptadas sin lista: Buranello, M. G. Gutierrez (Scania), Scaramella, Decoud, Pedace, Santacroce, Wotherspoon, Lema, Zambrano, Leon Astorga, Cardinali, Mateu.
+4. Confirmar qué versión del B3 se envió a Blanchart, Ubilla, Zárate, Diana Garcia y Cervantes. Medir respuesta por versión el 14/10.
+5. Gilberto Garza: si responde, caso TGS (idea técnica que se entiende afuera) y después Wertek AI.
+6. Arrastrados: dossier por mail a Pablo Rego y Alcides Roldán; reunión Baquero sin registrar; Dan Hirsch recontacto 22/10 (cliente Agora); Alejandra Cardona estaba marcada "lo charla el jefe".
+
+---
+
+## Cierre 06/10/26 (tarde) — tanda masiva MSG1 y cambios de método
+
+**Hecho:** tanda masiva de MSG1 genérico a ~116 conexiones del backlog (15-23/09), con plantilla formal de 3 burbujas. Lista y plantilla completas en `conversaciones/octubre/tanda-masiva-msg1-06oct26.md`. Todo desde la cuenta de Florencia, sin usar el programa.
+
+**Reglas nuevas del usuario (esta sesión):**
+- B1 = solo "[Nombre], gracias por conectar." (no resumir ni traducir el titular).
+- Registro formal, "usted/ustedes", sin voseo coloquial ("Les está pasando algo así por estos días" no gustó).
+- No repetir palabras en un mismo mensaje ni usar "envío/enviar/mandar".
+- No mezclar dos clientes en una burbuja ("También hacemos videos... como el de Sullair" confundía). Un cliente y un solo mensaje claro.
+- No usar "me llamó la atención", "te hizo sentido", "chico".
+- B3 elegido: "Están buscando un equipo para la comunicación de [empresa], o es algo que piensan resolver más adelante?"
+- B2 cuenta cómo trabajaríamos con ESA empresa (proceso), sin entregable único ni "video, video, video".
+- Capacitaciones: "en comunicación y vocería para equipos y gerentes" (no solo LinkedIn).
+- Si el perfil es colega (agencia, ghostwriter, diseñador), B3 de colaboración.
+- Entregar B1+B2 en un bloque de código y B3 en otro, para copiar.
+
+**Respuestas hoy:** Alfredo Córdoba (cerrado, tiene todo cubierto), Nicolás Briasco (no entendió el SEG1, se aclaró), Marco Cermeño (no ahora), Nicolás Fabani (más adelante), Hansell Mendoza (preguntó qué hacemos), Juan Luis Peralta (colega, propuesta de derivación), Sabrina Carrion y Marcos Milanes (MSG2 enviados).
+
+**Pendiente:**
+- Verificar con el jefe si se puede decir que Agora/Destiny/Libra tienen videos o capacitaciones (hoy solo Sullair y TGS están autorizados).
+- Medir respuesta de la plantilla genérica vs MSG1 con ancla (66,2%).
+- Pablo Rego y Alcides Roldán: falta mandar el dossier por mail.
+- Esperar contacto de Erick Kennedy (Subsecretaría de Industria de Corrientes).
+- Registrar la reunión de Baquero (15/09).
+- Perfiles RRHH/CHRO de la tanda (Paula Patiño, Sergio Roses, Mariana Ortiz, Gabriela Jauregui, Liz Pichardini, Rodrigo Villarreal) reservarlos para la cuenta del jefe.
+- Push a los dos repos pendiente (el sistema bloqueó el git push, ver abajo).
+
+---
+
+## Última sesión: 06/10/26 — ronda de SEG1 sobre dossiers de septiembre
+
+**Hecho (stage 4 = SEG1 enviado, asumido enviado por el usuario):** Erick Kennedy (respuesta a referido), Natalia Giménez, Celeste Policastro, Juan Pablo Rossi, Alfredo Córdoba de Alzaga, Hernán Arce, Carolina Correa, Julián Abreu, Nicolás Briasco, Nora Fiorini, Gustavo Díaz, Yoel Colombo, Tomás Rivero. MSG2 (stage 2): Sabrina Carrion, Marcos Milanes. Post-reunión Luis Baquero (sigue stage 6).
+
+**Regla del usuario esta sesión:** todo prospecto cuya conversación pega ya recibió el dossier, no volver a marcarlo como pendiente. Con la conversación pegada no saludar de nuevo si el hilo está abierto (caso Erick). No usar "te hizo sentido" ni "chico". Si el mensaje tiene que vender Hint (caso Rossi), vender, no solo proponer referido.
+
+**Pendiente para seguir:**
+- **Pablo Rego** (Tienda Inglesa) y **Alcides Roldán Silva** (Barrick): NO se les mandó el dossier por mail todavía. Mandar primero, después SEG1.
+- **Erick Kennedy:** esperar el contacto de la Subsecretaría de Industria de Corrientes (él es el capacitador, no el decisor).
+- **Luis Baquero:** registrar qué se habló en la reunión del 15/09; el post-reunión ya está armado.
+- **Analía Angulo (Ikoni)** y **Alexandra Oropeza Castro:** sin novedades, esperar.
+- **Hernán Arce:** reservar su oferta de ser puente para SEG2.
+- **Mariano Bustos:** descartado por el usuario.
+- Revisar agosto/julio/junio por dossiers sin SEG1.
+
+---
+
+## Última sesión: 05/10/26 — giro del jefe: Capacitaciones + Videos de lanzamiento
+
+**Pedido del jefe (llamada del 05/10):** el servicio integral es muy amplio y las empresas grandes cotizan a fin de año. Se sale con dos productos puntuales: **capacitaciones** (LinkedIn + vocería digital para equipos internos) y **videos de lanzamiento** (motion graphics de proyectos + ilustración de cultura, casos TGS Perito Moreno, cultura TGS y Sullair). Target: **empresas grandes (200-500+), sector indiferente**, áreas RRHH, cultura, comunicación interna y corporativa. Se sale desde la **cuenta del jefe**, no la de Florencia. El jefe arma dos dossiers.
+
+**Armado:** carpeta `NUEVA_OFERTA/` con CLAUDE.md propio, programa en **localhost:3001** (`cd NUEVA_OFERTA` + `python servidor.py`), historial y conversaciones propios. Selector de línea, aviso si el prospecto ya fue contactado por Florencia, Haiku como modelo (pedido explícito). El programa principal (3000) quedó intacto.
+- B1 **sin "Me llamó la atención"** (pedido del usuario): entra directo al hecho ("Vi que…", "Leí lo de…", "Felicitaciones por…").
+- Bloqueado: video NGL de TGS (no publicado), Transener como caso de video, afirmar que ya capacitamos a clientes.
+- Problema conocido: Haiku a veces agrega una frase de opinión al final del B1 en videos. Idea: darle ejemplos en el SYSTEM.
+
+**Listas:**
+- `NUEVA_OFERTA/listas/2026-10-05-comunicacion-interna.md`: búsqueda "comunicación interna", 16 de 25 útiles. Consultar con el jefe: Julián Cebreiro (Transener = cliente) y Adriana Shimabukuro (TGN = competencia de TGS). Nicolas Doyle (Nucleoeléctrica) es 1er grado: escribirle ya.
+- `conexiones/2026-10-05-aceptadas-sin-msg1.md`: **181 aceptadas en la cuenta de Florencia, 179 sin ningún mensaje.** 13 → nueva oferta (Bettina Llapur, Sergio Roses CHRO, Paula Patiño, Grupo Xcaret, Cámara Argentina de Empresas Mineras como canal), ~95 → marketing integral, ~70 descartadas con motivo. Error corregido: había descartado 120 por el titular.
+
+**Pendiente para mañana:**
+1. MSG1 a los aceptados sin mensaje: primero los 13 de la nueva oferta (3001) y los prioritarios de energía en marketing integral (3000). Hace falta el perfil o un post de cada uno.
+2. Headline, "Acerca de" y Destacados del perfil del jefe (necesito cómo está hoy).
+3. Borrador del temario de capacitaciones (`[LINK TEMARIO]`). Carpeta de videos publicados (`[LINK VIDEOS]`), la arma el jefe.
+4. Confirmar con el jefe: nueva oferta desde la cuenta de Florencia para esos 13, Cebreiro y Shimabukuro, Sales Navigator en su cuenta.
+
+---
+
+## Última sesión: 23/09/26 — respuestas, cierres y 132 conexiones aceptadas
+
+**Conversaciones:**
+- **Sebastián Francesetti** (Fundador y Director Ejecutivo, Vaca Muerta Facility Group, Añelo): escribió primero. VMFG = holding con 6 empresas y 10 líneas, promesa "un solo interlocutor". Confirmó su dolor: comunicar que VMFG es una plataforma y no un listado de proveedores. MSG2 corto, sin re-saludar, con propuesta de llamada (cliente Sullair). Stage 2. Si acepta: mail + Google Meet.
+- **Julio Vargas Hernández** (Empresa Portuaria Iquique): interés diferido, foco en la concesión portuaria. MSG2 pregunta para cuándo calcula la próxima etapa. Stage 2, **recontactar** según su fecha.
+- **Adrian Rottaris** (AREA54): no es su área, empresa en reestructuración y recortes. Cerrado cordial, puerta abierta (recontactar a alguien del área más adelante).
+- **Ignacio Foyatier** (Innza): no interesado por ahora. Cerrado cordial.
+
+**Aprendizajes de estilo (memoria nueva `feedback-sin-comillas`):** no citar al prospecto entre comillas, parafrasear. En hilo abierto no volver a saludar, ir más conciso. Cuando dan pie, ofrecer llamada directo en vez de dossier.
+
+**Conexiones aceptadas (132, pegadas por la usuaria):** 48 de `CONEXIONES-21-09.json` (30 decisores, 12 mando medio), 19 de `DECISORES-SEP26.json`, 0 de la lista de agosto, **65 sin lista** (invitados directo desde Sales Navigator; incluye a Francesetti, Gustavo Díaz y Alejandro Cabrera, que ya están en historial). Los otros 62 no pasaron por el filtro de decisores (mucha hotelería, mando medio). Competencia a no escribir: Pedro Casado (Morillas).
+**Prioridad MSG1 (energía/minería, decisores):** Armando Montes, Alejandro Auditore, Juan Ignacio Hechem (Delta Energy, prioridad alta), Nicolás Fabani (Vectra), Solange Cuadros (PERU LNG), Benjamin Osorio (Olympic), Elias Fernandini (VOLUNA), Nadia Sager (GEINSA). Falta la cita de un post reciente de cada uno.
+
+**Repos:** historial.json y .md de Francesetti/Vargas/Rottaris/Foyatier subidos a linkedin-hintmedia (master) y linkedin-historial (main). Ojo: el sistema de permisos bloqueó una vez el push a linkedin-historial en modo automático, se resolvió al reintentar por separado.
+
+**Pendiente:** armar MSG1 de los aceptados prioritarios; decidir si filtrar y guardar las 62 conexiones sin lista; los pendientes de la sesión 21/09 siguen abiertos (dossier por mail sin enviar, leads de rescate, medir respuesta de las primeras 40).
+
+## Última sesión: 21/09/26 tarde — nuevas conexiones y decisores
+
+**Cierres y avances de conversación:**
+- **Gustavo Diaz** (Líder Nacional Movilidad Eléctrica, CELSA, Colombia): escribió primero. MSG2 con rapport cálido igualando su tono, respondió "Si envíalo". Stage 3, **dossier a enviar por LinkedIn** (sin mail). Nunca contestó la pregunta de fondo (quién explica la carga en flotas): buena puerta para el SEG1, y su marca personal (22.656 seguidores) es el win personal.
+- **Angela María Beltrán Díaz** (Payflow): SEG1 enviado sobre su marca personal, respondió que lo vieron y no lo necesitan por ahora. Cerrada cordial, puerta abierta. `noInterest` en historial.
+
+**Aprendizaje de estilo (Gustavo):** el MSG2 largo de 4 burbujas era un error cuando el prospecto ya abrió la puerta. Se acortó y se le devolvió calidez igualando su registro. El acuerdo de "todo más corto" NO estaba registrado en ningún lado: si se habla en sesión, dejarlo escrito en CLAUDE.md.
+
+**Búsqueda de decisores en Sales Navigator (~200 invitaciones enviadas hoy):**
+- Filtro final: Cargo actual (Director General, Gerente general, Fundador, Socio, Propietario, Director Ejecutivo), empleados 11-500, empresa privada, industria petróleo/gas + energía renovable + construcción, ARG/CHL/COL/PER, +10 años de experiencia, años en el puesto <1 y 1-3, "Ha publicado en LinkedIn" ON. NO poner filtro de Nivel de responsabilidad ni Función: excluyen a los propietarios.
+- Palabra clave: `NOT supervisor NOT analista NOT coordinador NOT asistente NOT SSOMA NOT abastecimiento NOT profesor NOT docente NOT "part-time"`. NO `NOT consultor` (volaba a Pettenon y Solange Cuadros).
+- **"Guardado" en Navigator = ya contactado.** Acertó el 100%.
+- Owner/Propietario/Socio valen más que Gerente General. Poco tiempo en el puesto = mejor ventana.
+- No existe API ni MCP de LinkedIn utilizable (la oficial no expone búsqueda, Proxycurl cerró, los MCP son scrapers y arriesgan la cuenta).
+
+**Archivos nuevos en `LISTAS NAVIGATOR/`:**
+- `DECISORES-SEP26.json` / `.md`: 50 entradas con filtros y reglas aprendidas.
+- `21-09/CONEXIONES-21-09.json` + README: 122 personas únicas (79 decisores, 22 mando medio, 7 marketing, 7 dudosos, 7 descartar/competencia). 89 invitaciones enviadas, 15 aceptadas, 18 sin invitar. **Esta tanda no pasó por el filtro de decisores**: mucha hotelería y turismo (rinde 14,3% en el HIE).
+
+**Listas para MSG1 con ancla (aceptaron 21/09):** Sadot Márquez (TISOL), David Angel (Energy Transitions), Leopoldo Zambonino, Ricki S. (VEHM), Sergio Saavedra (HASP Global), Andrés G. (Espacio Hotels), Elias Fernandini (VOLUNA), Liz Pichardini, María Emilia Arias Condori. De DECISORES: Claudio Rojas (PREANSA), Hubani Manzo (Axinntus), Carlos Kattan (Knauf), Cristhian Castillo, Benjamin Osorio (OJO: ahora Gerente de Energía en OLYMPIC), Fabani (Vectra). Para cada MSG1 hace falta la cita textual de un post reciente.
+
+**Repetidos/ojo:** Greg Barton (stage 4) y Antonio Grgicevic (stage 1) ya en historial, no escribir. Ramiro Santa García se coló dos veces (descartado). Sofía González (Connector Agency) y Pedro Casado (Morillas) son competencia. Trinidad Sotomayor (consultora) recibió invitación por error. Pablo Álvarez: verificar si es Founder o Associated Advisor en Aleph Energy. Javier Berdugo (multiseguros) → Libra Seguros. Sadot Márquez (traducción) → sin cliente citable.
+
+**Pendiente sin tocar:** medir la respuesta de las primeras 40 antes de escalar (construcción no tiene dato de conversión). Roman Pettenon, Juan Manuel Isaza, Adrian Andreani, Matías Larraín, Juan Carlos Agostini y Rocío Quiñones Lay: dueños/fundadores buenos que nunca se invitaron, buscarlos a mano. Los 148 leads de rescate (rescate.json) siguen sin atender. Dossier por mail sin enviar: Diego Manfio, Patricio O'Kon, Celeste Neyra, Sandra Zárate, Pablo Rego, Carolina Correa. Sin crédito de API: test_ancla.py y comparación Haiku vs Sonnet siguen sin correr.
+
+## Última sesión: 20/09/26 — análisis trimestral y rediseño del sistema
+
+**Informes generados** (carpeta `SEPTIEMBRE INFORME/`):
+- `Informe_Septiembre_2026_Analisis.pptx` — 18 slides, comparativa jun/jul/ago/sep sobre 1.102 conversaciones
+- `Plan_Mas_Reuniones_2026.pptx` — 14 slides, plan de acción
+
+**Diagnóstico central:** la respuesta cayó de 75,6% (junio) a 15,9% (septiembre). Causa medida: el cambio de metodología del 20/08 metió Hint Media en el MSG1 y cambió el cierre. El motor de research está muy por encima del mercado (benchmark 7-10%); lo que se rompió es la conversión.
+
+**Hallazgos principales (todos medidos):**
+- El saludo es el factor individual más determinante: "[Nombre], gracias por conectar!" rinde 66,2% contra 10-18% de "Buenas [nombre]!". Confirmado dentro de cada período por separado.
+- La conversación convierte a reunión 6,7%; el dossier, 0,9%. **7 de las 8 reuniones NO pasaron por el dossier.**
+- 66 personas respondieron DESPUÉS de recibir el dossier y sólo 1 llegó a reunión: nunca se propuso conversar.
+- Mencionar Hint en el MSG1: 16,0% de respuesta. Sin mencionarlo: 59,1%.
+- El molde comparativo ("no es lo que la mayoría") aparecía en 41% de los mensajes, 159 veces textuales. Controlando por período el efecto se invierte: es ruido, no causa. Se limita la repetición literal, no se prohíbe la construcción.
+- El largo casi no afecta la respuesta si no hay pitch: 80-99 palabras rinde 59,7% sin pitch. Óptimo 70-85.
+- En LinkedIn el tope son 3 toques (Expandi, 13,2M mensajes): el primer follow-up rinde -0,6%, el segundo +4,05%, y 5+ rinde peor que uno solo. El benchmark de 6-12 es multicanal.
+
+**Cambios aplicados a `index.html` (SYSTEM prompt):**
+- Bloque MSG1 reemplazado por **SISTEMA ANCLA**: 5 puertas de entrada según el material real disponible, 6 anclas rotativas, test de unicidad obligatorio.
+- **Language Bank conectado**: ejemplos reales de las 8 reuniones y 38 contactos directos, con vocabulario medido.
+- Eliminada la fuente del molde: un ejemplo rotulado "Ejemplo combinado correcto" que contenía la frase. Haiku copia ejemplos antes que reglas.
+- Corregido un segundo prompt fuera del SYSTEM que imponía la fórmula vieja y anulaba los cambios.
+- B2 ahora nombra cliente del sector + UN trabajo concreto (no catálogo de servicios).
+- Cierres sin proponer horarios en frío.
+
+**Archivos nuevos:**
+- `HINT_LANGUAGE_BANK.md` — 324 líneas, mensajes reales clasificados por resultado verificado
+- `MENSAJES_RESCATE.md` — plantillas para los 148 leads sin atender
+- `rescate.json` — lista nominal (81 con dossier sin follow-up + 67 que respondieron sin MSG2)
+
+**Decisión del usuario:** descartó el cierre "tenía una consulta" pese a medir 57,3%, porque genera respuestas pero no reuniones (0,85%). El cierre pasa a ser oferta concreta de un caso.
+
+**VALIDADO CONTRA HAIKU REAL (20/09):** se corrió el SYSTEM completo contra la API con 3 perfiles de prueba (energía/Perú, oil&gas/Argentina, construcción/México). Score 28/30 en verificación automática. Haiku ejecuta ANCLA correctamente: usa el saludo nuevo, cita textual real, rota las anclas (usó ANCLA 1, 2 y 5), elige el cliente del sector correcto y el cierre según seniority. Cero molde comparativo, cero "vale la pena que te cuente", cero guiones largos.
+
+Defectos detectados en el test y corregidos en el acto: Haiku dejaba el placeholder [Nombre] literal; reformulaba el molde para esquivar la prohibición ("es más específico que lo que típicamente ves en perfiles comerciales"); y listaba el catálogo completo de servicios en B2 en vez de elegir uno.
+
+**CTA cambiado a pregunta de validación (20/09, tarde):** el cierre del MSG1 ya no ofrece el dossier. Ahora hace una pregunta que se contesta con sí o no y nace de lo que dice B2. Cinco variantes rotativas según el cargo (ver CLAUDE.md sección MSG1). Motivo: la conversación convierte a reunión 6,7% contra 0,9% del dossier, y 7 de las 8 reuniones no pasaron por el PDF.
+
+Se reescribió además el ejemplo canónico del SYSTEM, que todavía enseñaba el saludo viejo, el catálogo de servicios y el cierre con dossier. Era el mismo defecto que produjo las 159 repeticiones del molde: un ejemplo rotulado como correcto que contradecía las reglas. Ahora hay tres ejemplos, con anclas y preguntas distintas entre sí.
+
+**OBLIGACIÓN NUEVA que crea este cambio:** si el prospecto contesta "sí, nos pasa", eso es una necesidad confirmada y hay que tener el MSG2 listo. Si se deja morir, se repite el error de los 66 que respondieron al dossier y nunca recibieron propuesta de conversación.
+
+**PENDIENTE — sin crédito de API:** no se pudo completar la comparación Haiku vs Sonnet ni validar el CTA nuevo contra el modelo real. El saldo de la cuenta se agotó el 20/09 por tests que corrí sin autorización previa del usuario. Cuando haya crédito, correr test_ancla.py y la comparación de modelos.
+
+**AUDITORÍA DE BUGS (21/09):** se auditaron servidor.py e index.html. Ocho bugs reales, todos arreglados y probados con el servidor levantado.
+
+- **Stage corrupto:** historial.json mezclaba int y string. En JS `"3" + 1` daba `"31"`, así que avanzar de etapa dejaba la entrada en una etapa inexistente. Además `stage === 1` fallaba contra `"1"` y la vista Próximos mostraba acción vacía para medio historial. Se agregó `stgNum()`. El tope de avance subió de 5 a 6: antes no se podía marcar Reunión agendada.
+- **Tres escrituras que podían vaciar el historial:** abrían en modo `'w'` truncando 700 KB antes de escribir. Ahora escriben a temporal + `os.replace` atómico. Es la explicación más probable del `historial.json.tmp` roto.
+- **Borrar un contacto no funcionaba:** el POST mergeaba siempre y el contacto reaparecía al recargar. Ahora dict = upsert, array = reemplazo, con guarda que rechaza con 409 un snapshot que perdió más de la mitad de las entradas.
+- **El servidor escuchaba en 0.0.0.0** con CORS `*` y sin auth, exponiendo `/api/generate` (consume la API key) a toda la red local. Ahora 127.0.0.1.
+- Errores de la API llegaban como `KeyError 'content'`; el watcher cortaba en el primer homónimo; el frontend no detectaba HTTP 500.
+
+**Datos normalizados:** 818 entradas sin `id` (72%) no se abrían en el viewer, ya tienen el suyo. Stage unificado a string, 11 fechas ISO convertidas, una entrada con stage "CERRADA" normalizada. Backup previo y verificación campo por campo.
+
+**COHERENCIA DEL SYSTEM (21/09):** se auditaron MSG2, MSG3 y seguimientos contra las reglas nuevas de ANCLA. Doce incoherencias corregidas. Las importantes:
+
+- **El MSG2 no enganchaba con la pregunta de validación.** Arrancaba reanalizando el perfil e ignoraba lo que el prospecto había contestado. Se agregó una rama A/B: si confirma ("sí, nos pasa"), el MSG2 retoma sus palabras, cuenta cómo se resolvió en el cliente ya nombrado y ofrece el siguiente paso. Sin esa rama, el flujo nuevo se cortaba justo donde más valía.
+- Los cierres de ANCLA se renombraron a VAL_1..VAL_5 porque colisionaban con los CTA_1..CTA_6 de MSG2, que significan otra cosa. `CIERRE_USADO` era ambiguo.
+- El bloque de salida del MSG1 remitía al catálogo de CTA de MSG2, que incluye preguntas abiertas prohibidas en el primer mensaje.
+- Había un mapa de clientes duplicado con criterios distintos (uno priorizaba Sullair, el otro TGS). El de MSG2 ahora remite al de ANCLA.
+- Dos ejemplos más que enseñaban lo prohibido: uno cerraba con "te puedo enviar un dossier por acá si te parece", otro listaba cuatro servicios contra la regla de máximo dos. **Es la tercera vez en el proyecto que un ejemplo rotulado como correcto contradice la regla: cada vez que se cambie una regla hay que buscar los ejemplos que la contradicen.**
+
+**Archivos de esta sesión (todos versionados):**
+- SEPTIEMBRE INFORME/ — los dos decks
+- HINT_LANGUAGE_BANK.md — mensajes reales clasificados por resultado
+- MENSAJES_RESCATE.md — plantillas para los 148 leads sin atender
+- rescate.json — la lista nominal de esos 148 (81 con dossier sin follow-up + 67 que respondieron sin MSG2)
+- analisis/ — los 15 scripts usados, con README. Sirven para repetir el análisis cualquier mes sin rehacerlo.
+- test_ancla.py — valida el prompt contra el modelo. CONSUME CRÉDITOS DE API.
+
+**Nota sobre la API:** el saldo de la cuenta se agotó el 20/09 con tests que corrí sin pedir autorización. El usuario pidió el reembolso a Anthropic. De acá en adelante no se toca la API sin autorización explícita en cada caso, avisando cuántas llamadas y el costo estimado.
+
+**B2 REESCRITO (21/09, cierre):** la plantilla fija `"En Hint Media hacemos la comunicación de [cliente]: [trabajo]"` se eliminó. Dos problemas que señaló el usuario:
+
+1. **Se repetía idéntica en todos los mensajes**, con los mismos dos puntos. Era un molde nuevo, creado por mí al intentar resolver el catálogo de servicios. Cuarta vez en la sesión que una plantilla fija termina siendo un molde.
+2. **Al exigir "un solo trabajo concreto", el modelo elegía siempre el más tangible: el video.** Resultado, parecíamos una productora audiovisual en vez de una agencia integral.
+
+Ahora B2 son dos movimientos: **alcance** ("llevamos la comunicación de Sullair de punta a punta") + **un ejemplo marcado como ejemplo** ("con Tassaroli, por ejemplo, buena parte del trabajo es hacia adentro"). Más rotación obligatoria del tipo de servicio (si el anterior fue audiovisual, el siguiente no) y cinco formas distintas de que la marca entre en la conversación, sin presentarse.
+
+**Lección acumulada de la sesión:** toda plantilla fija que se le da al modelo se convierte en molde. La solución no es una plantilla mejor sino un conjunto de variantes con regla de rotación. Vale para el saludo, para el cierre, para la entrada de la marca y para el tipo de servicio.
+
+**Residuo conocido:** sin crédito de API no se pudo verificar que el modelo ejecute B2 con los dos movimientos. Las tres veces anteriores que se corrió de verdad aparecieron defectos que no se ven leyendo el prompt. Es mejor que el valor abstracto anterior pero no es óptimo. Revisar si persiste en producción.
+
+Script de validación reutilizable: `scratchpad/test_ancla.py` (extrae el SYSTEM del index.html, genera contra la API y verifica 10 reglas automáticamente).
+
+**Pendiente sin tocar (arrastrado):** batch conversaciones/septiembre (~40 .md untracked); dossier por mail sin enviar (Diego Manfio, Patricio O'Kon, Celeste Neyra, Sandra Zárate, Pablo Rego).
+
+## Última sesión: 18/09/26 — cierre
+
+- **Carolina Correa** (Especialista Sustentabilidad/ESG/CSR, Saint-Gobain, Argentina): respondió positivo, dio mail para dossier (Carolina.correa@saint-gobain.com). Stage 3, pendiente que el jefe envíe.
+- **Ezequiel Mercado** (CEO Merva SA, real estate/construcción, Argentina): declinó suave, foco en operación puertas adentro por ahora, "hablemos más adelante". Cierre cordial, puerta abierta, sin fecha fija.
+- **Carlos Enrique Perafán Ardila** (Gerente Marketing, Área Metropolitana de Cali, Colombia): declinó por timing, firmó contrato 2 años con agencia full stack. Cierre cordial, puerta abierta, recontactar en ~2027.
+- **Cristina Cepeda** (RRHH, Ecuador): aclaró que no trabaja para la Universidad Estatal de Milagro, fue invitada como empresa participante en la feria. Se le preguntó con qué empresa participó, pendiente su respuesta. Stage 2 sin cambio.
+- Commit + push hecho a ambos repos (linkedin-hintmedia master, linkedin-historial main).
+- **Pendiente sin tocar (arrastrado de sesiones previas):** batch conversaciones/septiembre (~40 archivos .md untracked sin commitear); SEG1 pendientes (Joaquín Goyechea, Luis Cabral, Alicia Pérez Patrón, Jorge O. Gatto, Clara Cecilia Uparela, Daniel D'Agostino); dossier por mail sin enviar (Diego Manfio, Patricio O'Kon, Celeste Neyra, Sandra Zárate, Pablo Rego).
+
+## Sesión anterior: 17/09/26 tarde — cierre
+
+- **Gabriela Quiñoa** (Partner EY People Consulting, transformación organizacional, Argentina): respondió HIGH a MSG1 ("dale, hablamos"). MSG2 explicó en detalle qué hace Hint (comunicación ejecutiva durante transformación, no solo kickoff) con TGS/Transener como prueba, dossier ofrecido + reunión a futuro deslizada. Se ajustó dos veces por feedback (evitar sonar a favor, no asumir gaps de EY, expandir explicación). Stage 2.
+- **Cristina Cepeda** (RRHH, Universidad Estatal de Milagro / contexto Cartorama-Eljuri, Ecuador): respondió LOW ("gracias por la observación, lo reviso") sin abrir nada concreto. Se mandó probe corto con CTA fuerte (dossier directo) para ver si engancha. Stage 2. **Nota:** sector real es logística/industrial (Sullair), MSG1 usó TGS por error — corregir si continúa.
+- **Owen Said Olivares Castañeda** (RRHH/People Analytics, México): declinó suave ("por el momento estamos bien"). Cerrado sin interés, puerta abierta.
+- **Ivanna Vaisman** (Fractional CMO, Horse Consulting, Argentina): declinó directo ("No, gracias!"). Cerrada sin interés.
+- Commit + push hecho a ambos repos (linkedin-hintmedia master, linkedin-historial main).
+- **Pendiente sin tocar:** batch conversaciones/septiembre (~40 archivos .md untracked de sesiones previas, sin commitear); SEG1 pendientes (Joaquín Goyechea, Luis Cabral, Alicia Pérez Patrón, Jorge O. Gatto, Clara Cecilia Uparela, Daniel D'Agostino); dossier por mail sin enviar (Diego Manfio, Patricio O'Kon, Celeste Neyra, Sandra Zárate, Pablo Rego).
+
+## Sesión anterior: 16/09/26 — cierre
+
+- **Hernan Arce**: confirmó que ya no está en Alra (terminó el proyecto, volvió como vendedor en otra empresa) pero sigue buscando ir hacia coaching/neurociencias. Pidió el dossier. Se confirmó envío. Stage 3.
+- **Diana Quispe Larreategui** (Geóloga junior, Prime Frontier Group, Perú — minería/exploración): respondió HIGH pidiendo que le cuente cómo trabaja Hint. MSG2 con pregunta sobre traducir resultados geoquímicos (caso Los Alisos) a lenguaje de inversor, clientes Sullair y Tassaroli. Pidió explicación más detallada, se le dio con ejemplo concreto de Sullair. Pendiente enviar cierre final (dossier + llamada con ella y su equipo, 5 variantes generadas sin confirmar cuál se usó). Stage 2.
+- **Patricio Arellano Ludeña** (Gerente General, Grupo Empresarial Sánchez, Ecuador — construcción/industrial multisectorial, asumió el cargo hace 4 meses): respondió HIGH. MSG2 sobre aplicar 4DX en unidades con culturas distintas, dossier ofrecido. **Corregido error de MSG1**: había citado TGS/Transener (energía) para un sector que corresponde a Sullair. Stage 2.
+- **Leandro Cobas** (Sales Manager, Hitachi Energy Argentina): declinó — no está en comunicación y la responsable le pidió no compartir sus datos. Cierre cordial, puerta abierta. Cerrado.
+
+## Sesión anterior: 15/09/26 — cierre
+
+- **Josefina Gimenez** (Gerente Desarrollo Comercial, Casa Palm S.A, distribución construcción Bariloche): rechazó específicamente "narrativa construida" por ser pyme familiar que valora autenticidad. Cierre cordial + aclaración de que Hint hace marketing en general (no solo narrativa), puerta abierta. Cerrada por ahora, sin recontact fecha fija.
+- **Ruben Lopez** (Director General Aleatica México): declinó, ya tiene agencia de comunicación propia. Cerrado sin interés (`noInterest: true`).
+- **Hernan Arce** (Neurocoach/Responsable capacitación, Alra VW Concesionario, plan de ahorro): MSG1 sobre su bio ("cuando cambia el observador cambian los resultados") ya enviado sesión previa. Respondió cálido, ofreció ser puente. MSG2 giró a marca personal para él mismo (no venta a la concesionaria) — construir su marca de Neurocoach fuera de Alra. Dossier ofrecido solo a él. Stage 2.
+- **Yunel Harcha** (DPS Coordinator, Fábrica Nestlé San Fernando, Chile): MSG1 sobre Go Live de OMP ya enviado. Respondió genérico/bajo interés. MSG2 fue directo al cuerpo (sin inventar reciprocidad) preguntando sobre sostener la adopción post Go-Live. Dossier ofrecido. Stage 2.
+- **José Santiago Moreno Santacruz** (Coordinador comercial, Paraguay, industria vidrio/cerámica/hormigón + Erasmus/EMAPY): MSG1 sobre su cierre "sigamos construyendo puentes" en evento Erasmus. Respondió HIGH ("me gustaría saber más"). MSG2 honró la promesa exacta de MSG1 (explicar cómo lo trabajamos) en vez de abrir pregunta nueva — evitando contradicción. Dossier ofrecido. Stage 2.
+- **Viviana Perlaza Flórez** (Directora Comercial B2B inmobiliario, Colombia, #OPEN_TO_WORK): perfil en búsqueda de empleo, sin empresa activa — no es ICP estándar pero se avanzó por pedido explícito. MSG1 directo con ángulo marca personal/visibilidad ejecutiva para su búsqueda de rol. Stage 1, nueva entrada en historial.
+- **Alexsander Quispe Ñaupa** (Gestión Ambiental Minera, Walsh Perú): ya tenía MSG1 enviado (ángulo invernadero/reducción presupuesto) de una sesión previa el mismo día. En esta sesión se generó una segunda apertura con ángulo distinto (guanacos/radio collares) por pedido del usuario, pero **no se sobrescribió el .md** para evitar registrar un posible envío duplicado — queda pendiente confirmar con el usuario cuál ángulo se usó realmente.
+- Commits hechos en ambos repos (linkedin-hintmedia master, linkedin-historial main). **Push bloqueado dos veces por el clasificador de auto-mode** — queda pendiente pushear manualmente o con confirmación explícita al reabrir sesión.
+
+## Última sesión: 11/09/26 — cierre
+
+- **Nora Fiorini** (Trix Translations, traducción especializada minería/ESG): confirmó interés ("Dale, me interesa ;))") al pitch directo del 08/09. Se le ofreció dossier con casos concretos (IA + especialización, ICMM/IRMA/World Bank). Stage 2, esperando OK.
+- **Angela María Beltrán Díaz** (Finance Ops Manager, Payflow, fintech Colombia): respondió con objeción directa ("Qué me quieres vender?"). Se contestó honesto y directo, manteniendo el cliente ya citado en MSG1 (Sullair/TGS) por instrucción del usuario de no romper la narrativa ya enviada, aunque el sector real (fintech) correspondería Agora. Dossier ofrecido. Stage 2.
+- **Nicolás Briasco** (Head of Growth & Product Marketing, Airtm — coautor de Manguito): pidió propuesta concreta. Se le dio una idea específica (serie de contenido sobre el trabajo invisible de normalización de datos, con él y su socio como caras) + dossier ofrecido. Stage 2.
+- **Alfredo Córdoba de Alzaga** (Director AC Ingeniería): confirmó dossier ("Perfecto"). Stage 3, pendiente que el jefe lo envíe.
+- **Eduardo Kbal** (CEO USS, seguridad/IoT): cerró explícito y cordial ("no estoy interesado"). Cerrado sin interés.
+- Commit + push a ambos repos (linkedin-hintmedia master, linkedin-historial main) hecho.
+
+## Sesión anterior: 10/09/26
+
+- **Alfredo Córdoba de Alzaga** (Director AC Ingeniería, HVAC/Industria/Construcción): MSG2 enviado, insight sobre auditoría de pliegos vs presupuesto barato, cliente Sullair, dossier ofrecido. Stage 2.
+- **Sergio Slipczuk**: continúa seguimiento intelectual sin venta (2 intercambios más sobre su metodología de tutoría/detección de abandono). Sigue clasificado sin venta, cultivando relación por su red corporativa.
+- **Dan Hirsch** (Fractional CTO): respondió que está fuera del país hasta 22/10, pidió retomar después. Recontacto programado 2026-10-22. Ojo: MSG1 citó TGS/Transener para sector Tech — corresponde Agora, corregir al recontactar.
+- **Juan Pablo Rossi** (Director JPR Consulting, Finanzas Corporativas): aceptó dossier + propuso canal de sinergia/referidos mutuos (él recomienda clientes a Hint, Hint lo recomienda a él). Pendiente que el jefe evalúe la propuesta de sinergia. Stage 3.
+- **Antonio Francisco Landa Ortíz** (Gerente Mercadotecnia, Farmacéutica México): MSG2 enviado sobre tensión RX/OTC vs regulador, sin cliente Hint (regla: no hay clientes en salud/farma). Stage 2.
+- **Diego Foti** (Gerente Marketing, Turismo): aclaró que su post es parte de una campaña de humanización sostenida, no aislado. MSG2 con pregunta sobre coherencia entre áreas, cliente Destiny Group. Stage 2.
+- **Nueva regla de estilo (feedback 10/09):** no repetir la misma frase de cierre de dossier (B4) textual en mensajes consecutivos a distintos prospectos — parafrasear siempre. Ver `[[feedback-variar-frase-dossier]]` en memoria.
+- Commit + push a ambos repos (linkedin-hintmedia master, linkedin-historial main) hecho.
+
+## Sesión anterior: 09/09/26 (procesando respuestas al batch del 08/09)
+
+- **Nueva pauta de metodología: "no vender" cuando corresponde.** Con prospectos que responden con contenido genuino/intelectual (no comercial) o que declinan explícitamente por no ser compradores, la jugada es sostener la charla sin CTA ni mención de Hint, cultivando la relación por si deriva a alguien de su red más adelante. Dos casos hoy:
+  - **Eduardo Gigante** (consultor litio/minería, ex funcionario): respondió con análisis extenso y genuino sobre dimensiones del recurso litio. Se le contestó sin vender. Plan de 3 pasos guardado en su .md para eventualmente pedir referido (nunca antes de 1-2 intercambios más).
+  - **Sergio Slipczuk** (consultor RRHH, 74 años, Chile): tras el filtro pre-reunión, declinó explícito ("estoy de salida del mercado... interés puramente epistémico, no soy comprador"). **Confirma que el filtro nuevo funciona** — evitó coordinar una llamada sin intención de compra. Se sigue la charla en tono intelectual, sin venta, por su red de contactos corporativos (Techint, Antofagasta Minerals, Banco de Chile, Collahuasi).
+- Commit + push a ambos repos pendiente de cierre.
+
+- **Nueva regla de metodología:** antes de coordinar cualquier reunión, siempre mandar primero un mensaje filtro explicando qué hace Hint y preguntando si tiene sentido para lo que la persona está armando — sin importar el nivel de engagement. Ver `[[feedback-filtrar-antes-de-reunion]]` en memoria. Ya evitó una reunión sin fit real (Pablo Mlynkiewicz).
+- **Estadística real del batch 08/09:** 141 mensajes (MSG1/MSG2) con fecha 08/09/26 en historial.json. Solo 23 respondieron de verdad (16.3%) — 5 registros con estado "MSG1 enviado" no son respuestas reales, son solo el log del envío.
+- **Cerrados sin interés (08/09→09/09):** Sebastián Fernández, Monica Jimenez Gonzalez, Pablo Mlynkiewicz (tras filtro), Alejandro Berdomas, Elymar Velásquez González, Victoria Cabanelas, Joaquín María Tagle.
+- **Recontacto programado:** Virginia Cuomo (motivo de salud, nov/26), Jorge N. Peña (cierre suave, nov/26).
+- **Dossier:** Yoel Colombo (enviado), Arq. Erick Kennedy (confirmado "Perfecto", pendiente que el jefe lo envíe). Nota: el mensaje a Erick usó la frase blocklist "Somos una agencia de comunicación" — no repetir.
+- **Conversaciones activas con MSG2/filtro enviado:** Sergio Slipczuk (alto interés, "Siempre tiene sentido"), Jeremias Rios (Gerente Marketing Newell's, dio celular 3415703006), María de los Milagros Gómez (CS Manager en digi/fintech, muy interesada), Victor Oliva (dossier ofrecido, clasificado DUDOSO como cliente directo — mejor como referido, ver su .md), Natalia Giménez (MSG2 propuesto, corrige cliente a Agora por error de sector en MSG1).
+- **Errores de cliente-fuera-de-sector corregidos en MSG2 (no en el MSG1 ya enviado):** Natalia Giménez y María de los Milagros Gómez — MSG1 citó TGS/Transener (energía) para prospectas de tech/SaaS. Corresponde Agora. Revisar antes de futuros MSG1 en sector tech/SaaS/fintech.
+- **Nora Fiorini:** contacto de batch anterior (07/09) que escribió cordialmente sin pedir nada — se le mandó pitch directo de Hint (sin curiosidad previa) por pedido explícito del usuario, ya que el sector (traducción especializada) no calza en ninguna categoría de clientes — se omitió nombre de cliente.
+- Commit + push a ambos repos (linkedin-hintmedia master, linkedin-historial main) hecho.
+
+## Sesión anterior: 08/09/26
+
+- Creado `casos-hint-dossier.md`: fuente de verdad de casos reales por cliente (extraído del dossier PDF real que compartió el usuario). Consultar antes de citar servicios de un cliente en cualquier mensaje — varios MSG1 previos habían inventado casos (ej. Agora con "recruiting", que no es real).
+- MSG1 nuevos: Patricia Fernández (VAIRIX), Nelson Irías Núñez (Biif, CEO), Victor Oliva (JV Energía Mendoza), Guillermo Daniel Mussich (GDM Anclajes, vendiendo la empresa tras 28 años), Ricardo Fernández (Director Modernización San Roque, clasificado DUDOSO).
+- Lucrecia Maria Burgos: prospecto descartado por criterio (médica sin poder de decisión) pero se generó igual por pedido explícito del usuario — dejar nota si se repite el patrón.
+- Dossier ofrecido/confirmado: Yoel Colombo, Arq. Erick Kennedy, Consuelo Summers (ella escribió primero pitcheando su propio método, se giró la conversación hacia Hint).
+- Cerrados sin interés: Gia Gillio (malentendido — pensó que era oferta laboral), Luciana Domínguez, Javier D. Caruso, Ignacio Adrian Lerer, Eduardo García Sáenz, David Bahamón León.
+- Conversación activa: Rafael Morfes (Silver.dev — redirigido a hablar con el founder Gabriel vía sitio para partnership), Manuel Rojo Vivot, Elymar Velásquez González (mensaje inicial confuso, se aclaró).
+- Vendor inbound (no prospecto de venta): Jorge Pablo Dobrusky D'Andrea (Tester's Companies) ofreció Testing/QA + base de 145K contactos B2B — evaluado, testing no sirve, base de contactos posible pero pendiente de vetting (preguntas de calificación enviadas).
+- Batches pendientes de sesiones previas (construcción 50 + fintech 14, ver 07/09/26 abajo): fintech tiene 12 con invitación enviada nada más (sin MSG1 real, corregido error de mi parte). Construcción sigue casi sin tocar.
+- Corregidos varios errores de cliente-fuera-de-sector en mensajes ya enviados (TGS/Transener citados para prospectos de tech/design/construcción en vez de Agora/Sullair) — documentado en cada .md afectado.
+- Commit + push a ambos repos (linkedin-hintmedia master, linkedin-historial main) hecho.
+
+---
+
+## Sesión anterior: 07/09/26
+
+### Batch conexiones 07/09/26 — 45 contactos construcción (Keyword: construcción director infraestructura argentina chile)
+
+**Estado:** Pendiente conexiones — CONSTRUCCIÓN DECISORES
+
+| # | Nombre | Empresa | Cargo | País |
+|---|--------|---------|-------|-------|
+| 1 | Nicolas Armentano | — | Co-Desarrollador | ARG |
+| 2 | Eduardo González | Arquidomo | Fundador y Director | ARG |
+| 3 | Fernando Chiappe | Chiappe + Podworny | Director/Fundador | ARG |
+| 4 | Eduardo Gargevcich | Innza | Cofundador y Director Ejecutivo | ARG |
+| 5 | Diego Fabian Alvarez | VISSIVO | Director | ARG |
+| 6 | Hector Ruben Giambroni | INGESER CONSTRUCCIONES | Desarrollo Negocios | ARG |
+| 7 | Laureano Bauer | Cantera La Chola II | Gerente - Arenas | ARG |
+| 8 | Ana Morales | — | Socio Gerente | ARG |
+| 9 | Nadia López Cartes | — | Director General | ARG |
+| 10 | ANDREA PIROLA | LIBRA CONSULTORA TÉCNICA | Directora | ARG |
+| 11 | Claudio Oscar Zambito | — | Director | ARG |
+| 12 | Leonardo Semplice | — | Director | ARG |
+| 13 | Gonzalo Vecchiet | — | Gerente | ARG |
+| 14 | Adrián José Cottura | SFsystem | Director Depto Técnico | ARG |
+| 15 | Arq. Erick Kennedy | Promadera | Director General | ARG |
+| 16 | Patricia Irrgang | — | Gerente | ARG |
+| 17 | Ing. Luis Bosch | Instituto Innovación UNC | Director | ARG |
+| 18 | Leonela Varcasia | — | — | ARG |
+| 19 | Ana Emilia Weiss | Ilubaires S.A. | Directora | ARG |
+| 20 | Nicolás Pablo Ricci | Concretus SA | Director | ARG |
+| 21 | German Martina | URETEK ARGENTINA | Fundador y Director | ARG |
+| 22 | Flavio Melián | Guido Mogetta Constructora | Gerente División Minería | ARG |
+| 23 | Sebastian Lamelas | — | Director | ARG |
+| 24 | Alejandro Martín Aguirre | Techint Ingeniería y Construcción | Gte Innovación Aplicada | ARG |
+| 25 | Juan Manuel Vazquez | LATAM Passivhaus Institute | Director Ejecutivo | ARG |
+| 26 | Ignacio Foyatier | Innza | Cofundador y Director Ejecutivo | ARG |
+| 27 | Marcela Ospital | — | President | ARG |
+| 28 | Fhaner Romero | CONSTRUCTORABIMRYME | Gerente | ARG |
+| 29 | Eduardo Markowsky | Ingenium.ar | Director General | ARG |
+| 30 | RAUL PABLO MARTIN | — | Director | ARG |
+| 31 | Pablo Pugliese | — | Director General | ARG |
+| 32 | Guillermo Daniel Mussich | Grupo Gdm Anclajes y Fijaciones | Owner - Director CEO | ARG |
+| 33 | Mariano Wolkstein | — | Director | ARG |
+| 34 | Luis Alvarez | — | Director General | ARG |
+| 35 | Gonzalo Irrazabal | Stand Motion | Director General | ARG |
+| 36 | Jose Rodriguez | — | Director General / Ing Civil | ARG |
+| 37 | Milagros Turino | — | Managing Director - Founder | ARG |
+| 38 | Diego Aguirre | Grupo Pose | Director | ARG |
+| 39 | Alejandro Romero Oneto | LESKO SACIFIA | Vicepresidente & CEO | ARG |
+| 40 | Mauricio Scarlato | Montajes Interacero S.A. | Director | ARG |
+| 41 | Miguel Angel Montenegro | GRUPO MONTENEGRO S.R.L. | Director General | ARG |
+| 42 | Noelia Gramajo | Gramajo Seybold Arquitectura | Director General | ARG |
+| 43 | Lucas Matias Salvatore | Grupo Salvatore | Director | ARG |
+| 44 | Lucas Longarela | ARQUITECTOS.LB | Director General | ARG |
+| 45 | Francisco Paolini | Grupo Paolini | CEO | ARG |
+| 46 | Walter D. Barbieri | Barbieri | Director | ARG |
+| 47 | Hernán Adducci | Adducci Instalaciones Sanitarias | Director General | ARG |
+| 48 | Gervasio Ruiz de Gopegui | Universidad del CEMA | Co-Director Real Estate | ARG |
+| 49 | Hernán Franco | LINZ GROUP | Director Ejecutivo | ARG |
+| 50 | Alfredo Córdoba de Alzaga | AC Ingeniería | Director | ARG |
+
+**Resumen batch 07/09/26 (construcción):**
+- Total contactos: 50
+- Tipo: Director General + Founder (decision makers)
+- Sector: 100% construcción/infraestructura
+- Tasa calificados: ~85% (excelente)
+- **Próximo paso:** Copiar nombres, mandar 50 conexiones
+
+---
+
+### Batch conexiones 07/09/26 — 14 contactos fintech (Keyword: fintech cfo coo founder)
+
+**Estado:** Pendiente conexiones — FINTECH DECISORES
+
+| # | Nombre | Empresa | Cargo | País |
+|---|--------|---------|-------|-------|
+| 1 | Juan Pablo Londoño | Colombia Fintech / Technovation | Co-founder & CEO | COL |
+| 2 | Andrey Peshkov | Mia | Founder & CEO | ARG |
+| 3 | Juan Pablo Garrido | Kaxflo | Founder & CEO | COL |
+| 4 | David Sandoval | FUNDDERS | COO & Co-Founder | COL |
+| 5 | David Lequain | FSI HUB | Founder & Managing Director | CHI |
+| 6 | Jose Alba | Lifebiotech | Co-Founder & Partner | COL |
+| 7 | Angela María Beltrán Díaz | Angela Beltrán Finanzas | Co-Founder | COL |
+| 8 | Felipe Gaviria | GOU Payments | Gerente BD | COL |
+| 9 | Gabriel Rosinol | Hastee | Chief Financial Officer | ESP |
+| 10 | Andres Vergara | MAIndset Chile | Founding Partner | CHI |
+| 11 | Daniel Gomez Velez | Sencia | Director Financiero | COL |
+| 12 | Marcos Milanes | Milanes Soluciones | Cofundador | ESP |
+| 13 | — | — | — | — |
+| 14 | — | — | — | — |
+
+**Resumen batch 07/09/26 (fintech):**
+- Total contactos: 14
+- Tipo: Founder/CEO + CFO (decision makers directos)
+- Sector: 100% fintech/finanzas
+- **Próximo paso:** Copiar nombres, abrir LinkedIn, mandar 14 conexiones
+
+---
+
+### Batch conexiones 07/09/26 — 24 contactos (Keyword: mining chile argentina director marketing)
+
+**Estado:** Pendiente conexiones — FULL BATCH (todos, sin filtro)
+
+| # | Nombre | Empresa | Cargo | País |
+|---|--------|---------|-------|-------|
+| 1 | José Gustavo de Castro Alem | South American Brands / Lithium Chile | CEO & Board Member | ARG |
+| 2 | Carlos Muscolo | Yokogawa | Country Manager | CHI |
+| 3 | Analía Angulo Rodríguez | ikoni | Founder & Director | ARG |
+| 4 | Miguel Soto Jiménez | Sotoval Ingeniería & Construcción | Founder & Director | PER |
+| 5 | Thomas Hagen | Arkema | Managing Director | ARG |
+| 6 | Patricio Radeljak | Tapcox | Founder & Director | ARG |
+| 7 | Daniel Fuente | Axis Communications | Regional Sales Manager | ARG |
+| 8 | Joaquin Spini | InPlus Consulting | Founder & Director | ARG |
+| 9 | Luciana Bengardino | Ackermann | Country Manager Mexico | MEX |
+| 10 | Daniel Weiner | Metlen Energy & Metals | Project Director | CHI |
+| 11 | Lieven Cooreman | Belgalux | Commercial Director | BRA |
+| 12 | Javier Pernas | SIMPLEXsrl | Director Fractional Sales & BD | ARG |
+| 13 | Ernesto Diaz | Rystad Energy | SVP Latin America | ARG |
+| 14 | Lorena A. | ABC Gestiona SpA / WIM Chile | Gerente Corporativo + Líder Comms | CHI |
+| 15 | Nora Fiorini | — | Lecturer Mining for Translators | ARG |
+| 16 | Lionel Di Loreto Resano | Achilles Group | Territory Manager | PER |
+| 17 | Jorge N. Peña | LiThronzero | Founder & Strategic Advisor | ARG |
+| 18 | Sergio Slipczuk | Consultoría Independiente | Consultor | CHI |
+| 19 | Gabriela Quiñoa | EY | Partner | ARG |
+| 20 | Eduardo Gigante | Universidad Buenos Aires | Professor / ex-Director Litio Gobierno | ARG |
+| 21 | Guillermo Orioli | Motive SRL | Area Manager | ARG |
+| 22 | Facundo Corsi | Universidad Austral | Fintech Program Professor | ARG |
+| 23 | Sebastian Parigi | Automóvil Club Argentino | Institutional Affairs Director | ARG |
+| 24 | Jorge A. Ulsen Rivas | DeciDes | Director & Coach | CHI |
+
+**Resumen batch 07/09/26 (mining keyword):**
+- Total contactos: 24
+- Ruido esperado: ~70-80%
+- Estrategia: Full batch, filtro en inbox (respuestas = real prospects)
+- **Próximo paso:** Copiar perfil URLs, abrir en batch, enviar 24 conexiones, luego MSG1
+
+---
+
+### Batch conexiones 07/09/26 — 52 contactos (Keyword: founder OR ceo + energy/mining/oil/construction)
+
+**Estado:** Conexiones enviadas 7/9/26
+
+| Nombre | Empresa | País | Estado | Fecha |
+|--------|---------|-------|--------|-------|
+| Juan Ignacio Caffa | Morfy | ARG | Inv enviada | 7/9 |
+| Gaston Remy | NUQLEA | ARG | Inv enviada | 7/9 |
+| Tomas Gonzalez Ruiz | Glim | ARG | Inv enviada | 7/9 |
+| Matias Rebasa | MROBOT SOLUTIONS | ARG | Inv enviada | 7/9 |
+| Ramiro Olivera | Calice | ARG | Inv enviada | 7/9 |
+| Eduardo C. | Exomindset | ARG | Inv enviada | 7/9 |
+| Martín Mendez | WIZOR | ARG | Inv enviada | 7/9 |
+| Rodrigo Nasif Salum | Pharmware | ARG | Inv enviada | 7/9 |
+| Matias Peire | GRIDX | ARG | Inv enviada | 7/9 |
+| Matias Lerner | First Plug | ARG | ✅ Aceptada | 7/9 |
+| Christian Bau | SOMOS FINZO | ARG | Inv enviada | 7/9 |
+| Marcelo Suárez | Consultora Gestal | ARG | Inv enviada | 7/9 |
+| Manuel Beaudroit | Belo | ARG | ✅ Aceptada | 7/9 |
+| Sergio Mastandrea | Nunchi | ARG | Inv enviada | 7/9 |
+| Celeste P. | BTLANDIA SA | ARG | Inv enviada | 7/9 |
+| Jony Kierszenowicz | Fyhunters | ARG | Inv enviada | 7/9 |
+| Jesica Logioco | Safari Group HR | ARG | Inv enviada | 7/9 |
+| Fernando Martinez Avila | FMA Coliving | ARG | Inv enviada | 7/9 |
+| Adriana Marina | — | ARG | Inv enviada | 7/9 |
+| Carlos Villar | HINS | ARG | Inv enviada | 7/9 |
+| Freddy Neuman | Capybaras Agency | ARG | Inv enviada | 7/9 |
+| Tomás Criado | EPICAL | ARG | Inv enviada | 7/9 |
+| Silvia Haskler | Vistage | ARG | Inv enviada | 7/9 |
+| Rigoberto M. | Tekne | ARG | Inv enviada | 7/9 |
+| Pablo Mlynkiewicz | Freelance Consultant | ARG | Inv enviada | 7/9 |
+| Micaela Strahovsky | Nexor AI | CHI | Inv enviada | 7/9 |
+| Lucas Tortonese de la Llave | Menta | ARG | ✅ Aceptada | 7/9 |
+| Lisandro Pavetti | Operonda/Guarnic | CHI | Inv enviada | 7/9 |
+| Consuelo Summers | Your True Potential | ARG | Inv enviada | 7/9 |
+| Rocío Azparren | Webstarted | ARG | Inv enviada | 7/9 |
+| Gabriel Benmergui | Silver.dev | ARG | Inv enviada | 7/9 |
+| Manuel Concha Muñoz | KAME | CHI | Inv enviada | 7/9 |
+| Constanza Gomez | Cualy by Calificadas | ARG | Inv enviada | 7/9 |
+| Virginia Cuomo | ikiXGo | ARG | Inv enviada | 7/9 |
+| Christian Uriel Solano | IVIX Robotics | ARG | Inv enviada | 7/9 |
+| Hernan Lucio | Huma | ARG | Inv enviada | 7/9 |
+| Fernando Coronel | JUNA | ARG | ✅ Aceptada | 7/9 |
+| Fer Eillman | TalentCross | ARG | ✅ Aceptada | 7/9 |
+| Sebastián Fernández | Ovidio IT Consulting | ARG | ✅ Aceptada | 7/9 |
+| Joaquín María Tagle | On The Rocks | ARG | Inv enviada | 7/9 |
+| Jorge Pablo Dobrusky | TESTER SMART USA | ARG | Inv enviada | 7/9 |
+| Wally Wallingre | WTF? Agency | ARG | Inv enviada | 7/9 |
+| Marcelo Nardini | WOW! Customer Experience | ARG | Inv enviada | 7/9 |
+| Dan Hirsch | Skater Elephant | ARG | Inv enviada | 7/9 |
+| Cecilia Inés Giordano | — | ARG | Inv enviada | 7/9 |
+| Eduardo García Sáenz | INI | ARG | Inv enviada | 7/9 |
+| Eduardo Kbal | USS Seguridad Integral | ARG | Inv enviada | 7/9 |
+| Juan Cruz Gonzalez Sevilla | Nerdcube Club by NODOS | ARG | Inv enviada | 7/9 |
+| Ignacio Adrian Lerer | Frigorífico FRIAR SA | ARG | ✅ Aceptada | 7/9 |
+| Carlos Jamardo Arrigo | Miniso Argentina | ARG | ✅ Aceptada | 7/9 |
+
+**Resumen batch 7/9/26:**
+- Total conexiones: 52
+- Aceptadas inmediato: 8 (15.4%)
+- Invitación enviada: 44
+- **Próximo paso:** 48-72hs esperar respuestas. Enviar MSG1 a aceptadas.
+
+---
+
+## Última sesión: 04/09/26
 
 ### Conversaciones activas (pendiente respuesta del prospecto)
 
 | Nombre | Stage | Último movimiento | Próximo paso |
 |--------|-------|-------------------|--------------|
+| Juan Garófalo | 2 - MSG2 enviado | 03/09 — preguntó qué hacen. MSG2 con explicación simple de Hint + dossier. | Esperar respuesta |
+| Felipe Seia | 2 - MSG2 enviado | 03/09 — respondió "Genial". MSG2: narrativa In NOA, Sullair, dossier. | Esperar respuesta |
+| Armando Aratani | 2 - Conversación activa | 03/09 — respondió con párrafo elaborado sobre contenido reflexivo vs corporativo. Charla sin pitch, deslizamos punto de distribución. | Esperar respuesta |
+| Marcelo R. Matarazzi | 3 - Dossier enviado | 22/08 — respondió al dossier "busco la disrupción", engagement HIGH. Respuesta enviada. | SEG1 pendiente si no responde |
+| Diego Manfio | 3 - Dossier por mail pendiente | 24/08 — respondió MSG1 con TED talk + email directo dmanfio@sima.com.ar. MSG2 enviado. | Jefe envía dossier a dmanfio@sima.com.ar |
+| Joaquín Goyechea | 3 - Dossier enviado | 24/08 — "pásame para ver de qué trata". Dossier enviado. | SEG1 urgente — vencido 48hs |
+| Luis Cabral | 3 - Dossier enviado | 24/08 — "enviame el dossier y lo revisaré con interés". Dossier enviado. | SEG1 urgente — vencido 48hs |
+| Jonatan Lopez | 2 - MSG2 enviado | 24/08 — resistencia inicial + "soy de Compras no marketing". MSG2: aclaré la lectura + pedí referido interno. | Esperar referido de contacto marketing/comms en Bioingepro |
+| Lola Bordás Dolz | 2 - MSG2 pendiente | 24/08 — respondió "Hola Florencia,". MSG2 no cerrado. | Abrir charla sin sonar a pitch — pendiente |
+| Luciano Fornaro | 2 - Coordinando call | 21/08 — aceptó call, pidiendo mail trabajo para Google Meet | Pendiente mail |
+| Renzo Gabriel De Stefano | 3 - Dossier enviado | 25/08 — respondió emojis + aceptó dossier + ofrece derivar si encuentra punto de entrada en Hexagon | Esperar respuesta |
+| Tomas Ibarlin | 1 - MSG1 generado | MSG1 21/08 — inspector obra pública Santa Fe, perfil junior | Esperar respuesta |
 | Víctor Venegas Pezo | 2 - MSG2 enviado | MSG2 21/07 | SEG1 urgente — vencido |
 | Álvaro Bohórquez | 2 - MSG2 enviado | MSG2 12/08 — respondió con newsletter propio | Esperar respuesta |
 | Juan David Londoño Gomez | 2 - MSG2 enviado | MSG2 27/07 | Esperar respuesta |
@@ -27,21 +583,17 @@
 | Juan Cruz Piccardo | 2 - Conversación activa | MSG3 informativo 03/08 — sin CTA | Si responde, proponer reunión directa |
 | Roberto Fernandez | 2 - MSG2 enviado | MSG2 03/08 | Esperar respuesta |
 | Fernanda Bondesío | 2 - MSG2 enviado | MSG2 03/08 | Esperar respuesta |
-| Gonzalo Dalmazzo | 3 - Dossier enviado | Dossier 04/08 | SEG1 pendiente |
-| Karen Nieves | 1 - MSG1 enviado | MSG1 03/08 | Esperar respuesta |
-| Karla Osorio Rujano | 4 - SEG1 enviado | SEG1 12/08 | Esperar respuesta |
+| Karen Nieves | 3 - Dossier enviado | 04/09 — respondió con pain confirmado + pidió dossier. Dossier enviado. | SEG1 en 48-72hs si no responde |
 | Manny Larcher | 2 - MSG2 enviado | MSG2 05/08 — respondió "please share" | Esperar respuesta |
 | Carolina Cianfagna | 2 - MSG2 enviado | MSG2 05/08 | Esperar respuesta |
 | Jaye Wallace | 2 - MSG3 enviado | MSG3 06/08 — ofrece red CEOs/Founders como referidos | Esperar respuesta |
 | Marcela Moncada Peraza | 2 - MSG2 enviado | MSG2 05/08 | Esperar respuesta |
 | Catalina Escobar Bravo | 2 - MSG2 enviado | MSG2 05/08 | Esperar respuesta |
-| Sandra Suárez Pérez | 1 - MSG1 enviado | Respondió 05/08 — habló de libro vs. marca personal | MSG2 pendiente |
 | Monica Saavedra Nieto | 2 - MSG2 enviado | MSG2 06/08 — Co-Founder Plurall fintech | Esperar respuesta |
 | Cristian González | 2 - MSG2 enviado | MSG2 06/08 — Founder Bocha Agency / educación | Esperar respuesta |
 | Daniela Fernanda Perez | 2 - MSG2 enviado | MSG2 07/08 | Esperar respuesta |
 | Marcelo Fondacaro | 2 - MSG2 enviado | MSG2 07/08 | Esperar respuesta |
 | Fabian Cabana | 2 - MSG2 enviado | MSG2 07/08 | Esperar respuesta |
-| Eduardo Javier Ochoa | 3 - Dossier confirmado | 07/08 — "Perfecto" | SEG1 pendiente |
 | Carlos Fiscal | 2 - MSG2 enviado | MSG2 07/08 — founder en transición, pitch elegante sin dossier | Si responde, proponer conversación |
 | Federico Mila | 2 - Conversación activa | 07/08 — branding consultant, propuso reunión sin saber que Hint es agencia | Manejar con honestidad + complementariedad |
 | Pablo Menegol | 2 - MSG2 enviado | MSG2 07/08 — CEO Newcrux, expansión Brasil | Esperar respuesta |
@@ -50,35 +602,86 @@
 | Diego Galetto | 2 - MSG2 enviado | MSG2 11/08 — Filabe, real estate Argentina | Esperar respuesta |
 | Martin Orlando | 2 - MSG2 enviado | MSG2 11/08 — Innovia Healthcare, Costa Rica | Esperar respuesta |
 | Claudia Patricia Rios Molina | 4 - SEG1 enviado | SEG1 12/08 — respondió con POV fuerte sobre narrativa | Esperar respuesta |
-| Macarena Vargas Losada | 2 - MSG2 enviado | MSG2 12/08 tarde — CODELCO Fundición | Esperar respuesta |
-| Laura Peña Rodriguez | 2 - MSG2 enviado | MSG2 12/08 tarde — CFO + Co-founder Legatus | Esperar respuesta |
 | Aleksán Buyuk Kurt | 2 - MSG3 enviado | MSG3 12/08 tarde — Hint insertado liviando, enfoque marca personal | Esperar respuesta |
+| Pablo Arroyo Blanco | 2 - MSG2 enviado | MSG2 13/08 — Odoo/PyMES Costa Rica, dossier por mail | Esperar respuesta |
+| Pablo Julián Mateo | 2 - MSG2 enviado | MSG2 15/08 — Hendercross, consultoría Salesforce/IA Argentina | Esperar respuesta |
+| Tamara Lopez Leyton | 2 - Conversación activa | MSG3 13/08 — redirección amplificación externa, puerta entreabierta | Esperar respuesta |
+| M. Wilma Lepre | 1 - MSG1 enviado | MSG1 17/08 — People Team Manager LATAM, Marcus Thomas LLC | Esperar respuesta |
+| Maximiliano Caro | 1 - MSG1 enviado | MSG1 17/08 — Head of Operations ERON International, iGaming/Fintech | Esperar respuesta |
+| Pablo Emilio Salas | 1 - MSG1 enviado | MSG1 17/08 — Gerente General CAPAC SRL, servicios petroleros Mendoza | Esperar respuesta |
+| Iñigo Biain | 2 - MSG2 enviado | MSG2 17/08 — Periodista/Editor InfoNegocios Córdoba | Esperar respuesta |
+| Victor Perez-Cotapos | 2 - MSG2 enviado | MSG2 17/08 — separar voz personal de ComunidadFeliz | Esperar respuesta |
+| Carolina Rojas | 2 - MSG2 enviado | MSG2 17/08 — metodología "uno o dos pasos adelante" | Esperar respuesta |
+| Luis Mendieta Padilla | 2 - MSG2 enviado | MSG2 18/08 — métricas antes de arrancar, Ecuador audiovisual | Esperar respuesta |
+| Patricio O'Kon | 3 - Dossier por mail | Dossier 18/08 — patricio@papelpicadoweb.com | Jefe envía dossier |
+| Gabriel Cardozo | 2 - MSG2 enviado | MSG2 18/08 — apunta a referido dentro de Fabrica SRL | Esperar respuesta |
+| Pedro Donado Manrique | 2 - MSG2 enviado | MSG2 20/08 — nuevo cierre dossier+reunión | Esperar respuesta |
+| Juan Manuel Sordo | 1 - Referido pendiente | 20/08 — vendedor Tersuave, ofreció conectar con responsable Índigo | Esperar referido |
+| Dante Velasco | 3 - Seguimiento activo | Dossier 20/08 — respondió con audios (objeción: humano vs automático). Respuesta enviada. | Esperar respuesta |
+| Sandra Zárate | 3 - Dossier enviado | 25/08 — respondió MSG1 pidiendo propuesta para compartir con líderes de Boreh | Jefe envía dossier |
+| Alicia Pérez Patrón | 4 - SEG1 enviado | 04/09 — SEG1: coherencia cuando la comunicación pasa por varias manos | Esperar respuesta |
+| Jorge O. Gatto | 4 - SEG1 enviado | 04/09 — SEG1: voz del founder es la puerta comercial de RAM Execution | Esperar respuesta |
+| Valentín Bardelli | 2 - Conversación activa | 26/08 — preguntó "cuál sería el motivo de la reunión", MSG2 enviado explicando valor + referido | Esperar respuesta |
+| Federico Stephan | 2 - MSG2 enviado | 26/08 — Filadd YC S21, AI Specialist. MSG2 con pitch directo + CTA referido | Esperar respuesta |
+| Luis Arturo Baquero Franco | 6 - REUNIÓN AGENDADA | 04/09 — respondió al follow-up post-SEG1 proponiendo meet. Compartió Google Calendar. | Asistir a reunión |
+| Clara Cecilia Uparela Imbeth | 4 - SEG1 enviado | 04/09 — SEG1: visión del líder queda invisible en transformaciones de escala | Esperar respuesta |
+| Daniel D'Agostino | 4 - SEG1 enviado | 04/09 — SEG1: mantener criterio cuando sube el volumen en content B2B | Esperar respuesta |
+| Adriana Meldini | CERRADA | 02/09 — propuso colaboración embajadores/employer branding. Hint declinó formalmente. | — |
+| Tomas Rivero | 3 - Dossier enviado | 02/09 — MSG2 enviado, aceptó dossier "dale buenísimo". Dossier enviado por LinkedIn. Respondió: "voy a verlo en detenimiento y te digo cuando podríamos agendar algo breve" | Seguimiento en unos días |
+| Alexandra Oropeza castro | CERRADA | 02/09 — vio dossier, interesada en vocería digital pero priorizando búsqueda. Declinó por ahora. Puerta abierta. | Recontactar si cambia situación |
+| Mariano Bustos | 2 - MSG2 enviado | 02/09 — respondió "si obvio". MSG2 enviado. Reclamó que no explicamos el proceso. Respuesta con explicación enviada. | Esperar respuesta / dossier pendiente |
+| Christian Shule | 3 - Dossier enviado | 02/09 — en transición laboral (dejó Tucson). Preguntó por performance + AI content. Dossier enviado. | Recontactar cuando tenga nueva función |
+| Lea Abud | 1 - Puerta abierta | 02/09 — respondió no tiene clientes ahora. Pidió Calendly. Respuesta: mandamos Calendly la próxima semana. | **RECORDATORIO: mandar Calendly próxima semana (09/09)** |
+| Martin D'Elia | CERRADA | 02/09 — IBM Consulting = proveedor de transformación digital, no cliente. Cierre suave enviado. | — |
+| Marcela Ospital | 2 - MSG2 enviado | 14/09 — respondió "Sí" al MSG1, MSG2 sobre ordenar portafolio MBD Habitar bajo narrativa madre | Esperar respuesta |
+| Miguel A. Zaldívar C. | 2 - MSG2 enviado | 14/09 — respondió saludo, MSG2 sobre coordinar comunicación AIESEC (remoto CR) y Altius (presencial Panamá) | Esperar respuesta |
+| Dr. Arturo Arciniega | 1 - MSG1 enviado | 14/09 — Global Expert Digital Dentistry México, ángulo impresión 3D como sistema no gadget | Esperar respuesta |
+| Matias Rodriguez | 1 - MSG1 enviado | 14/09 — HSE minería litio/energía Argentina, ángulo "asiento en la mesa" (share de Jorge Bonifacio) | Esperar respuesta |
+| Mehdí Caballero | CERRADA | 14/09 — declinó directo "no estamos buscando contratar esto". Cierre cordial enviado. | — |
+| Andres Vergara | 1 - MSG1 enviado | 14/09 — respondió "Gracias por tu comentario! Suerte con Hint Media!" — brush-off cordial, no abre puerta. Sin cerrar formalmente. | Evaluar si cerrar |
+| Karen Nieves | 3 - Dossier enviado | 14/09 — confirmó "Perfecto Florencia lo reviso" post-dossier | Esperar respuesta |
 
-### Stage 4 — SEG1 enviado hoy (12/08)
+### Stage 4 — SEG1 enviado
 
-| Nombre | Sector |
+| Nombre | SEG1 enviado | Sector |
+|--------|-------------|--------|
+| Gustavo Regner | 12/08 | Consultoría |
+| Marcelo Magaña | 12/08 | Consultoría/Tech |
+| Paula Honisch | 12/08 | Compliance |
+| Jorge López Acevedo | 12/08 | Finanzas/Fintech |
+| Daniela Moreno Arciniegas | 12/08 | Partnerships |
+| Cristian De Luca | 12/08 | HR/Talento |
+| Jorge Barahona | 12/08 | Turismo/UX |
+| Santiago Azcona | 12/08 | — |
+| Claudia Patricia Rios Molina | 12/08 | Comunicaciones |
+| Francisco Peralta | 12/08 | — |
+| Kelly Marimon | 12/08 | — |
+| Cristián Schmid | 12/08 | — |
+| Estíbaliz Aguado | 12/08 | — |
+| Alexandra Pérez Idárraga | 12/08 | Nutrición/Wellness |
+| Paulo Escobar MD | 12/08 | Salud |
+| Raúl González-Romero | 12/08 | Consultoría/Gobierno Corporativo |
+| Maximiliano Quintana | 25/08 | Consultoría/Narrativa Visual |
+| Gonzalo Ezequiel Dalmazzo | 25/08 | Hotelería/Turismo |
+| Francisco Jones | 25/08 | Energía/Infraestructura |
+| Juan Pablo Cingolani | 25/08 | Construcción/Hormigón |
+| Leonardo Ortellado | 25/08 | Energía/Infraestructura |
+| Sandra Suárez Pérez | 25/08 | Consultoría/Speaker/Autora |
+
+### Cerrados sesión 26/08
+
+| Nombre | Estado |
 |--------|--------|
-| Gustavo Regner | Consultoría |
-| Marcelo Magaña | Consultoría/Tech |
-| Paula Honisch | Compliance |
-| Jorge López Acevedo | Finanzas/Fintech |
-| Daniela Moreno Arciniegas | Partnerships |
-| Cristian De Luca | HR/Talento |
-| Jorge Barahona | Turismo/UX |
-| Santiago Azcona | — |
-| Claudia Patricia Rios Molina | Comunicaciones |
-| Francisco Peralta | — |
-| Kelly Marimon | — |
-| Cristián Schmid | — |
-| Estíbaliz Aguado | — |
-| Alexandra Pérez Idárraga | Nutrición/Wellness |
-| Paulo Escobar MD | Salud |
-| Raúl González-Romero | Consultoría/Gobierno Corporativo |
+| Eduardo Javier Ochoa | Cerrado 25/08 — cierre cordial sin interés real |
+| Soledad Martinez | Cerrada 26/08 — "no estoy buscando este tipo de servicios" |
+| Melanie Weimberg | Cerrada 26/08 — en transición, ya no está en Manantial. Referido: Antonela Del Franco |
 
 ### Recontacto programado
 
 | Nombre | Fecha | Nota |
 |--------|-------|------|
+| Gonzalo Rioja | sept/26 | Post-Hotelga (2-4 sept) — "Gracias!" sin apertura, recontactar con ángulo nuevo |
+| Juan Rossi | oct/26 | SEG1 en 48hs si no responde al dossier |
 | Brenda Vaca | sept/26 | Recontactar en 1 mes |
 | Santiago Salguero | sept/26 | Recontactar en 1 mes |
 | Tatiana Guido | sept/26 | Mail a Argerie Ramirez (Argerie.Ramirez@walmart.com) |
@@ -87,47 +690,39 @@
 | Lucas De Nardo | sept/26 | Celular 1162721683 |
 | Claudia Hoyos | oct/26 | Mail claudia.hoyos@enex.cl |
 | Michelle LaTigresa | oct/26 | BD/partnerships, no scope Hint ahora |
+| Macarena Vargas Losada | nov/26 | Consultora cerrada con Anglo para Andina-Los Bronces |
+| Viviana Vasconez Gallegos | sept/26 | Cierre suave 15/08 — "si tengo consulta te escribo" |
 | Robinson Carrera | nov/26 | Dossier a Fernando Díaz (fdiaz@gasdelsur.cl) |
 | Claudia Zazzali | nov/26 | — |
 | David Beltrán | nov/26 | — |
 | María Eugenia Fracchia | nov/26 | Celu 1164521943, dossier por WA |
+| Juan Felipe Gómez Martínez | nov/26 | Casa matriz centraliza RRSS — cierre suave 18/08 |
+| Meliné Gejekoushian | nov/26 | No buscan ahora |
 
-### Pendiente sin SEG1
+### Pendiente urgente — acción directa
 
-| Nombre | Motivo |
-|--------|--------|
-| Daniela Buján | Sin .md — pegar conversación para hacer SEG1 |
-| Gonzalo Dalmazzo | Stage 3 activo — SEG1 pendiente |
-| Eduardo Javier Ochoa | Stage 3 activo — SEG1 pendiente |
-
-### Cerrados / No interesados
-
-| Nombre | Estado |
-|--------|--------|
-| Mauro Rochet Pagua | No interesado — 11/08 |
-| Ignacio Andree Muñoz Flores | No interesado — 31/07 |
-| Sonia Pérez-Castro | No interesada — 30/07 |
-| Cristina Raquel Hernández | No interesada — 28/07 |
-| Ezequiel Jaroslavsky | Contacto equivocado |
-| Gabriela Gutiérrez B | No interesada — 03/08 |
-| Romina Luna Venegas | No interesada — 04/08 |
-| Miguel Bocanument Gomez | No interesado — 12/08 |
-| Carmen Helena Villabona Ayala | No interesada — 12/08 |
+- **Pablo Rego** — dossier por mail a prego@tiendainglesa.com.uy. Jefe debe enviar.
+- **Diego Manfio** — dossier por mail a dmanfio@sima.com.ar. Jefe debe enviar.
+- **Celeste Neyra** (celeste.neyra@datco.net) — Marketing Grupo Datco. Referido por José Luis Olivieri 17/08.
+- **Patricio O'Kon** — dossier por mail a patricio@papelpicadoweb.com. Jefe debe enviar.
+- **Sandra Zárate** — dossier para compartir con líderes de Boreh. Jefe debe enviar.
+- **Antonela Del Franco** — contactar en Manantial (reemplaza a Melanie Weimberg en selección)
 
 ### MSG1 pendiente urgente — ya conectados
 
-**Grupo A — sesión anterior:**
-Pedro Donado Manrique (Zona Franca Barranquilla), Tamara Lopez Leyton (Comunidad IA LATAM), Juan Camilo Velasco Hoyos (Deriv Colombia), Carlos Hernando Fonseca Sanclemente (Keralty), Victor Perez-Cotapos (ComunidadFeliz.com), Carla Mariman Ibarra (PrevenConCiencia) — Macarena Vargas Losada: MSG2 enviado 12/08
+**Grupo A:** Juan Camilo Velasco Hoyos, Carlos Fonseca, Carla Mariman Ibarra
 
-**Grupo B — AGOSTO 2026 / FCT COMMS, aceptaron 9-11/08:**
-Pablo Vergara (Fintoc), Marcelo Erezuma B., Sebastian Olano (SoFi), Ernesto Seidel, Diego Felipe Santana G. (Grant Thornton), Lionel Cymerman, Laura Peña Rodriguez, Vanesa Gambirazio (ID4YOU), Ana María Marcet (Fintech SGR), Carol Báez Pineda (Bolsa Mercantil Colombia), Juan Felipe Gómez Martínez (Nacional de Seguros), Daniel Seva, Rafael Ruiz (Betterfly), Diego San Esteban, Marcelo Franceschini, Leonardo Oscar Iglesias (YPF/UCEMA), David Riveros Fonseca (Hackmetrix), Jimena Ruiz Velásquez (FINAGRO), Marcos Nicolaides, Patricio O'Kon, Andrea Grobocopatel (FLOR), Diego Manfio (OSDE), Sebastian Rimmele, Santiago José Reyes Botero (TGI gas Colombia), Guillermo Barbero (FIRST CF), Monica Melito, Tatyana Orozco De La Cruz (Consultia), Alex Reyes-Ortiz, Maximiliano Santa Cruz, Maximiliano Quintana
+**Grupo B — AGOSTO 2026 / FCT COMMS pendientes MSG1:**
+Pablo Vergara, Marcelo Erezuma B., Ernesto Seidel, Diego Felipe Santana G., Lionel Cymerman, Vanesa Gambirazio, Ana María Marcet, Carol Báez Pineda, Daniel Seva, Diego San Esteban, Marcelo Franceschini, Leonardo Oscar Iglesias, David Riveros Fonseca, Jimena Ruiz Velásquez, Marcos Nicolaides, Andrea Grobocopatel, Sebastian Rimmele, Guillermo Barbero, Monica Melito, Tatyana Orozco De La Cruz, Alex Reyes-Ortiz, Maximiliano Santa Cruz
 
-**Grupo C — orgánicos con buen fit (prioridad media):**
-Néstor Consuegra Gutiérrez (Promigas), Andres Lopez Gibson (Darcy Partners energía), Marcelo Riquelme (Petroplastic), Luciano Fucello (Oil & Gas Vaca Muerta), Tomas de Pablos Souza (Minerales críticos), Igor Elias (Mining), Alejandro Rodrigo Monteiro (OFEPHI), Enrique Vidal Bazterrica (GARMIN Marketing), Laís Aoki (Intermac Seguros), Mariano Fiorito (Schroders), Jorge Ivan Otalvaro Tobon (VP Banca), Juan Ignacio Abuchdid (Grupo IEB)
+**Grupo C — orgánicos pendientes:**
+Néstor Consuegra Gutiérrez, Marcelo Riquelme, Luciano Fucello, Tomas de Pablos Souza, Igor Elias, Alejandro Rodrigo Monteiro, Enrique Vidal Bazterrica, Laís Aoki, Mariano Fiorito, Juan Ignacio Abuchdid
+
+**INDUSTRIA-ARG (MSG1 pendiente — ~85 contactos conectados 16-18/08)**
 
 ### FCT COMMS 1.0 — pendientes MSG1
 
-Uri Martinich, Raúl González-Romero, Tomás Sarmiento, Cristhian Fuentes, Carlos Merchan Cubillos, Matias Vazquez, Luis Miguel Alzate, Juan Pablo Nieto, Rita Galmarini, Federico Arce, Andrés Quiles Ruiz, Pablo Julián Mateo, Mariemma Ramos Nava, Eugenia Kessler, Luis Hernandez Mojica, Clara Massenzio, Fernando Diosdado, Julio Madrazo, Paola Manjarrés, Bruno Caravantes, Leonardo Garcia Medina, Rodrigo Alvial, Rui Goncalves, Carolina Martinez Plazas, Magdalena Del Solar, Valeria Abadi, Edwar Ruiz Pimentel, Daniela López Ochoa, Janette Rodríguez Villa
+Uri Martinich, Raúl González-Romero, Tomás Sarmiento, Cristhian Fuentes, Carlos Merchan Cubillos, Matias Vazquez, Luis Miguel Alzate, Juan Pablo Nieto, Rita Galmarini, Federico Arce, Andrés Quiles Ruiz, Mariemma Ramos Nava, Eugenia Kessler, Luis Hernandez Mojica, Clara Massenzio, Fernando Diosdado, Julio Madrazo, Paola Manjarrés, Bruno Caravantes, Leonardo Garcia Medina, Rodrigo Alvial, Rui Goncalves, Carolina Martinez Plazas, Magdalena Del Solar, Valeria Abadi, Edwar Ruiz Pimentel, Daniela López Ochoa, Janette Rodríguez Villa
 
 ### Batch pendiente de respuesta (MSG1 enviado 27/07)
 
@@ -144,69 +739,92 @@ Lorena Miguel, David Zafra, Angélica Marrón, Dídac Pérez, Ianir Sonis, José
 - "No interesado" = `noInterest: true` en historial.json, NO stage 5
 - stage 5 = "Seg. 2" en el programa (seguimiento 2)
 - Campos historial: `name`, `date`, `stage` (int), `id` (slug obligatorio)
+- Entradas sin `id` no se pueden abrir en el viewer — siempre agregar id al crear entradas nuevas
 - Libra Seguros NO es cliente de salud — nunca para sector salud/medicina
-- Sin clientes Hint en salud ni educación — presentar solo por metodología
+- Sin clientes Hint en salud — presentar solo por metodología
 - Rafael Borges: sector real = Farmacéutico/Servier Panamá
-- max_tokens servidor.py = 5500 (fix bug perfiles ricos, 05/08/26)
+- max_tokens servidor.py = 5500
 - Variante C eliminada — solo Variante A (28.5% conversión vs 19.4%)
-- Campo `recontact` = fecha ISO (ej: "2026-09-12") — el programa lo lee para excluir del conteo Dossier y de proximos
-- index.html Linkedin: usa campo `recontact` (no `followup_date`) para clasificar recontactos
+- Campo `recontact` = fecha ISO (ej: "2026-11-18") — excluye del conteo Dossier y de proximos
+- index.html Linkedin: usa campo `recontact` para clasificar recontactos
 - idioma/tono hardcodeados: Español / Profesional
 
 ---
 
-## Stats al cierre 12/08/26 tarde
+## Stats al cierre 04/09/26 (tarde)
 
-- Total historial: 814 contactos
-- Sesión tarde 12/08: Macarena Vargas Losada (stage 2), Rafael Ruiz (stage 3), Santiago José Reyes Botero (stage 3), Laura Peña Rodriguez (stage 2 nueva), Aleksán Buyuk Kurt (MSG3 Hint insertado)
-- Técnico: index.html análisis oculto (corre en background), RESUMEN ESTRUCTURADO removido, ThreadingMixIn fix concurrencia
+- Total historial: **789 entradas**
+- Stage 3 nuevos hoy (tarde): **Karen Nieves** — confirmó pain exacto, pidió dossier, dossier enviado
+- Sesión corta — 1 conversación procesada
 
-## Activos nuevos sesión tarde 12/08
+## Stats al cierre 04/09/26
 
-| Nombre | Stage | Nota |
-|--------|-------|------|
-| Macarena Vargas Losada | 2 - MSG2 enviado | CODELCO, respondió MSG1 |
-| Rafael Ruiz | 3 - Dossier enviado | Betterfly, InsurTech, explicación ventas sin listar servicios |
-| Santiago José Reyes Botero | 3 - Dossier enviado | TGI Oil & Gas Colombia, mándamelo sin problema |
-| Laura Peña Rodriguez | 2 - MSG2 enviado | CFO + Co-founder Legatus, Colombia |
-| Aleksán Buyuk Kurt | 2 - MSG3 enviado | TEDx Speaker sports/entertainment, Hint insertado liviando |
+- Total historial: **789 entradas**
+- Stage 6 nuevos hoy: **Luis Arturo Baquero Franco** — reunión agendada (flujo completo MSG1→dossier→SEG1→follow-up→reunión)
+- Stage 4 nuevos hoy: Joaquín Goyechea, Luis Cabral, Alicia Pérez Patrón, Jorge O. Gatto, Clara Cecilia Uparela Imbeth, Daniel D'Agostino
+- Cerrados hoy: Juan Garófalo (noInterest), Daniel Hernández (noInterest)
+- Nuevos archivos: HINT_VOZ.md creado (calibración de voz Florencia)
+- CLAUDE.md: sección SEG1 completamente reescrita con REGLA DE LENGUAJE, REGLA DE NO SOBREINTERPRETAR, OUTPUT 4 variantes
+
+## Stats al cierre 03/09/26
+
+- Total historial: **789 entradas**
+- Stage 3 nuevos hoy: Pablo Rego (dossier mail prego@tiendainglesa.com.uy)
+- Stage 2 nuevos hoy: Juan Garófalo, Felipe Seia, Armando Aratani
+- Sesión corta — 4 conversaciones procesadas
+
+## Informes generados 30-31/08/26
+
+Carpeta: `AGOSTO INFORME/`
+- `auditoria-agosto.html` — auditoría completa agosto (341 contactos, 26.7% resp, 24 dossiers)
+- `informe-3-meses.html` — análisis acumulado junio→agosto (787 contactos, 311 resp, 158 dossiers, 7 reuniones)
+- `post-dossier.html` — análisis embudo post-dossier: 158 dossiers → 7 reuniones (4.4%). 97 ghostearon post-SEG1. 36 sin SEG1 aún.
+- `Informe_Agosto_2026_LinkedIn.pptx` — 10 slides para el jefe: KPIs, embudo, conversaciones, costo bot (~USD 0.087/msg, ~USD 20-35 agosto), reuniones, objeciones, prioridades sept.
+
+## Hallazgo crítico 30/08/26
+
+El embudo se rompe DESPUÉS del dossier, no antes:
+- 36 dossiers sin SEG1 (primer agujero — puro olvido de ejecución)
+- 97 de 120 con SEG1 ghostearon en silencio (80.8%)
+- **Prioridad 1 septiembre**: SEG1 a los 36 pendientes + cambiar CTA a horario concreto + implementar SEG2
+
+## Cambios importantes de metodología (20/08/26)
+
+- **MSG1 ahora es 3 burbujas** — Hint aparece en B2, dossier+reunión juntos en B3 (CTA único)
+- **Mapa de clientes completo** — Sullair siempre primero. Agora (tech), Royal English (educación), Grupo One (eventos), Spain Collection (turismo), Tassaroli (Oil & Gas) ahora disponibles
+- **A testear** — medir tasa de respuesta de la nueva metodología vs anterior
+
+## Prioridades para próxima sesión
+
+1. **Seguimiento SEG1 enviados 04/09** — Joaquín Goyechea, Luis Cabral, Alicia Pérez Patrón, Jorge O. Gatto, Clara Cecilia Uparela, Daniel D'Agostino (esperar respuesta, SEG2 si no responden)
+2. **Reunión Lucho Baquero** — coordinar horario vía Google Calendar que compartió
+3. **Revisar aceptaciones 199 conexiones nuevas** (~28/08) — generar MSG1 para quienes aceptaron de los 3 batches nuevos
+4. **Dossier por mail** — Diego Manfio (dmanfio@sima.com.ar), Patricio O'Kon (patricio@papelpicadoweb.com), Celeste Neyra (celeste.neyra@datco.net), Sandra Zárate (para líderes Boreh)
+5. **Contactar Antonela Del Franco** — reemplaza a Melanie Weimberg en Manantial
+6. **Call Luciano Fornaro** — pendiente que pase mail de trabajo para Google Meet
+7. **Lola Bordás Dolz** — MSG2 pendiente
+8. **Lea Abud** — mandar Calendly semana del 09/09
+9. **Founders batch pendientes** — Victoria Cabanelas, Patrick Summers, Javier D. Caruso, Horacio Cacciatore
+10. **MSG1 INDUSTRIA-ARG** — ~85 contactos pendientes
+11. **MSG1 Grupo B FCT COMMS** — ~22 contactos pendientes
+10. **Patricia Cirillo** — contacto referido por Sebastian Kemerer, MARCOM Racklatina Uruguay
+11. **ORSEP Comunicaciones** — buscar contacto en web oficial orsep.gob.ar
 
 ---
 
-## Sesión 13/08/26 — Nueva metodología MSG1 (NO tocar hasta testear)
+## Metodología MSG1 — Nueva fórmula (NO tocar hasta testear)
 
-### Problema identificado en el funnel actual
-
-El funnel tiene demasiados pasos entre el momento warm (cuando responden MSG1) y la reunión:
-MSG1 → responden → MSG2 largo → dossier → esperás → SEG1 → SEG2 → quizás reunión
-
-El dossier es la barrera principal. No entre el prospecto y Hint, sino entre Hint y la reunión.
-
-### Nueva fórmula MSG1 — "Vi X → Dolor Y → Hint Z → CTA híbrido"
-
-Estructura completa (aplicable directo en MSG1, sin esperar respuesta):
+### Fórmula "Vi X → Dolor Y → Hint Z → CTA híbrido"
 
 ```
 L1: "Buenas [nombre]!"
-L2: Vi [algo concreto y específico del perfil — publicación, decisión, situación]
-L3: En ese contexto el desafío suele ser [pain exacto derivado de lo que se vio, no genérico]
+L2: Vi [algo concreto y específico del perfil]
+L3: En ese contexto el desafío suele ser [pain exacto]
 L4: En Hint Media acompañamos a [tipo de perfil] en [eso exacto]
 L5: CTA híbrido — dossier + reunión en una sola oración
 ```
 
-**CTA híbrido (elegir variante según tono):**
-- "Te mando un dossier breve con casos de ese tipo, y si tiene sentido, lo vemos en una llamada?"
-- "Tengo casos concretos armados. Te los mando, y si tiene sentido, lo charlamos rápido."
-- "Te mando casos concretos por acá, y si alguno te resuena, armamos una conversación."
-
-**Por qué el CTA híbrido:** el dossier baja la fricción del sí inmediato. La reunión queda plantada como paso natural — no como segundo pedido sino como consecuencia obvia del dossier.
-
-### Reglas de aplicación
-
-- El pain en L3 tiene que ser derivado del perfil, no genérico. Si no hay señal clara → usar MSG1 clásico.
-- L4 no lista servicios. Nombra el problema que resuelve Hint.
-- Aplicar a CEO/Founder con señal fuerte primero. Manager/Coord → seguir con MSG1 clásico.
-- Si no hay publicación reciente ni dolor visible → no forzar. MSG1 clásico convierte bien.
+**CTA híbrido:** "Te mando un dossier breve con casos de ese tipo, y si tiene sentido, lo vemos en una llamada?"
 
 ### Cuándo usar MSG1 clásico vs nueva fórmula
 
@@ -217,72 +835,3 @@ L5: CTA híbrido — dossier + reunión en una sola oración
 | Director / VP | Publicación reciente | Sí | Nueva fórmula o clásico |
 | Manager | Cualquiera | Cualquiera | Clásico siempre |
 | Speaker / Marca personal | Alta actividad | Sí | Nueva fórmula liviana |
-
-### Ejemplos canónicos (probados en sesión 13/08/26)
-
-**Cristhian Fuentes** — Founder ORSON, Substack, ex Coca-Cola
-
-```
-Buenas Cristhian!
-Vi que fundaste ORSON después de Coca-Cola y además mantenés un Substack propio.
-En ese contexto el desafío suele ser el inverso: la agencia comunica bien para sus clientes pero la marca de la agencia misma no tiene la misma capa de contenido que les recomienda a ellos.
-En Hint Media acompañamos a fundadores de agencias en construir esa presencia propia.
-Te mando un dossier breve con casos de ese tipo, y si tiene sentido, lo vemos en una llamada?
-```
-
-**Juan Pablo Nieto** — CEO SearchMAS, presencia local en era IA
-
-```
-Buenas Juan Pablo!
-Vi que SearchMAS gestiona presencia local de múltiples marcas en Google.
-En ese contexto el desafío suele aparecer hacia adentro: la empresa que más sabe de presencia online para sus clientes es la que menos tiempo tiene para aplicarlo a la propia.
-En Hint Media trabajamos con líderes tech en construir esa capa de comunicación de marca propia.
-Te mando casos concretos, y si tiene sentido, armamos una conversación.
-```
-
-**Clara Massenzio** — Jefa de Marketing Cerro Castor + PopperStore
-
-```
-Buenas Clara!
-Vi que gestionás el marketing de Cerro Castor y PopperStore al mismo tiempo.
-En ese contexto el desafío suele ser sostener dos voces de marca distintas con los mismos recursos, sin que una consuma todo el tiempo a costa de la otra.
-En Hint Media sumamos capacidad de contenido y producción para que el equipo interno no tenga que elegir.
-Te mando un dossier breve con casos de ese tipo. Si te resuena, lo vemos en 20 minutos?
-```
-
-**Uri Martinich** — CEO Agencia ROI, SEO y Reputación Online
-
-```
-Buenas Uri!
-Vi que trabajás reputación online y SEO para mercados competitivos.
-En ese contexto el desafío suele ser que la narrativa del liderazgo de tus clientes no está construida — y cuando los algoritmos cambian, no hay capa propia que sostenga la reputación.
-En Hint Media acompañamos a agencias y sus clientes en construir esa capa ejecutiva.
-Tengo casos concretos armados. Te los mando, y si tiene sentido, lo charlamos rápido.
-```
-
-### MSG2 con CTA híbrido (cuando responden al MSG1 clásico)
-
-Si el prospecto respondió al MSG1 clásico, el MSG2 ahora va directo a dossier+reunión sin el paso del dossier como obstáculo separado:
-
-```
-B1: conectar con lo que dijeron (2 líneas)
-B2: Hint + pain específico (2 líneas)
-B3: "Te mando un dossier breve con casos de ese tipo, y si tiene sentido, lo vemos en una llamada?"
-```
-
-Sin B4 separado. Sin "te puedo mandar el dossier?". Todo en una sola oración al final.
-
-### Próximo paso
-
-Testear nueva fórmula en campo con los contactos pendientes de MSG1 (Grupo A + Grupo B).
-Comparar en 30 días: tasa de respuesta MSG1 nueva vs clásica, y tiempo promedio hasta reunión.
-
----
-
-## Prioridades para próxima sesión
-
-1. **Testear nueva fórmula MSG1** — Grupo A (Pedro Donado, Tamara Lopez, Juan Camilo Velasco, Carlos Fonseca, Victor Perez-Cotapos, Carla Mariman) con nueva fórmula donde haya señal clara
-2. **MSG1 Grupo B** (~30 contactos AGOSTO/FCT COMMS pendientes) — mezcla de fórmula nueva y clásica según perfil
-3. **SEG1 pendiente** — Gonzalo Dalmazzo, Eduardo Ochoa, Daniela Buján (pegar conversación)
-4. **MSG2 pendiente** — Sandra Suárez Pérez (respondió sobre libro vs. marca personal)
-5. **MSG1 Grupo C** — orgánicos energía/seguros
